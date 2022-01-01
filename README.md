@@ -70,6 +70,28 @@ E-commerce site built using Django.
 
 ### Frameworks, libraries and other tools
 
+[Git](https://git-scm.com/)
+
+- Git was used for version control within VSCode to push the code to GitHub.
+
+[GitHub](https://github.com/)
+
+- GitHub was used as a remote repository to store project code.
+
+[Unsplash](https://unsplash.com/)
+
+- All images used in the website apart from the logo were from the online copyright-free repository, Unsplash. See Credits for more information.
+
+[Am I Responsive](http://ami.responsivedesign.is/)
+
+- Am I Responsive was used to create the multi-device mock-up you see at the start of this README.md file.
+
+[Visual Studio Code (VSCode)](https://code.visualstudio.com/)
+
+- VSCode was the IDE used to write the code for this project. The following extensions were used for this project:
+
+- *markdownlint*: to keep consistent styling on markdown files.
+
 ## Testing
 
 ### HTML Validation
