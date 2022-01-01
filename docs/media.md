@@ -2,7 +2,7 @@
 
 ## Unsplash
 
-Below is the list of photographers in alphabetical order whose photographs were used from the copyright-free image repository Unsplash. 
+Below is the list of photographers in alphabetical order whose photographs were used from the copyright-free image repository Unsplash.
 
 - Aditya Romansa
 - Alexander Rotker
@@ -75,10 +75,9 @@ Below is the list of photographers in alphabetical order whose photographs were 
 - Vincent Branciforti
 - Vlad Bouts
 
-
 ## Pexels
 
-Below is the list of photographers in alphabetical order whose photographs were used from the copyright-free image repository Unsplash. 
+Below is the list of photographers in alphabetical order whose photographs were used from the copyright-free image repository Unsplash.
 
 - Athena
 - Cottonbro
