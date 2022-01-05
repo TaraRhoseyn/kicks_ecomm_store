@@ -38,19 +38,25 @@ The aim of this website is to build a fully functional e-commerce site where use
 
 ### Target Audience
 
-The target audience for this website is primarily young people interested in fashion and footware. In particular: 
+The target audience for this website is primarily young people interested in fashion and footwear. In particular...
+
 1. Fashion forward students aged between 18-24.
 2. Teenagers aged between 13-18.
-3. Parents of teenagers and students looking to purchase gifts for their children. 
+3. Parents of teenagers and students looking to purchase gifts for their children.
 4. Young people conscious of deals and student discounts, hunting down bargains.
-5. Deal hunters looking for a good deal on footware.
-6. Young professionals looking for comfortable shoes. 
-7. Parents of young children looking to buy good quality but afforable shoes for their growing children.
-8. Family members of young children looking to buy footware-related gifts for seasonal occassions.
+5. Deal hunters looking for a good deal on footwear.
+6. Young professionals looking for comfortable shoes.
+7. Parents of young children looking to buy good quality but affordable shoes for their growing children.
+8. Family members of young children looking to buy footwear-related gifts for seasonal occasions.
 
 ### User Stories
 
 #### First-time users
+
+1. As a first-time user, I want to able to navigate around the website in a way that is intuitive and easily understandable so I can browse freely.
+2. As a first-time user, I want to be able to create an account so I can see all of my information at once.
+3. As a first-time user, I want to be able to place an order without creating an account if I wish.
+4. As a first-time user, I want to be able to search the product catalog
 
 #### Regular visitors
 
@@ -100,7 +106,12 @@ The target audience for this website is primarily young people interested in fas
 
 - VSCode was the IDE used to write the code for this project. The following extensions were used for this project:
 
-- *markdownlint*: to keep consistent styling on markdown files.
+- *markdownlint*: To keep consistent styling on markdown files.
+- *SpellChecker*: To spell check markdown files.
+- *TODO Highlight*: To keep track of outstanding tasks, bugs that need to be fixed and annotations throughout the development process.
+- *Tokyo Night*: For syntax highlighting & styling of VSCode.
+- *vscode-pdf*: To view the wireframes.pdf file within VSCode.
+- *Terminal Tools*: Provides buttons among terminal for command shorthands, making interacting with the terminal faster.
 
 ## Testing
 
@@ -120,20 +131,20 @@ The target audience for this website is primarily young people interested in fas
 
 #### Lighthouse Testing
 
-#### Manual Testing
+### Manual Testing
 
-##### Devices tested
+#### Devices tested
 
 - Huawei PRA-LX1
 - iPhone SE
 - LENOVO IdeaCentre 3 Desktop PC with a 34" monitor
 - DELL Inspiron 15 5593
 
-##### Tests performed
+#### Tests performed
 
-##### Results
+#### Results
 
-### Browser compatability
+### Browser compatibility
 
 ### Testing user stories
 
@@ -153,6 +164,6 @@ The images were edited using [Canva](https://www.canva.com/). The logo for 'KICK
 
 ### Acknowledgements
 
-- To my fiancee Yasmine Haggar for her testing support and feedback on this project.
+- To my wife Yasmine Rhoseyn for her testing support and feedback on this project.
 - To my mentor Mo Shami for his feedback, advice and support.
 - To the Code Institute slack community of students and alumni for their helpful advice, resources, guidance and support.
