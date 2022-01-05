@@ -32,7 +32,7 @@
 
 ## Project Goals
 
-The aim of this website is to build a fully functional e-commerce site where users can purchase footware and accessories, leave ratings, create accounts and view their order history. 
+The aim of this website is to build a fully functional e-commerce site where users can purchase footwear and accessories, leave ratings, create accounts and view their order history.
 
 ## User Experience
 
