@@ -32,11 +32,21 @@
 
 ## Project Goals
 
-E-commerce site built using Django.
+The aim of this website is to build a fully functional e-commerce site where users can purchase footware and accessories, leave ratings, create accounts and view their order history. 
 
 ## User Experience
 
 ### Target Audience
+
+The target audience for this website is primarily young people interested in fashion and footware. In particular: 
+1. Fashion forward students aged between 18-24.
+2. Teenagers aged between 13-18.
+3. Parents of teenagers and students looking to purchase gifts for their children. 
+4. Young people conscious of deals and student discounts, hunting down bargains.
+5. Deal hunters looking for a good deal on footware.
+6. Young professionals looking for comfortable shoes. 
+7. Parents of young children looking to buy good quality but afforable shoes for their growing children.
+8. Family members of young children looking to buy footware-related gifts for seasonal occassions.
 
 ### User Stories
 
@@ -44,7 +54,7 @@ E-commerce site built using Django.
 
 #### Regular visitors
 
-#### Site owner
+#### Site owner/Administrator
 
 ## Scope
 
