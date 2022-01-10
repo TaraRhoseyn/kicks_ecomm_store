@@ -1,0 +1,155 @@
+[{
+   "pk":1,
+   "model":"products.product",
+   "fields": {
+       "sku":"...",
+       "name":"Unisex Nike 500 trainer",
+       "description":"Navy and pink trainers designed for the kid always on the move.",
+       "product_group":1,
+       "product_type":1,
+       "price":49.99,
+       "rating":3,
+       "brand":"Nike",
+       "image":"kids_1.png"
+   }
+}, {
+    "pk":2,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "name":"Bear Baby shoes",
+        "description":"The adorable gift for the adorable baby.",
+        "product_group":1,
+        "product_type":2,
+        "price":12.99,
+        "rating":4,
+        "brand":"Wakki",
+        "image":"kids_2.png"
+    }
+}, {
+    "pk":3,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "name":"Nike surfer Air",
+        "description":"A brand new line from Nike, these Air trainers will rock the seas.",
+        "product_group":1,
+        "product_type":1,
+        "price":59.99,
+        "rating":2,
+        "brand":"Nike",
+        "image":"kids_3.png"
+    }
+}, {
+    "pk":4,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "name":"Rustic leather boots",
+        "description":"Stylish and practical, these boots are perfect for the teenager always on the go.",
+        "product_group":1,
+        "product_type":4,
+        "price":30.00,
+        "rating":1,
+        "brand":"Tommand Boyd",
+        "image":"kids_4.png"
+    }
+}, {
+    "pk":5,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "name":"Winged baby shoes",
+        "description":"For the little angel in your life.",
+        "product_group":1,
+        "product_type":1,
+        "price":25.99,
+        "rating":5,
+        "brand":"Vans",
+        "image":"kids_5.png"
+    }
+}, {
+    "pk":6,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "name":"Navy blue shoes",
+        "description":"These tiny blue shoes are the small infant shoes we carry, perfect for delicate feet.",
+        "product_group":1,
+        "product_type":2,
+        "price":9.99,
+        "rating":3,
+        "brand":"Littluns",
+        "image":"kids_6.png"
+    }
+}, {
+    "pk":7,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "name":"Gold girly pumps",
+        "description":"Perfect shoes for the growing girl. Ideal at school discos and special occassions.",
+        "product_group":1,
+        "product_type":7,
+        "price":12.99,
+        "rating":3,
+        "brand":"Zara",
+        "image":"kids_7.png"
+    }
+}, {
+    "pk":8,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "name":"Fila kicks",
+        "description":"Meet the brand new kick on the block: Fila's Kicks range out now in all sizes available.",
+        "product_group":1,
+        "product_type":1,
+        "price":69.99,
+        "rating":2,
+        "brand":"Fila",
+        "image":"kids_8.png"
+    }
+}, {
+    "pk":9,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "name":"Worker-style kid's boots",
+        "description":"Perfect for the rugged kid, these worn brown leather boots are the ideal shoe for the adventurous.",
+        "product_group":1,
+        "product_type":4,
+        "price":19.99,
+        "rating":1,
+        "brand":"Timberlands",
+        "image":"kids_9.png"
+    }
+}, {
+    "pk":10,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "name":"Black Nike Camo Daps",
+        "description":"Black shoes with a camoflauge print underneath the iconic Nike swish.",
+        "product_group":1,
+        "product_type":7,
+        "price":45.00,
+        "rating":5,
+        "brand":"Nike",
+        "image":"kids_10.png"
+    }
+}, {
+    "pk":11,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "name":"Sparkly Pink Snow Boots",
+        "description":"Track through the winter ground with these shoes sure to make a sparkle.",
+        "product_group":1,
+        "product_type":4,
+        "price":30.00,
+        "rating":4,
+        "brand":"George",
+        "image":"kids_11.png"
+    }
+}]
