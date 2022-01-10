@@ -1,3 +1,8 @@
+/* 
+TODO: Add is_clearance to all products
+TODO: Add has_sizes bool key/values to all products
+FIXME: Add sku values to all sku keys
+*/
 [{
    "pk":1,
    "model":"products.product",
@@ -321,7 +326,7 @@
         "image":"womens_12.png"
     }
 }, {
-    "pk":23,
+    "pk":24,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -335,7 +340,7 @@
         "image":"womens_13.png"
     }
 }, {
-    "pk":24,
+    "pk":25,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -349,7 +354,7 @@
         "image":"womens_14.png"
     }
 }, {
-    "pk":25,
+    "pk":26,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -363,7 +368,7 @@
         "image":"womens_15.png"
     }
 }, {
-    "pk":26,
+    "pk":27,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -377,7 +382,7 @@
         "image":"womens_16.png"
     }
 }, {
-    "pk":27,
+    "pk":28,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -391,7 +396,7 @@
         "image":"womens_17.png"
     }
 }, {
-    "pk":28,
+    "pk":29,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -405,7 +410,7 @@
         "image":"womens_18.png"
     }
 }, {
-    "pk":29,
+    "pk":30,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -419,7 +424,7 @@
         "image":"womens_19.png"
     }
 }, {
-    "pk":30,
+    "pk":31,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -433,7 +438,7 @@
         "image":"womens_20.png"
     }
 }, {
-    "pk":31,
+    "pk":32,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -447,7 +452,7 @@
         "image":"womens_21.png"
     }
 }, {
-    "pk":32,
+    "pk":33,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -461,7 +466,7 @@
         "image":"womens_22.png"
     }
 }, {
-    "pk":33,
+    "pk":34,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -475,7 +480,7 @@
         "image":"mens_1.png"
     }
 }, {
-    "pk":34,
+    "pk":35,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -489,7 +494,7 @@
         "image":"mens_2.png"
     }
 }, {
-    "pk":35,
+    "pk":36,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -503,7 +508,7 @@
         "image":"mens_3.png"
     }
 }, {
-    "pk":36,
+    "pk":37,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -517,7 +522,7 @@
         "image":"mens_4.png"
     }
 }, {
-    "pk":37,
+    "pk":38,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -531,7 +536,7 @@
         "image":"mens_5.png"
     }
 }, {
-    "pk":38,
+    "pk":39,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -545,7 +550,7 @@
         "image":"mens_6.png"
     }
 }, {
-    "pk":39,
+    "pk":40,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -559,7 +564,7 @@
         "image":"mens_7.png"
     }
 }, {
-    "pk":40,
+    "pk":41,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -573,7 +578,7 @@
         "image":"mens_8.png"
     }
 }, {
-    "pk":41,
+    "pk":42,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -587,7 +592,7 @@
         "image":"mens_9.png"
     }
 }, {
-    "pk":42,
+    "pk":43,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -601,7 +606,7 @@
         "image":"mens_10.png"
     }
 }, {
-    "pk":43,
+    "pk":44,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -615,7 +620,7 @@
         "image":"mens_11.png"
     }
 }, {
-    "pk":44,
+    "pk":45,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -629,7 +634,7 @@
         "image":"mens_12.png"
     }
 }, {
-    "pk":45,
+    "pk":46,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -643,7 +648,7 @@
         "image":"mens_13.png"
     }
 }, {
-    "pk":46,
+    "pk":47,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -657,7 +662,7 @@
         "image":"mens_14.png"
     }
 }, {
-    "pk":47,
+    "pk":48,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -671,7 +676,7 @@
         "image":"mens_15.png"
     }
 }, {
-    "pk":48,
+    "pk":49,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -685,7 +690,7 @@
         "image":"mens_16.png"
     }
 }, {
-    "pk":49,
+    "pk":50,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -699,7 +704,7 @@
         "image":"mens_17.png"
     }
 }, {
-    "pk":50,
+    "pk":51,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -713,7 +718,7 @@
         "image":"mens_18.png"
     }
 }, {
-    "pk":51,
+    "pk":52,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -727,7 +732,7 @@
         "image":"mens_19.png"
     }
 }, {
-    "pk":52,
+    "pk":53,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -741,7 +746,7 @@
         "image":"mens_20.png"
     }
 }, {
-    "pk":53,
+    "pk":54,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -755,7 +760,7 @@
         "image":"mens_21.png"
     }
 }, {
-    "pk":54,
+    "pk":55,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -769,7 +774,7 @@
         "image":"mens_22.png"
     }
 }, {
-    "pk":55,
+    "pk":56,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -783,7 +788,7 @@
         "image":"mens_23.png"
     }
 }, {
-    "pk":56,
+    "pk":57,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -797,7 +802,7 @@
         "image":"mens_24.png"
     }
 }, {
-    "pk":57,
+    "pk":58,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -811,7 +816,7 @@
         "image":"mens_25.png"
     }
 }, {
-    "pk":58,
+    "pk":59,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -825,7 +830,7 @@
         "image":"mens_26.png"
     }
 }, {
-    "pk":59,
+    "pk":60,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -839,7 +844,7 @@
         "image":"mens_27.png"
     }
 }, {
-    "pk":60,
+    "pk":61,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -853,7 +858,7 @@
         "image":"mens_28.png"
     }
 }, {
-    "pk":61,
+    "pk":62,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -867,7 +872,7 @@
         "image":"mens_29.png"
     }
 }, {
-    "pk":62,
+    "pk":63,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -881,7 +886,7 @@
         "image":"mens_30.png"
     }
 }, {
-    "pk":63,
+    "pk":64,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -895,7 +900,7 @@
         "image":"mens_31.png"
     }
 }, {
-    "pk":64,
+    "pk":65,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -909,7 +914,7 @@
         "image":"mens_32.png"
     }
 }, {
-    "pk":65,
+    "pk":66,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -923,7 +928,7 @@
         "image":"mens_33.png"
     }
 }, {
-    "pk":66,
+    "pk":67,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -937,7 +942,7 @@
         "image":"mens_34.png"
     }
 }, {
-    "pk":67,
+    "pk":68,
     "model":"products.product",
     "fields": {
         "sku":"...",
@@ -949,5 +954,495 @@
         "rating":2,
         "brand":"Dockers",
         "image":"mens_35.png"
+    }
+}, {
+    "pk":69,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Addidas Tennis Shoes",
+        "description":"White tennis-style high shoes.",
+        "product_group":"",
+        "product_type":"",
+        "price":21.99,
+        "rating":5,
+        "brand":"Addidas",
+        "image":"socks_1.png"
+    }
+}, {
+    "pk":70,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Earth Tone Socks",
+        "description":"Earth tone socks from the Carretera V Manta collaboration from 2021.",
+        "product_group":"",
+        "product_type":"",
+        "price":5.99,
+        "rating":3,
+        "brand":"Carretera Y Manta",
+        "image":"socks_2.png"
+    }
+}, {
+    "pk":71,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Purple Bedeckled Socks",
+        "description":"Purple, black and blue bedeckled high socks.",
+        "product_group":"",
+        "product_type":"",
+        "price":3.99,
+        "rating":2,
+        "brand":"Carretera Y Manta",
+        "image":"socks_3.png"
+    }
+}, {
+    "pk":72,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Purple Bedeckled Socks",
+        "description":"Purple, black and blue bedeckled high socks.",
+        "product_group":"",
+        "product_type":"",
+        "price":3.99,
+        "rating":3,
+        "brand":"Carretera Y Manta",
+        "image":"socks_3.png"
+    }
+}, {
+    "pk":73,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"White Multi-Striped High Socks",
+        "description":"70s-style white high socks with three block coloured bands at the top.",
+        "product_group":"",
+        "product_type":"",
+        "price":12.99,
+        "rating":4,
+        "brand":"Deckler",
+        "image":"socks_4.png"
+    }
+}, {
+    "pk":74,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Flame Socks",
+        "description":"Perfect for any grunge aesthetic, these flame socks are here to stay.",
+        "product_group":"",
+        "product_type":"",
+        "price":9.99,
+        "rating":5,
+        "brand":"Vans",
+        "image":"socks_5.png"
+    }
+}, {
+    "pk":75,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Black Rose Socks",
+        "description":"Beware the thorns... Get stuck into beautiful rose socks.",
+        "product_group":"",
+        "product_type":"",
+        "price":4.99,
+        "rating":4,
+        "brand":"New Look",
+        "image":"socks_6.png"
+    }
+}, {
+    "pk":76,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Plain White Trainer Socks",
+        "description":"Girls plain white trainer socks, a staple for any sock drawer.",
+        "product_group":3,
+        "product_type":"",
+        "price":2.99,
+        "rating":5,
+        "brand":"Zara",
+        "image":"socks_7.png"
+    }
+}, {
+    "pk":77,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Adorable Sheep Socks",
+        "description":"Sleeping sheeps adorn this gorgeous pair of comfy socks.",
+        "product_group":3,
+        "product_type":"",
+        "price":12.99,
+        "rating":5,
+        "brand":"Auckland",
+        "image":"socks_8.png"
+    }
+}, {
+    "pk":78,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Floral Block Print Socks",
+        "description":"Pink modern art floral print socks.",
+        "product_group":3,
+        "product_type":"",
+        "price":21.99,
+        "rating":3,
+        "brand":"Auckland",
+        "image":"socks_9.png"
+    }
+}, {
+    "pk":79,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Autumnal Print Socks",
+        "description":"Block print from the 2021 Autumn Jack Wills collection.",
+        "product_group":2,
+        "product_type":"",
+        "price":17.00,
+        "rating":5,
+        "brand":"Jack Wills",
+        "image":"socks_10.png"
+    }
+}, {
+    "pk":80,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Black Trainer Socks with Support",
+        "description":"Socks with added heel support for the ideal fit.",
+        "product_group":"",
+        "product_type":"",
+        "price":10.00,
+        "rating":4,
+        "brand":"HJ Hall",
+        "image":"socks_11.png"
+    }
+}, {
+    "pk":81,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Witchy Orange Striped Socks",
+        "description":"Socks for the witchy among us.",
+        "product_group":3,
+        "product_type":"",
+        "price":7.99,
+        "rating":3,
+        "brand":"HJ Hall",
+        "image":"socks_12.png"
+    }
+}, {
+    "pk":82,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Orange Fruit Navy Socks",
+        "description":"Orange print 100% cotton socks.",
+        "product_group":"",
+        "product_type":"",
+        "price":13.50,
+        "rating":5,
+        "brand":"Fairie",
+        "image":"socks_13.png"
+    }
+}, {
+    "pk":83,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Reindeer Christmas Socks",
+        "description":"The perfect pair of socks to get warm to on a crisp winter day.",
+        "product_group":"",
+        "product_type":"",
+        "price":22.00,
+        "rating":4,
+        "brand":"Hollyhead",
+        "image":"socks_14.png"
+    }
+}, {
+    "pk":84,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Striped Reindeer Christmas Socks",
+        "description":"The perfect pair of socks to gift as stocking fillers.",
+        "product_group":"",
+        "product_type":"",
+        "price":22.00,
+        "rating":4,
+        "brand":"Hollyhead",
+        "image":"socks_15.png"
+    }
+}, {
+    "pk":85,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"ECTP Thick Socks",
+        "description":"Socks for the colder months, part of the ECTP Winter 2019 collection.",
+        "product_group":"",
+        "product_type":"",
+        "price":15.99,
+        "rating":5,
+        "brand":"ECTP",
+        "image":"socks_16.png"
+    }
+}, {
+    "pk":86,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Grey Cotton Socks",
+        "description":"Patterned grey socks with extra padding for heel support.",
+        "product_group":"",
+        "product_type":"",
+        "price":8.99,
+        "rating":3,
+        "brand":"New Look",
+        "image":"socks_17.png"
+    }
+}, {
+    "pk":87,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Rocky Horror Socks",
+        "description":"Socks inspired by the iconic visuals of the infamous Rocky Horror Picture Show.",
+        "product_group":"",
+        "product_type":"",
+        "price":19.99,
+        "rating":5,
+        "brand":"Novelty Socks Ltd",
+        "image":"socks_18.png"
+    }
+}, {
+    "pk":88,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Banana Socks",
+        "description":"Bananarama! Snap up these colourful delights while we're still in stock.",
+        "product_group":3,
+        "product_type":"",
+        "price":19.99,
+        "rating":4,
+        "brand":"Novelty Socks Ltd",
+        "image":"socks_19.png"
+    }
+}, {
+    "pk":89,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Pack of 3 Socks",
+        "description":"Value pack of three pairs of socks in grey, purple and yellow.",
+        "product_group":"",
+        "product_type":"",
+        "price":9.99,
+        "rating":5,
+        "brand":"Enertor",
+        "image":"socks_20.png"
+    }
+}, {
+    "pk":90,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Christmas Tree Socks",
+        "description":"Christmas style socks with presents and trees for a pattern.",
+        "product_group":"",
+        "product_type":"",
+        "price":12.99,
+        "rating":2,
+        "brand":"Hollyhead",
+        "image":"socks_21.png"
+    }
+}, {
+    "pk":91,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Baby Socks",
+        "description":"Long white baby socks with roll-up top.",
+        "product_group":1,
+        "product_type":2,
+        "price":7.00,
+        "rating":5,
+        "brand":"Angel",
+        "image":"socks_22.png"
+    }
+}, {
+    "pk":92,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Cashmere Socks",
+        "description":"Luxury orange cashmere socks made in Scotland.",
+        "product_group":"",
+        "product_type":"",
+        "price":54.99,
+        "rating":4,
+        "brand":"Johnstons of Elgin",
+        "image":"socks_23.png"
+    }
+}, {
+    "pk":93,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Holiday Socks",
+        "description":"White socks reading 'Yay holiday', start Christmas off right.",
+        "product_group":3,
+        "product_type":"",
+        "price":4.99,
+        "rating":2,
+        "brand":"Hollyhead",
+        "image":"socks_24.png"
+    }
+}, {
+    "pk":94,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Children's Wellies",
+        "description":"Bright red wellies for children.",
+        "product_group":1,
+        "product_type":11,
+        "price":13.99,
+        "rating":5,
+        "brand":"Cath Kidson",
+        "image":"socks_25.png"
+    }
+}, {
+    "pk":95,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Ice Cream Socks",
+        "description":"Blue, white and red French-style luxury socks.",
+        "product_group":2,
+        "product_type":"",
+        "price":25.00,
+        "rating":4,
+        "brand":"Balitello",
+        "image":"socks_26.png"
+    }
+}, {
+    "pk":96,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Brutalist Socks",
+        "description":"Red, navy and white brutalist-style socks for the esteemed gentleman.",
+        "product_group":2,
+        "product_type":2,
+        "price":25.00,
+        "rating":4,
+        "brand":"Balitello",
+        "image":"socks_27.png"
+    }
+}, {
+    "pk":97,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Pumpkin Socks",
+        "description":"Pumpkin-style striped orange and red socks for the autumn and winter months.",
+        "product_group":2,
+        "product_type":2,
+        "price":4.99,
+        "rating":3,
+        "brand":"Holyhead",
+        "image":"socks_28.png"
+    }
+}, {
+    "pk":98,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Telo Socks",
+        "description":"90s-style original Telo socks with rainbow top bands and blue heels.",
+        "product_group":"",
+        "product_type":"",
+        "price":14.99,
+        "rating":5,
+        "brand":"Telo",
+        "image":"socks_29.png"
+    }
+}, {
+    "pk":99,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Chequred Socks",
+        "description":"Black and white chequred grunge-style socks.",
+        "product_group":2,
+        "product_type":"",
+        "price":12.00,
+        "rating":2,
+        "brand":"Vans",
+        "image":"socks_30.png"
+    }
+}, {
+    "pk":100,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Cola Socks",
+        "description":"White and red official merchandise Coca Cola pair of socks.",
+        "product_group":2,
+        "product_type":"",
+        "price":30.00,
+        "rating":4,
+        "brand":"Coca Cola Company",
+        "image":"socks_31.png"
+    }
+}, {
+    "pk":101,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Directional Socks",
+        "description":"Tongue-in-cheek directional socks so you never mess up your left and right ever again.",
+        "product_group":"",
+        "product_type":"",
+        "price":5.00,
+        "rating":3,
+        "brand":"Menkind",
+        "image":"socks_32.png"
+    }
+}, {
+    "pk":102,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Fosters Socks",
+        "description":"Bright yellow skater socks from Fosters.",
+        "product_group":2,
+        "product_type":"",
+        "price":4.99,
+        "rating":4,
+        "brand":"Fosters",
+        "image":"socks_33.png"
+    }
+}, {
+    "pk":103,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Pastel Socks",
+        "description":"Pastel multi-coloured summer thin socks.",
+        "product_group":"",
+        "product_type":"",
+        "price":2.99,
+        "rating":5,
+        "brand":"Urban Outfitters",
+        "image":"socks_34.png"
     }
 }]
