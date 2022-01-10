@@ -66,6 +66,14 @@ The target audience for this website is primarily young people interested in fas
 
 ## Design
 
+<details>
+    <summary>Why use ProductGroup and ProductType models?</summary>
+
+    For the data of product group (womens, mens and kids) and type (sandals, trainers, etc) I could have used character fields in the main Products model. Instead, I opted to create separate models to hold this data to limit human error. One could easily accidentally type in "men" instead of "mens" for example, leading to issues when sorting the products later on.
+</details>
+
+### Database Design
+
 ### Colour Scheme
 
 ### Typography
@@ -112,6 +120,10 @@ The target audience for this website is primarily young people interested in fas
 - *Tokyo Night*: For syntax highlighting & styling of VSCode.
 - *vscode-pdf*: To view the wireframes.pdf file within VSCode.
 - *Terminal Tools*: Provides buttons among terminal for command shorthands, making interacting with the terminal faster.
+
+[Tiny PNG](https://tinypng.com/)
+
+- TinyPNG was used to compress images for improved website performance.
 
 ## Testing
 
