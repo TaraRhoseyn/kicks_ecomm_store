@@ -460,4 +460,494 @@
         "brand":"George",
         "image":"womens_22.png"
     }
+}, {
+    "pk":33,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Luxury Brown Real Leather Sandals",
+        "description":"The ultimate expression of luxury and couture, meet your new summer must-have. Don't miss out!",
+        "product_group":2,
+        "product_type":3,
+        "price":455.00,
+        "rating":5,
+        "brand":"Tom Ford",
+        "image":"mens_1.png"
+    }
+}, {
+    "pk":34,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Stockhart Beach Shoes",
+        "description":"Light grey strap sandals.",
+        "product_group":2,
+        "product_type":3,
+        "price":45.00,
+        "rating":4,
+        "brand":"Stockhart",
+        "image":"mens_2.png"
+    }
+}, {
+    "pk":35,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Red Boys Daps",
+        "description":"Red and white striped daps with laces.",
+        "product_group":2,
+        "product_type":7,
+        "price":22.99,
+        "rating":3,
+        "brand":"Vans",
+        "image":"mens_3.png"
+    }
+}, {
+    "pk":36,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Multi-coloured Chunky Trainers",
+        "description":"Multi-coloured K Swiss trainers with a chunky 3'' heel.",
+        "product_group":2,
+        "product_type":1,
+        "price":26.99,
+        "rating":4,
+        "brand":"K Swiss",
+        "image":"mens_4.png"
+    }
+}, {
+    "pk":37,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Blue Addidas Trainers",
+        "description":"Ideal for the everyday jogger, these lightweight and comfortable trainers make a perfect addition to your workout.",
+        "product_group":2,
+        "product_type":1,
+        "price":45.99,
+        "rating":3,
+        "brand":"Addidas",
+        "image":"mens_5.png"
+    }
+}, {
+    "pk":38,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Bright Football Trainers",
+        "description":"Bright pair of trainers for young footballers on the pitch.",
+        "product_group":2,
+        "product_type":1,
+        "price":29.99,
+        "rating":2,
+        "brand":"Hummel",
+        "image":"mens_6.png"
+    }
+}, {
+    "pk":39,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Red Swish Nikes",
+        "description":"Red Nikes with the iconic swish, meet on any basketball court in style.",
+        "product_group":2,
+        "product_type":1,
+        "price":59.99,
+        "rating":3,
+        "brand":"Nike",
+        "image":"mens_7.png"
+    }
+}, {
+    "pk":40,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Everyday Vans",
+        "description":"These biege vans go with any outfit and are suitable for all weathers.",
+        "product_group":2,
+        "product_type":1,
+        "price":19.99,
+        "rating":4,
+        "brand":"Vans",
+        "image":"mens_8.png"
+    }
+}, {
+    "pk":41,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Orange Running Nike Trainers",
+        "description":"Breathable orange running trainers ideal for everyday jogging.",
+        "product_group":2,
+        "product_type":1,
+        "price":39.99,
+        "rating":4,
+        "brand":"Nike",
+        "image":"mens_9.png"
+    }
+}, {
+    "pk":42,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Bright Urban Nike Trainers",
+        "description":"Nike shoes from the 2020 Urban collection.",
+        "product_group":2,
+        "product_type":1,
+        "price":69.99,
+        "rating":5,
+        "brand":"Nike",
+        "image":"mens_10.png"
+    }
+}, {
+    "pk":43,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Converse",
+        "description":"Classic Converse shoes, fully laced up in a striking red colour.",
+        "product_group":2,
+        "product_type":7,
+        "price":31.99,
+        "rating":3,
+        "brand":"Converse",
+        "image":"mens_11.png"
+    }
+}, {
+    "pk":44,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Waterproof Hummel Camo Shoes",
+        "description":"Keep splashing with these green and yellow trainers.",
+        "product_group":2,
+        "product_type":1,
+        "price":15.99,
+        "rating":2,
+        "brand":"Hummel",
+        "image":"mens_12.png"
+    }
+}, {
+    "pk":45,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Chunky Vans",
+        "description":"Shoes specifically designed with a high ankle point and heel.",
+        "product_group":2,
+        "product_type":7,
+        "price":40.00,
+        "rating":3,
+        "brand":"Vans",
+        "image":"mens_13.png"
+    }
+}, {
+    "pk":46,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Elite Running Nike Shoes",
+        "description":"Proven to be faster than the average shoe on the market, this shoe is ideal for sprint runners.",
+        "product_group":2,
+        "product_type":1,
+        "price":110.00,
+        "rating":5,
+        "brand":"Nike",
+        "image":"mens_14.png"
+    }
+}, {
+    "pk":47,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Fashion Urban Trainers Jacks",
+        "description":"Bright and multi-colours trainers with a chunky heel, white basis and red laces.",
+        "product_group":2,
+        "product_type":1,
+        "price":20.99,
+        "rating":3,
+        "brand":"Jacks",
+        "image":"mens_15.png"
+    }
+}, {
+    "pk":48,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Simple Monochromotic Pumas",
+        "description":"This iconic 90s design makes a striking comeback in black and white.",
+        "product_group":2,
+        "product_type":7,
+        "price":34.99,
+        "rating":3,
+        "brand":"Puma",
+        "image":"mens_16.png"
+    }
+}, {
+    "pk":49,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Velvet Nike",
+        "description":"An unusual material for Nike, enjoy this unique statement piece in forest green.",
+        "product_group":2,
+        "product_type":1,
+        "price":60.50,
+        "rating":2,
+        "brand":"Nike",
+        "image":"mens_17.png"
+    }
+}, {
+    "pk":50,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Summer 2021 Nike Collection in Blue",
+        "description":"Blue Nikes from the bright and colourful Summer 2021 collection.",
+        "product_group":2,
+        "product_type":1,
+        "price":79.99,
+        "rating":4,
+        "brand":"Nike",
+        "image":"mens_18.png"
+    }
+}, {
+    "pk":51,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Red and Black Arrow Sandals",
+        "description":"The ultimate in comfortable summertime.",
+        "product_group":2,
+        "product_type":3,
+        "price":15.00,
+        "rating":3,
+        "brand":"Arrow",
+        "image":"mens_19.png"
+    }
+}, {
+    "pk":52,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"New Balance Long Distance Shoes",
+        "description":"Shoes specifically designed for long distance running from New Balance.",
+        "product_group":2,
+        "product_type":1,
+        "price":55.00,
+        "rating":5,
+        "brand":"New Balance",
+        "image":"mens_20.png"
+    }
+}, {
+    "pk":53,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"White Converse",
+        "description":"White converse shoes in the style of the American flag, perfect for 4th July celebrations.",
+        "product_group":2,
+        "product_type":7,
+        "price":29.99,
+        "rating":3,
+        "brand":"Converse",
+        "image":"mens_21.png"
+    }
+}, {
+    "pk":54,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Comfortable slip-on daps",
+        "description":"Blue canvas slip-on shoes for comfortable everday use.",
+        "product_group":2,
+        "product_type":7,
+        "price":19.99,
+        "rating":2,
+        "brand":"Differente",
+        "image":"mens_22.png"
+    }
+}, {
+    "pk":55,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Airated Nike Thin Membrane",
+        "description":"Forest green Nike's with a thin membrane for running in high heat.",
+        "product_group":2,
+        "product_type":1,
+        "price":49.99,
+        "rating":3,
+        "brand":"Nike",
+        "image":"mens_23.png"
+    }
+}, {
+    "pk":56,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Air Jordans '94",
+        "description":"Nike Air Jordans modelled after the original 1994 design.",
+        "product_group":2,
+        "product_type":1,
+        "price":39.99,
+        "rating":5,
+        "brand":"Nike",
+        "image":"mens_24.png"
+    }
+}, {
+    "pk":57,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Track Nikes",
+        "description":"Red training shoes ideal for track running with high laces.",
+        "product_group":2,
+        "product_type":1,
+        "price":79.99,
+        "rating":3,
+        "brand":"Nike",
+        "image":"mens_25.png"
+    }
+}, {
+    "pk":58,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Summer Black Vans",
+        "description":"White and black summer lightweight vans.",
+        "product_group":2,
+        "product_type":7,
+        "price":20.50,
+        "rating":4,
+        "brand":"Vans",
+        "image":"mens_26.png"
+    }
+}, {
+    "pk":59,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"White DC Flat Shoes",
+        "description":"White DC flat shoes, ideal for the warmer months.",
+        "product_group":2,
+        "product_type":1,
+        "price":39.99,
+        "rating":3,
+        "brand":"DC",
+        "image":"mens_27.png"
+    }
+}, {
+    "pk":60,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Red Puma Flip Flops",
+        "description":"Red leather flip flops with a supportive black base.",
+        "product_group":2,
+        "product_type":3,
+        "price":69.99,
+        "rating":5,
+        "brand":"Nike",
+        "image":"mens_28.png"
+    }
+}, {
+    "pk":61,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Puma Airs",
+        "description":"White Pumas from the Spring 2021 collection.",
+        "product_group":2,
+        "product_type":1,
+        "price":71.64,
+        "rating":4,
+        "brand":"Puma",
+        "image":"mens_29.png"
+    }
+}, {
+    "pk":62,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Nike Cork",
+        "description":"Nikes with a unique cork heel in celebration in aid of environmental causes.",
+        "product_group":2,
+        "product_type":1,
+        "price":230.00,
+        "rating":1,
+        "brand":"Nike",
+        "image":"mens_30.png"
+    }
+}, {
+    "pk":63,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Nike Airmax",
+        "description":"The famous Airmax, the shoes responsible for the fastest marathon ever recorded.",
+        "product_group":2,
+        "product_type":1,
+        "price":169.99,
+        "rating":5,
+        "brand":"Nike",
+        "image":"mens_31.png"
+    }
+}, {
+    "pk":64,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Shark Nike",
+        "description":"Shark-style base beneath a light membrane black shoe.",
+        "product_group":2,
+        "product_type":1,
+        "price":79.99,
+        "rating":3,
+        "brand":"Nike",
+        "image":"mens_32.png"
+    }
+}, {
+    "pk":65,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Bubble Trainers",
+        "description":"White bubble shoes, the latest trend in urban footware.",
+        "product_group":2,
+        "product_type":1,
+        "price":80.00,
+        "rating":4,
+        "brand":"Zoe",
+        "image":"mens_33.png"
+    }
+}, {
+    "pk":66,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Leatherette Ankle Boots",
+        "description":"Vegan brown leatherette ankle boots with comfortable slip-on hooks.",
+        "product_group":2,
+        "product_type":4,
+        "price":21.99,
+        "rating":2,
+        "brand":"Hummel",
+        "image":"mens_34.png"
+    }
+}, {
+    "pk":67,
+    "model":"products.product",
+    "fields": {
+        "sku":"...",
+        "friendly_name":"Leatherette Ankle Boots",
+        "description":"Vegan brown leatherette ankle boots with comfortable slip-on hooks.",
+        "product_group":2,
+        "product_type":4,
+        "price":21.99,
+        "rating":2,
+        "brand":"Dockers",
+        "image":"mens_35.png"
+    }
 }]
