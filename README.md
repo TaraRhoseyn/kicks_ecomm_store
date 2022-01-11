@@ -66,13 +66,13 @@ The target audience for this website is primarily young people interested in fas
 
 ## Design
 
+### Database Design
+
 <details>
     <summary>Why use ProductGroup and ProductType models?</summary>
 
     For the data of product group (womens, mens and kids) and type (sandals, trainers, etc) I could have used character fields in the main Products model. Instead, I opted to create separate models to hold this data to limit human error. One could easily accidentally type in "men" instead of "mens" for example, leading to issues when sorting the products later on.
 </details>
-
-### Database Design
 
 ### Colour Scheme
 
@@ -124,6 +124,10 @@ The target audience for this website is primarily young people interested in fas
 [Tiny PNG](https://tinypng.com/)
 
 - TinyPNG was used to compress images for improved website performance.
+
+[Gorgias SKU Generator](https://www.gorgias.com/tools/sku-generator)
+
+- Gorgias SKU Generator was used to generate SKU values. Please see [Database Design](#Database-Design) for more information on SKU architecture within the fixtures.
 
 ## Testing
 
