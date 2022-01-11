@@ -7,7 +7,7 @@ FIXME: Add sku values to all sku keys
    "pk":1,
    "model":"products.product",
    "fields": {
-       "sku":"...",
+       "sku":"TRANICH3BL",
        "name":"Unisex Nike 500 trainer",
        "description":"Navy and pink trainers designed for the kid always on the move.",
        "product_group":1,
@@ -21,7 +21,7 @@ FIXME: Add sku values to all sku keys
     "pk":2,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"BABWACH4BR",
         "name":"Bear Baby shoes",
         "description":"The adorable gift for the adorable baby.",
         "product_group":1,
@@ -35,7 +35,7 @@ FIXME: Add sku values to all sku keys
     "pk":3,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRANICH2BL",
         "name":"Nike surfer Air",
         "description":"A brand new line from Nike, these Air trainers will rock the seas.",
         "product_group":1,
@@ -49,7 +49,7 @@ FIXME: Add sku values to all sku keys
     "pk":4,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"BOOTOCH1BR",
         "name":"Rustic leather boots",
         "description":"Stylish and practical, these boots are perfect for the teenager always on the go.",
         "product_group":1,
@@ -63,7 +63,7 @@ FIXME: Add sku values to all sku keys
     "pk":5,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRAVACH5BL",
         "name":"Winged baby shoes",
         "description":"For the little angel in your life.",
         "product_group":1,
@@ -77,7 +77,7 @@ FIXME: Add sku values to all sku keys
     "pk":6,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"BABLICH3BL",
         "name":"Navy blue shoes",
         "description":"These tiny blue shoes are the small infant shoes we carry, perfect for delicate feet.",
         "product_group":1,
@@ -91,7 +91,7 @@ FIXME: Add sku values to all sku keys
     "pk":7,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"DAPZACH3GO",
         "name":"Gold girly pumps",
         "description":"Perfect shoes for the growing girl. Ideal at school discos and special occassions.",
         "product_group":1,
@@ -105,7 +105,7 @@ FIXME: Add sku values to all sku keys
     "pk":8,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRAFICH2WH",
         "name":"Fila kicks",
         "description":"Meet the brand new kick on the block: Fila's Kicks range out now in all sizes available.",
         "product_group":1,
@@ -119,7 +119,7 @@ FIXME: Add sku values to all sku keys
     "pk":9,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"BOOTICH1BR",
         "name":"Worker-style kid's boots",
         "description":"Perfect for the rugged kid, these worn brown leather boots are the ideal shoe for the adventurous.",
         "product_group":1,
@@ -133,7 +133,7 @@ FIXME: Add sku values to all sku keys
     "pk":10,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"DAPNICH5BL",
         "name":"Black Nike Camo Daps",
         "description":"Black shoes with a camoflauge print underneath the iconic Nike swish.",
         "product_group":1,
@@ -147,7 +147,7 @@ FIXME: Add sku values to all sku keys
     "pk":11,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"BOOGECH4PI",
         "name":"Sparkly Pink Snow Boots",
         "description":"Track through the winter ground with these shoes sure to make a sparkle.",
         "product_group":1,
