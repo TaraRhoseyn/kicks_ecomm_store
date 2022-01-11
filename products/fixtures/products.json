@@ -483,7 +483,7 @@ FIXME: Add sku values to all sku keys
     "pk":35,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SANSTME4GR",
         "friendly_name":"Stockhart Beach Shoes",
         "description":"Light grey strap sandals.",
         "product_group":2,
@@ -497,7 +497,7 @@ FIXME: Add sku values to all sku keys
     "pk":36,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"DAPVAME3RE",
         "friendly_name":"Red Boys Daps",
         "description":"Red and white striped daps with laces.",
         "product_group":2,
@@ -511,7 +511,7 @@ FIXME: Add sku values to all sku keys
     "pk":37,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRAKSME4MU",
         "friendly_name":"Multi-coloured Chunky Trainers",
         "description":"Multi-coloured K Swiss trainers with a chunky 3'' heel.",
         "product_group":2,
@@ -525,7 +525,7 @@ FIXME: Add sku values to all sku keys
     "pk":38,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRAADME3BL",
         "friendly_name":"Blue Addidas Trainers",
         "description":"Ideal for the everyday jogger, these lightweight and comfortable trainers make a perfect addition to your workout.",
         "product_group":2,
@@ -539,7 +539,7 @@ FIXME: Add sku values to all sku keys
     "pk":39,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRAHUME2BL",
         "friendly_name":"Bright Football Trainers",
         "description":"Bright pair of trainers for young footballers on the pitch.",
         "product_group":2,
@@ -553,7 +553,7 @@ FIXME: Add sku values to all sku keys
     "pk":40,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRANIME3RE",
         "friendly_name":"Red Swish Nikes",
         "description":"Red Nikes with the iconic swish, meet on any basketball court in style.",
         "product_group":2,
@@ -567,7 +567,7 @@ FIXME: Add sku values to all sku keys
     "pk":41,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRAVAME4BI",
         "friendly_name":"Everyday Vans",
         "description":"These biege vans go with any outfit and are suitable for all weathers.",
         "product_group":2,
@@ -581,7 +581,7 @@ FIXME: Add sku values to all sku keys
     "pk":42,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRANIME4OR",
         "friendly_name":"Orange Running Nike Trainers",
         "description":"Breathable orange running trainers ideal for everyday jogging.",
         "product_group":2,
@@ -595,7 +595,7 @@ FIXME: Add sku values to all sku keys
     "pk":43,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRANIME5YE",
         "friendly_name":"Bright Urban Nike Trainers",
         "description":"Nike shoes from the 2020 Urban collection.",
         "product_group":2,
@@ -609,7 +609,7 @@ FIXME: Add sku values to all sku keys
     "pk":44,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"DAPCOME3WH",
         "friendly_name":"Converse",
         "description":"Classic Converse shoes, fully laced up in a striking red colour.",
         "product_group":2,
@@ -623,7 +623,7 @@ FIXME: Add sku values to all sku keys
     "pk":45,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRAHUME2FO",
         "friendly_name":"Waterproof Hummel Camo Shoes",
         "description":"Keep splashing with these green and yellow trainers.",
         "product_group":2,
@@ -637,7 +637,7 @@ FIXME: Add sku values to all sku keys
     "pk":46,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"DAPVAME3WH",
         "friendly_name":"Chunky Vans",
         "description":"Shoes specifically designed with a high ankle point and heel.",
         "product_group":2,
@@ -651,7 +651,7 @@ FIXME: Add sku values to all sku keys
     "pk":47,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRANIME5GR",
         "friendly_name":"Elite Running Nike Shoes",
         "description":"Proven to be faster than the average shoe on the market, this shoe is ideal for sprint runners.",
         "product_group":2,
@@ -665,7 +665,7 @@ FIXME: Add sku values to all sku keys
     "pk":48,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRAJAME4MU",
         "friendly_name":"Fashion Urban Trainers Jacks",
         "description":"Bright and multi-colours trainers with a chunky heel, white basis and red laces.",
         "product_group":2,
@@ -679,7 +679,7 @@ FIXME: Add sku values to all sku keys
     "pk":49,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"DAPPUME3BL",
         "friendly_name":"Simple Monochromotic Pumas",
         "description":"This iconic 90s design makes a striking comeback in black and white.",
         "product_group":2,
@@ -693,7 +693,7 @@ FIXME: Add sku values to all sku keys
     "pk":50,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRANIME2VE",
         "friendly_name":"Velvet Nike",
         "description":"An unusual material for Nike, enjoy this unique statement piece in forest green.",
         "product_group":2,
@@ -707,7 +707,7 @@ FIXME: Add sku values to all sku keys
     "pk":51,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRANIME4BL",
         "friendly_name":"Summer 2021 Nike Collection in Blue",
         "description":"Blue Nikes from the bright and colourful Summer 2021 collection.",
         "product_group":2,
@@ -721,7 +721,7 @@ FIXME: Add sku values to all sku keys
     "pk":52,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SANARME3RE",
         "friendly_name":"Red and Black Arrow Sandals",
         "description":"The ultimate in comfortable summertime.",
         "product_group":2,
@@ -735,7 +735,7 @@ FIXME: Add sku values to all sku keys
     "pk":53,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRANEME5GR",
         "friendly_name":"New Balance Long Distance Shoes",
         "description":"Shoes specifically designed for long distance running from New Balance.",
         "product_group":2,
@@ -749,7 +749,7 @@ FIXME: Add sku values to all sku keys
     "pk":54,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"DAPCOME3BW",
         "friendly_name":"White Converse",
         "description":"White converse shoes in the style of the American flag, perfect for 4th July celebrations.",
         "product_group":2,
@@ -763,7 +763,7 @@ FIXME: Add sku values to all sku keys
     "pk":55,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"DAPDIME2BL",
         "friendly_name":"Comfortable slip-on daps",
         "description":"Blue canvas slip-on shoes for comfortable everday use.",
         "product_group":2,
@@ -777,7 +777,7 @@ FIXME: Add sku values to all sku keys
     "pk":56,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"AIRNIME3GR",
         "friendly_name":"Airated Nike Thin Membrane",
         "description":"Forest green Nike's with a thin membrane for running in high heat.",
         "product_group":2,
@@ -791,7 +791,7 @@ FIXME: Add sku values to all sku keys
     "pk":57,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"AIRNIME5JO",
         "friendly_name":"Air Jordans '94",
         "description":"Nike Air Jordans modelled after the original 1994 design.",
         "product_group":2,
@@ -805,7 +805,7 @@ FIXME: Add sku values to all sku keys
     "pk":58,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRANIME3TR",
         "friendly_name":"Track Nikes",
         "description":"Red training shoes ideal for track running with high laces.",
         "product_group":2,
@@ -819,7 +819,7 @@ FIXME: Add sku values to all sku keys
     "pk":59,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRAVAME4SU",
         "friendly_name":"Summer Black Vans",
         "description":"White and black summer lightweight vans.",
         "product_group":2,
@@ -833,7 +833,7 @@ FIXME: Add sku values to all sku keys
     "pk":60,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRADCME3DC",
         "friendly_name":"White DC Flat Shoes",
         "description":"White DC flat shoes, ideal for the warmer months.",
         "product_group":2,
@@ -847,7 +847,7 @@ FIXME: Add sku values to all sku keys
     "pk":61,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRANIME5PU",
         "friendly_name":"Red Puma Flip Flops",
         "description":"Red leather flip flops with a supportive black base.",
         "product_group":2,
@@ -861,7 +861,7 @@ FIXME: Add sku values to all sku keys
     "pk":62,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRAPUME4WH",
         "friendly_name":"Puma Airs",
         "description":"White Pumas from the Spring 2021 collection.",
         "product_group":2,
@@ -875,7 +875,7 @@ FIXME: Add sku values to all sku keys
     "pk":63,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRANIME1CO",
         "friendly_name":"Nike Cork",
         "description":"Nikes with a unique cork heel in celebration in aid of environmental causes.",
         "product_group":2,
@@ -889,7 +889,7 @@ FIXME: Add sku values to all sku keys
     "pk":64,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRANIME5MA",
         "friendly_name":"Nike Airmax",
         "description":"The famous Airmax, the shoes responsible for the fastest marathon ever recorded.",
         "product_group":2,
@@ -903,7 +903,7 @@ FIXME: Add sku values to all sku keys
     "pk":65,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRANIME3SH",
         "friendly_name":"Shark Nike",
         "description":"Shark-style base beneath a light membrane black shoe.",
         "product_group":2,
@@ -917,7 +917,7 @@ FIXME: Add sku values to all sku keys
     "pk":66,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRAZOME4BU",
         "friendly_name":"Bubble Trainers",
         "description":"White bubble shoes, the latest trend in urban footware.",
         "product_group":2,
@@ -931,7 +931,7 @@ FIXME: Add sku values to all sku keys
     "pk":67,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"BOOHUME2VE",
         "friendly_name":"Leatherette Ankle Boots",
         "description":"Vegan brown leatherette ankle boots with comfortable slip-on hooks.",
         "product_group":2,
@@ -945,7 +945,7 @@ FIXME: Add sku values to all sku keys
     "pk":68,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"BRODOME2BR",
         "friendly_name":"Leatherette Ankle Boots",
         "description":"Vegan brown leatherette ankle boots with comfortable slip-on hooks.",
         "product_group":2,
@@ -959,7 +959,7 @@ FIXME: Add sku values to all sku keys
     "pk":69,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCADAL5WH",
         "friendly_name":"Addidas Tennis Shoes",
         "description":"White tennis-style high shoes.",
         "product_group":"",
@@ -973,7 +973,7 @@ FIXME: Add sku values to all sku keys
     "pk":70,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCCAAL3TO",
         "friendly_name":"Earth Tone Socks",
         "description":"Earth tone socks from the Carretera V Manta collaboration from 2021.",
         "product_group":"",
@@ -987,21 +987,7 @@ FIXME: Add sku values to all sku keys
     "pk":71,
     "model":"products.product",
     "fields": {
-        "sku":"...",
-        "friendly_name":"Purple Bedeckled Socks",
-        "description":"Purple, black and blue bedeckled high socks.",
-        "product_group":"",
-        "product_type":"",
-        "price":3.99,
-        "rating":2,
-        "brand":"Carretera Y Manta",
-        "image":"socks_3.png"
-    }
-}, {
-    "pk":72,
-    "model":"products.product",
-    "fields": {
-        "sku":"...",
+        "sku":"SOCCAAL3PU",
         "friendly_name":"Purple Bedeckled Socks",
         "description":"Purple, black and blue bedeckled high socks.",
         "product_group":"",
@@ -1012,10 +998,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_3.png"
     }
 }, {
-    "pk":73,
+    "pk":72,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCDEAL4MU",
         "friendly_name":"White Multi-Striped High Socks",
         "description":"70s-style white high socks with three block coloured bands at the top.",
         "product_group":"",
@@ -1026,10 +1012,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_4.png"
     }
 }, {
-    "pk":74,
+    "pk":73,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCVAAL5OR",
         "friendly_name":"Flame Socks",
         "description":"Perfect for any grunge aesthetic, these flame socks are here to stay.",
         "product_group":"",
@@ -1040,12 +1026,12 @@ FIXME: Add sku values to all sku keys
         "image":"socks_5.png"
     }
 }, {
-    "pk":75,
+    "pk":74,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCNEAL4RO",
         "friendly_name":"Black Rose Socks",
-        "description":"Beware the thorns... Get stuck into beautiful rose socks.",
+        "description":"Beware the thorns Get stuck into beautiful rose socks.",
         "product_group":"",
         "product_type":"",
         "price":4.99,
@@ -1054,10 +1040,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_6.png"
     }
 }, {
-    "pk":76,
+    "pk":75,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCZAAL5WH",
         "friendly_name":"Plain White Trainer Socks",
         "description":"Girls plain white trainer socks, a staple for any sock drawer.",
         "product_group":3,
@@ -1068,10 +1054,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_7.png"
     }
 }, {
-    "pk":77,
+    "pk":76,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCAUAL5WH",
         "friendly_name":"Adorable Sheep Socks",
         "description":"Sleeping sheeps adorn this gorgeous pair of comfy socks.",
         "product_group":3,
@@ -1082,10 +1068,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_8.png"
     }
 }, {
-    "pk":78,
+    "pk":77,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCAUAL3PI",
         "friendly_name":"Floral Block Print Socks",
         "description":"Pink modern art floral print socks.",
         "product_group":3,
@@ -1096,10 +1082,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_9.png"
     }
 }, {
-    "pk":79,
+    "pk":78,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCJAAL5AU",
         "friendly_name":"Autumnal Print Socks",
         "description":"Block print from the 2021 Autumn Jack Wills collection.",
         "product_group":2,
@@ -1110,10 +1096,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_10.png"
     }
 }, {
-    "pk":80,
+    "pk":79,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCHJAL4BL",
         "friendly_name":"Black Trainer Socks with Support",
         "description":"Socks with added heel support for the ideal fit.",
         "product_group":"",
@@ -1124,10 +1110,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_11.png"
     }
 }, {
-    "pk":81,
+    "pk":80,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCHJAL3OR",
         "friendly_name":"Witchy Orange Striped Socks",
         "description":"Socks for the witchy among us.",
         "product_group":3,
@@ -1138,10 +1124,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_12.png"
     }
 }, {
-    "pk":82,
+    "pk":81,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCFAAL5OR",
         "friendly_name":"Orange Fruit Navy Socks",
         "description":"Orange print 100% cotton socks.",
         "product_group":"",
@@ -1152,10 +1138,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_13.png"
     }
 }, {
-    "pk":83,
+    "pk":82,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCHOAL4BR",
         "friendly_name":"Reindeer Christmas Socks",
         "description":"The perfect pair of socks to get warm to on a crisp winter day.",
         "product_group":"",
@@ -1166,10 +1152,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_14.png"
     }
 }, {
-    "pk":84,
+    "pk":83,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCHOAL4ST",
         "friendly_name":"Striped Reindeer Christmas Socks",
         "description":"The perfect pair of socks to gift as stocking fillers.",
         "product_group":"",
@@ -1180,10 +1166,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_15.png"
     }
 }, {
-    "pk":85,
+    "pk":84,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCECAL4WH",
         "friendly_name":"ECTP Thick Socks",
         "description":"Socks for the colder months, part of the ECTP Winter 2019 collection.",
         "product_group":"",
@@ -1194,10 +1180,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_16.png"
     }
 }, {
-    "pk":86,
+    "pk":85,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCNEAL3GR",
         "friendly_name":"Grey Cotton Socks",
         "description":"Patterned grey socks with extra padding for heel support.",
         "product_group":"",
@@ -1208,10 +1194,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_17.png"
     }
 }, {
-    "pk":87,
+    "pk":86,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCNOAL5RE",
         "friendly_name":"Rocky Horror Socks",
         "description":"Socks inspired by the iconic visuals of the infamous Rocky Horror Picture Show.",
         "product_group":"",
@@ -1222,10 +1208,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_18.png"
     }
 }, {
-    "pk":88,
+    "pk":87,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCNOAL4YE",
         "friendly_name":"Banana Socks",
         "description":"Bananarama! Snap up these colourful delights while we're still in stock.",
         "product_group":3,
@@ -1236,10 +1222,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_19.png"
     }
 }, {
-    "pk":89,
+    "pk":88,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCENAL5PA",
         "friendly_name":"Pack of 3 Socks",
         "description":"Value pack of three pairs of socks in grey, purple and yellow.",
         "product_group":"",
@@ -1250,10 +1236,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_20.png"
     }
 }, {
-    "pk":90,
+    "pk":89,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCHOAL2CH",
         "friendly_name":"Christmas Tree Socks",
         "description":"Christmas style socks with presents and trees for a pattern.",
         "product_group":"",
@@ -1264,10 +1250,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_21.png"
     }
 }, {
-    "pk":91,
+    "pk":90,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCANCH5WH",
         "friendly_name":"Baby Socks",
         "description":"Long white baby socks with roll-up top.",
         "product_group":1,
@@ -1278,10 +1264,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_22.png"
     }
 }, {
-    "pk":92,
+    "pk":91,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCJOAL4OR",
         "friendly_name":"Cashmere Socks",
         "description":"Luxury orange cashmere socks made in Scotland.",
         "product_group":"",
@@ -1292,10 +1278,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_23.png"
     }
 }, {
-    "pk":93,
+    "pk":92,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCHOAL2WH",
         "friendly_name":"Holiday Socks",
         "description":"White socks reading 'Yay holiday', start Christmas off right.",
         "product_group":3,
@@ -1306,12 +1292,12 @@ FIXME: Add sku values to all sku keys
         "image":"socks_24.png"
     }
 }, {
-    "pk":94,
+    "pk":93,
     "model":"products.product",
     "fields": {
-        "sku":"...",
-        "friendly_name":"Children's Wellies",
-        "description":"Bright red wellies for children.",
+        "sku":"SOCCACH5BL",
+        "friendly_name":"Children's Wellie Socks",
+        "description":"Striped wellie socks for children.",
         "product_group":1,
         "product_type":11,
         "price":13.99,
@@ -1320,10 +1306,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_25.png"
     }
 }, {
-    "pk":95,
+    "pk":94,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCBAAL4IC",
         "friendly_name":"Ice Cream Socks",
         "description":"Blue, white and red French-style luxury socks.",
         "product_group":2,
@@ -1334,10 +1320,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_26.png"
     }
 }, {
-    "pk":96,
+    "pk":95,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCBAAL4BR",
         "friendly_name":"Brutalist Socks",
         "description":"Red, navy and white brutalist-style socks for the esteemed gentleman.",
         "product_group":2,
@@ -1348,13 +1334,13 @@ FIXME: Add sku values to all sku keys
         "image":"socks_27.png"
     }
 }, {
-    "pk":97,
+    "pk":96,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCHOCH3PU",
         "friendly_name":"Pumpkin Socks",
         "description":"Pumpkin-style striped orange and red socks for the autumn and winter months.",
-        "product_group":2,
+        "product_group":"",
         "product_type":2,
         "price":4.99,
         "rating":3,
@@ -1362,10 +1348,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_28.png"
     }
 }, {
-    "pk":98,
+    "pk":97,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCTEAL5NI",
         "friendly_name":"Telo Socks",
         "description":"90s-style original Telo socks with rainbow top bands and blue heels.",
         "product_group":"",
@@ -1376,13 +1362,13 @@ FIXME: Add sku values to all sku keys
         "image":"socks_29.png"
     }
 }, {
-    "pk":99,
+    "pk":98,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCVAAL2CH",
         "friendly_name":"Chequred Socks",
         "description":"Black and white chequred grunge-style socks.",
-        "product_group":2,
+        "product_group":"",
         "product_type":"",
         "price":12.00,
         "rating":2,
@@ -1390,13 +1376,13 @@ FIXME: Add sku values to all sku keys
         "image":"socks_30.png"
     }
 }, {
-    "pk":100,
+    "pk":99,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCCOAL4CO",
         "friendly_name":"Cola Socks",
         "description":"White and red official merchandise Coca Cola pair of socks.",
-        "product_group":2,
+        "product_group":"",
         "product_type":"",
         "price":30.00,
         "rating":4,
@@ -1404,10 +1390,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_31.png"
     }
 }, {
-    "pk":101,
+    "pk":100,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCMEAL3BL",
         "friendly_name":"Directional Socks",
         "description":"Tongue-in-cheek directional socks so you never mess up your left and right ever again.",
         "product_group":"",
@@ -1418,13 +1404,13 @@ FIXME: Add sku values to all sku keys
         "image":"socks_32.png"
     }
 }, {
-    "pk":102,
+    "pk":101,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCFOAL4YE",
         "friendly_name":"Fosters Socks",
         "description":"Bright yellow skater socks from Fosters.",
-        "product_group":2,
+        "product_group":"",
         "product_type":"",
         "price":4.99,
         "rating":4,
@@ -1432,10 +1418,10 @@ FIXME: Add sku values to all sku keys
         "image":"socks_33.png"
     }
 }, {
-    "pk":103,
+    "pk":102,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SOCURAL5PA",
         "friendly_name":"Pastel Socks",
         "description":"Pastel multi-coloured summer thin socks.",
         "product_group":"",
