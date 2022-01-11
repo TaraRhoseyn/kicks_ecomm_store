@@ -161,7 +161,7 @@ FIXME: Add sku values to all sku keys
     "pk":12,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"HEENEWO3ZE",
         "name":"Zebra Beach Loungers",
         "description":"Ideal for any summer getaway, these zebra flip-flops come in handy for those beachy days.",
         "product_group":3,
@@ -175,7 +175,7 @@ FIXME: Add sku values to all sku keys
     "pk":13,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"HEEAKWO3BI",
         "name":"Prom High Heels",
         "description":"Biege-coloured rhine-stoned high heels, perfect for dream occassions.",
         "product_group":3,
@@ -189,7 +189,7 @@ FIXME: Add sku values to all sku keys
     "pk":14,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"HEENOWO2RE",
         "name":"Bold Blue Floral Print High Heels",
         "description":"Red roses and dark blue adorn this gorgeous pair of high heels.",
         "product_group":3,
@@ -203,7 +203,7 @@ FIXME: Add sku values to all sku keys
     "pk":15,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRANIWO5PI",
         "name":"Pink Nike Running Shoes",
         "description":"Pink running shoes with a sponge, comfortable heel making this the ideal shoe for running beginners looking to prevent injury.",
         "product_group":3,
@@ -217,7 +217,7 @@ FIXME: Add sku values to all sku keys
     "pk":16,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRANEWO2PI",
         "name":"New Balance Ultra Running Shoes",
         "description":"These brand new shoes in the latest range from New Balance have been designed with ultra runners in mind - ultralight, unassuming with extra heel support.",
         "product_group":3,
@@ -231,7 +231,7 @@ FIXME: Add sku values to all sku keys
     "pk":17,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"HEEVUWO1BL",
         "name":"Sleek Black Heels",
         "description":"A staple of any wardrobe, the little black heel is an essential no woman can go without.",
         "product_group":3,
@@ -245,7 +245,7 @@ FIXME: Add sku values to all sku keys
     "pk":18,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"HEESTWO4WH",
         "name":"White 6'' Heels",
         "description":"These white high heels are a top seller from Stella Lauren, with enough height for style but still comfortable for daily wear.",
         "product_group":3,
@@ -259,7 +259,7 @@ FIXME: Add sku values to all sku keys
     "pk":19,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"BROCLWO2GR",
         "name":"Green Office Brogues",
         "description":"Green office brogues, comfortable for everyday wear.",
         "product_group":3,
@@ -273,7 +273,7 @@ FIXME: Add sku values to all sku keys
     "pk":20,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"TRAADWO5MU",
         "name":"Chunky Multi-Coloured Trainers",
         "description":"With a high chunky heel, these are trainers ideal for the fashion conscious and walkers alike.",
         "product_group":3,
@@ -287,7 +287,7 @@ FIXME: Add sku values to all sku keys
     "pk":21,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SANSAWO4YE",
         "name":"Scandi-style Sandals",
         "description":"Bright yellow slightly heeled sandals ideal for the spring months.",
         "product_group":3,
@@ -301,7 +301,7 @@ FIXME: Add sku values to all sku keys
     "pk":22,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SANVIWO3FL",
         "friendly_name":"Floral Beach Sandals",
         "description":"Striped and floral design pink and blue sandals for the beach.",
         "product_group":3,
@@ -315,7 +315,7 @@ FIXME: Add sku values to all sku keys
     "pk":23,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"BOODOWO5BL",
         "friendly_name":"Doc Martens Yellow Boots",
         "description":"Famed for their resilience and iconic British design, buy a slice of UK fashion history at a steal of a price.",
         "product_group":3,
@@ -329,7 +329,7 @@ FIXME: Add sku values to all sku keys
     "pk":24,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SANSAWO1GO",
         "friendly_name":"Lightweight Flipflops",
         "description":"Summer red and gold flip-flops for summer wear.",
         "product_group":3,
@@ -343,7 +343,7 @@ FIXME: Add sku values to all sku keys
     "pk":25,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"BOOVIWO3BR",
         "friendly_name":"Brown and Clear 70s-style Heeled Boots",
         "description":"Stomp onto the disco floor like it's 1972 in this iconic design.",
         "product_group":3,
@@ -357,7 +357,7 @@ FIXME: Add sku values to all sku keys
     "pk":26,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"BOOSOWO4BL",
         "friendly_name":"Black Romper Boots",
         "description":"Hot off the latest trend come these new black boots from Solovair Ava.",
         "product_group":3,
@@ -371,7 +371,7 @@ FIXME: Add sku values to all sku keys
     "pk":27,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"BOOBLWO3OR",
         "friendly_name":"70s-style Brown Thigh-high Boots",
         "description":"Orange and brown autumn 70s-style boots will be the envy of any party.",
         "product_group":3,
@@ -385,13 +385,13 @@ FIXME: Add sku values to all sku keys
     "pk":28,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"BOOSOWO3BL",
         "friendly_name":"Black Heeled Boots",
         "description":"Black boots with a 5'' heel and full outside zipper.",
         "product_group":3,
         "product_type":4,
         "price":26.99,
-        "rating":4,
+        "rating":3,
         "brand":"Solovair Ava",
         "image":"womens_17.png"
     }
@@ -399,7 +399,7 @@ FIXME: Add sku values to all sku keys
     "pk":29,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"HEESOWO3BL",
         "friendly_name":"Black shoes with circular heel",
         "description":"Black raised shoes with a unique circular design for a heel.",
         "product_group":3,
@@ -413,7 +413,7 @@ FIXME: Add sku values to all sku keys
     "pk":30,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SANSAWO4WH",
         "friendly_name":"White Sandals with Comfy Strap",
         "description":"White beach sandals with specifically designed strap for ultimate comfort.",
         "product_group":3,
@@ -427,7 +427,7 @@ FIXME: Add sku values to all sku keys
     "pk":31,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"HEEUIWO5BL",
         "friendly_name":"Velvet Blue Heels",
         "description":"Blue heels made out of comfortable and stylish velvet material with a 7'' heel.",
         "product_group":3,
@@ -441,7 +441,7 @@ FIXME: Add sku values to all sku keys
     "pk":32,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SANGEWO1PI",
         "friendly_name":"Pink Durable Sandals",
         "description":"Lightweight and durable pink sandals ideal for the holidays.",
         "product_group":3,
@@ -455,7 +455,7 @@ FIXME: Add sku values to all sku keys
     "pk":33,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"BOODOWO1BL",
         "friendly_name":"Classic Doc Martens",
         "description":"The classic Doc Marten design is finally back in stock. Don't miss out!",
         "product_group":3,
@@ -469,7 +469,7 @@ FIXME: Add sku values to all sku keys
     "pk":34,
     "model":"products.product",
     "fields": {
-        "sku":"...",
+        "sku":"SANTOME5BR",
         "friendly_name":"Luxury Brown Real Leather Sandals",
         "description":"The ultimate expression of luxury and couture, meet your new summer must-have. Don't miss out!",
         "product_group":2,
