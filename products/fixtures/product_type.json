@@ -1,0 +1,64 @@
+[{
+    "pk":1,
+    "model":"products.producttype",
+    "fields": {
+        "name": "trainers",
+        "friendly_name": "Trainers"
+    }
+}, {
+    "pk":2,
+    "model":"products.producttype",
+    "fields": {
+        "name":"babyshoes",
+        "friendly_name":"Baby shoes"
+    }
+}, {
+    "pk":3,
+    "model":"products.producttype",
+    "fields": {
+        "name":"sandals",
+        "friendly_name":"Sandals"
+    }
+}, {
+    "pk":4,
+    "model":"products.producttype",
+    "fields": {
+        "name":"boots",
+        "friendly_name":"Boots"
+    }
+}, {
+    "pk":5,
+    "model":"products.producttype",
+    "fields": {
+        "name":"pumps",
+        "friendly_name":"Pumps"
+    }
+}, {
+    "pk":6,
+    "model":"products.producttype",
+    "fields": {
+        "name":"heels",
+        "friendly_name":"Heels"
+    }
+}, {
+    "pk":7,
+    "model":"products.producttype",
+    "fields": {
+        "name":"daps",
+        "friendly_name":"Daps"
+    }
+}, {
+    "pk":8,
+    "model":"products.producttype",
+    "fields": {
+        "name":"brogues",
+        "friendly_name":"Brogues"
+    }
+}, {
+    "pk":9,
+    "model":"products.producttype",
+    "fields": {
+        "name":"socks",
+        "friendly_name":"Socks"
+    }
+}]

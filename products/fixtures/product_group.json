@@ -1,0 +1,22 @@
+[{
+    "pk":1,
+    "model":"products.productgroup",
+    "fields": {
+        "name": "childrens",
+        "friendly_name": "Childrens"
+    }
+}, {
+    "pk":2,
+    "model":"products.productgroup",
+    "fields": {
+        "name":"mens",
+        "friendly_name":"Mens"
+    }
+}, {
+    "pk":3,
+    "model":"products.productgroup",
+    "fields": {
+        "name":"womens",
+        "friendly_name":"Womens"
+    }
+}]
