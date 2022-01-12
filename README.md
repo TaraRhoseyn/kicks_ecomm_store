@@ -166,9 +166,14 @@ The target audience for this website is primarily young people interested in fas
 
 ## Bug Squashing
 
+**Bug 1**: Product model throwing errors when attempting to make migration
+**Fix**:  Change attribute on an IntegerField from max_digits to the Django method MaxValueValidator. Add on_delete attribute to ForeignKeys. Add max_digits attribute to DecimalFields.
+
 ## Deployment
 
 ## Credits
+
+- **Stack Overflow**: For fixing [max_length on IntegerField](https://stackoverflow.com/questions/30849862/django-max-length-for-integerfield) bug.
 
 ### Code
 
