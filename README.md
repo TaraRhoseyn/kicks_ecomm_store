@@ -175,6 +175,8 @@ The target audience for this website is primarily young people interested in fas
 
 - **Stack Overflow**: For fixing [max_length on IntegerField](https://stackoverflow.com/questions/30849862/django-max-length-for-integerfield) bug.
 
+- **test-driven-django-development**: For [model unit testing methods](https://test-driven-django-development.readthedocs.io/en/latest/02-models.html).
+
 ### Code
 
 ### Media
