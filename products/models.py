@@ -4,10 +4,6 @@ from django.core.validators import MaxValueValidator
 
 class ProductGroup(models.Model):
 
-
-    class Meta:
-        verbose_name_plural = 'ProductGroups'
-
     name = models.CharField(max_length=200, null=True, blank=True)
     friendly_name = models.CharField(max_length=200, null=True, blank=True)
 
@@ -21,10 +17,6 @@ class ProductGroup(models.Model):
 
 
 class ProductType(models.Model):
-
-
-    class Meta:
-        verbose_name_plural = 'ProductTypes'
 
     name = models.CharField(max_length=200, null=True, blank=True)
     friendly_name = models.CharField(max_length=200, null=True, blank=True)
