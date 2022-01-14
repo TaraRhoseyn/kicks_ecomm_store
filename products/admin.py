@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Product, ProductGroup, ProductType
 
+
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'name',
@@ -18,15 +19,15 @@ class ProductAdmin(admin.ModelAdmin):
 
 class ProductGroupAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
         'name',
+        'friendly_name'
     )
 
 
 class ProductTypeAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
         'name',
+        'friendly_name'
     )
 
 
