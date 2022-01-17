@@ -1,0 +1,11 @@
+@use 'base';
+
+/* Navbar */
+nav {
+    
+    background-color: $black!important;
+
+    a {
+        color: $white;
+    }
+}
