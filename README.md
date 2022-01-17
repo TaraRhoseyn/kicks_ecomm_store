@@ -71,7 +71,7 @@ The target audience for this website is primarily young people interested in fas
 <details>
     <summary>Why use ProductGroup and ProductType models?</summary>
 
-    For the data of product group (womens, mens and kids) and type (sandals, trainers, etc) I could have used character fields in the main Products model. Instead, I opted to create separate models to hold this data to limit human error. One could easily accidentally type in "men" instead of "mens" for example, leading to issues when sorting the products later on.
+For the data of product group (womens, mens and kids) and type (sandals, trainers, etc) I could have used character fields in the main Products model. Instead, I opted to create separate models to hold this data to limit human error. One could easily accidentally type in "men" instead of "mens" for example, leading to issues when sorting the products later on.
 </details>
 
 ### Colour Scheme
@@ -178,11 +178,13 @@ The target audience for this website is primarily young people interested in fas
 
 ## Credits
 
+### Code
+
 - **Stack Overflow**: For fixing [max_length on IntegerField](https://stackoverflow.com/questions/30849862/django-max-length-for-integerfield) bug.
 
 - **test-driven-django-development**: For [model unit testing methods](https://test-driven-django-development.readthedocs.io/en/latest/02-models.html).
 
-### Code
+- **Cory House**: For [adding aria-current attributes to current pages](https://twitter.com/housecor/status/1476910306702077954/photo/1)
 
 ### Media
 
