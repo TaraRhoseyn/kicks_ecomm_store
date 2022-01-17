@@ -94,6 +94,10 @@ The target audience for this website is primarily young people interested in fas
 
 ### Frameworks, libraries and other tools
 
+[Sass](https://sass-lang.com/)
+
+- Sass was used as a CSS extension to speed up development of stylesheets. The features of Sass such as variables, mixins, nesting and seperation of logic was very helpful in this project. 
+
 [Git](https://git-scm.com/)
 
 - Git was used for version control within VSCode to push the code to GitHub.
@@ -120,6 +124,7 @@ The target audience for this website is primarily young people interested in fas
 - *Tokyo Night*: For syntax highlighting & styling of VSCode.
 - *vscode-pdf*: To view the wireframes.pdf file within VSCode.
 - *Terminal Tools*: Provides buttons among terminal for command shorthands, making interacting with the terminal faster.
+- *Live Sass Compiler*: Watches for changes in scss files and compiles them to css files automatically. I've customised the settings to compile my .scss files into a singular .min.css file in my static directory.
 
 [Tiny PNG](https://tinypng.com/)
 
