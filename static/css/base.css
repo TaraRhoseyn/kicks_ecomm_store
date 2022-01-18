@@ -1,0 +1,51 @@
+/* Colors */
+/* Typography */
+/* Media breakpoints.
+Credit: Eduardo Boucas
+*/
+/* Navbar */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+#nav {
+  background-color: #000000;
+}
+
+#nav a {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+#nav .navbar-brand {
+  font-family: 'Rubik Mono One', sans-serif;
+  letter-spacing: 0.2em;
+  text-shadow: 1px 1px #8918fb;
+}
+
+#nav .btn-outline-warning {
+  color: #faff00;
+  border-color: #faff00;
+}
+
+.nav-link:hover, .navbar-brand:hover, .nav-icon:hover {
+  color: #faff00 !important;
+}
+
+.btn-outline-warning:hover {
+  color: #000000 !important;
+  background-color: #faff00;
+}
+
+.search-input:focus {
+  outline: 2px solid #faff00;
+}
+
+/* Media mixins. */
+/* Accessibility measure. Credit: Cory House */
+[aria-current] {
+  font-weight: 700 !important;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+/*# sourceMappingURL=base.css.map */

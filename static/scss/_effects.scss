@@ -1,0 +1,12 @@
+.nav-link:hover, .navbar-brand:hover, .nav-icon:hover { 
+    color: $yellow!important;
+}
+
+.btn-outline-warning:hover {
+    color: $black!important;
+    background-color: $yellow;
+}
+
+.search-input:focus {
+    outline: 2px solid $yellow;
+}

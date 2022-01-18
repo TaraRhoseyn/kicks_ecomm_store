@@ -1,8 +1,17 @@
-navbar {
-    color: $black;
-}
-
-body {
-    font: $main-font;
-    color: $white;
+/* Navbar */
+#nav {
+    background-color: $black;
+    a {
+        color: $white;
+        font-weight: 300;
+    }
+    .navbar-brand {
+        font-family: 'Rubik Mono One', sans-serif;
+        letter-spacing: 0.2em;
+        text-shadow: 1px 1px $purple;
+    }
+    .btn-outline-warning {
+        color: $yellow;
+        border-color: $yellow;
+    }
 }
