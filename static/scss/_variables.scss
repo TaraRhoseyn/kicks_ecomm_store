@@ -8,12 +8,14 @@ $white: #ffffff !default;
 /* Typography */
 
 $main-font: 'Montserrat', sans-serif;
+$secondary-font: 'Outfit', sans-serif;
+$tertiary-font: 'Rubik Mono One', sans-serif;
 
 /* Media breakpoints.
 Credit: Eduardo Boucas
 */ 
 
-$breakpoint-phone:640px;
+$breakpoint-phone:320px;
 $breakpoint-tablet:768px;
 $breakpoint-desktop:1024px;
 $breakpoint-min-large-screen:1025px;

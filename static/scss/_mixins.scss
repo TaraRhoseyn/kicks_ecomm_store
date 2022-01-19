@@ -1,7 +1,7 @@
 /* Media mixins. */ 
 
 @mixin for-phone-only {
-    @media (max-width: $breakpoint-phone) { @content; }
+    @media (max-width: 767px) { @content; }
 }
 
 @mixin for-phone-up {

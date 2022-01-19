@@ -1,3 +1,5 @@
+@use '_mixins';
+
 /* Navbar */
 #nav {
     background-color: $black;
@@ -6,9 +8,13 @@
         font-weight: 300;
     }
     .navbar-brand {
-        font-family: 'Rubik Mono One', sans-serif;
+        font-family: $secondary-font;
         letter-spacing: 0.2em;
         text-shadow: 1px 1px $purple;
+
+        &:hover {
+            color: $yellow!important;
+        }
     }
     .btn-outline-warning {
         color: $yellow;
@@ -19,10 +25,54 @@
 /* home hero section */ 
 
 .hero-image {
-    background-image: url("../../media/home_hero.png");
+    background-image: url("../home/home_hero.png");
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
+    .container {
+        @include for-tablet-up {
+            margin-top: 250px;
+        }
+
+        a {
+            @include for-tablet-up {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+/* buttons */ 
+
+.main-btn {
+    color: $white;
+    background-color: $purple;
+
+    &:hover {
+        color: $white!important;
+        background-color: #370569!important;
+    }
+}
+
+.home-secondary-section {
+    > div, > div > div {
+        @include for-phone-up {
+            // outline: 2px red solid;
+            margin-top: 30px;
+        }
+    }
+}
+
+
+.home-images-rows {
+    @include for-tablet-up {
+        margin-top: 100px;
+    }
+}
+
+.home-images {
+    width: 100%;
 }
