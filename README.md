@@ -190,6 +190,8 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 - **Eduardo Boucas** - For [approaching media queries in sass](https://css-tricks.com/approaches-media-queries-sass/)
 
+- **CSS Tricks** - For [approaching nesting in sass](https://css-tricks.com/the-sass-ampersand/)
+
 ### Media
 
 All images were sourced from the copyright-free image repositories [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/). For full image rights and credit, please see the seperate [media.md](/docs/media.md) file.
