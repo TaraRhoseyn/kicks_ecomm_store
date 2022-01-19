@@ -26,6 +26,16 @@ Credit: Eduardo Boucas
   border-color: #faff00;
 }
 
+/* home hero section */
+.hero-image {
+  background-image: url("../../media/home_hero.png");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 .nav-link:hover, .navbar-brand:hover, .nav-icon:hover {
   color: #faff00 !important;
 }

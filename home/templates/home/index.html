@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block head_title %}Home{% endblock %}
 {% block extra_meta %}
@@ -6,7 +7,10 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <h1>Hello World</h1>
+    <div class="container-fluid hero-image">
+        <div class="row">
+            <div class="col-12"></div>
+        </div>
     </div>
+    <img src="{% static 'home/kids_1.png' %}" alt="">
 {% endblock %}
