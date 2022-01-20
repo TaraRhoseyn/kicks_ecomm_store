@@ -31,7 +31,7 @@ class ProductType(models.Model):
 
 class Product(models.Model):
     sku = models.CharField(max_length=12, null=False, blank=False)
-    name = models.CharField(max_length=20, null=False, blank=False)
+    name = models.CharField(max_length=40, null=False, blank=False)
     description = models.TextField()
     product_group = models.ForeignKey(
         'ProductGroup', default=1, null=True, blank=True, on_delete=models.SET_NULL)
@@ -42,7 +42,8 @@ class Product(models.Model):
     rating = models.IntegerField(
         null=False, blank=False, validators=[MaxValueValidator(999)])
     brand = models.CharField(max_length=50, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
+    image_url = models.CharField(
+        max_length=40, null=False, blank=False, default='SOME STRING')
 
 
     def __str__(self):

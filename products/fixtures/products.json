@@ -1,1429 +1,1532 @@
-[{
-   "pk":1,
-   "model":"products.product",
-   "fields": {
-       "sku":"TRANICH3BL",
-       "name":"Unisex Nike 500 trainer",
-       "description":"Navy and pink trainers designed for the kid always on the move.",
-       "product_group":1,
-       "product_type":1,
-       "price":49.99,
-       "rating":3,
-       "brand":"Nike",
-       "image":"kids_1.png"
-   }
-}, {
-    "pk":2,
-    "model":"products.product",
-    "fields": {
-        "sku":"BABWACH4BR",
-        "name":"Bear Baby shoes",
-        "description":"The adorable gift for the adorable baby.",
-        "product_group":1,
-        "product_type":2,
-        "price":12.99,
-        "rating":4,
-        "brand":"Wakki",
-        "image":"kids_2.png"
-    }
-}, {
-    "pk":3,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRANICH2BL",
-        "name":"Nike surfer Air",
-        "description":"A brand new line from Nike, these Air trainers will rock the seas.",
-        "product_group":1,
-        "product_type":1,
-        "price":59.99,
-        "rating":2,
-        "brand":"Nike",
-        "image":"kids_3.png"
-    }
-}, {
-    "pk":4,
-    "model":"products.product",
-    "fields": {
-        "sku":"BOOTOCH1BR",
-        "name":"Rustic leather boots",
-        "description":"Stylish and practical, these boots are perfect for the teenager always on the go.",
-        "product_group":1,
-        "product_type":4,
-        "price":30.00,
-        "rating":1,
-        "brand":"Tommand Boyd",
-        "image":"kids_4.png"
-    }
-}, {
-    "pk":5,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRAVACH5BL",
-        "name":"Winged baby shoes",
-        "description":"For the little angel in your life.",
-        "product_group":1,
-        "product_type":1,
-        "price":25.99,
-        "rating":5,
-        "brand":"Vans",
-        "image":"kids_5.png"
-    }
-}, {
-    "pk":6,
-    "model":"products.product",
-    "fields": {
-        "sku":"BABLICH3BL",
-        "name":"Navy blue shoes",
-        "description":"These tiny blue shoes are the small infant shoes we carry, perfect for delicate feet.",
-        "product_group":1,
-        "product_type":2,
-        "price":9.99,
-        "rating":3,
-        "brand":"Littluns",
-        "image":"kids_6.png"
-    }
-}, {
-    "pk":7,
-    "model":"products.product",
-    "fields": {
-        "sku":"DAPZACH3GO",
-        "name":"Gold girly pumps",
-        "description":"Perfect shoes for the growing girl. Ideal at school discos and special occassions.",
-        "product_group":1,
-        "product_type":7,
-        "price":12.99,
-        "rating":3,
-        "brand":"Zara",
-        "image":"kids_7.png"
-    }
-}, {
-    "pk":8,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRAFICH2WH",
-        "name":"Fila kicks",
-        "description":"Meet the brand new kick on the block: Fila's Kicks range out now in all sizes available.",
-        "product_group":1,
-        "product_type":1,
-        "price":69.99,
-        "rating":2,
-        "brand":"Fila",
-        "image":"kids_8.png"
-    }
-}, {
-    "pk":9,
-    "model":"products.product",
-    "fields": {
-        "sku":"BOOTICH1BR",
-        "name":"Worker-style kid's boots",
-        "description":"Perfect for the rugged kid, these worn brown leather boots are the ideal shoe for the adventurous.",
-        "product_group":1,
-        "product_type":4,
-        "price":19.99,
-        "rating":1,
-        "brand":"Timberlands",
-        "image":"kids_9.png"
-    }
-}, {
-    "pk":10,
-    "model":"products.product",
-    "fields": {
-        "sku":"DAPNICH5BL",
-        "name":"Black Nike Camo Daps",
-        "description":"Black shoes with a camoflauge print underneath the iconic Nike swish.",
-        "product_group":1,
-        "product_type":7,
-        "price":45.00,
-        "rating":5,
-        "brand":"Nike",
-        "image":"kids_10.png"
-    }
-}, {
-    "pk":11,
-    "model":"products.product",
-    "fields": {
-        "sku":"BOOGECH4PI",
-        "name":"Sparkly Pink Snow Boots",
-        "description":"Track through the winter ground with these shoes sure to make a sparkle.",
-        "product_group":1,
-        "product_type":4,
-        "price":30.00,
-        "rating":4,
-        "brand":"George",
-        "image":"kids_11.png"
-    }
-}, {
-    "pk":12,
-    "model":"products.product",
-    "fields": {
-        "sku":"HEENEWO3ZE",
-        "name":"Zebra Beach Loungers",
-        "description":"Ideal for any summer getaway, these zebra flip-flops come in handy for those beachy days.",
-        "product_group":3,
-        "product_type":3,
-        "price":7.99,
-        "rating":3,
-        "brand":"New Look",
-        "image":"womens_1.png"
-    }
-}, {
-    "pk":13,
-    "model":"products.product",
-    "fields": {
-        "sku":"HEEAKWO3BI",
-        "name":"Prom High Heels",
-        "description":"Biege-coloured rhine-stoned high heels, perfect for dream occassions.",
-        "product_group":3,
-        "product_type":6,
-        "price":79.99,
-        "rating":3,
-        "brand":"Akhsch",
-        "image":"womens_2.png"
-    }
-}, {
-    "pk":14,
-    "model":"products.product",
-    "fields": {
-        "sku":"HEENOWO2RE",
-        "name":"Bold Blue Floral Print High Heels",
-        "description":"Red roses and dark blue adorn this gorgeous pair of high heels.",
-        "product_group":3,
-        "product_type":6,
-        "price":39.99,
-        "rating":2,
-        "brand":"Fashion Nova",
-        "image":"womens_3.png"
-    }
-}, {
-    "pk":15,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRANIWO5PI",
-        "name":"Pink Nike Running Shoes",
-        "description":"Pink running shoes with a sponge, comfortable heel making this the ideal shoe for running beginners looking to prevent injury.",
-        "product_group":3,
-        "product_type":1,
-        "price":48.95,
-        "rating":5,
-        "brand":"Nike",
-        "image":"womens_4.png"
-    }
-}, {
-    "pk":16,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRANEWO2PI",
-        "name":"New Balance Ultra Running Shoes",
-        "description":"These brand new shoes in the latest range from New Balance have been designed with ultra runners in mind - ultralight, unassuming with extra heel support.",
-        "product_group":3,
-        "product_type":1,
-        "price":35.99,
-        "rating":2,
-        "brand":"New Balance",
-        "image":"womens_5.png"
-    }
-}, {
-    "pk":17,
-    "model":"products.product",
-    "fields": {
-        "sku":"HEEVUWO1BL",
-        "name":"Sleek Black Heels",
-        "description":"A staple of any wardrobe, the little black heel is an essential no woman can go without.",
-        "product_group":3,
-        "product_type":6,
-        "price":25.00,
-        "rating":1,
-        "brand":"Louis Vuitton",
-        "image":"womens_6.png"
-    }
-}, {
-    "pk":18,
-    "model":"products.product",
-    "fields": {
-        "sku":"HEESTWO4WH",
-        "name":"White 6'' Heels",
-        "description":"These white high heels are a top seller from Stella Lauren, with enough height for style but still comfortable for daily wear.",
-        "product_group":3,
-        "product_type":6,
-        "price":53.99,
-        "rating":4,
-        "brand":"Stella Lauren",
-        "image":"womens_7.png"
-    }
-}, {
-    "pk":19,
-    "model":"products.product",
-    "fields": {
-        "sku":"BROCLWO2GR",
-        "name":"Green Office Brogues",
-        "description":"Green office brogues, comfortable for everyday wear.",
-        "product_group":3,
-        "product_type":8,
-        "price":22.00,
-        "rating":2,
-        "brand":"Clarks",
-        "image":"womens_8.png"
-    }
-}, {
-    "pk":20,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRAADWO5MU",
-        "name":"Chunky Multi-Coloured Trainers",
-        "description":"With a high chunky heel, these are trainers ideal for the fashion conscious and walkers alike.",
-        "product_group":3,
-        "product_type":1,
-        "price":15.00,
-        "rating":5,
-        "brand":"Addidas",
-        "image":"womens_9.png"
-    }
-}, {
-    "pk":21,
-    "model":"products.product",
-    "fields": {
-        "sku":"SANSAWO4YE",
-        "name":"Scandi-style Sandals",
-        "description":"Bright yellow slightly heeled sandals ideal for the spring months.",
-        "product_group":3,
-        "product_type":3,
-        "price":21.00,
-        "rating":4,
-        "brand":"Sally Hansens",
-        "image":"womens_10.png"
-    }
-}, {
-    "pk":22,
-    "model":"products.product",
-    "fields": {
-        "sku":"SANVIWO3FL",
-        "name":"Floral Beach Sandals",
-        "description":"Striped and floral design pink and blue sandals for the beach.",
-        "product_group":3,
-        "product_type":3,
-        "price":55.00,
-        "rating":3,
-        "brand":"Vionic",
-        "image":"womens_11.png"
-    }
-}, {
-    "pk":23,
-    "model":"products.product",
-    "fields": {
-        "sku":"BOODOWO5BL",
-        "name":"Doc Martens Yellow Boots",
-        "description":"Famed for their resilience and iconic British design, buy a slice of UK fashion history at a steal of a price.",
-        "product_group":3,
-        "product_type":4,
-        "price":40.00,
-        "rating":5,
-        "brand":"Doc Martens",
-        "image":"womens_12.png"
-    }
-}, {
-    "pk":24,
-    "model":"products.product",
-    "fields": {
-        "sku":"SANSAWO1GO",
-        "name":"Lightweight Flipflops",
-        "description":"Summer red and gold flip-flops for summer wear.",
-        "product_group":3,
-        "product_type":3,
-        "price":10.00,
-        "rating":1,
-        "brand":"Sally Hansens",
-        "image":"womens_13.png"
-    }
-}, {
-    "pk":25,
-    "model":"products.product",
-    "fields": {
-        "sku":"BOOVIWO3BR",
-        "name":"Brown and Clear 70s-style Heeled Boots",
-        "description":"Stomp onto the disco floor like it's 1972 in this iconic design.",
-        "product_group":3,
-        "product_type":4,
-        "price":46.95,
-        "rating":3,
-        "brand":"Vintage Designs",
-        "image":"womens_14.png"
-    }
-}, {
-    "pk":26,
-    "model":"products.product",
-    "fields": {
-        "sku":"BOOSOWO4BL",
-        "name":"Black Romper Boots",
-        "description":"Hot off the latest trend come these new black boots from Solovair Ava.",
-        "product_group":3,
-        "product_type":4,
-        "price":26.99,
-        "rating":4,
-        "brand":"Solovair Ava",
-        "image":"womens_15.png"
-    }
-}, {
-    "pk":27,
-    "model":"products.product",
-    "fields": {
-        "sku":"BOOBLWO3OR",
-        "name":"70s-style Brown Thigh-high Boots",
-        "description":"Orange and brown autumn 70s-style boots will be the envy of any party.",
-        "product_group":3,
-        "product_type":4,
-        "price":73.99,
-        "rating":3,
-        "brand":"Blundstone",
-        "image":"womens_16.png"
-    }
-}, {
-    "pk":28,
-    "model":"products.product",
-    "fields": {
-        "sku":"BOOSOWO3BL",
-        "name":"Black Heeled Boots",
-        "description":"Black boots with a 5'' heel and full outside zipper.",
-        "product_group":3,
-        "product_type":4,
-        "price":26.99,
-        "rating":3,
-        "brand":"Solovair Ava",
-        "image":"womens_17.png"
-    }
-}, {
-    "pk":29,
-    "model":"products.product",
-    "fields": {
-        "sku":"HEESOWO3BL",
-        "name":"Black shoes with circular heel",
-        "description":"Black raised shoes with a unique circular design for a heel.",
-        "product_group":3,
-        "product_type":6,
-        "price":26.99,
-        "rating":3,
-        "brand":"Solovair Ava",
-        "image":"womens_18.png"
-    }
-}, {
-    "pk":30,
-    "model":"products.product",
-    "fields": {
-        "sku":"SANSAWO4WH",
-        "name":"White Sandals with Comfy Strap",
-        "description":"White beach sandals with specifically designed strap for ultimate comfort.",
-        "product_group":3,
-        "product_type":3,
-        "price":26.99,
-        "rating":4,
-        "brand":"Sally Hansens",
-        "image":"womens_19.png"
-    }
-}, {
-    "pk":31,
-    "model":"products.product",
-    "fields": {
-        "sku":"HEEUIWO5BL",
-        "name":"Velvet Blue Heels",
-        "description":"Blue heels made out of comfortable and stylish velvet material with a 7'' heel.",
-        "product_group":3,
-        "product_type":6,
-        "price":54.60,
-        "rating":5,
-        "brand":"Uirna",
-        "image":"womens_20.png"
-    }
-}, {
-    "pk":32,
-    "model":"products.product",
-    "fields": {
-        "sku":"SANGEWO1PI",
-        "name":"Pink Durable Sandals",
-        "description":"Lightweight and durable pink sandals ideal for the holidays.",
-        "product_group":3,
-        "product_type":3,
-        "price":5.00,
-        "rating":1,
-        "brand":"George",
-        "image":"womens_21.png"
-    }
-}, {
-    "pk":33,
-    "model":"products.product",
-    "fields": {
-        "sku":"BOODOWO1BL",
-        "name":"Classic Doc Martens",
-        "description":"The classic Doc Marten design is finally back in stock. Don't miss out!",
-        "product_group":3,
-        "product_type":4,
-        "price":5.00,
-        "rating":1,
-        "brand":"George",
-        "image":"womens_22.png"
-    }
-}, {
-    "pk":34,
-    "model":"products.product",
-    "fields": {
-        "sku":"SANTOME5BR",
-        "name":"Luxury Brown Real Leather Sandals",
-        "description":"The ultimate expression of luxury and couture, meet your new summer must-have. Don't miss out!",
-        "product_group":2,
-        "product_type":3,
-        "price":455.00,
-        "rating":5,
-        "brand":"Tom Ford",
-        "image":"mens_1.png"
-    }
-}, {
-    "pk":35,
-    "model":"products.product",
-    "fields": {
-        "sku":"SANSTME4GR",
-        "name":"Stockhart Beach Shoes",
-        "description":"Light grey strap sandals.",
-        "product_group":2,
-        "product_type":3,
-        "price":45.00,
-        "rating":4,
-        "brand":"Stockhart",
-        "image":"mens_2.png"
-    }
-}, {
-    "pk":36,
-    "model":"products.product",
-    "fields": {
-        "sku":"DAPVAME3RE",
-        "name":"Red Boys Daps",
-        "description":"Red and white striped daps with laces.",
-        "product_group":2,
-        "product_type":7,
-        "price":22.99,
-        "rating":3,
-        "brand":"Vans",
-        "image":"mens_3.png"
-    }
-}, {
-    "pk":37,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRAKSME4MU",
-        "name":"Multi-coloured Chunky Trainers",
-        "description":"Multi-coloured K Swiss trainers with a chunky 3'' heel.",
-        "product_group":2,
-        "product_type":1,
-        "price":26.99,
-        "rating":4,
-        "brand":"K Swiss",
-        "image":"mens_4.png"
-    }
-}, {
-    "pk":38,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRAADME3BL",
-        "name":"Blue Addidas Trainers",
-        "description":"Ideal for the everyday jogger, these lightweight and comfortable trainers make a perfect addition to your workout.",
-        "product_group":2,
-        "product_type":1,
-        "price":45.99,
-        "rating":3,
-        "brand":"Addidas",
-        "image":"mens_5.png"
-    }
-}, {
-    "pk":39,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRAHUME2BL",
-        "name":"Bright Football Trainers",
-        "description":"Bright pair of trainers for young footballers on the pitch.",
-        "product_group":2,
-        "product_type":1,
-        "price":29.99,
-        "rating":2,
-        "brand":"Hummel",
-        "image":"mens_6.png"
-    }
-}, {
-    "pk":40,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRANIME3RE",
-        "name":"Red Swish Nikes",
-        "description":"Red Nikes with the iconic swish, meet on any basketball court in style.",
-        "product_group":2,
-        "product_type":1,
-        "price":59.99,
-        "rating":3,
-        "brand":"Nike",
-        "image":"mens_7.png"
-    }
-}, {
-    "pk":41,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRAVAME4BI",
-        "name":"Everyday Vans",
-        "description":"These biege vans go with any outfit and are suitable for all weathers.",
-        "product_group":2,
-        "product_type":1,
-        "price":19.99,
-        "rating":4,
-        "brand":"Vans",
-        "image":"mens_8.png"
-    }
-}, {
-    "pk":42,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRANIME4OR",
-        "name":"Orange Running Nike Trainers",
-        "description":"Breathable orange running trainers ideal for everyday jogging.",
-        "product_group":2,
-        "product_type":1,
-        "price":39.99,
-        "rating":4,
-        "brand":"Nike",
-        "image":"mens_9.png"
-    }
-}, {
-    "pk":43,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRANIME5YE",
-        "name":"Bright Urban Nike Trainers",
-        "description":"Nike shoes from the 2020 Urban collection.",
-        "product_group":2,
-        "product_type":1,
-        "price":69.99,
-        "rating":5,
-        "brand":"Nike",
-        "image":"mens_10.png"
-    }
-}, {
-    "pk":44,
-    "model":"products.product",
-    "fields": {
-        "sku":"DAPCOME3WH",
-        "name":"Converse",
-        "description":"Classic Converse shoes, fully laced up in a striking red colour.",
-        "product_group":2,
-        "product_type":7,
-        "price":31.99,
-        "rating":3,
-        "brand":"Converse",
-        "image":"mens_11.png"
-    }
-}, {
-    "pk":45,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRAHUME2FO",
-        "name":"Waterproof Hummel Camo Shoes",
-        "description":"Keep splashing with these green and yellow trainers.",
-        "product_group":2,
-        "product_type":1,
-        "price":15.99,
-        "rating":2,
-        "brand":"Hummel",
-        "image":"mens_12.png"
-    }
-}, {
-    "pk":46,
-    "model":"products.product",
-    "fields": {
-        "sku":"DAPVAME3WH",
-        "name":"Chunky Vans",
-        "description":"Shoes specifically designed with a high ankle point and heel.",
-        "product_group":2,
-        "product_type":7,
-        "price":40.00,
-        "rating":3,
-        "brand":"Vans",
-        "image":"mens_13.png"
-    }
-}, {
-    "pk":47,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRANIME5GR",
-        "name":"Elite Running Nike Shoes",
-        "description":"Proven to be faster than the average shoe on the market, this shoe is ideal for sprint runners.",
-        "product_group":2,
-        "product_type":1,
-        "price":110.00,
-        "rating":5,
-        "brand":"Nike",
-        "image":"mens_14.png"
-    }
-}, {
-    "pk":48,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRAJAME4MU",
-        "name":"Fashion Urban Trainers Jacks",
-        "description":"Bright and multi-colours trainers with a chunky heel, white basis and red laces.",
-        "product_group":2,
-        "product_type":1,
-        "price":20.99,
-        "rating":3,
-        "brand":"Jacks",
-        "image":"mens_15.png"
-    }
-}, {
-    "pk":49,
-    "model":"products.product",
-    "fields": {
-        "sku":"DAPPUME3BL",
-        "name":"Simple Monochromotic Pumas",
-        "description":"This iconic 90s design makes a striking comeback in black and white.",
-        "product_group":2,
-        "product_type":7,
-        "price":34.99,
-        "rating":3,
-        "brand":"Puma",
-        "image":"mens_16.png"
-    }
-}, {
-    "pk":50,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRANIME2VE",
-        "name":"Velvet Nike",
-        "description":"An unusual material for Nike, enjoy this unique statement piece in forest green.",
-        "product_group":2,
-        "product_type":1,
-        "price":60.50,
-        "rating":2,
-        "brand":"Nike",
-        "image":"mens_17.png"
-    }
-}, {
-    "pk":51,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRANIME4BL",
-        "name":"Summer 2021 Nike Collection in Blue",
-        "description":"Blue Nikes from the bright and colourful Summer 2021 collection.",
-        "product_group":2,
-        "product_type":1,
-        "price":79.99,
-        "rating":4,
-        "brand":"Nike",
-        "image":"mens_18.png"
-    }
-}, {
-    "pk":52,
-    "model":"products.product",
-    "fields": {
-        "sku":"SANARME3RE",
-        "name":"Red and Black Arrow Sandals",
-        "description":"The ultimate in comfortable summertime.",
-        "product_group":2,
-        "product_type":3,
-        "price":15.00,
-        "rating":3,
-        "brand":"Arrow",
-        "image":"mens_19.png"
-    }
-}, {
-    "pk":53,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRANEME5GR",
-        "name":"New Balance Long Distance Shoes",
-        "description":"Shoes specifically designed for long distance running from New Balance.",
-        "product_group":2,
-        "product_type":1,
-        "price":55.00,
-        "rating":5,
-        "brand":"New Balance",
-        "image":"mens_20.png"
-    }
-}, {
-    "pk":54,
-    "model":"products.product",
-    "fields": {
-        "sku":"DAPCOME3BW",
-        "name":"White Converse",
-        "description":"White converse shoes in the style of the American flag, perfect for 4th July celebrations.",
-        "product_group":2,
-        "product_type":7,
-        "price":29.99,
-        "rating":3,
-        "brand":"Converse",
-        "image":"mens_21.png"
-    }
-}, {
-    "pk":55,
-    "model":"products.product",
-    "fields": {
-        "sku":"DAPDIME2BL",
-        "name":"Comfortable slip-on daps",
-        "description":"Blue canvas slip-on shoes for comfortable everday use.",
-        "product_group":2,
-        "product_type":7,
-        "price":19.99,
-        "rating":2,
-        "brand":"Differente",
-        "image":"mens_22.png"
-    }
-}, {
-    "pk":56,
-    "model":"products.product",
-    "fields": {
-        "sku":"AIRNIME3GR",
-        "name":"Airated Nike Thin Membrane",
-        "description":"Forest green Nike's with a thin membrane for running in high heat.",
-        "product_group":2,
-        "product_type":1,
-        "price":49.99,
-        "rating":3,
-        "brand":"Nike",
-        "image":"mens_23.png"
-    }
-}, {
-    "pk":57,
-    "model":"products.product",
-    "fields": {
-        "sku":"AIRNIME5JO",
-        "name":"Air Jordans '94",
-        "description":"Nike Air Jordans modelled after the original 1994 design.",
-        "product_group":2,
-        "product_type":1,
-        "price":39.99,
-        "rating":5,
-        "brand":"Nike",
-        "image":"mens_24.png"
-    }
-}, {
-    "pk":58,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRANIME3TR",
-        "name":"Track Nikes",
-        "description":"Red training shoes ideal for track running with high laces.",
-        "product_group":2,
-        "product_type":1,
-        "price":79.99,
-        "rating":3,
-        "brand":"Nike",
-        "image":"mens_25.png"
-    }
-}, {
-    "pk":59,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRAVAME4SU",
-        "name":"Summer Black Vans",
-        "description":"White and black summer lightweight vans.",
-        "product_group":2,
-        "product_type":7,
-        "price":20.50,
-        "rating":4,
-        "brand":"Vans",
-        "image":"mens_26.png"
-    }
-}, {
-    "pk":60,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRADCME3DC",
-        "name":"White DC Flat Shoes",
-        "description":"White DC flat shoes, ideal for the warmer months.",
-        "product_group":2,
-        "product_type":1,
-        "price":39.99,
-        "rating":3,
-        "brand":"DC",
-        "image":"mens_27.png"
-    }
-}, {
-    "pk":61,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRANIME5PU",
-        "name":"Red Puma Flip Flops",
-        "description":"Red leather flip flops with a supportive black base.",
-        "product_group":2,
-        "product_type":3,
-        "price":69.99,
-        "rating":5,
-        "brand":"Nike",
-        "image":"mens_28.png"
-    }
-}, {
-    "pk":62,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRAPUME4WH",
-        "name":"Puma Airs",
-        "description":"White Pumas from the Spring 2021 collection.",
-        "product_group":2,
-        "product_type":1,
-        "price":71.64,
-        "rating":4,
-        "brand":"Puma",
-        "image":"mens_29.png"
-    }
-}, {
-    "pk":63,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRANIME1CO",
-        "name":"Nike Cork",
-        "description":"Nikes with a unique cork heel in celebration in aid of environmental causes.",
-        "product_group":2,
-        "product_type":1,
-        "price":230.00,
-        "rating":1,
-        "brand":"Nike",
-        "image":"mens_30.png"
-    }
-}, {
-    "pk":64,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRANIME5MA",
-        "name":"Nike Airmax",
-        "description":"The famous Airmax, the shoes responsible for the fastest marathon ever recorded.",
-        "product_group":2,
-        "product_type":1,
-        "price":169.99,
-        "rating":5,
-        "brand":"Nike",
-        "image":"mens_31.png"
-    }
-}, {
-    "pk":65,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRANIME3SH",
-        "name":"Shark Nike",
-        "description":"Shark-style base beneath a light membrane black shoe.",
-        "product_group":2,
-        "product_type":1,
-        "price":79.99,
-        "rating":3,
-        "brand":"Nike",
-        "image":"mens_32.png"
-    }
-}, {
-    "pk":66,
-    "model":"products.product",
-    "fields": {
-        "sku":"TRAZOME4BU",
-        "name":"Bubble Trainers",
-        "description":"White bubble shoes, the latest trend in urban footware.",
-        "product_group":2,
-        "product_type":1,
-        "price":80.00,
-        "rating":4,
-        "brand":"Zoe",
-        "image":"mens_33.png"
-    }
-}, {
-    "pk":67,
-    "model":"products.product",
-    "fields": {
-        "sku":"BOOHUME2VE",
-        "name":"Leatherette Ankle Boots",
-        "description":"Vegan brown leatherette ankle boots with comfortable slip-on hooks.",
-        "product_group":2,
-        "product_type":4,
-        "price":21.99,
-        "rating":2,
-        "brand":"Hummel",
-        "image":"mens_34.png"
-    }
-}, {
-    "pk":68,
-    "model":"products.product",
-    "fields": {
-        "sku":"BRODOME2BR",
-        "name":"Leatherette Ankle Boots",
-        "description":"Vegan brown leatherette ankle boots with comfortable slip-on hooks.",
-        "product_group":2,
-        "product_type":4,
-        "price":21.99,
-        "rating":2,
-        "brand":"Dockers",
-        "image":"mens_35.png"
-    }
-}, {
-    "pk":69,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCADAL5WH",
-        "name":"Addidas Tennis Shoes",
-        "description":"White tennis-style high shoes.",
-        "product_group":null,
-        "product_type":9,
-        "price":21.99,
-        "rating":5,
-        "brand":"Addidas",
-        "image":"socks_1.png"
-    }
-}, {
-    "pk":70,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCCAAL3TO",
-        "name":"Earth Tone Socks",
-        "description":"Earth tone socks from the Carretera V Manta collaboration from 2021.",
-        "product_group":null,
-        "product_type":9,
-        "price":5.99,
-        "rating":3,
-        "brand":"Carretera Y Manta",
-        "image":"socks_2.png"
-    }
-}, {
-    "pk":71,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCCAAL3PU",
-        "name":"Purple Bedeckled Socks",
-        "description":"Purple, black and blue bedeckled high socks.",
-        "product_group":null,
-        "product_type":9,
-        "price":3.99,
-        "rating":3,
-        "brand":"Carretera Y Manta",
-        "image":"socks_3.png"
-    }
-}, {
-    "pk":72,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCDEAL4MU",
-        "name":"White Multi-Striped High Socks",
-        "description":"70s-style white high socks with three block coloured bands at the top.",
-        "product_group":null,
-        "product_type":9,
-        "price":12.99,
-        "rating":4,
-        "brand":"Deckler",
-        "image":"socks_4.png"
-    }
-}, {
-    "pk":73,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCVAAL5OR",
-        "name":"Flame Socks",
-        "description":"Perfect for any grunge aesthetic, these flame socks are here to stay.",
-        "product_group":null,
-        "product_type":9,
-        "price":9.99,
-        "rating":5,
-        "brand":"Vans",
-        "image":"socks_5.png"
-    }
-}, {
-    "pk":74,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCNEAL4RO",
-        "name":"Black Rose Socks",
-        "description":"Beware the thorns Get stuck into beautiful rose socks.",
-        "product_group":null,
-        "product_type":9,
-        "price":4.99,
-        "rating":4,
-        "brand":"New Look",
-        "image":"socks_6.png"
-    }
-}, {
-    "pk":75,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCZAAL5WH",
-        "name":"Plain White Trainer Socks",
-        "description":"Girls plain white trainer socks, a staple for any sock drawer.",
-        "product_group":3,
-        "product_type":9,
-        "price":2.99,
-        "rating":5,
-        "brand":"Zara",
-        "image":"socks_7.png"
-    }
-}, {
-    "pk":76,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCAUAL5WH",
-        "name":"Adorable Sheep Socks",
-        "description":"Sleeping sheeps adorn this gorgeous pair of comfy socks.",
-        "product_group":3,
-        "product_type":9,
-        "price":12.99,
-        "rating":5,
-        "brand":"Auckland",
-        "image":"socks_8.png"
-    }
-}, {
-    "pk":77,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCAUAL3PI",
-        "name":"Floral Block Print Socks",
-        "description":"Pink modern art floral print socks.",
-        "product_group":3,
-        "product_type":9,
-        "price":21.99,
-        "rating":3,
-        "brand":"Auckland",
-        "image":"socks_9.png"
-    }
-}, {
-    "pk":78,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCJAAL5AU",
-        "name":"Autumnal Print Socks",
-        "description":"Block print from the 2021 Autumn Jack Wills collection.",
-        "product_group":2,
-        "product_type":9,
-        "price":17.00,
-        "rating":5,
-        "brand":"Jack Wills",
-        "image":"socks_10.png"
-    }
-}, {
-    "pk":79,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCHJAL4BL",
-        "name":"Black Trainer Socks with Support",
-        "description":"Socks with added heel support for the ideal fit.",
-        "product_group":null,
-        "product_type":9,
-        "price":10.00,
-        "rating":4,
-        "brand":"HJ Hall",
-        "image":"socks_11.png"
-    }
-}, {
-    "pk":80,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCHJAL3OR",
-        "name":"Witchy Orange Striped Socks",
-        "description":"Socks for the witchy among us.",
-        "product_group":3,
-        "product_type":9,
-        "price":7.99,
-        "rating":3,
-        "brand":"HJ Hall",
-        "image":"socks_12.png"
-    }
-}, {
-    "pk":81,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCFAAL5OR",
-        "name":"Orange Fruit Navy Socks",
-        "description":"Orange print 100% cotton socks.",
-        "product_group":null,
-        "product_type":9,
-        "price":13.50,
-        "rating":5,
-        "brand":"Fairie",
-        "image":"socks_13.png"
-    }
-}, {
-    "pk":82,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCHOAL4BR",
-        "name":"Reindeer Christmas Socks",
-        "description":"The perfect pair of socks to get warm to on a crisp winter day.",
-        "product_group":null,
-        "product_type":9,
-        "price":22.00,
-        "rating":4,
-        "brand":"Hollyhead",
-        "image":"socks_14.png"
-    }
-}, {
-    "pk":83,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCHOAL4ST",
-        "name":"Striped Reindeer Christmas Socks",
-        "description":"The perfect pair of socks to gift as stocking fillers.",
-        "product_group":null,
-        "product_type":9,
-        "price":22.00,
-        "rating":4,
-        "brand":"Hollyhead",
-        "image":"socks_15.png"
-    }
-}, {
-    "pk":84,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCECAL4WH",
-        "name":"ECTP Thick Socks",
-        "description":"Socks for the colder months, part of the ECTP Winter 2019 collection.",
-        "product_group":null,
-        "product_type":9,
-        "price":15.99,
-        "rating":5,
-        "brand":"ECTP",
-        "image":"socks_16.png"
-    }
-}, {
-    "pk":85,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCNEAL3GR",
-        "name":"Grey Cotton Socks",
-        "description":"Patterned grey socks with extra padding for heel support.",
-        "product_group":null,
-        "product_type":9,
-        "price":8.99,
-        "rating":3,
-        "brand":"New Look",
-        "image":"socks_17.png"
-    }
-}, {
-    "pk":86,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCNOAL5RE",
-        "name":"Rocky Horror Socks",
-        "description":"Socks inspired by the iconic visuals of the infamous Rocky Horror Picture Show.",
-        "product_group":null,
-        "product_type":9,
-        "price":19.99,
-        "rating":5,
-        "brand":"Novelty Socks Ltd",
-        "image":"socks_18.png"
-    }
-}, {
-    "pk":87,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCNOAL4YE",
-        "name":"Banana Socks",
-        "description":"Bananarama! Snap up these colourful delights while we're still in stock.",
-        "product_group":3,
-        "product_type":9,
-        "price":19.99,
-        "rating":4,
-        "brand":"Novelty Socks Ltd",
-        "image":"socks_19.png"
-    }
-}, {
-    "pk":88,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCENAL5PA",
-        "name":"Pack of 3 Socks",
-        "description":"Value pack of three pairs of socks in grey, purple and yellow.",
-        "product_group":null,
-        "product_type":9,
-        "price":9.99,
-        "rating":5,
-        "brand":"Enertor",
-        "image":"socks_20.png"
-    }
-}, {
-    "pk":89,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCHOAL2CH",
-        "name":"Christmas Tree Socks",
-        "description":"Christmas style socks with presents and trees for a pattern.",
-        "product_group":null,
-        "product_type":9,
-        "price":12.99,
-        "rating":2,
-        "brand":"Hollyhead",
-        "image":"socks_21.png"
-    }
-}, {
-    "pk":90,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCANCH5WH",
-        "name":"Baby Socks",
-        "description":"Long white baby socks with roll-up top.",
-        "product_group":1,
-        "product_type":2,
-        "price":7.00,
-        "rating":5,
-        "brand":"Angel",
-        "image":"socks_22.png"
-    }
-}, {
-    "pk":91,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCJOAL4OR",
-        "name":"Cashmere Socks",
-        "description":"Luxury orange cashmere socks made in Scotland.",
-        "product_group":null,
-        "product_type":9,
-        "price":54.99,
-        "rating":4,
-        "brand":"Johnstons of Elgin",
-        "image":"socks_23.png"
-    }
-}, {
-    "pk":92,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCHOAL2WH",
-        "name":"Holiday Socks",
-        "description":"White socks reading 'Yay holiday', start Christmas off right.",
-        "product_group":3,
-        "product_type":9,
-        "price":4.99,
-        "rating":2,
-        "brand":"Hollyhead",
-        "image":"socks_24.png"
-    }
-}, {
-    "pk":93,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCCACH5BL",
-        "name":"Children's Wellie Socks",
-        "description":"Striped wellie socks for children.",
-        "product_group":1,
-        "product_type":9,
-        "price":13.99,
-        "rating":5,
-        "brand":"Cath Kidson",
-        "image":"socks_25.png"
-    }
-}, {
-    "pk":94,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCBAAL4IC",
-        "name":"Ice Cream Socks",
-        "description":"Blue, white and red French-style luxury socks.",
-        "product_group":2,
-        "product_type":9,
-        "price":25.00,
-        "rating":4,
-        "brand":"Balitello",
-        "image":"socks_26.png"
-    }
-}, {
-    "pk":95,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCBAAL4BR",
-        "name":"Brutalist Socks",
-        "description":"Red, navy and white brutalist-style socks for the esteemed gentleman.",
-        "product_group":2,
-        "product_type":2,
-        "price":25.00,
-        "rating":4,
-        "brand":"Balitello",
-        "image":"socks_27.png"
-    }
-}, {
-    "pk":96,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCHOCH3PU",
-        "name":"Pumpkin Socks",
-        "description":"Pumpkin-style striped orange and red socks for the autumn and winter months.",
-        "product_group":null,
-        "product_type":2,
-        "price":4.99,
-        "rating":3,
-        "brand":"Holyhead",
-        "image":"socks_28.png"
-    }
-}, {
-    "pk":97,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCTEAL5NI",
-        "name":"Telo Socks",
-        "description":"90s-style original Telo socks with rainbow top bands and blue heels.",
-        "product_group":null,
-        "product_type":9,
-        "price":14.99,
-        "rating":5,
-        "brand":"Telo",
-        "image":"socks_29.png"
-    }
-}, {
-    "pk":98,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCVAAL2CH",
-        "name":"Chequred Socks",
-        "description":"Black and white chequred grunge-style socks.",
-        "product_group":null,
-        "product_type":9,
-        "price":12.00,
-        "rating":2,
-        "brand":"Vans",
-        "image":"socks_30.png"
-    }
-}, {
-    "pk":99,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCCOAL4CO",
-        "name":"Cola Socks",
-        "description":"White and red official merchandise Coca Cola pair of socks.",
-        "product_group":null,
-        "product_type":9,
-        "price":30.00,
-        "rating":4,
-        "brand":"Coca Cola Company",
-        "image":"socks_31.png"
-    }
-}, {
-    "pk":100,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCMEAL3BL",
-        "name":"Directional Socks",
-        "description":"Tongue-in-cheek directional socks so you never mess up your left and right ever again.",
-        "product_group":null,
-        "product_type":9,
-        "price":5.00,
-        "rating":3,
-        "brand":"Menkind",
-        "image":"socks_32.png"
-    }
-}, {
-    "pk":101,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCFOAL4YE",
-        "name":"Fosters Socks",
-        "description":"Bright yellow skater socks from Fosters.",
-        "product_group":null,
-        "product_type":9,
-        "price":4.99,
-        "rating":4,
-        "brand":"Fosters",
-        "image":"socks_33.png"
-    }
-}, {
-    "pk":102,
-    "model":"products.product",
-    "fields": {
-        "sku":"SOCURAL5PA",
-        "name":"Pastel Socks",
-        "description":"Pastel multi-coloured summer thin socks.",
-        "product_group":null,
-        "product_type":9,
-        "price":2.99,
-        "rating":5,
-        "brand":"Urban Outfitters",
-        "image":"socks_34.png"
-    }
-}]
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANICH3BL",
+        "name": "Unisex Nike 500 trainer",
+        "description": "Navy and pink trainers designed for the kid always on the move.",
+        "product_group": 1,
+        "product_type": 1,
+        "price": 49.99,
+        "rating": 3,
+        "brand": "Nike",
+        "image_url": "kids_1.png"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "BABWACH4BR",
+        "name": "Bear Baby shoes",
+        "description": "The adorable gift for the adorable baby.",
+        "product_group": 1,
+        "product_type": 2,
+        "price": 12.99,
+        "rating": 4,
+        "brand": "Wakki",
+        "image_url": "kids_2.png"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANICH2BL",
+        "name": "Nike surfer Air",
+        "description": "A brand new line from Nike, these Air trainers will rock the seas.",
+        "product_group": 1,
+        "product_type": 1,
+        "price": 59.99,
+        "rating": 2,
+        "brand": "Nike",
+        "image_url": "kids_3.png"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+        "sku": "BOOTOCH1BR",
+        "name": "Rustic leather boots",
+        "description": "Stylish and practical, these boots are perfect for the teenager always on the go.",
+        "product_group": 1,
+        "product_type": 4,
+        "price": 30,
+        "rating": 1,
+        "brand": "Tommand Boyd",
+        "image_url": "kids_4.png"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRAVACH5BL",
+        "name": "Winged baby shoes",
+        "description": "For the little angel in your life.",
+        "product_group": 1,
+        "product_type": 1,
+        "price": 25.99,
+        "rating": 5,
+        "brand": "Vans",
+        "image_url": "kids_5.png"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "BABLICH3BL",
+        "name": "Navy blue shoes",
+        "description": "These tiny blue shoes are the small infant shoes we carry, perfect for delicate feet.",
+        "product_group": 1,
+        "product_type": 2,
+        "price": 9.99,
+        "rating": 3,
+        "brand": "Littluns",
+        "image_url": "kids_6.png"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+        "sku": "DAPZACH3GO",
+        "name": "Gold girly pumps",
+        "description": "Perfect shoes for the growing girl. Ideal at school discos and special occassions.",
+        "product_group": 1,
+        "product_type": 7,
+        "price": 12.99,
+        "rating": 3,
+        "brand": "Zara",
+        "image_url": "kids_7.png"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRAFICH2WH",
+        "name": "Fila kicks",
+        "description": "Meet the brand new kick on the block: Fila's Kicks range out now in all sizes available.",
+        "product_group": 1,
+        "product_type": 1,
+        "price": 69.99,
+        "rating": 2,
+        "brand": "Fila",
+        "image_url": "kids_8.png"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+        "sku": "BOOTICH1BR",
+        "name": "Worker-style kid's boots",
+        "description": "Perfect for the rugged kid, these worn brown leather boots are the ideal shoe for the adventurous.",
+        "product_group": 1,
+        "product_type": 4,
+        "price": 19.99,
+        "rating": 1,
+        "brand": "Timberlands",
+        "image_url": "kids_9.png"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+        "sku": "DAPNICH5BL",
+        "name": "Black Nike Camo Daps",
+        "description": "Black shoes with a camoflauge print underneath the iconic Nike swish.",
+        "product_group": 1,
+        "product_type": 7,
+        "price": 45,
+        "rating": 5,
+        "brand": "Nike",
+        "image_url": "kids_10.png"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+        "sku": "BOOGECH4PI",
+        "name": "Sparkly Pink Snow Boots",
+        "description": "Track through the winter ground with these shoes sure to make a sparkle.",
+        "product_group": 1,
+        "product_type": 4,
+        "price": 30,
+        "rating": 4,
+        "brand": "George",
+        "image_url": "kids_11.png"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+        "sku": "HEENEWO3ZE",
+        "name": "Zebra Beach Loungers",
+        "description": "Ideal for any summer getaway, these zebra flip-flops come in handy for those beachy days.",
+        "product_group": 3,
+        "product_type": 3,
+        "price": 7.99,
+        "rating": 3,
+        "brand": "New Look",
+        "image_url": "womens_1.png"
+      }
+    },
+    {
+      "pk": 13,
+      "model": "products.product",
+      "fields": {
+        "sku": "HEEAKWO3BI",
+        "name": "Prom High Heels",
+        "description": "Biege-coloured rhine-stoned high heels, perfect for dream occassions.",
+        "product_group": 3,
+        "product_type": 6,
+        "price": 79.99,
+        "rating": 3,
+        "brand": "Akhsch",
+        "image_url": "womens_2.png"
+      }
+    },
+    {
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+        "sku": "HEENOWO2RE",
+        "name": "Bold Blue Floral Print High Heels",
+        "description": "Red roses and dark blue adorn this gorgeous pair of high heels.",
+        "product_group": 3,
+        "product_type": 6,
+        "price": 39.99,
+        "rating": 2,
+        "brand": "Fashion Nova",
+        "image_url": "womens_3.png"
+      }
+    },
+    {
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANIWO5PI",
+        "name": "Pink Nike Running Shoes",
+        "description": "Pink running shoes with a sponge, comfortable heel making this the ideal shoe for running beginners looking to prevent injury.",
+        "product_group": 3,
+        "product_type": 1,
+        "price": 48.95,
+        "rating": 5,
+        "brand": "Nike",
+        "image_url": "womens_4.png"
+      }
+    },
+    {
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANEWO2PI",
+        "name": "New Balance Ultra Running Shoes",
+        "description": "These brand new shoes in the latest range from New Balance have been designed with ultra runners in mind - ultralight, unassuming with extra heel support.",
+        "product_group": 3,
+        "product_type": 1,
+        "price": 35.99,
+        "rating": 2,
+        "brand": "New Balance",
+        "image_url": "womens_5.png"
+      }
+    },
+    {
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+        "sku": "HEEVUWO1BL",
+        "name": "Sleek Black Heels",
+        "description": "A staple of any wardrobe, the little black heel is an essential no woman can go without.",
+        "product_group": 3,
+        "product_type": 6,
+        "price": 25,
+        "rating": 1,
+        "brand": "Louis Vuitton",
+        "image_url": "womens_6.png"
+      }
+    },
+    {
+      "pk": 18,
+      "model": "products.product",
+      "fields": {
+        "sku": "HEESTWO4WH",
+        "name": "White 6'' Heels",
+        "description": "These white high heels are a top seller from Stella Lauren, with enough height for style but still comfortable for daily wear.",
+        "product_group": 3,
+        "product_type": 6,
+        "price": 53.99,
+        "rating": 4,
+        "brand": "Stella Lauren",
+        "image_url": "womens_7.png"
+      }
+    },
+    {
+      "pk": 19,
+      "model": "products.product",
+      "fields": {
+        "sku": "BROCLWO2GR",
+        "name": "Green Office Brogues",
+        "description": "Green office brogues, comfortable for everyday wear.",
+        "product_group": 3,
+        "product_type": 8,
+        "price": 22,
+        "rating": 2,
+        "brand": "Clarks",
+        "image_url": "womens_8.png"
+      }
+    },
+    {
+      "pk": 20,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRAADWO5MU",
+        "name": "Chunky Multi-Coloured Trainers",
+        "description": "With a high chunky heel, these are trainers ideal for the fashion conscious and walkers alike.",
+        "product_group": 3,
+        "product_type": 1,
+        "price": 15,
+        "rating": 5,
+        "brand": "Addidas",
+        "image_url": "womens_9.png"
+      }
+    },
+    {
+      "pk": 21,
+      "model": "products.product",
+      "fields": {
+        "sku": "SANSAWO4YE",
+        "name": "Scandi-style Sandals",
+        "description": "Bright yellow slightly heeled sandals ideal for the spring months.",
+        "product_group": 3,
+        "product_type": 3,
+        "price": 21,
+        "rating": 4,
+        "brand": "Sally Hansens",
+        "image_url": "womens_10.png"
+      }
+    },
+    {
+      "pk": 22,
+      "model": "products.product",
+      "fields": {
+        "sku": "SANVIWO3FL",
+        "name": "Floral Beach Sandals",
+        "description": "Striped and floral design pink and blue sandals for the beach.",
+        "product_group": 3,
+        "product_type": 3,
+        "price": 55,
+        "rating": 3,
+        "brand": "Vionic",
+        "image_url": "womens_11.png"
+      }
+    },
+    {
+      "pk": 23,
+      "model": "products.product",
+      "fields": {
+        "sku": "BOODOWO5BL",
+        "name": "Doc Martens Yellow Boots",
+        "description": "Famed for their resilience and iconic British design, buy a slice of UK fashion history at a steal of a price.",
+        "product_group": 3,
+        "product_type": 4,
+        "price": 40,
+        "rating": 5,
+        "brand": "Doc Martens",
+        "image_url": "womens_12.png"
+      }
+    },
+    {
+      "pk": 24,
+      "model": "products.product",
+      "fields": {
+        "sku": "SANSAWO1GO",
+        "name": "Lightweight Flipflops",
+        "description": "Summer red and gold flip-flops for summer wear.",
+        "product_group": 3,
+        "product_type": 3,
+        "price": 10,
+        "rating": 1,
+        "brand": "Sally Hansens",
+        "image_url": "womens_13.png"
+      }
+    },
+    {
+      "pk": 25,
+      "model": "products.product",
+      "fields": {
+        "sku": "BOOVIWO3BR",
+        "name": "Brown and Clear 70s-style Heeled Boots",
+        "description": "Stomp onto the disco floor like it's 1972 in this iconic design.",
+        "product_group": 3,
+        "product_type": 4,
+        "price": 46.95,
+        "rating": 3,
+        "brand": "Vintage Designs",
+        "image_url": "womens_14.png"
+      }
+    },
+    {
+      "pk": 26,
+      "model": "products.product",
+      "fields": {
+        "sku": "BOOSOWO4BL",
+        "name": "Black Romper Boots",
+        "description": "Hot off the latest trend come these new black boots from Solovair Ava.",
+        "product_group": 3,
+        "product_type": 4,
+        "price": 26.99,
+        "rating": 4,
+        "brand": "Solovair Ava",
+        "image_url": "womens_15.png"
+      }
+    },
+    {
+      "pk": 27,
+      "model": "products.product",
+      "fields": {
+        "sku": "BOOBLWO3OR",
+        "name": "70s-style Brown Thigh-high Boots",
+        "description": "Orange and brown autumn 70s-style boots will be the envy of any party.",
+        "product_group": 3,
+        "product_type": 4,
+        "price": 73.99,
+        "rating": 3,
+        "brand": "Blundstone",
+        "image_url": "womens_16.png"
+      }
+    },
+    {
+      "pk": 28,
+      "model": "products.product",
+      "fields": {
+        "sku": "BOOSOWO3BL",
+        "name": "Black Heeled Boots",
+        "description": "Black boots with a 5'' heel and full outside zipper.",
+        "product_group": 3,
+        "product_type": 4,
+        "price": 26.99,
+        "rating": 3,
+        "brand": "Solovair Ava",
+        "image_url": "womens_17.png"
+      }
+    },
+    {
+      "pk": 29,
+      "model": "products.product",
+      "fields": {
+        "sku": "HEESOWO3BL",
+        "name": "Black shoes with circular heel",
+        "description": "Black raised shoes with a unique circular design for a heel.",
+        "product_group": 3,
+        "product_type": 6,
+        "price": 26.99,
+        "rating": 3,
+        "brand": "Solovair Ava",
+        "image_url": "womens_18.png"
+      }
+    },
+    {
+      "pk": 30,
+      "model": "products.product",
+      "fields": {
+        "sku": "SANSAWO4WH",
+        "name": "White Sandals with Comfy Strap",
+        "description": "White beach sandals with specifically designed strap for ultimate comfort.",
+        "product_group": 3,
+        "product_type": 3,
+        "price": 26.99,
+        "rating": 4,
+        "brand": "Sally Hansens",
+        "image_url": "womens_19.png"
+      }
+    },
+    {
+      "pk": 31,
+      "model": "products.product",
+      "fields": {
+        "sku": "HEEUIWO5BL",
+        "name": "Velvet Blue Heels",
+        "description": "Blue heels made out of comfortable and stylish velvet material with a 7'' heel.",
+        "product_group": 3,
+        "product_type": 6,
+        "price": 54.6,
+        "rating": 5,
+        "brand": "Uirna",
+        "image_url": "womens_20.png"
+      }
+    },
+    {
+      "pk": 32,
+      "model": "products.product",
+      "fields": {
+        "sku": "SANGEWO1PI",
+        "name": "Pink Durable Sandals",
+        "description": "Lightweight and durable pink sandals ideal for the holidays.",
+        "product_group": 3,
+        "product_type": 3,
+        "price": 5,
+        "rating": 1,
+        "brand": "George",
+        "image_url": "womens_21.png"
+      }
+    },
+    {
+      "pk": 33,
+      "model": "products.product",
+      "fields": {
+        "sku": "BOODOWO1BL",
+        "name": "Classic Doc Martens",
+        "description": "The classic Doc Marten design is finally back in stock. Don't miss out!",
+        "product_group": 3,
+        "product_type": 4,
+        "price": 5,
+        "rating": 1,
+        "brand": "George",
+        "image_url": "womens_22.png"
+      }
+    },
+    {
+      "pk": 34,
+      "model": "products.product",
+      "fields": {
+        "sku": "SANTOME5BR",
+        "name": "Luxury Brown Real Leather Sandals",
+        "description": "The ultimate expression of luxury and couture, meet your new summer must-have. Don't miss out!",
+        "product_group": 2,
+        "product_type": 3,
+        "price": 455,
+        "rating": 5,
+        "brand": "Tom Ford",
+        "image_url": "mens_1.png"
+      }
+    },
+    {
+      "pk": 35,
+      "model": "products.product",
+      "fields": {
+        "sku": "SANSTME4GR",
+        "name": "Stockhart Beach Shoes",
+        "description": "Light grey strap sandals.",
+        "product_group": 2,
+        "product_type": 3,
+        "price": 45,
+        "rating": 4,
+        "brand": "Stockhart",
+        "image_url": "mens_2.png"
+      }
+    },
+    {
+      "pk": 36,
+      "model": "products.product",
+      "fields": {
+        "sku": "DAPVAME3RE",
+        "name": "Red Boys Daps",
+        "description": "Red and white striped daps with laces.",
+        "product_group": 2,
+        "product_type": 7,
+        "price": 22.99,
+        "rating": 3,
+        "brand": "Vans",
+        "image_url": "mens_3.png"
+      }
+    },
+    {
+      "pk": 37,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRAKSME4MU",
+        "name": "Multi-coloured Chunky Trainers",
+        "description": "Multi-coloured K Swiss trainers with a chunky 3'' heel.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 26.99,
+        "rating": 4,
+        "brand": "K Swiss",
+        "image_url": "mens_4.png"
+      }
+    },
+    {
+      "pk": 38,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRAADME3BL",
+        "name": "Blue Addidas Trainers",
+        "description": "Ideal for the everyday jogger, these lightweight and comfortable trainers make a perfect addition to your workout.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 45.99,
+        "rating": 3,
+        "brand": "Addidas",
+        "image_url": "mens_5.png"
+      }
+    },
+    {
+      "pk": 39,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRAHUME2BL",
+        "name": "Bright Football Trainers",
+        "description": "Bright pair of trainers for young footballers on the pitch.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 29.99,
+        "rating": 2,
+        "brand": "Hummel",
+        "image_url": "mens_6.png"
+      }
+    },
+    {
+      "pk": 40,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANIME3RE",
+        "name": "Red Swish Nikes",
+        "description": "Red Nikes with the iconic swish, meet on any basketball court in style.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 59.99,
+        "rating": 3,
+        "brand": "Nike",
+        "image_url": "mens_7.png"
+      }
+    },
+    {
+      "pk": 41,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRAVAME4BI",
+        "name": "Everyday Vans",
+        "description": "These biege vans go with any outfit and are suitable for all weathers.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 19.99,
+        "rating": 4,
+        "brand": "Vans",
+        "image_url": "mens_8.png"
+      }
+    },
+    {
+      "pk": 42,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANIME4OR",
+        "name": "Orange Running Nike Trainers",
+        "description": "Breathable orange running trainers ideal for everyday jogging.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 39.99,
+        "rating": 4,
+        "brand": "Nike",
+        "image_url": "mens_9.png"
+      }
+    },
+    {
+      "pk": 43,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANIME5YE",
+        "name": "Bright Urban Nike Trainers",
+        "description": "Nike shoes from the 2020 Urban collection.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 69.99,
+        "rating": 5,
+        "brand": "Nike",
+        "image_url": "mens_10.png"
+      }
+    },
+    {
+      "pk": 44,
+      "model": "products.product",
+      "fields": {
+        "sku": "DAPCOME3WH",
+        "name": "Converse",
+        "description": "Classic Converse shoes, fully laced up in a striking red colour.",
+        "product_group": 2,
+        "product_type": 7,
+        "price": 31.99,
+        "rating": 3,
+        "brand": "Converse",
+        "image_url": "mens_11.png"
+      }
+    },
+    {
+      "pk": 45,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRAHUME2FO",
+        "name": "Waterproof Hummel Camo Shoes",
+        "description": "Keep splashing with these green and yellow trainers.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 15.99,
+        "rating": 2,
+        "brand": "Hummel",
+        "image_url": "mens_12.png"
+      }
+    },
+    {
+      "pk": 46,
+      "model": "products.product",
+      "fields": {
+        "sku": "DAPVAME3WH",
+        "name": "Chunky Vans",
+        "description": "Shoes specifically designed with a high ankle point and heel.",
+        "product_group": 2,
+        "product_type": 7,
+        "price": 40,
+        "rating": 3,
+        "brand": "Vans",
+        "image_url": "mens_13.png"
+      }
+    },
+    {
+      "pk": 47,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANIME5GR",
+        "name": "Elite Running Nike Shoes",
+        "description": "Proven to be faster than the average shoe on the market, this shoe is ideal for sprint runners.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 110,
+        "rating": 5,
+        "brand": "Nike",
+        "image_url": "mens_14.png"
+      }
+    },
+    {
+      "pk": 48,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRAJAME4MU",
+        "name": "Fashion Urban Trainers Jacks",
+        "description": "Bright and multi-colours trainers with a chunky heel, white basis and red laces.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 20.99,
+        "rating": 3,
+        "brand": "Jacks",
+        "image_url": "mens_15.png"
+      }
+    },
+    {
+      "pk": 49,
+      "model": "products.product",
+      "fields": {
+        "sku": "DAPPUME3BL",
+        "name": "Simple Monochromotic Pumas",
+        "description": "This iconic 90s design makes a striking comeback in black and white.",
+        "product_group": 2,
+        "product_type": 7,
+        "price": 34.99,
+        "rating": 3,
+        "brand": "Puma",
+        "image_url": "mens_16.png"
+      }
+    },
+    {
+      "pk": 50,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANIME2VE",
+        "name": "Velvet Nike",
+        "description": "An unusual material for Nike, enjoy this unique statement piece in forest green.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 60.5,
+        "rating": 2,
+        "brand": "Nike",
+        "image_url": "mens_17.png"
+      }
+    },
+    {
+      "pk": 51,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANIME4BL",
+        "name": "Summer 2021 Nike Collection in Blue",
+        "description": "Blue Nikes from the bright and colourful Summer 2021 collection.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 79.99,
+        "rating": 4,
+        "brand": "Nike",
+        "image_url": "mens_18.png"
+      }
+    },
+    {
+      "pk": 52,
+      "model": "products.product",
+      "fields": {
+        "sku": "SANARME3RE",
+        "name": "Red and Black Arrow Sandals",
+        "description": "The ultimate in comfortable summertime.",
+        "product_group": 2,
+        "product_type": 3,
+        "price": 15,
+        "rating": 3,
+        "brand": "Arrow",
+        "image_url": "mens_19.png"
+      }
+    },
+    {
+      "pk": 53,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANEME5GR",
+        "name": "New Balance Long Distance Shoes",
+        "description": "Shoes specifically designed for long distance running from New Balance.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 55,
+        "rating": 5,
+        "brand": "New Balance",
+        "image_url": "mens_20.png"
+      }
+    },
+    {
+      "pk": 54,
+      "model": "products.product",
+      "fields": {
+        "sku": "DAPCOME3BW",
+        "name": "White Converse",
+        "description": "White converse shoes in the style of the American flag, perfect for 4th July celebrations.",
+        "product_group": 2,
+        "product_type": 7,
+        "price": 29.99,
+        "rating": 3,
+        "brand": "Converse",
+        "image_url": "mens_21.png"
+      }
+    },
+    {
+      "pk": 55,
+      "model": "products.product",
+      "fields": {
+        "sku": "DAPDIME2BL",
+        "name": "Comfortable slip-on daps",
+        "description": "Blue canvas slip-on shoes for comfortable everday use.",
+        "product_group": 2,
+        "product_type": 7,
+        "price": 19.99,
+        "rating": 2,
+        "brand": "Differente",
+        "image_url": "mens_22.png"
+      }
+    },
+    {
+      "pk": 56,
+      "model": "products.product",
+      "fields": {
+        "sku": "AIRNIME3GR",
+        "name": "Airated Nike Thin Membrane",
+        "description": "Forest green Nike's with a thin membrane for running in high heat.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 49.99,
+        "rating": 3,
+        "brand": "Nike",
+        "image_url": "mens_23.png"
+      }
+    },
+    {
+      "pk": 57,
+      "model": "products.product",
+      "fields": {
+        "sku": "AIRNIME5JO",
+        "name": "Air Jordans '94",
+        "description": "Nike Air Jordans modelled after the original 1994 design.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 39.99,
+        "rating": 5,
+        "brand": "Nike",
+        "image_url": "mens_24.png"
+      }
+    },
+    {
+      "pk": 58,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANIME3TR",
+        "name": "Track Nikes",
+        "description": "Red training shoes ideal for track running with high laces.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 79.99,
+        "rating": 3,
+        "brand": "Nike",
+        "image_url": "mens_25.png"
+      }
+    },
+    {
+      "pk": 59,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRAVAME4SU",
+        "name": "Summer Black Vans",
+        "description": "White and black summer lightweight vans.",
+        "product_group": 2,
+        "product_type": 7,
+        "price": 20.5,
+        "rating": 4,
+        "brand": "Vans",
+        "image_url": "mens_26.png"
+      }
+    },
+    {
+      "pk": 60,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRADCME3DC",
+        "name": "White DC Flat Shoes",
+        "description": "White DC flat shoes, ideal for the warmer months.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 39.99,
+        "rating": 3,
+        "brand": "DC",
+        "image_url": "mens_27.png"
+      }
+    },
+    {
+      "pk": 61,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANIME5PU",
+        "name": "Red Puma Flip Flops",
+        "description": "Red leather flip flops with a supportive black base.",
+        "product_group": 2,
+        "product_type": 3,
+        "price": 69.99,
+        "rating": 5,
+        "brand": "Nike",
+        "image_url": "mens_28.png"
+      }
+    },
+    {
+      "pk": 62,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRAPUME4WH",
+        "name": "Puma Airs",
+        "description": "White Pumas from the Spring 2021 collection.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 71.64,
+        "rating": 4,
+        "brand": "Puma",
+        "image_url": "mens_29.png"
+      }
+    },
+    {
+      "pk": 63,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANIME1CO",
+        "name": "Nike Cork",
+        "description": "Nikes with a unique cork heel in celebration in aid of environmental causes.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 230,
+        "rating": 1,
+        "brand": "Nike",
+        "image_url": "mens_30.png"
+      }
+    },
+    {
+      "pk": 64,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANIME5MA",
+        "name": "Nike Airmax",
+        "description": "The famous Airmax, the shoes responsible for the fastest marathon ever recorded.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 169.99,
+        "rating": 5,
+        "brand": "Nike",
+        "image_url": "mens_31.png"
+      }
+    },
+    {
+      "pk": 65,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRANIME3SH",
+        "name": "Shark Nike",
+        "description": "Shark-style base beneath a light membrane black shoe.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 79.99,
+        "rating": 3,
+        "brand": "Nike",
+        "image_url": "mens_32.png"
+      }
+    },
+    {
+      "pk": 66,
+      "model": "products.product",
+      "fields": {
+        "sku": "TRAZOME4BU",
+        "name": "Bubble Trainers",
+        "description": "White bubble shoes, the latest trend in urban footware.",
+        "product_group": 2,
+        "product_type": 1,
+        "price": 80,
+        "rating": 4,
+        "brand": "Zoe",
+        "image_url": "mens_33.png"
+      }
+    },
+    {
+      "pk": 67,
+      "model": "products.product",
+      "fields": {
+        "sku": "BOOHUME2VE",
+        "name": "Leatherette Ankle Boots",
+        "description": "Vegan brown leatherette ankle boots with comfortable slip-on hooks.",
+        "product_group": 2,
+        "product_type": 4,
+        "price": 21.99,
+        "rating": 2,
+        "brand": "Hummel",
+        "image_url": "mens_34.png"
+      }
+    },
+    {
+      "pk": 68,
+      "model": "products.product",
+      "fields": {
+        "sku": "BRODOME2BR",
+        "name": "Leatherette Ankle Boots",
+        "description": "Vegan brown leatherette ankle boots with comfortable slip-on hooks.",
+        "product_group": 2,
+        "product_type": 4,
+        "price": 21.99,
+        "rating": 2,
+        "brand": "Dockers",
+        "image_url": "mens_35.png"
+      }
+    },
+    {
+      "pk": 69,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCADAL5WH",
+        "name": "Addidas Tennis Shoes",
+        "description": "White tennis-style high shoes.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 21.99,
+        "rating": 5,
+        "brand": "Addidas",
+        "image_url": "socks_1.png"
+      }
+    },
+    {
+      "pk": 70,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCCAAL3TO",
+        "name": "Earth Tone Socks",
+        "description": "Earth tone socks from the Carretera V Manta collaboration from 2021.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 5.99,
+        "rating": 3,
+        "brand": "Carretera Y Manta",
+        "image_url": "socks_2.png"
+      }
+    },
+    {
+      "pk": 71,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCCAAL3PU",
+        "name": "Purple Bedeckled Socks",
+        "description": "Purple, black and blue bedeckled high socks.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 3.99,
+        "rating": 3,
+        "brand": "Carretera Y Manta",
+        "image_url": "socks_3.png"
+      }
+    },
+    {
+      "pk": 72,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCDEAL4MU",
+        "name": "White Multi-Striped High Socks",
+        "description": "70s-style white high socks with three block coloured bands at the top.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 12.99,
+        "rating": 4,
+        "brand": "Deckler",
+        "image_url": "socks_4.png"
+      }
+    },
+    {
+      "pk": 73,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCVAAL5OR",
+        "name": "Flame Socks",
+        "description": "Perfect for any grunge aesthetic, these flame socks are here to stay.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 9.99,
+        "rating": 5,
+        "brand": "Vans",
+        "image_url": "socks_5.png"
+      }
+    },
+    {
+      "pk": 74,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCNEAL4RO",
+        "name": "Black Rose Socks",
+        "description": "Beware the thorns Get stuck into beautiful rose socks.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 4.99,
+        "rating": 4,
+        "brand": "New Look",
+        "image_url": "socks_6.png"
+      }
+    },
+    {
+      "pk": 75,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCZAAL5WH",
+        "name": "Plain White Trainer Socks",
+        "description": "Girls plain white trainer socks, a staple for any sock drawer.",
+        "product_group": 3,
+        "product_type": 9,
+        "price": 2.99,
+        "rating": 5,
+        "brand": "Zara",
+        "image_url": "socks_7.png"
+      }
+    },
+    {
+      "pk": 76,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCAUAL5WH",
+        "name": "Adorable Sheep Socks",
+        "description": "Sleeping sheeps adorn this gorgeous pair of comfy socks.",
+        "product_group": 3,
+        "product_type": 9,
+        "price": 12.99,
+        "rating": 5,
+        "brand": "Auckland",
+        "image_url": "socks_8.png"
+      }
+    },
+    {
+      "pk": 77,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCAUAL3PI",
+        "name": "Floral Block Print Socks",
+        "description": "Pink modern art floral print socks.",
+        "product_group": 3,
+        "product_type": 9,
+        "price": 21.99,
+        "rating": 3,
+        "brand": "Auckland",
+        "image_url": "socks_9.png"
+      }
+    },
+    {
+      "pk": 78,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCJAAL5AU",
+        "name": "Autumnal Print Socks",
+        "description": "Block print from the 2021 Autumn Jack Wills collection.",
+        "product_group": 2,
+        "product_type": 9,
+        "price": 17,
+        "rating": 5,
+        "brand": "Jack Wills",
+        "image_url": "socks_10.png"
+      }
+    },
+    {
+      "pk": 79,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCHJAL4BL",
+        "name": "Black Trainer Socks with Support",
+        "description": "Socks with added heel support for the ideal fit.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 10,
+        "rating": 4,
+        "brand": "HJ Hall",
+        "image_url": "socks_11.png"
+      }
+    },
+    {
+      "pk": 80,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCHJAL3OR",
+        "name": "Witchy Orange Striped Socks",
+        "description": "Socks for the witchy among us.",
+        "product_group": 3,
+        "product_type": 9,
+        "price": 7.99,
+        "rating": 3,
+        "brand": "HJ Hall",
+        "image_url": "socks_12.png"
+      }
+    },
+    {
+      "pk": 81,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCFAAL5OR",
+        "name": "Orange Fruit Navy Socks",
+        "description": "Orange print 100% cotton socks.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 13.5,
+        "rating": 5,
+        "brand": "Fairie",
+        "image_url": "socks_13.png"
+      }
+    },
+    {
+      "pk": 82,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCHOAL4BR",
+        "name": "Reindeer Christmas Socks",
+        "description": "The perfect pair of socks to get warm to on a crisp winter day.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 22,
+        "rating": 4,
+        "brand": "Hollyhead",
+        "image_url": "socks_14.png"
+      }
+    },
+    {
+      "pk": 83,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCHOAL4ST",
+        "name": "Striped Reindeer Christmas Socks",
+        "description": "The perfect pair of socks to gift as stocking fillers.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 22,
+        "rating": 4,
+        "brand": "Hollyhead",
+        "image_url": "socks_15.png"
+      }
+    },
+    {
+      "pk": 84,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCECAL4WH",
+        "name": "ECTP Thick Socks",
+        "description": "Socks for the colder months, part of the ECTP Winter 2019 collection.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 15.99,
+        "rating": 5,
+        "brand": "ECTP",
+        "image_url": "socks_16.png"
+      }
+    },
+    {
+      "pk": 85,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCNEAL3GR",
+        "name": "Grey Cotton Socks",
+        "description": "Patterned grey socks with extra padding for heel support.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 8.99,
+        "rating": 3,
+        "brand": "New Look",
+        "image_url": "socks_17.png"
+      }
+    },
+    {
+      "pk": 86,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCNOAL5RE",
+        "name": "Rocky Horror Socks",
+        "description": "Socks inspired by the iconic visuals of the infamous Rocky Horror Picture Show.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 19.99,
+        "rating": 5,
+        "brand": "Novelty Socks Ltd",
+        "image_url": "socks_18.png"
+      }
+    },
+    {
+      "pk": 87,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCNOAL4YE",
+        "name": "Banana Socks",
+        "description": "Bananarama! Snap up these colourful delights while we're still in stock.",
+        "product_group": 3,
+        "product_type": 9,
+        "price": 19.99,
+        "rating": 4,
+        "brand": "Novelty Socks Ltd",
+        "image_url": "socks_19.png"
+      }
+    },
+    {
+      "pk": 88,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCENAL5PA",
+        "name": "Pack of 3 Socks",
+        "description": "Value pack of three pairs of socks in grey, purple and yellow.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 9.99,
+        "rating": 5,
+        "brand": "Enertor",
+        "image_url": "socks_20.png"
+      }
+    },
+    {
+      "pk": 89,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCHOAL2CH",
+        "name": "Christmas Tree Socks",
+        "description": "Christmas style socks with presents and trees for a pattern.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 12.99,
+        "rating": 2,
+        "brand": "Hollyhead",
+        "image_url": "socks_21.png"
+      }
+    },
+    {
+      "pk": 90,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCANCH5WH",
+        "name": "Baby Socks",
+        "description": "Long white baby socks with roll-up top.",
+        "product_group": 1,
+        "product_type": 2,
+        "price": 7,
+        "rating": 5,
+        "brand": "Angel",
+        "image_url": "socks_22.png"
+      }
+    },
+    {
+      "pk": 91,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCJOAL4OR",
+        "name": "Cashmere Socks",
+        "description": "Luxury orange cashmere socks made in Scotland.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 54.99,
+        "rating": 4,
+        "brand": "Johnstons of Elgin",
+        "image_url": "socks_23.png"
+      }
+    },
+    {
+      "pk": 92,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCHOAL2WH",
+        "name": "Holiday Socks",
+        "description": "White socks reading 'Yay holiday', start Christmas off right.",
+        "product_group": 3,
+        "product_type": 9,
+        "price": 4.99,
+        "rating": 2,
+        "brand": "Hollyhead",
+        "image_url": "socks_24.png"
+      }
+    },
+    {
+      "pk": 93,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCCACH5BL",
+        "name": "Children's Wellie Socks",
+        "description": "Striped wellie socks for children.",
+        "product_group": 1,
+        "product_type": 9,
+        "price": 13.99,
+        "rating": 5,
+        "brand": "Cath Kidson",
+        "image_url": "socks_25.png"
+      }
+    },
+    {
+      "pk": 94,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCBAAL4IC",
+        "name": "Ice Cream Socks",
+        "description": "Blue, white and red French-style luxury socks.",
+        "product_group": 2,
+        "product_type": 9,
+        "price": 25,
+        "rating": 4,
+        "brand": "Balitello",
+        "image_url": "socks_26.png"
+      }
+    },
+    {
+      "pk": 95,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCBAAL4BR",
+        "name": "Brutalist Socks",
+        "description": "Red, navy and white brutalist-style socks for the esteemed gentleman.",
+        "product_group": 2,
+        "product_type": 2,
+        "price": 25,
+        "rating": 4,
+        "brand": "Balitello",
+        "image_url": "socks_27.png"
+      }
+    },
+    {
+      "pk": 96,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCHOCH3PU",
+        "name": "Pumpkin Socks",
+        "description": "Pumpkin-style striped orange and red socks for the autumn and winter months.",
+        "product_group": null,
+        "product_type": 2,
+        "price": 4.99,
+        "rating": 3,
+        "brand": "Holyhead",
+        "image_url": "socks_28.png"
+      }
+    },
+    {
+      "pk": 97,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCTEAL5NI",
+        "name": "Telo Socks",
+        "description": "90s-style original Telo socks with rainbow top bands and blue heels.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 14.99,
+        "rating": 5,
+        "brand": "Telo",
+        "image_url": "socks_29.png"
+      }
+    },
+    {
+      "pk": 98,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCVAAL2CH",
+        "name": "Chequred Socks",
+        "description": "Black and white chequred grunge-style socks.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 12,
+        "rating": 2,
+        "brand": "Vans",
+        "image_url": "socks_30.png"
+      }
+    },
+    {
+      "pk": 99,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCCOAL4CO",
+        "name": "Cola Socks",
+        "description": "White and red official merchandise Coca Cola pair of socks.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 30,
+        "rating": 4,
+        "brand": "Coca Cola Company",
+        "image_url": "socks_31.png"
+      }
+    },
+    {
+      "pk": 100,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCMEAL3BL",
+        "name": "Directional Socks",
+        "description": "Tongue-in-cheek directional socks so you never mess up your left and right ever again.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 5,
+        "rating": 3,
+        "brand": "Menkind",
+        "image_url": "socks_32.png"
+      }
+    },
+    {
+      "pk": 101,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCFOAL4YE",
+        "name": "Fosters Socks",
+        "description": "Bright yellow skater socks from Fosters.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 4.99,
+        "rating": 4,
+        "brand": "Fosters",
+        "image_url": "socks_33.png"
+      }
+    },
+    {
+      "pk": 102,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOCURAL5PA",
+        "name": "Pastel Socks",
+        "description": "Pastel multi-coloured summer thin socks.",
+        "product_group": null,
+        "product_type": 9,
+        "price": 2.99,
+        "rating": 5,
+        "brand": "Urban Outfitters",
+        "image_url": "socks_34.png"
+      }
+    }
+  ]
