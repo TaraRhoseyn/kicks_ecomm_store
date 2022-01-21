@@ -230,7 +230,7 @@
       "fields": {
         "sku": "TRANEWO2PI",
         "name": "New Balance Ultra Running Shoes",
-        "description": "These brand new shoes in the latest range from New Balance have been designed with ultra runners in mind - ultralight, unassuming with extra heel support.",
+        "description": "These new shoes have been designed with ultra runners in mind - ultralight, unassuming with extra heel support.",
         "product_group": 3,
         "product_type": 1,
         "price": 35.99,
@@ -335,7 +335,7 @@
       "fields": {
         "sku": "BOODOWO5BL",
         "name": "Doc Martens Yellow Boots",
-        "description": "Famed for their resilience and iconic British design, buy a slice of UK fashion history at a steal of a price.",
+        "description": "Famed for their iconic design, buy a slice of fashion history at a steal of a price.",
         "product_group": 3,
         "product_type": 4,
         "price": 40,
@@ -500,7 +500,7 @@
       "fields": {
         "sku": "SANTOME5BR",
         "name": "Luxury Brown Real Leather Sandals",
-        "description": "The ultimate expression of luxury and couture, meet your new summer must-have. Don't miss out!",
+        "description": "The ultimate expression of luxury and couture, meet your new summer must-have.",
         "product_group": 2,
         "product_type": 3,
         "price": 455,
