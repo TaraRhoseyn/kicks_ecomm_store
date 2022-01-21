@@ -78,7 +78,9 @@ Credit: Eduardo Boucas
 
 .card-deck {
   margin: 5px !important;
-  border: 2px black solid;
+  border: 3px black solid;
+  -webkit-box-shadow: 7px 9px 0px 0px #8918fb;
+  box-shadow: 7px 9px 0px 0px #8918fb;
 }
 
 @media (min-width: 768px) {

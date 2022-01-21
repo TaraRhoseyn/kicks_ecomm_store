@@ -73,7 +73,9 @@
 
 .card-deck {
     margin: 5px!important;
-    border: 2px rgb(0, 0, 0) solid;
+    border: 3px rgb(0, 0, 0) solid;
+    -webkit-box-shadow: 7px 9px 0px 0px $purple; 
+    box-shadow: 7px 9px 0px 0px $purple;
 
     @include for-tablet-up {
         margin-top: 5rem!important;

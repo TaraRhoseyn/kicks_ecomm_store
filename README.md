@@ -196,6 +196,8 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 - **Code Institute** - For their lessons on Python and Django, particularly the Boutique Ado project.
 
+- **Chris Bongers** - For [a star rating system made of SVG paths](https://codepen.io/rebelchris/pen/dyXORMd)
+
 ### Media
 
 All images were sourced from the copyright-free image repositories [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/). For full image rights and credit, please see the seperate [media.md](/docs/media.md) file.
