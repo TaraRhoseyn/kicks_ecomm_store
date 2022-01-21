@@ -8,12 +8,15 @@
         
         {% for product in products %}
             <div class="col-12 col-md-3">
-                <img src="../../../static/home/{{ product.image_url }}" alt="{{ product.description }}" class="product-images">
-                <p>{{ product.name }}</p>
-                <p>{{ product.rating }}</p>
-                <p>{{ product.description }}</p>
-                <p>{{ product.price }}</p>
-                <p>{{ product.brand }}</p>
+                <div class="card-deck">
+                    <img class="card-img-top" src="../../../static/home/{{ product.image_url }}" alt="{{ product.description }}" class="product-images">
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>{{ product.name }}</strong></h5>
+                      <p class="card-text">{{ product.description }}</p>
+                      <p>{{ product.rating }}</p>
+                      <p>£{{ product.price }}</p>
+                    </div>
+                  </div>
             </div>
         {% endfor %}
 
