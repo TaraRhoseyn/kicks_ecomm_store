@@ -91,6 +91,38 @@ Credit: Eduardo Boucas
   height: 17.6rem !important;
 }
 
+/* rating system */
+.card-price {
+  font-weight: 700;
+}
+
+use:nth-child(2) {
+  -webkit-transform: translate(20px);
+          transform: translate(20px);
+}
+
+use:nth-child(3) {
+  -webkit-transform: translate(40px);
+          transform: translate(40px);
+}
+
+use:nth-child(4) {
+  -webkit-transform: translate(60px);
+          transform: translate(60px);
+}
+
+use:nth-child(5) {
+  -webkit-transform: translate(80px);
+          transform: translate(80px);
+}
+
+.rating {
+  display: block;
+  height: 20px;
+  width: 100px;
+  margin-bottom: 15px;
+}
+
 .nav-link:hover, .nav-icon:hover {
   color: #faff00 !important;
 }

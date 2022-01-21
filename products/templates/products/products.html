@@ -14,9 +14,9 @@
                     </div>
                     <div class="card-body">
                       <h5 class="card-title"><strong>{{ product.name }}</strong></h5>
+                      {% include "includes/rating.html" %}
                       <p class="card-text">{{ product.description }}</p>
-                      <p>{{ product.rating }}</p>
-                      <p>£{{ product.price }}</p>
+                      <p class="card-price">£{{ product.price }}</p>
                     </div>
                   </div>
             </div>
