@@ -3,6 +3,9 @@
 /* Navbar */
 #nav {
     background-color: $black;
+    @include for-tablet-up {
+        height: 5rem;
+    }
     a {
         color: $white;
         font-weight: 300;
@@ -19,6 +22,10 @@
     .btn-outline-warning {
         color: $yellow;
         border-color: $yellow;
+    }
+    .nav-link {
+        font-weight: 400;
+        letter-spacing: 1px;
     }
 }
 
