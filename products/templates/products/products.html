@@ -9,7 +9,9 @@
         {% for product in products %}
             <div class="col-12 col-md-3">
                 <div class="card-deck">
-                    <img class="card-img-top" src="../../../static/home/{{ product.image_url }}" alt="{{ product.description }}" class="product-images">
+                    <div class="img-container">
+                        <img class="card-img-top product-img" src="../../../static/home/{{ product.image_url }}" alt="{{ product.description }}" class="product-images">
+                    </div>
                     <div class="card-body">
                       <h5 class="card-title"><strong>{{ product.name }}</strong></h5>
                       <p class="card-text">{{ product.description }}</p>

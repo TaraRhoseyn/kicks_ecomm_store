@@ -1,4 +1,4 @@
-@use '_mixins';
+// @use '_mixins';
 
 /* Navbar */
 #nav {
@@ -8,7 +8,7 @@
         font-weight: 300;
     }
     .navbar-brand {
-        font-family: $secondary-font;
+        font-family: $tertiary-font;
         letter-spacing: 0.2em;
         text-shadow: 1px 1px $purple;
 
@@ -67,12 +67,20 @@
 }
 
 
-.home-images-rows {
-    @include for-tablet-up {
-        margin-top: 100px;
-    }
-}
-
 .home-images {
     width: 100%;
+}
+
+.card-deck {
+    margin: 5px!important;
+    border: 2px rgb(0, 0, 0) solid;
+
+    @include for-tablet-up {
+        margin-top: 5rem!important;
+    }
+
+    .card-body {
+        height: 17.6rem!important;
+    }
+
 }
