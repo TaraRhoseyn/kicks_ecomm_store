@@ -192,6 +192,10 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 - **CSS Tricks** - For [approaching nesting in sass](https://css-tricks.com/the-sass-ampersand/)
 
+- **Lucy Wheel** - For [zoom image hover effect](https://codepen.io/lucy_wheel/pen/VxYzKP)
+
+- **Code Institute** - For their lessons on Python and Django, particularly the Boutique Ado project.
+
 ### Media
 
 All images were sourced from the copyright-free image repositories [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/). For full image rights and credit, please see the seperate [media.md](/docs/media.md) file.
