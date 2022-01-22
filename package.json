@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "jquery-scrollify": "^1.0.21",
     "sass": "^1.48.0"
   }
 }

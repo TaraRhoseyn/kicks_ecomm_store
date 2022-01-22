@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid hero-image">
+    <div class="container-fluid hero-image scroll-section">
         <div class="row">
             <div class="col-12">
                 <div class="container">
@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="container home-secondary-section">
-        <div class="row home-images-rows">
+        <div class="row home-images-rows scroll-section">
             <div class="col-12 col-md-6">
                 <img src="../../../static/home/home_students.png" class="home-images" alt="">
             </div>
@@ -30,7 +30,7 @@
                 <a href="" class="main-btn btn">Claim discount</a>
             </div>
         </div>
-        <div class="row home-images-rows">
+        <div class="row home-images-rows scroll-section">
             <div class="col-12 col-md-6">
                 <h3>Winter sale is now on!</h3>
                 <p>Our annual winter sale is back on for another year. 
@@ -42,4 +42,13 @@
             </div>
         </div>
     </div>
+    <script src="../../../static/js/jquery.js"></script>
+    <script src="../../../static/js/jquery.scrollify.js"></script>
+    <script>
+        $(function() {
+            $.scrollify({
+            section : ".scroll-section",
+            });
+        });
+    </script>
 {% endblock %}
