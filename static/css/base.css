@@ -84,7 +84,7 @@ Credit: Eduardo Boucas
 }
 
 .home-images {
-  width: 100%;
+  width: 80%;
 }
 
 .card-deck {
@@ -134,6 +134,31 @@ use:nth-child(5) {
   height: 20px;
   width: 100px;
   margin-bottom: 15px;
+}
+
+.home-secondary-section {
+  padding: 0;
+  border: 0;
+}
+
+.scroll-section {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  border: 0 !important;
+  margin: 0 !important;
+}
+
+#scroll-green {
+  background-color: #B1CD44 !important;
+}
+
+#scroll-red {
+  background-color: #D8243C !important;
 }
 
 .nav-link:hover, .nav-icon:hover {
