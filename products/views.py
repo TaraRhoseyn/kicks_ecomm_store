@@ -10,12 +10,19 @@ def show_all_products(request):
     """
 
     search = None
+    product_groups = None
     products = Product.objects.all()
     
 
-    # For searching:
     if request.GET:
-        # 'search' is coming from text input
+
+        # Sorting products by group
+        if 'product_group' in request.GET:
+            product_groups = request.GET['product_group']
+            products = products.filter(product_group__name__in=product_groups)
+            product_groups = ProductGroup.objects.filter(name__in=product_groups)
+
+        # User searching products
         if 'search' in request.GET:
             search = request.GET['search']
             if not search:
@@ -24,10 +31,12 @@ def show_all_products(request):
                 return redirect(reverse('products'))
             searches = Q(name__icontains=search) | Q(brand__icontains=search) | Q(description__icontains=search)
             products = products.filter(searches)
+       
 
     context = {
         'products': products,
         'search_term': search,
+        'product_group': product_groups,
     }
 
     return render(request, 'products/products.html', context)

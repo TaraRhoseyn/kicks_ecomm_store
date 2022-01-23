@@ -12,13 +12,13 @@
                 <a class="nav-link mx-1" href="{% url 'home' %}">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mx-1" href="#">Women's</a>
+                <a class="nav-link mx-1" href="{% url 'products' %}?product_group=womens">Women's</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mx-1" href="#">Men's</a>
+                <a class="nav-link mx-1" href="{% url 'products' %}?product_group=mens">Men's</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mx-1" href="#">Kid's</a>
+                <a class="nav-link mx-1" href="{% url 'products' %}?product_group=childrens">Kid's</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link mx-1" href="#">Clearance</a>
@@ -27,7 +27,7 @@
                 <a class="nav-link mx-1" href="#">Brands</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mx-1" href="#">Socks</a>
+                <a class="nav-link mx-1" href="">Socks</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link mx-1" href="{% url 'products' %}">All</a>
