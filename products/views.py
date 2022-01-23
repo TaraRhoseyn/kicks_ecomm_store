@@ -1,4 +1,6 @@
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, render, reverse, redirect
+from django.contrib import messages
+from django.db.models import Q
 from .models import Product, ProductGroup, ProductType
 
 
@@ -7,10 +9,25 @@ def show_all_products(request):
     Returns all products.
     """
 
+    search = None
     products = Product.objects.all()
+    
+
+    # For searching:
+    if request.GET:
+        # 'search' is coming from text input
+        if 'search' in request.GET:
+            search = request.GET['search']
+            if not search:
+                # If search bar is blank:
+                messages.error(request, "Please fill out the search bar.")
+                return redirect(reverse('products'))
+            searches = Q(name_icontains=search) | Q(brand_icontains=search) | Q(description_icontains=search)
+            products = products.filter(searches)
 
     context = {
         'products': products,
+        'search_term': search,
     }
 
     return render(request, 'products/products.html', context)
