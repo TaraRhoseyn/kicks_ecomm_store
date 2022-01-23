@@ -4,8 +4,13 @@
 {% block content %}
 
 <div class="container">
+        {% if search_term %}
+            <h1 class="mt-5">Search results for:<span class="search-term ml-2">{{ search_term }}</span></h1>
+            <a href="{% url 'products' %}" class="text-muted"><i class="fas fa-times"></i>  Clear search</a>
+        {% else %}
+            <h1 class="mt-5">Step in and explore all</h1>
+        {% endif %}
     <div class="row">
-        
         {% for product in products %}
             <div class="col-12 col-md-3">
                 <div class="card-deck">

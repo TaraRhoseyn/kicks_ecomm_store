@@ -167,6 +167,13 @@ use:nth-child(5) {
   }
 }
 
+.search-term {
+  background-color: #f1e100;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 .nav-link:hover, .nav-icon:hover {
   color: #DED92F !important;
 }
