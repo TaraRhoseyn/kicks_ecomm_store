@@ -22,7 +22,7 @@ def show_all_products(request):
                 # If search bar is blank:
                 messages.error(request, "Please fill out the search bar.")
                 return redirect(reverse('products'))
-            searches = Q(name_icontains=search) | Q(brand_icontains=search) | Q(description_icontains=search)
+            searches = Q(name__icontains=search) | Q(brand__icontains=search) | Q(description__icontains=search)
             products = products.filter(searches)
 
     context = {
