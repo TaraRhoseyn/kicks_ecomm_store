@@ -161,6 +161,12 @@ use:nth-child(5) {
   background-color: #D8243C !important;
 }
 
+@media (min-width: 768px) {
+  .product-details {
+    margin-top: 80px;
+  }
+}
+
 .nav-link:hover, .nav-icon:hover {
   color: #DED92F !important;
 }

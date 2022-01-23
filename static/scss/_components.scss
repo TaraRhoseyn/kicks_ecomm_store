@@ -145,3 +145,9 @@ use {
 #scroll-red {
     background-color: #D8243C!important;
 }
+
+.product-details {
+    @include for-tablet-up {
+        margin-top: 80px;
+    }
+}

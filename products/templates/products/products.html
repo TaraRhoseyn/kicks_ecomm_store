@@ -10,13 +10,15 @@
             <div class="col-12 col-md-3">
                 <div class="card-deck">
                     <div class="img-container">
-                        <img class="card-img-top product-img" src="../../../static/home/{{ product.image_url }}" alt="{{ product.description }}" class="product-images">
+                        <a href="{% url 'individual_product' product.id %}">
+                            <img class="card-img-top product-img" src="../../../static/home/{{ product.image_url }}" alt="{{ product.description }}" class="product-images">
+                        </a>
                     </div>
                     <div class="card-body">
                       <h5 class="card-title"><strong>{{ product.name }}</strong></h5>
                       {% include "includes/rating.html" %}
                       <p class="card-text">{{ product.description }}</p>
-                      <p class="card-price">£{{ product.price }}</p>
+                      <p class="card-price"><strong>£{{ product.price }}</strong></p>
                     </div>
                   </div>
             </div>
