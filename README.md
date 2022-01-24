@@ -1,4 +1,4 @@
-# CI_MS4_Kicks
+# Kicks
 
 1. [Project Goals](#project-goals)
 2. [User Experience](#user-experience)
@@ -92,32 +92,19 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 ### Languages
 
+- [HTML5](https://en.wikipedia.org/wiki/HTML)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](https://www.python.org/)
+
 ### Frameworks, libraries and other tools
 
-[Sass](https://sass-lang.com/)
-
-- Sass was used as a CSS extension to speed up development of stylesheets. The features of Sass such as variables, mixins, nesting and seperation of logic was very helpful in this project. 
-
-[Git](https://git-scm.com/)
-
-- Git was used for version control within VSCode to push the code to GitHub.
-
-[GitHub](https://github.com/)
-
-- GitHub was used as a remote repository to store project code.
-
-[Unsplash](https://unsplash.com/)
-
-- All images used in the website apart from the logo were from the online copyright-free repository, Unsplash. See Credits for more information.
-
-[Am I Responsive](http://ami.responsivedesign.is/)
-
-- Am I Responsive was used to create the multi-device mock-up you see at the start of this README.md file.
-
-[Visual Studio Code (VSCode)](https://code.visualstudio.com/)
-
-- VSCode was the IDE used to write the code for this project. The following extensions were used for this project:
-
+- [Sass](https://sass-lang.com/): A CSS extension to speed up development of stylesheets. The features of Sass such as variables, mixins, nesting and seperation of logic was very helpful in this project. 
+- [Git](https://git-scm.com/): Used for version control within VSCode to push the code to GitHub.
+- [GitHub](https://github.com/): Used as a remote repository to store project code.
+- [Unsplash](https://unsplash.com/)- All images used in the website apart from the logo were from the online copyright-free repository, Unsplash. See Credits for more information.
+- [Am I Responsive](http://ami.responsivedesign.is/): Used to create the multi-device mock-up you see at the start of this README.md file.
+- [Visual Studio Code (VSCode)](https://code.visualstudio.com/):VSCode was the IDE used to write the code for this project. The following extensions were used for this project:
 - *markdownlint*: To keep consistent styling on markdown files.
 - *SpellChecker*: To spell check markdown files.
 - *TODO Highlight*: To keep track of outstanding tasks, bugs that need to be fixed and annotations throughout the development process.
@@ -125,14 +112,10 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - *vscode-pdf*: To view the wireframes.pdf file within VSCode.
 - *Terminal Tools*: Provides buttons among terminal for command shorthands, making interacting with the terminal faster.
 - *Live Sass Compiler*: Watches for changes in scss files and compiles them to css files automatically. I've customised the settings to compile my .scss files into a singular .min.css file in my static directory.
-
-[Tiny PNG](https://tinypng.com/)
-
-- TinyPNG was used to compress images for improved website performance.
-
-[Gorgias SKU Generator](https://www.gorgias.com/tools/sku-generator)
-
-- Gorgias SKU Generator was used to generate SKU values. Please see [Database Design](#Database-Design) for more information on SKU architecture within the fixtures.
+-[Tiny PNG](https://tinypng.com/): Used to compress images for improved website performance.
+- [Gorgias SKU Generator](https://www.gorgias.com/tools/sku-generator): Gorgias SKU Generator was used to generate SKU values. Please see [Database Design](#Database-Design) for more information on SKU architecture within the fixtures.
+- [EmailJS API](https://www.emailjs.com/) - For taking data from the contact form and sending it to my email.
+- [Heroku](https://www.heroku.com/) - Used for deployment.  
 
 ## Testing
 
