@@ -117,7 +117,6 @@ use {
     display: block;
     height: 20px;
     width: 100px;
-    margin-bottom: 15px;
 }
 
 .home-secondary-section {
@@ -161,4 +160,14 @@ use {
 
 #try-again {
     display: block!important;
+}
+
+.rating-desc {
+    color: grey;
+    margin-left: 15px;
+    margin-top: 1px;
+}
+
+.rating-desc, .rating-aria, .rating {
+    display: inline;
 }

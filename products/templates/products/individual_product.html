@@ -21,7 +21,8 @@
             <div class="product-details">
                 <h1><strong>{{ product.name }}</strong></h1>
                 {% include "includes/rating.html" %}
-                <p>{{ product.description }}</p>
+                <p class="rating-desc"><em>Based on customer feedback.</em></p>
+                <p class="prod-desc">{{ product.description }}</p>
                 <p class="card-price">£{{ product.price }}</p>
                 <p>Brand: {{ product.brand }}</p>
             </div>
