@@ -18,7 +18,7 @@ def show_all_products(request):
 
         # Sorting products by group
         if 'product_group' in request.GET:
-            product_groups = request.GET['product_group']
+            product_groups = request.GET['product_group'].split(',')
             products = products.filter(product_group__name__in=product_groups)
             product_groups = ProductGroup.objects.filter(name__in=product_groups)
 
