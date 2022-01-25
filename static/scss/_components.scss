@@ -176,10 +176,11 @@ use {
     color: grey;
     border: 1px grey solid;
     padding: 10px;
+    background-color: white!important;
 
     &:hover {
-        color: white;
-        background-color: grey;
+        color: white!important;
+        background-color: grey!important;
 
     }
 }

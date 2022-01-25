@@ -1,13 +1,21 @@
 /* jshint esversion: 6 */
 
-window.onload = setCurrentAttr;
-const navbar = document.getElementById('nav').getElementsByTagName('a');
+const navbar = document.getElementsByTagName('a');
 
 // Checks current href & sets attribution if href is active
-function setCurrentAttr() {
-    for(i = 0; i < navbar.length; i++) { 
-        if(document.location.href.indexOf(navbar[i].href)>=0) {
-            navbar[i].attr('aria-current', 'page');
-        }
-    }
+// function setCurrentAttr() {
+//     console.log("main.js is here");
+//     for(i = 0; i < navbar.length; i++) { 
+//         if(document.location.href.indexOf(navbar[i].href)>=0) {
+//             navbar[i].attr('aria-current', 'page');
+//         }
+//     };
+    
+// }
+window.onload=function(){
+
+    // Sends user back to previous page
+    $("#btn--back").on("click", function() {
+        history.go(-1);
+    });
 }
