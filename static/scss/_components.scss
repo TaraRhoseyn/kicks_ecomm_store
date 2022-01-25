@@ -171,3 +171,15 @@ use {
 .rating-desc, .rating-aria, .rating {
     display: inline;
 }
+
+.btn--grey {
+    color: grey;
+    border: 1px grey solid;
+    padding: 10px;
+
+    &:hover {
+        color: white;
+        background-color: grey;
+
+    }
+}

@@ -5,9 +5,9 @@
 
     <div class="container">
             {% if search_term %}
-                <h1 class="mt-5" id="search-result-text"><span id="search-result-display"></span> search results for:<span class="search-term ml-2">{{ search_term }}</span></h1>
+                <h1 class="mt-5 mb-4" id="search-result-text"><span id="search-result-display"></span> search results for<span class="ml-2">'{{ search_term }}'</span></h1>
                 <span id="try-again"></span>
-                <a href="{% url 'products' %}" id="research-btn" class="text-muted"><i class="fas fa-times"></i>  Clear search results</a>
+                <a href="{% url 'products' %}" id="research-btn" class="btn--grey"><i class="fas fa-times"></i>  Clear search results</a>
             {% else %}
                 <h1 class="mt-5">Step in and explore all</h1>
             {% endif %}

@@ -187,6 +187,17 @@ use:nth-child(5) {
   display: inline;
 }
 
+.btn--grey {
+  color: grey;
+  border: 1px grey solid;
+  padding: 10px;
+}
+
+.btn--grey:hover {
+  color: white;
+  background-color: grey;
+}
+
 .nav-link:hover, .nav-icon:hover {
   color: #DED92F !important;
 }
