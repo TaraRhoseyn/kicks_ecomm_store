@@ -11,10 +11,17 @@ def show_all_products(request):
 
     search = None
     product_groups = None
+    product_types = None
     products = Product.objects.all()
     
 
     if request.GET:
+
+        # Sorting products by type 
+        if 'product_type' in request.GET:
+            product_types = request.GET['product_type'].split(',')
+            products = products.filter(product_type__name__in=product_types)
+            product_types = ProductType.objects.filter(name__in=product_types)
 
         # Sorting products by group
         if 'product_group' in request.GET:
