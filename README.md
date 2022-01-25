@@ -158,6 +158,8 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - **Fix**:  Change attribute on an IntegerField from max_digits to the Django method MaxValueValidator. Add on_delete attribute to ForeignKeys. Add max_digits attribute to DecimalFields.
 - **Bug 2**: When searching using the search bar Django would throw a FieldError and could not resolve 'name_icontains'.
 - **Fix**: From consulting Django documentation I realised I had mistakenly only used one underscore (_) instead of two before 'icontains'.
+- **Bug 3**: My filtering method through product_group was not rendering the correct products to the HTML.
+- **Fix** - Add .split() method to if statement within my product view.
 
 ## Deployment
 
