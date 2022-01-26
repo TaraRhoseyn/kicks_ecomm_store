@@ -92,12 +92,33 @@
     -webkit-box-shadow: 7px 9px 0px 0px $purple; 
     box-shadow: 7px 9px 0px 0px $purple;
 
+    @include for-phone-up {
+        margin-top: 2rem!important;
+    }
+
     @include for-tablet-up {
         margin-top: 5rem!important;
     }
 
     .card-body {
         height: 17.6rem!important;
+    }
+
+    .card-text {
+        margin-top: 1rem;
+    }
+}
+
+.prod-desc {
+    @include for-phone-only {
+        margin-top: 1rem;
+    }
+    margin-top: 3rem;
+}
+
+.product-details {
+    @include for-phone-only {
+        margin-top: 2rem;
     }
 }
 
@@ -173,12 +194,16 @@ use {
 
 .rating-desc {
     color: grey;
-    margin-left: 15px;
     margin-top: 1px;
+    @include for-tablet-up {
+        margin-left: 15px;
+    }
 }
 
 .rating-desc, .rating-aria, .rating {
-    display: inline;
+    @include for-tablet-up {
+        display: inline;
+    }
 }
 
 .btn--grey {

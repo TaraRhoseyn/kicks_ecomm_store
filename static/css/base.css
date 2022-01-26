@@ -103,6 +103,12 @@ Credit: Eduardo Boucas
   box-shadow: 7px 9px 0px 0px #8918fb;
 }
 
+@media (min-width: 320px) {
+  .card-deck {
+    margin-top: 2rem !important;
+  }
+}
+
 @media (min-width: 768px) {
   .card-deck {
     margin-top: 5rem !important;
@@ -111,6 +117,26 @@ Credit: Eduardo Boucas
 
 .card-deck .card-body {
   height: 17.6rem !important;
+}
+
+.card-deck .card-text {
+  margin-top: 1rem;
+}
+
+.prod-desc {
+  margin-top: 3rem;
+}
+
+@media (max-width: 767px) {
+  .prod-desc {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-details {
+    margin-top: 2rem;
+  }
 }
 
 /* rating system */
@@ -188,12 +214,19 @@ use:nth-child(5) {
 
 .rating-desc {
   color: grey;
-  margin-left: 15px;
   margin-top: 1px;
 }
 
-.rating-desc, .rating-aria, .rating {
-  display: inline;
+@media (min-width: 768px) {
+  .rating-desc {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .rating-desc, .rating-aria, .rating {
+    display: inline;
+  }
 }
 
 .btn--grey {
@@ -226,7 +259,6 @@ use:nth-child(5) {
   position: relative;
   margin: auto;
   overflow: hidden;
-  width: 540px;
 }
 
 .img-container img {
