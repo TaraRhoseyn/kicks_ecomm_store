@@ -44,6 +44,15 @@ Credit: Eduardo Boucas
   letter-spacing: 1px;
 }
 
+.dropdown-menu {
+  background-color: black !important;
+  border: none;
+}
+
+.dropdown-item:hover {
+  color: black !important;
+}
+
 /* home hero section */
 .hero-image {
   background-image: url("../home/home_hero.png");
