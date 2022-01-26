@@ -29,8 +29,18 @@
             <li class="nav-item">
                 <a class="nav-link mx-1" href="{% url 'products' %}?product_type=socks">Socks</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link mx-1" href="{% url 'products' %}?product_type=trainers,sandals,boots,pumps,heels,daps,brogues">Shoes</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link mx-1 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{% url 'products' %}?product_type=trainers,babyshoes,sandals,boots,pumps,heels,daps,brogues">Shoes</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% url 'products' %}?product_type=trainers">Trainers</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?product_type=babyshoes">Baby shoes</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?product_type=sandals">Sandals</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?product_type=boots">Boots</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?product_type=pumps">Pumps</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?product_type=heels">Heels</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?product_type=daps">Daps</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?product_type=brogues">Brogues</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link mx-1" href="{% url 'products' %}">All</a>
