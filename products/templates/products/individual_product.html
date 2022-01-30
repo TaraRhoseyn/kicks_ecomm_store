@@ -25,6 +25,13 @@
                 <p class="prod-desc">{{ product.description }}</p>
                 <p class="card-price">£{{ product.price }}</p>
                 <p>Brand: {{ product.brand }}</p>
+
+                {% if product.product_type %}
+                    <a href="{% url 'products' %}?product_type={{ product.product_type.name }}">
+                        View all {{ product.product_type.friendly_name }}
+                    </a>
+                {% endif %}
+
             </div>
         </div>
     </div>
