@@ -24,10 +24,11 @@
                 <p class="rating-desc"><em>Based on customer feedback.</em></p>
                 <p class="prod-desc">{{ product.description }}</p>
                 <p class="card-price">£{{ product.price }}</p>
-
-                {% if product.brand %}
-                    <p>Brand: {{ product.brand.friendly_name }}</p>
-                {% endif %}
+                <p>
+                    <a href="{% url 'products' %}?product_brand={{ product.product_brand.name }}">
+                        Brand: {{ product.product_brand.friendly_name }}
+                    </a>
+                </p>
 
                 {% if product.product_type %}
                     <a href="{% url 'products' %}?product_type={{ product.product_type.name }}">

@@ -12,6 +12,7 @@ def show_all_products(request):
     search = None
     product_groups = None
     product_types = None
+    product_brands = None
     sort = None
     direction = None
     products = Product.objects.all()
@@ -30,6 +31,11 @@ def show_all_products(request):
             product_groups = request.GET['product_group'].split(',')
             products = products.filter(product_group__name__in=product_groups)
             product_groups = ProductGroup.objects.filter(name__in=product_groups)
+
+        if 'product_brand' in request.GET:
+            product_brands = request.GET['product_brand'].split(',')
+            products = products.filter(product_brand__name__in=product_brands)
+            product_brands = ProductBrand.objects.filter(name__in=product_brands)
 
         # User searching products
         if 'search' in request.GET:
@@ -62,6 +68,7 @@ def show_all_products(request):
         'search_term': search,
         'product_group': product_groups,
         'product_type': product_types,
+        'product_brand': product_brands,
         'current_sorting': current_sorting,
     }
 

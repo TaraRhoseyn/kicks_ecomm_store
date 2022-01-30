@@ -904,7 +904,7 @@
     "model": "products.product",
     "fields": {
       "sku": "TRANIME5PU",
-      "name": "Red Puma Flip Flops",
+      "name": "Red Flip Flops",
       "description": "Red leather flip flops with a supportive black base.",
       "product_group": 2,
       "product_type": 3,
