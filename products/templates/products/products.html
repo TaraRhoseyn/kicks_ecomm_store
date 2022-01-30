@@ -11,6 +11,22 @@
             {% else %}
                 <h1 class="mt-5">Step in and explore all</h1>
             {% endif %}
+
+        <div class="row">
+            <p>Sorted by...</p>
+            <a href="{% url 'products' %}?sort=price&direction=asc">By Price: Lowest to Highest</a>
+            <a href="{% url 'products' %}?sort=price&direction=desc">By Price: Highest to Lowest</a>
+            <a href="{% url 'products' %}?sort=rating&direction=desc">By Rating</a>
+            <a href="{% url 'products' %}?sort=brand&direction=asc&brand=addidas">brand</a>
+        </div>
+
+        {% if brands %}
+            <p>Brands selected</p>
+
+            {{ brand }}
+
+        {% endif %}
+        
         <div class="row">
             {% for product in products %}
                 <div class="col-12 col-md-3" id="search-result">
