@@ -28,7 +28,7 @@
         {% endif %}
         
         <div class="row">
-            {% for product in products %}
+            {% for p in products %}
                 <div class="col-12 col-md-3" id="search-result">
                     <div class="card-deck">
                         <div class="img-container">
@@ -37,10 +37,10 @@
                             </a>
                         </div>
                         <div class="card-body">
-                        <h5 class="card-title"><strong>{{ product.name }}</strong></h5>
+                        <h5 class="card-title"><strong>{{ p.name }}</strong></h5>
                         {% include "includes/rating.html" %}
-                        <p class="card-text">{{ product.description }}</p>
-                        <p class="card-price"><strong>£{{ product.price }}</strong></p>
+                        <p class="card-text">{{ p.description }}</p>
+                        <p class="card-price"><strong>£{{ p.price }}</strong></p>
                         </div>
                     </div>
                 </div>
