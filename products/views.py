@@ -12,6 +12,9 @@ def show_all_products(request):
     search = None
     product_groups = None
     product_types = None
+    sort = None
+    direction = None
+    brands = None
     products = Product.objects.all()
     
 
@@ -39,11 +42,30 @@ def show_all_products(request):
             searches = Q(name__icontains=search) | Q(brand__icontains=search) | Q(description__icontains=search)
             products = products.filter(searches)
        
+       # User sorting products
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            if 'brands' in request.GET:
+                brands = request.GET['brands']
+            products = products.order_by(sortkey)
+
+
+    current_sorting = f'{sort}_{direction}'
 
     context = {
         'products': products,
         'search_term': search,
         'product_group': product_groups,
+        'current_sorting': current_sorting,
+        'brands': brands,
     }
 
     return render(request, 'products/products.html', context)
