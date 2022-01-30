@@ -9,22 +9,17 @@
                 <span id="try-again"></span>
                 <a href="{% url 'products' %}" id="research-btn" class="btn--grey"><i class="fas fa-times"></i>  Clear search results</a>
             {% else %}
-                <h1 class="mt-5">Step in and explore all</h1>
+                <h1 class="mt-5 text-center">Step in and explore all</h1>
             {% endif %}
-
-        <div class="row">
-            <p>Sorted by...</p>
-            <a href="{% url 'products' %}?sort=price&direction=asc">By Price: Lowest to Highest</a>
-            <a href="{% url 'products' %}?sort=price&direction=desc">By Price: Highest to Lowest</a>
-            <a href="{% url 'products' %}?sort=rating&direction=desc">By Rating</a>
+        
+        <h2 class="text-center my-4">Sort by...</h2>    
+        <div class="d-flex flex-row justify-content-center my-4">
+            <a href="{% url 'products' %}?sort=price&direction=asc" class="text-center">Price (low to high)</a>
+            <span class="mx-2">│</span>
+            <a href="{% url 'products' %}?sort=price&direction=desc">Price (high to low)</a>
+            <span class="mx-2">│</span>
+            <a href="{% url 'products' %}?sort=rating&direction=desc">Rating</a>
         </div>
-
-
-        <select id="sort-selector" class="">
-            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price: Lowest to Highest</option>
-            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
-            <option value="rating_asc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating </option>
-        </select>
         
         
         <div class="row">
