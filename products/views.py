@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404, render, reverse, redirect
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product, ProductGroup, ProductType
+from .models import Product, ProductBrand, ProductGroup, ProductType
 
 
 def show_all_products(request):
@@ -14,7 +14,6 @@ def show_all_products(request):
     product_types = None
     sort = None
     direction = None
-    brands = None
     products = Product.objects.all()
     
 
@@ -39,7 +38,7 @@ def show_all_products(request):
                 # If search bar is blank:
                 messages.error(request, "Please fill out the search bar.")
                 return redirect(reverse('products'))
-            searches = Q(name__icontains=search) | Q(brand__icontains=search) | Q(description__icontains=search)
+            searches = Q(name__icontains=search) | Q(product_brand__icontains=search) | Q(description__icontains=search)
             products = products.filter(searches)
        
        # User sorting products
@@ -53,10 +52,8 @@ def show_all_products(request):
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            if 'brands' in request.GET:
-                brands = request.GET['brands']
             products = products.order_by(sortkey)
-
+        
 
     current_sorting = f'{sort}_{direction}'
 
@@ -64,8 +61,8 @@ def show_all_products(request):
         'products': products,
         'search_term': search,
         'product_group': product_groups,
+        'product_type': product_types,
         'current_sorting': current_sorting,
-        'brands': brands,
     }
 
     return render(request, 'products/products.html', context)

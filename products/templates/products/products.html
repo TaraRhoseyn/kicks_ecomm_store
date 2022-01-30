@@ -17,18 +17,18 @@
             <a href="{% url 'products' %}?sort=price&direction=asc">By Price: Lowest to Highest</a>
             <a href="{% url 'products' %}?sort=price&direction=desc">By Price: Highest to Lowest</a>
             <a href="{% url 'products' %}?sort=rating&direction=desc">By Rating</a>
-            <a href="{% url 'products' %}?sort=brand&direction=asc&brand=addidas">brand</a>
         </div>
 
-        {% if brands %}
-            <p>Brands selected</p>
 
-            {{ brand }}
-
-        {% endif %}
+        <select id="sort-selector" class="">
+            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price: Lowest to Highest</option>
+            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+            <option value="rating_asc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating </option>
+        </select>
+        
         
         <div class="row">
-            {% for p in products %}
+            {% for product in products %}
                 <div class="col-12 col-md-3" id="search-result">
                     <div class="card-deck">
                         <div class="img-container">
@@ -37,10 +37,10 @@
                             </a>
                         </div>
                         <div class="card-body">
-                        <h5 class="card-title"><strong>{{ p.name }}</strong></h5>
+                        <h5 class="card-title"><strong>{{ product.name }}</strong></h5>
                         {% include "includes/rating.html" %}
-                        <p class="card-text">{{ p.description }}</p>
-                        <p class="card-price"><strong>£{{ p.price }}</strong></p>
+                        <p class="card-text">{{ product.description }}</p>
+                        <p class="card-price"><strong>£{{ product.price }}</strong></p>
                         </div>
                     </div>
                 </div>

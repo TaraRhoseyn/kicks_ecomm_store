@@ -54,7 +54,8 @@ class Product(models.Model):
         max_digits=7, decimal_places=2, null=False, blank=False)
     rating = models.IntegerField(
         null=False, blank=False, validators=[MaxValueValidator(999)])
-    brand = models.CharField(max_length=50, null=True, blank=True)
+    product_brand = models.ForeignKey(
+        'ProductBrand', default=1, null=True, blank=True, on_delete=models.SET_NULL)
     image_url = models.CharField(
         max_length=40, null=False, blank=False, default='SOME STRING')
 
