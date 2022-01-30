@@ -29,6 +29,19 @@ class ProductType(models.Model):
         return self.friendly_name
 
 
+class ProductBrand(models.Model):
+
+    name = models.CharField(max_length=200, null=True, blank=True)
+    friendly_name = models.CharField(max_length=200, null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+
+    def get_friendly_name(self):
+        return self.friendly_name
+
+
 class Product(models.Model):
     sku = models.CharField(max_length=12, null=False, blank=False)
     name = models.CharField(max_length=40, null=False, blank=False)

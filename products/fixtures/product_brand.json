@@ -1,0 +1,379 @@
+[{
+    "pk":1,
+    "model":"products.productbrand",
+    "fields": {
+        "name": "nike",
+        "friendly_name": "Nike "
+    }
+}, {
+    "pk":2,
+    "model":"products.productbrand",
+    "fields": {
+        "name":"wakki",
+        "friendly_name":"Wakki"
+    }
+}, {
+    "pk":3,
+    "model":"products.productbrand",
+    "fields": {
+        "name":"tommandboyd",
+        "friendly_name":"Tommand Boyd"
+    }
+}, {
+    "pk":4,
+    "model":"products.productbrand",
+    "fields": {
+        "name":"vans",
+        "friendly_name":"Vans"
+    }
+}, {
+    "pk":5,
+    "model":"products.productbrand",
+    "fields": {
+        "name":"littluns",
+        "friendly_name":"Littluns"
+    }
+}, {
+    "pk":6,
+    "model":"products.productbrand",
+    "fields": {
+        "name":"zara",
+        "friendly_name":"Zara"
+    }
+}, {
+    "pk":7,
+    "model":"products.productbrand",
+    "fields": {
+        "name":"fila",
+        "friendly_name":"Fila"
+    }
+}, {
+    "pk":8,
+    "model":"products.productbrand",
+    "fields": {
+        "name":"timberlands",
+        "friendly_name":"Timberlands"
+    }
+}, {
+    "pk":9,
+    "model":"products.producttype",
+    "fields": {
+        "name":"george",
+        "friendly_name":"George"
+    }
+}, {
+    "pk":10,
+    "model":"products.producttype",
+    "fields": {
+        "name":"newlook",
+        "friendly_name":"New Look"
+    }
+}, {
+    "pk":11,
+    "model":"products.producttype",
+    "fields": {
+        "name":"akhsch",
+        "friendly_name":"Akhsch"
+    }
+}, {
+    "pk":12,
+    "model":"products.producttype",
+    "fields": {
+        "name":"fashionnova",
+        "friendly_name":"Fashion Nova"
+    }
+}, {
+    "pk":13,
+    "model":"products.producttype",
+    "fields": {
+        "name":"newbalance",
+        "friendly_name":"New Balance"
+    }
+}, {
+    "pk":14,
+    "model":"products.producttype",
+    "fields": {
+        "name":"louisvuitton",
+        "friendly_name":"Louis Vuitton"
+    }
+}, {
+    "pk":15,
+    "model":"products.producttype",
+    "fields": {
+        "name":"stellalauren",
+        "friendly_name":"Stella Lauren"
+    }
+}, {
+    "pk":16,
+    "model":"products.producttype",
+    "fields": {
+        "name":"clarks",
+        "friendly_name":"Clarks"
+    }
+}, {
+    "pk":17,
+    "model":"products.producttype",
+    "fields": {
+        "name":"addidas",
+        "friendly_name":"Addidas"
+    }
+}, {
+    "pk":18,
+    "model":"products.producttype",
+    "fields": {
+        "name":"sallyhansens",
+        "friendly_name":"Sally Hansens"
+    }
+}, {
+    "pk":19,
+    "model":"products.producttype",
+    "fields": {
+        "name":"vionic",
+        "friendly_name":"Vionic"
+    }
+}, {
+    "pk":20,
+    "model":"products.producttype",
+    "fields": {
+        "name":"docmartens",
+        "friendly_name":"Doc Martens"
+    }
+}, {
+    "pk":21,
+    "model":"products.producttype",
+    "fields": {
+        "name":"vintagedesigns",
+        "friendly_name":"Vintage Designs"
+    }
+}, {
+    "pk":22,
+    "model":"products.producttype",
+    "fields": {
+        "name":"solovair ava",
+        "friendly_name":"Solovair Ava"
+    }
+}, {
+    "pk":23,
+    "model":"products.producttype",
+    "fields": {
+        "name":"blundstone",
+        "friendly_name":"Blundstone"
+    }
+}, {
+    "pk":24,
+    "model":"products.producttype",
+    "fields": {
+        "name":"uirna",
+        "friendly_name":"Uirna"
+    }
+}, {
+    "pk":25,
+    "model":"products.producttype",
+    "fields": {
+        "name":"tomford",
+        "friendly_name":"Tom Ford"
+    }
+}, {
+    "pk":26,
+    "model":"products.producttype",
+    "fields": {
+        "name":"stockhart",
+        "friendly_name":"Stockhart"
+    }
+}, {
+    "pk":27,
+    "model":"products.producttype",
+    "fields": {
+        "name":"kswiss",
+        "friendly_name":"K Swiss"
+    }
+}, {
+    "pk":28,
+    "model":"products.producttype",
+    "fields": {
+        "name":"hummel",
+        "friendly_name":"Hummel"
+    }
+}, {
+    "pk":29,
+    "model":"products.producttype",
+    "fields": {
+        "name":"converse",
+        "friendly_name":"Converse"
+    }
+}, {
+    "pk":30,
+    "model":"products.producttype",
+    "fields": {
+        "name":"jackwills",
+        "friendly_name":"Jack Wills"
+    }
+}, {
+    "pk":31,
+    "model":"products.producttype",
+    "fields": {
+        "name":"puma",
+        "friendly_name":"Puma"
+    }
+}, {
+    "pk":32,
+    "model":"products.producttype",
+    "fields": {
+        "name":"arrow",
+        "friendly_name":"Arrow"
+    }
+}, {
+    "pk":33,
+    "model":"products.producttype",
+    "fields": {
+        "name":"differente",
+        "friendly_name":"Differente"
+    }
+}, {
+    "pk":34,
+    "model":"products.producttype",
+    "fields": {
+        "name":"dc",
+        "friendly_name":"DC"
+    }
+}, {
+    "pk":35,
+    "model":"products.producttype",
+    "fields": {
+        "name":"zoe",
+        "friendly_name":"Zoe"
+    }
+}, {
+    "pk":36,
+    "model":"products.producttype",
+    "fields": {
+        "name":"dockers",
+        "friendly_name":"Dockers"
+    }
+}, {
+    "pk":37,
+    "model":"products.producttype",
+    "fields": {
+        "name":"carreteraymanta",
+        "friendly_name":"Carretera Y Manta"
+    }
+}, {
+    "pk":38,
+    "model":"products.producttype",
+    "fields": {
+        "name":"deckler",
+        "friendly_name":"Deckler"
+    }
+}, {
+    "pk":39,
+    "model":"products.producttype",
+    "fields": {
+        "name":"auckland",
+        "friendly_name":"Auckland"
+    }
+}, {
+    "pk":40,
+    "model":"products.producttype",
+    "fields": {
+        "name":"hjhall",
+        "friendly_name":"HJ Hall"
+    }
+}, {
+    "pk":41,
+    "model":"products.producttype",
+    "fields": {
+        "name":"fairie",
+        "friendly_name":"Fairie"
+    }
+}, {
+    "pk":42,
+    "model":"products.producttype",
+    "fields": {
+        "name":"hollyhead",
+        "friendly_name":"Hollyhead"
+    }
+}, {
+    "pk":43,
+    "model":"products.producttype",
+    "fields": {
+        "name":"ectp",
+        "friendly_name":"ECTP"
+    }
+}, {
+    "pk":44,
+    "model":"products.producttype",
+    "fields": {
+        "name":"noveltysocksltd",
+        "friendly_name":"Novelty Socks Ltd"
+    }
+}, {
+    "pk":45,
+    "model":"products.producttype",
+    "fields": {
+        "name":"enertor",
+        "friendly_name":"Enertor"
+    }
+}, {
+    "pk":46,
+    "model":"products.producttype",
+    "fields": {
+        "name":"angel",
+        "friendly_name":"Angel"
+    }
+}, {
+    "pk":47,
+    "model":"products.producttype",
+    "fields": {
+        "name":"johnstonsofelgin",
+        "friendly_name":"Johnstons of Elgin"
+    }
+}, {
+    "pk":48,
+    "model":"products.producttype",
+    "fields": {
+        "name":"cathkidson",
+        "friendly_name":"Cath Kidson"
+    }
+}, {
+    "pk":49,
+    "model":"products.producttype",
+    "fields": {
+        "name":"balitello",
+        "friendly_name":"Balitello"
+    }
+}, {
+    "pk":50,
+    "model":"products.producttype",
+    "fields": {
+        "name":"telo",
+        "friendly_name":"Telo"
+    }
+}, {
+    "pk":51,
+    "model":"products.producttype",
+    "fields": {
+        "name":"cocacolacompany",
+        "friendly_name":"Coca Cola Company"
+    }
+}, {
+    "pk":52,
+    "model":"products.producttype",
+    "fields": {
+        "name":"menkind",
+        "friendly_name":"Menkind"
+    }
+}, {
+    "pk":53,
+    "model":"products.producttype",
+    "fields": {
+        "name":"fosters",
+        "friendly_name":"Fosters"
+    }
+}, {
+    "pk":54,
+    "model":"products.producttype",
+    "fields": {
+        "name":"urbanoutfitters",
+        "friendly_name":"Urban Outfitters"
+    }
+}]

@@ -10,7 +10,7 @@
         "product_type": 1,
         "price": 49.99,
         "rating": 3,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "kids_1.png"
       }
     },
@@ -25,7 +25,7 @@
         "product_type": 2,
         "price": 12.99,
         "rating": 4,
-        "brand": "Wakki",
+        "brand": 2,
         "image_url": "kids_2.png"
       }
     },
@@ -37,10 +37,10 @@
         "name": "Nike surfer Air",
         "description": "A brand new line from Nike, these Air trainers will rock the seas.",
         "product_group": 1,
-        "product_type": 1,
+        "product_type": 9,
         "price": 59.99,
         "rating": 2,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "kids_3.png"
       }
     },
@@ -55,7 +55,7 @@
         "product_type": 4,
         "price": 30,
         "rating": 1,
-        "brand": "Tommand Boyd",
+        "brand": 3,
         "image_url": "kids_4.png"
       }
     },
@@ -67,10 +67,10 @@
         "name": "Winged baby shoes",
         "description": "For the little angel in your life.",
         "product_group": 1,
-        "product_type": 1,
+        "product_type": 9,
         "price": 25.99,
         "rating": 5,
-        "brand": "Vans",
+        "brand": 4,
         "image_url": "kids_5.png"
       }
     },
@@ -85,7 +85,7 @@
         "product_type": 2,
         "price": 9.99,
         "rating": 3,
-        "brand": "Littluns",
+        "brand": 5,
         "image_url": "kids_6.png"
       }
     },
@@ -100,7 +100,7 @@
         "product_type": 7,
         "price": 12.99,
         "rating": 3,
-        "brand": "Zara",
+        "brand": 6,
         "image_url": "kids_7.png"
       }
     },
@@ -115,7 +115,7 @@
         "product_type": 1,
         "price": 69.99,
         "rating": 2,
-        "brand": "Fila",
+        "brand": 7,
         "image_url": "kids_8.png"
       }
     },
@@ -130,7 +130,7 @@
         "product_type": 4,
         "price": 19.99,
         "rating": 1,
-        "brand": "Timberlands",
+        "brand": 8,
         "image_url": "kids_9.png"
       }
     },
@@ -145,7 +145,7 @@
         "product_type": 7,
         "price": 45,
         "rating": 5,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "kids_10.png"
       }
     },
@@ -160,7 +160,7 @@
         "product_type": 4,
         "price": 30,
         "rating": 4,
-        "brand": "George",
+        "brand": 9,
         "image_url": "kids_11.png"
       }
     },
@@ -175,7 +175,7 @@
         "product_type": 3,
         "price": 7.99,
         "rating": 3,
-        "brand": "New Look",
+        "brand": 10,
         "image_url": "womens_1.png"
       }
     },
@@ -190,7 +190,7 @@
         "product_type": 6,
         "price": 79.99,
         "rating": 3,
-        "brand": "Akhsch",
+        "brand": 11,
         "image_url": "womens_2.png"
       }
     },
@@ -205,7 +205,7 @@
         "product_type": 6,
         "price": 39.99,
         "rating": 2,
-        "brand": "Fashion Nova",
+        "brand": 12,
         "image_url": "womens_3.png"
       }
     },
@@ -220,7 +220,7 @@
         "product_type": 1,
         "price": 48.95,
         "rating": 5,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "womens_4.png"
       }
     },
@@ -235,7 +235,7 @@
         "product_type": 1,
         "price": 35.99,
         "rating": 2,
-        "brand": "New Balance",
+        "brand": 13,
         "image_url": "womens_5.png"
       }
     },
@@ -250,7 +250,7 @@
         "product_type": 6,
         "price": 25,
         "rating": 1,
-        "brand": "Louis Vuitton",
+        "brand": 14,
         "image_url": "womens_6.png"
       }
     },
@@ -265,7 +265,7 @@
         "product_type": 6,
         "price": 53.99,
         "rating": 4,
-        "brand": "Stella Lauren",
+        "brand": 15,
         "image_url": "womens_7.png"
       }
     },
@@ -280,7 +280,7 @@
         "product_type": 8,
         "price": 22,
         "rating": 2,
-        "brand": "Clarks",
+        "brand": 16,
         "image_url": "womens_8.png"
       }
     },
@@ -295,7 +295,7 @@
         "product_type": 1,
         "price": 15,
         "rating": 5,
-        "brand": "Addidas",
+        "brand": 17,
         "image_url": "womens_9.png"
       }
     },
@@ -310,7 +310,7 @@
         "product_type": 3,
         "price": 21,
         "rating": 4,
-        "brand": "Sally Hansens",
+        "brand": 18,
         "image_url": "womens_10.png"
       }
     },
@@ -325,7 +325,7 @@
         "product_type": 3,
         "price": 55,
         "rating": 3,
-        "brand": "Vionic",
+        "brand": 19,
         "image_url": "womens_11.png"
       }
     },
@@ -340,7 +340,7 @@
         "product_type": 4,
         "price": 40,
         "rating": 5,
-        "brand": "Doc Martens",
+        "brand": 20,
         "image_url": "womens_12.png"
       }
     },
@@ -355,7 +355,7 @@
         "product_type": 3,
         "price": 10,
         "rating": 1,
-        "brand": "Sally Hansens",
+        "brand": 18,
         "image_url": "womens_13.png"
       }
     },
@@ -370,7 +370,7 @@
         "product_type": 4,
         "price": 46.95,
         "rating": 3,
-        "brand": "Vintage Designs",
+        "brand": 21,
         "image_url": "womens_14.png"
       }
     },
@@ -385,7 +385,7 @@
         "product_type": 4,
         "price": 26.99,
         "rating": 4,
-        "brand": "Solovair Ava",
+        "brand": 22,
         "image_url": "womens_15.png"
       }
     },
@@ -400,7 +400,7 @@
         "product_type": 4,
         "price": 73.99,
         "rating": 3,
-        "brand": "Blundstone",
+        "brand": 23,
         "image_url": "womens_16.png"
       }
     },
@@ -415,7 +415,7 @@
         "product_type": 4,
         "price": 26.99,
         "rating": 3,
-        "brand": "Solovair Ava",
+        "brand": 22,
         "image_url": "womens_17.png"
       }
     },
@@ -430,7 +430,7 @@
         "product_type": 6,
         "price": 26.99,
         "rating": 3,
-        "brand": "Solovair Ava",
+        "brand": 22,
         "image_url": "womens_18.png"
       }
     },
@@ -445,7 +445,7 @@
         "product_type": 3,
         "price": 26.99,
         "rating": 4,
-        "brand": "Sally Hansens",
+        "brand": 18,
         "image_url": "womens_19.png"
       }
     },
@@ -460,7 +460,7 @@
         "product_type": 6,
         "price": 54.6,
         "rating": 5,
-        "brand": "Uirna",
+        "brand": 24,
         "image_url": "womens_20.png"
       }
     },
@@ -475,7 +475,7 @@
         "product_type": 3,
         "price": 5,
         "rating": 1,
-        "brand": "George",
+        "brand": 9,
         "image_url": "womens_21.png"
       }
     },
@@ -490,7 +490,7 @@
         "product_type": 4,
         "price": 5,
         "rating": 1,
-        "brand": "George",
+        "brand": 9,
         "image_url": "womens_22.png"
       }
     },
@@ -505,7 +505,7 @@
         "product_type": 3,
         "price": 455,
         "rating": 5,
-        "brand": "Tom Ford",
+        "brand": 25,
         "image_url": "mens_1.png"
       }
     },
@@ -520,7 +520,7 @@
         "product_type": 3,
         "price": 45,
         "rating": 4,
-        "brand": "Stockhart",
+        "brand": 26,
         "image_url": "mens_2.png"
       }
     },
@@ -535,7 +535,7 @@
         "product_type": 7,
         "price": 22.99,
         "rating": 3,
-        "brand": "Vans",
+        "brand": 4,
         "image_url": "mens_3.png"
       }
     },
@@ -550,7 +550,7 @@
         "product_type": 1,
         "price": 26.99,
         "rating": 4,
-        "brand": "K Swiss",
+        "brand": 27,
         "image_url": "mens_4.png"
       }
     },
@@ -565,7 +565,7 @@
         "product_type": 1,
         "price": 45.99,
         "rating": 3,
-        "brand": "Addidas",
+        "brand": 17,
         "image_url": "mens_5.png"
       }
     },
@@ -580,7 +580,7 @@
         "product_type": 1,
         "price": 29.99,
         "rating": 2,
-        "brand": "Hummel",
+        "brand": 28,
         "image_url": "mens_6.png"
       }
     },
@@ -595,7 +595,7 @@
         "product_type": 1,
         "price": 59.99,
         "rating": 3,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "mens_7.png"
       }
     },
@@ -610,7 +610,7 @@
         "product_type": 1,
         "price": 19.99,
         "rating": 4,
-        "brand": "Vans",
+        "brand": 4,
         "image_url": "mens_8.png"
       }
     },
@@ -625,7 +625,7 @@
         "product_type": 1,
         "price": 39.99,
         "rating": 4,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "mens_9.png"
       }
     },
@@ -640,7 +640,7 @@
         "product_type": 1,
         "price": 69.99,
         "rating": 5,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "mens_10.png"
       }
     },
@@ -655,7 +655,7 @@
         "product_type": 5,
         "price": 31.99,
         "rating": 3,
-        "brand": "Converse",
+        "brand": 29,
         "image_url": "mens_11.png"
       }
     },
@@ -670,7 +670,7 @@
         "product_type": 1,
         "price": 15.99,
         "rating": 2,
-        "brand": "Hummel",
+        "brand": 28,
         "image_url": "mens_12.png"
       }
     },
@@ -685,7 +685,7 @@
         "product_type": 7,
         "price": 40,
         "rating": 3,
-        "brand": "Vans",
+        "brand": 4,
         "image_url": "mens_13.png"
       }
     },
@@ -700,7 +700,7 @@
         "product_type": 1,
         "price": 110,
         "rating": 5,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "mens_14.png"
       }
     },
@@ -715,7 +715,7 @@
         "product_type": 1,
         "price": 20.99,
         "rating": 3,
-        "brand": "Jacks",
+        "brand": 30,
         "image_url": "mens_15.png"
       }
     },
@@ -730,7 +730,7 @@
         "product_type": 7,
         "price": 34.99,
         "rating": 3,
-        "brand": "Puma",
+        "brand": 31,
         "image_url": "mens_16.png"
       }
     },
@@ -745,7 +745,7 @@
         "product_type": 1,
         "price": 60.5,
         "rating": 2,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "mens_17.png"
       }
     },
@@ -760,7 +760,7 @@
         "product_type": 1,
         "price": 79.99,
         "rating": 4,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "mens_18.png"
       }
     },
@@ -775,7 +775,7 @@
         "product_type": 3,
         "price": 15,
         "rating": 3,
-        "brand": "Arrow",
+        "brand": 32,
         "image_url": "mens_19.png"
       }
     },
@@ -790,7 +790,7 @@
         "product_type": 1,
         "price": 55,
         "rating": 5,
-        "brand": "New Balance",
+        "brand": 13,
         "image_url": "mens_20.png"
       }
     },
@@ -805,7 +805,7 @@
         "product_type": 5,
         "price": 29.99,
         "rating": 3,
-        "brand": "Converse",
+        "brand": 29,
         "image_url": "mens_21.png"
       }
     },
@@ -820,7 +820,7 @@
         "product_type": 7,
         "price": 19.99,
         "rating": 2,
-        "brand": "Differente",
+        "brand": 33,
         "image_url": "mens_22.png"
       }
     },
@@ -835,7 +835,7 @@
         "product_type": 1,
         "price": 49.99,
         "rating": 3,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "mens_23.png"
       }
     },
@@ -850,7 +850,7 @@
         "product_type": 1,
         "price": 39.99,
         "rating": 5,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "mens_24.png"
       }
     },
@@ -865,7 +865,7 @@
         "product_type": 1,
         "price": 79.99,
         "rating": 3,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "mens_25.png"
       }
     },
@@ -880,7 +880,7 @@
         "product_type": 7,
         "price": 20.5,
         "rating": 4,
-        "brand": "Vans",
+        "brand": 4,
         "image_url": "mens_26.png"
       }
     },
@@ -895,7 +895,7 @@
         "product_type": 1,
         "price": 39.99,
         "rating": 3,
-        "brand": "DC",
+        "brand": 34,
         "image_url": "mens_27.png"
       }
     },
@@ -910,7 +910,7 @@
         "product_type": 3,
         "price": 69.99,
         "rating": 5,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "mens_28.png"
       }
     },
@@ -925,7 +925,7 @@
         "product_type": 1,
         "price": 71.64,
         "rating": 4,
-        "brand": "Puma",
+        "brand": 31,
         "image_url": "mens_29.png"
       }
     },
@@ -940,7 +940,7 @@
         "product_type": 1,
         "price": 230,
         "rating": 1,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "mens_30.png"
       }
     },
@@ -955,7 +955,7 @@
         "product_type": 1,
         "price": 169.99,
         "rating": 5,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "mens_31.png"
       }
     },
@@ -970,7 +970,7 @@
         "product_type": 1,
         "price": 79.99,
         "rating": 3,
-        "brand": "Nike",
+        "brand": 1,
         "image_url": "mens_32.png"
       }
     },
@@ -985,7 +985,7 @@
         "product_type": 1,
         "price": 80,
         "rating": 4,
-        "brand": "Zoe",
+        "brand": 35,
         "image_url": "mens_33.png"
       }
     },
@@ -1000,7 +1000,7 @@
         "product_type": 4,
         "price": 21.99,
         "rating": 2,
-        "brand": "Hummel",
+        "brand": 28,
         "image_url": "mens_34.png"
       }
     },
@@ -1015,7 +1015,7 @@
         "product_type": 4,
         "price": 21.99,
         "rating": 2,
-        "brand": "Dockers",
+        "brand": 36,
         "image_url": "mens_35.png"
       }
     },
@@ -1030,7 +1030,7 @@
         "product_type": 9,
         "price": 21.99,
         "rating": 5,
-        "brand": "Addidas",
+        "brand": 17,
         "image_url": "socks_1.png"
       }
     },
@@ -1045,7 +1045,7 @@
         "product_type": 9,
         "price": 5.99,
         "rating": 3,
-        "brand": "Carretera Y Manta",
+        "brand": 37,
         "image_url": "socks_2.png"
       }
     },
@@ -1060,7 +1060,7 @@
         "product_type": 9,
         "price": 3.99,
         "rating": 3,
-        "brand": "Carretera Y Manta",
+        "brand": 37,
         "image_url": "socks_3.png"
       }
     },
@@ -1075,7 +1075,7 @@
         "product_type": 9,
         "price": 12.99,
         "rating": 4,
-        "brand": "Deckler",
+        "brand": 38,
         "image_url": "socks_4.png"
       }
     },
@@ -1090,7 +1090,7 @@
         "product_type": 9,
         "price": 9.99,
         "rating": 5,
-        "brand": "Vans",
+        "brand": 4,
         "image_url": "socks_5.png"
       }
     },
@@ -1105,7 +1105,7 @@
         "product_type": 9,
         "price": 4.99,
         "rating": 4,
-        "brand": "New Look",
+        "brand": 10,
         "image_url": "socks_6.png"
       }
     },
@@ -1120,7 +1120,7 @@
         "product_type": 9,
         "price": 2.99,
         "rating": 5,
-        "brand": "Zara",
+        "brand": 6,
         "image_url": "socks_7.png"
       }
     },
@@ -1135,7 +1135,7 @@
         "product_type": 9,
         "price": 12.99,
         "rating": 5,
-        "brand": "Auckland",
+        "brand": 39,
         "image_url": "socks_8.png"
       }
     },
@@ -1150,7 +1150,7 @@
         "product_type": 9,
         "price": 21.99,
         "rating": 3,
-        "brand": "Auckland",
+        "brand": 39,
         "image_url": "socks_9.png"
       }
     },
@@ -1165,7 +1165,7 @@
         "product_type": 9,
         "price": 17,
         "rating": 5,
-        "brand": "Jack Wills",
+        "brand": 30,
         "image_url": "socks_10.png"
       }
     },
@@ -1180,7 +1180,7 @@
         "product_type": 9,
         "price": 10,
         "rating": 4,
-        "brand": "HJ Hall",
+        "brand": 40,
         "image_url": "socks_11.png"
       }
     },
@@ -1195,7 +1195,7 @@
         "product_type": 9,
         "price": 7.99,
         "rating": 3,
-        "brand": "HJ Hall",
+        "brand": 40,
         "image_url": "socks_12.png"
       }
     },
@@ -1210,7 +1210,7 @@
         "product_type": 9,
         "price": 13.5,
         "rating": 5,
-        "brand": "Fairie",
+        "brand": 41,
         "image_url": "socks_13.png"
       }
     },
@@ -1225,7 +1225,7 @@
         "product_type": 9,
         "price": 22,
         "rating": 4,
-        "brand": "Hollyhead",
+        "brand": 42,
         "image_url": "socks_14.png"
       }
     },
@@ -1240,7 +1240,7 @@
         "product_type": 9,
         "price": 22,
         "rating": 4,
-        "brand": "Hollyhead",
+        "brand": 42,
         "image_url": "socks_15.png"
       }
     },
@@ -1255,7 +1255,7 @@
         "product_type": 9,
         "price": 15.99,
         "rating": 5,
-        "brand": "ECTP",
+        "brand": 43,
         "image_url": "socks_16.png"
       }
     },
@@ -1270,7 +1270,7 @@
         "product_type": 9,
         "price": 8.99,
         "rating": 3,
-        "brand": "New Look",
+        "brand": 10,
         "image_url": "socks_17.png"
       }
     },
@@ -1285,7 +1285,7 @@
         "product_type": 9,
         "price": 19.99,
         "rating": 5,
-        "brand": "Novelty Socks Ltd",
+        "brand": 44,
         "image_url": "socks_18.png"
       }
     },
@@ -1300,7 +1300,7 @@
         "product_type": 9,
         "price": 19.99,
         "rating": 4,
-        "brand": "Novelty Socks Ltd",
+        "brand": 44,
         "image_url": "socks_19.png"
       }
     },
@@ -1315,7 +1315,7 @@
         "product_type": 9,
         "price": 9.99,
         "rating": 5,
-        "brand": "Enertor",
+        "brand": 45,
         "image_url": "socks_20.png"
       }
     },
@@ -1330,7 +1330,7 @@
         "product_type": 9,
         "price": 12.99,
         "rating": 2,
-        "brand": "Hollyhead",
+        "brand": 42,
         "image_url": "socks_21.png"
       }
     },
@@ -1345,7 +1345,7 @@
         "product_type": 2,
         "price": 7,
         "rating": 5,
-        "brand": "Angel",
+        "brand": 46,
         "image_url": "socks_22.png"
       }
     },
@@ -1360,7 +1360,7 @@
         "product_type": 9,
         "price": 54.99,
         "rating": 4,
-        "brand": "Johnstons of Elgin",
+        "brand": 47,
         "image_url": "socks_23.png"
       }
     },
@@ -1375,7 +1375,7 @@
         "product_type": 9,
         "price": 4.99,
         "rating": 2,
-        "brand": "Hollyhead",
+        "brand": 42,
         "image_url": "socks_24.png"
       }
     },
@@ -1390,7 +1390,7 @@
         "product_type": 9,
         "price": 13.99,
         "rating": 5,
-        "brand": "Cath Kidson",
+        "brand": 48,
         "image_url": "socks_25.png"
       }
     },
@@ -1405,7 +1405,7 @@
         "product_type": 9,
         "price": 25,
         "rating": 4,
-        "brand": "Balitello",
+        "brand": 49,
         "image_url": "socks_26.png"
       }
     },
@@ -1420,7 +1420,7 @@
         "product_type": 9,
         "price": 25,
         "rating": 4,
-        "brand": "Balitello",
+        "brand": 49,
         "image_url": "socks_27.png"
       }
     },
@@ -1435,7 +1435,7 @@
         "product_type": 2,
         "price": 4.99,
         "rating": 3,
-        "brand": "Holyhead",
+        "brand": 42,
         "image_url": "socks_28.png"
       }
     },
@@ -1450,7 +1450,7 @@
         "product_type": 9,
         "price": 14.99,
         "rating": 5,
-        "brand": "Telo",
+        "brand": 50,
         "image_url": "socks_29.png"
       }
     },
@@ -1465,7 +1465,7 @@
         "product_type": 9,
         "price": 12,
         "rating": 2,
-        "brand": "Vans",
+        "brand": 4,
         "image_url": "socks_30.png"
       }
     },
@@ -1480,7 +1480,7 @@
         "product_type": 9,
         "price": 30,
         "rating": 4,
-        "brand": "Coca Cola Company",
+        "brand": 51,
         "image_url": "socks_31.png"
       }
     },
@@ -1495,7 +1495,7 @@
         "product_type": 9,
         "price": 5,
         "rating": 3,
-        "brand": "Menkind",
+        "brand": 52,
         "image_url": "socks_32.png"
       }
     },
@@ -1510,7 +1510,7 @@
         "product_type": 9,
         "price": 4.99,
         "rating": 4,
-        "brand": "Fosters",
+        "brand": 53,
         "image_url": "socks_33.png"
       }
     },
@@ -1525,7 +1525,7 @@
         "product_type": 9,
         "price": 2.99,
         "rating": 5,
-        "brand": "Urban Outfitters",
+        "brand": 54,
         "image_url": "socks_34.png"
       }
     }
