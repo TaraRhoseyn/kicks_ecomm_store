@@ -46,7 +46,7 @@
                 <a class="nav-link mx-1" href="{% url 'products' %}">All</a>
             </li>
         </ul>
-        <a class="nav-icon mx-3" href="" aria-label="Shopping basket"><i class="fas fa-shopping-basket fa-lg"></i></a>
+        <a class="nav-icon mx-3" href="{% url 'bag' %}" aria-label="Shopping basket"><i class="fas fa-shopping-basket fa-lg"></i></a>
         <a class="nav-icon mx-3" href="" aria-label="User account"><i class="fas fa-user fa-lg"></i></a>
         <!-- FIXME adjust tablet view of search bar with icons-->
         <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
