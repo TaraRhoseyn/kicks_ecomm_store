@@ -43,7 +43,23 @@
     {% block content %}
     {% endblock %}
 
+    <!-- Back to top button -->
+    <div class="overlay">
+        <a class="back-to-top d-flex h-100">
+              <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+          </a>
+    </div>
+        	
+
     {% block postloadjs %}
+    {{ block.super }}
+      <!-- Back to top logic. Credit: CI -->
+      <script type="text/javascript">
+        $('.back-to-top').click(function(e) {
+          window.scrollTo(0,0)
+        })
+      </script>
+      <script src="../../../static/js/search.js" crossorigin="anonymous"></script>
     {% endblock %}
 
   </body>
