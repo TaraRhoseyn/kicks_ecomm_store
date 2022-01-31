@@ -12,10 +12,4 @@ const navbar = document.getElementsByTagName('a');
 //     };
     
 // }
-window.onload=function(){
-    // Sends user back to previous page
-    $("#btn--back").on("click", function() {
-        console.log("here");
-        history.go(-1);
-    });
-}
+
