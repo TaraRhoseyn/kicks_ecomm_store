@@ -2,5 +2,15 @@
 {% load static %}
 
 {% block content %}
-    <h1>hello world</h1>
+    <div class="container">
+        <h1>Your Shopping Bag</h1>
+        <div class="row">
+            <div class="col">
+                {% if bag_items %}
+                <!-- Display items-->
+                {% else %}
+                    <p>Your bag is empty.</p>
+                {% endif %}
+        </div>
+    </div>
 {% endblock %}
