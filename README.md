@@ -154,12 +154,14 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 ## Bug Squashing
 
-- **Bug 1**: Product model throwing errors when attempting to make migration
+- **Bug 1: Incorrect data types**: Product model throwing errors when attempting to make migration
 - **Fix**:  Change attribute on an IntegerField from max_digits to the Django method MaxValueValidator. Add on_delete attribute to ForeignKeys. Add max_digits attribute to DecimalFields.
-- **Bug 2**: When searching using the search bar Django would throw a FieldError and could not resolve 'name_icontains'.
+- **Bug 2: Searching FieldError**: When searching using the search bar Django would throw a FieldError and could not resolve 'name_icontains'.
 - **Fix**: From consulting Django documentation I realised I had mistakenly only used one underscore (_) instead of two before 'icontains'.
-- **Bug 3**: My filtering method through product_group was not rendering the correct products to the HTML.
+- **Bug 3: No render of products by product_group**: My filtering method through product_group was not rendering the correct products to the HTML.
 - **Fix** - Add .split() method to if statement within my product view.
+-- **Bug 4: Field Error on search feature**: After working successfully (see bug 2) the search feature became broken during development. When attemping to search Django would through a FieldError, 'Related Field has invalid lookup: icontains".
+-- **Fix** - Through research I discovered that in Django you can't use the Query object on ForeignKey database values. When I changed my product models to use a ForeignKey in place of the brand, it broke the search feature. I removed the ability to search by brand to fix this.
 
 ## Deployment
 
