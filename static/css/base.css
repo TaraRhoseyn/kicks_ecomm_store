@@ -241,6 +241,26 @@ use:nth-child(5) {
   background-color: grey !important;
 }
 
+.btn_to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 5px;
+  height: 60px !important;
+  width: 60px !important;
+  border-radius: 50%;
+  font-size: 20px;
+  font-size: 30px;
+  -webkit-box-shadow: 0px 5px 17px 5px rgba(166, 160, 170, 0.38);
+  box-shadow: 0px 5px 17px 5px rgba(166, 160, 170, 0.38);
+}
+
+.btn_to-top:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 17px 5px rgba(162, 13, 163, 0.38);
+  box-shadow: 0px 5px 17px 5px rgba(162, 13, 163, 0.38);
+}
+
 .nav-link:hover, .nav-icon:hover {
   color: #DED92F !important;
 }
@@ -275,14 +295,6 @@ use:nth-child(5) {
 .img-container:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-/* Credit: Modern CSS Dev */
-/* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
-@media screen and (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
 }
 
 /* Accessibility measure. Credit: Cory House */
