@@ -282,6 +282,41 @@ use:nth-child(5) {
   font-size: 1.5rem;
 }
 
+.nav__total {
+  color: #DED92F !important;
+  margin: 0px !important;
+}
+
+.nav__bag-indicator-circle {
+  width: 20px;
+  height: 20px;
+  color: black;
+  background-color: #DED92F;
+  margin-left: 15px !important;
+  position: relative;
+  border-radius: 100px;
+  margin-top: 18px;
+}
+
+.nav__bag-icon {
+  margin-left: -30px !important;
+}
+
+@media (max-width: 767px) {
+  .nav__bag-icon {
+    margin-left: auto !important;
+  }
+}
+
+.nav__bag-indicator-text {
+  margin-bottom: 0px !important;
+  font-size: 12px !important;
+}
+
+.nav__total {
+  margin-right: 15px !important;
+}
+
 .nav-link:hover, .nav-icon:hover {
   color: #DED92F !important;
 }

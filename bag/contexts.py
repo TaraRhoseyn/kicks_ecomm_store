@@ -19,11 +19,12 @@ def bag_items(request):
     for item_id, qty in bag.items():
         product = get_object_or_404(Product, pk=item_id)
         total += qty * product.price
-        # product_count += qty
+        product_nu += qty
         bag_items.append({
             'item_id': item_id,
             'qty': qty,
             'product': product,
+            'product_nu': product_nu,
         })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
@@ -33,8 +34,6 @@ def bag_items(request):
         delivery = 0
         free_delivery_delta = 0
         grand_total = total
-        print("not enough")
-        # insert code to let user know how much more to spend to get free deliv
 
     context = {
         'bag_items': bag_items,
@@ -43,6 +42,7 @@ def bag_items(request):
         'free_delivery_delta': free_delivery_delta,
         'product_nu': product_nu,
         'grand_total': grand_total,
+        'product_nu': product_nu,
         'free_delivery_threshold': Decimal(settings.FREE_DELIVERY_THRESHOLD),
     }
 

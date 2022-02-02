@@ -4,6 +4,8 @@
 {% block content %}
     <div class="container">
         <h1 class="my-5">Shopping Bag</h1>
+        <button class="btn--grey mb-5" id="btn--back"><i class="fas fa-chevron-left"></i> Keep Shopping</button>
+
         <h2 class="mb-5"><strong>Your Items</strong></h2>
                 {% if bag_items %}
                     <main id="main--bag">
@@ -36,7 +38,8 @@
                             
                         {% endif %}
                         <p class="bag--total">Your total is: <strong>{{ grand_total|floatformat:2 }}</strong></p>
-                    
+                            
+                        
                             
                         <!-- CHECKOUT -->
                         <div>
