@@ -12,6 +12,7 @@ def bag_items(request):
     total = 0
     product_nu = 0
     grand_total = 0
+    delivery = Decimal(settings.DELIVERY_COST)
     bag = request.session.get('bag', {})
     # user = request.session.get('user', {})
 
@@ -26,8 +27,11 @@ def bag_items(request):
         })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
-        grand_total = total + Decimal(settings.DELIVERY_COST)
+        grand_total = total + delivery
+        free_delivery_delta = Decimal(settings.FREE_DELIVERY_THRESHOLD) - total
     else:
+        delivery = 0
+        free_delivery_delta = 0
         grand_total = total
         print("not enough")
         # insert code to let user know how much more to spend to get free deliv
@@ -35,9 +39,11 @@ def bag_items(request):
     context = {
         'bag_items': bag_items,
         'total': total,
+        'delivery': delivery,
+        'free_delivery_delta': free_delivery_delta,
         'product_nu': product_nu,
         'grand_total': grand_total,
-        'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
+        'free_delivery_threshold': Decimal(settings.FREE_DELIVERY_THRESHOLD),
     }
 
     return context

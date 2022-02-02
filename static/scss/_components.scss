@@ -249,3 +249,13 @@ use {
         border: 2px solid $yellow!important;
     }
 }
+
+#main--bag img {
+    width: 80%;
+    border: 3px $purple solid;
+    margin-bottom: 20px;
+}
+
+.bag--total {
+    font-size: 1.5rem;
+}

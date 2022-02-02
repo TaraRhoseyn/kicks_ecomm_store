@@ -3,26 +3,57 @@
 
 {% block content %}
     <div class="container">
-        <h1>Your Shopping Bag</h1>
-        <div class="row">
-            <div class="col">
+        <h1 class="my-5">Shopping Bag</h1>
+        <h2 class="mb-5"><strong>Your Items</strong></h2>
                 {% if bag_items %}
-                    {% for i in bag_items %}
-                        <img src="{{ i.product.image_url }}" alt="">
+                    <main id="main--bag">
 
-                        {{ i.product.price }}
-                        {{ i.product.sku }}
-                        {{ i.product.name }}
+                        <!-- DISPLAYING SHOPPING BAG ITEMS -->
+
+                        {% for i in bag_items %}
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <img src="../../../static/home/{{ i.product.image_url }}" alt="">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <h3 class="mb-4">{{ i.product.name }}</h3>
+                                    <p>Price: <strong>£{{ i.product.price }}</strong></p>
+                                    <p>Quantity: <strong>{{ i.qty }}</strong></p>
+                                    <p>SKU: {{ i.product.sku }}</p>
+                                </div>
+                            </div>
+                        {% endfor %}
+
+                        <!-- DISPLAYING TOTAL -->
+
+                        <h2 class="my-5"><strong>Your Total</strong></h2>
+
+                        {% if grand_total > free_delivery_threshold %}
+                            <p>You've spent enough to get free delivery. Woo!</p>
+                        {% else %}
+                            <p>Delivery cost: <strong>£{{ delivery|floatformat:2 }}</strong></p>
+                            <p><em>Spend only an extra £{{ free_delivery_delta }} more for free shipping!</em></p>
+                            
+                        {% endif %}
+                        <p class="bag--total">Your total is: <strong>{{ grand_total|floatformat:2 }}</strong></p>
+                    
+                            
+                        <!-- CHECKOUT -->
+                        <div>
+                            <p>Checkout</p>
+                        </div>
+
+                    </main>
                         
-                    
-                    
-                    {% endfor %}
 
-                    </div>
+                        
+
+                    
+                    
+                    
+
                 {% else %}
                     <p>Your bag is empty.</p>
                 {% endif %}
-                <p>Your total:</p>{{ grand_total }}
-        </div>
     </div>
 {% endblock %}

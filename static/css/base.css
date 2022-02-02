@@ -272,6 +272,16 @@ use:nth-child(5) {
   border: 2px solid #DED92F !important;
 }
 
+#main--bag img {
+  width: 80%;
+  border: 3px #8918fb solid;
+  margin-bottom: 20px;
+}
+
+.bag--total {
+  font-size: 1.5rem;
+}
+
 .nav-link:hover, .nav-icon:hover {
   color: #DED92F !important;
 }
