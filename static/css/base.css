@@ -311,10 +311,44 @@ use:nth-child(5) {
 .nav__bag-indicator-text {
   margin-bottom: 0px !important;
   font-size: 12px !important;
+  font-weight: 600;
 }
 
 .nav__total {
   margin-right: 15px !important;
+}
+
+footer {
+  background-color: #000000 !important;
+  color: #DED92F;
+}
+
+footer .footer__header {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+footer .footer--icons a {
+  color: white !important;
+  font-size: 38px;
+}
+
+footer .footer--icons a:hover {
+  color: #DED92F !important;
+}
+
+@media (min-width: 320px) {
+  footer .footer--icons a {
+    padding-right: 50px;
+  }
+}
+
+footer p a {
+  color: white !important;
+}
+
+footer p a:hover {
+  color: #DED92F !important;
 }
 
 .nav-link:hover, .nav-icon:hover {
