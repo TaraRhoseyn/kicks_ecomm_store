@@ -261,6 +261,17 @@ use:nth-child(5) {
   box-shadow: 0px 5px 17px 5px rgba(162, 13, 163, 0.38);
 }
 
+.btn--sort {
+  background-color: white !important;
+  border: 2px solid #8918fb !important;
+  border-radius: 20px !important;
+}
+
+.btn--sort:hover {
+  background-color: #DED92F !important;
+  border: 2px solid #DED92F !important;
+}
+
 .nav-link:hover, .nav-icon:hover {
   color: #DED92F !important;
 }

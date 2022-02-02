@@ -238,3 +238,14 @@ use {
         box-shadow: 0px 5px 17px 5px rgba(162,13,163,0.38);
     }
 }
+
+.btn--sort {
+    background-color: white!important;
+    border: 2px solid $purple!important;
+    border-radius: 20px!important;
+
+    &:hover {
+        background-color: $yellow!important;
+        border: 2px solid $yellow!important;
+    }
+}
