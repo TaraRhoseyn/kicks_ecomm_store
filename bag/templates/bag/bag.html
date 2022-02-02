@@ -7,10 +7,22 @@
         <div class="row">
             <div class="col">
                 {% if bag_items %}
-                <!-- Display items-->
+                    {% for i in bag_items %}
+                        <img src="{{ i.product.image_url }}" alt="">
+
+                        {{ i.product.price }}
+                        {{ i.product.sku }}
+                        {{ i.product.name }}
+                        
+                    
+                    
+                    {% endfor %}
+
+                    </div>
                 {% else %}
                     <p>Your bag is empty.</p>
                 {% endif %}
+                <p>Your total:</p>{{ grand_total }}
         </div>
     </div>
 {% endblock %}
