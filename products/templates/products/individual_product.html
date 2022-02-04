@@ -47,7 +47,7 @@
         {% include "includes/sizing.html" %}
 
         <p>Quantity:</p>
-        <input type="number" name="quantity" value="1" min="1" max="999" data-item-id="{{ product.id }}" id="id_qty_{{ product.id }}">
+        <input type="number" name="quantity" value="1" min="1" max="999" data-item-id="{{ product.id }}" id="id_quantity_{{ product.id }}">
         <input type="submit" value="Add to Cart">
         <!-- can i redirect through js instead? -->
         <input type="hidden" name="redirect_url" value="{{ request.path }}">

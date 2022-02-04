@@ -46,7 +46,7 @@
         {% if total > 0 %}
             <p class="nav__total">£{{ total|floatformat:2 }}</p>
             <div class="nav__bag-indicator-circle">
-                <p class="nav__bag-indicator-text text-center">{{ product_nu }}</p>
+                <p class="nav__bag-indicator-text text-center">{{ product_count }}</p>
             </div>
         {% elif total == 0 %}
             <p class="nav__total"></p>
