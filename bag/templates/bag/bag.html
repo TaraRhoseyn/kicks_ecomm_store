@@ -4,7 +4,9 @@
 {% block content %}
     <div class="container">
         <h1 class="my-5">Shopping Bag</h1>
-        <button class="btn--grey mb-5" id="btn--back"><i class="fas fa-chevron-left"></i> Keep Shopping</button>
+        <button class="btn--grey mb-5" id="btn--back"><i class="fas fa-chevron-left"></i> 
+            <a href="{% url 'products' %}">Keep Shopping</a>   
+        </button>
 
         <h2 class="mb-5"><strong>Your Items</strong></h2>
                 {% if bag_items %}
@@ -19,6 +21,7 @@
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <h3 class="mb-4">{{ i.product.name }}</h3>
+                                    <p>Size: <strong>{% if i.product.has_sizes %}{{ i.size }}{% endif %}</strong></p>
                                     <p>Price: <strong>£{{ i.product.price }}</strong></p>
                                     <p>Quantity: <strong>{{ i.qty }}</strong></p>
                                     <p>SKU: {{ i.product.sku }}</p>

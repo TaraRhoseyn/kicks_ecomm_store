@@ -7,10 +7,8 @@ class ProductGroup(models.Model):
     name = models.CharField(max_length=200, null=True, blank=True)
     friendly_name = models.CharField(max_length=200, null=True, blank=True)
 
-
     def __str__(self):
         return self.name
-
 
     def get_friendly_name(self):
         return self.friendly_name
@@ -24,7 +22,6 @@ class ProductType(models.Model):
     def __str__(self):
         return self.name
 
-
     def get_friendly_name(self):
         return self.friendly_name
 
@@ -36,7 +33,6 @@ class ProductBrand(models.Model):
 
     def __str__(self):
         return self.name
-
 
     def get_friendly_name(self):
         return self.friendly_name
@@ -58,7 +54,8 @@ class Product(models.Model):
         'ProductBrand', default=1, null=True, blank=True, on_delete=models.SET_NULL)
     image_url = models.CharField(
         max_length=40, null=False, blank=False, default='SOME STRING')
-
+    has_sizes = models.BooleanField(
+        default=True, null=False, blank=False)
 
     def __str__(self):
         return self.name

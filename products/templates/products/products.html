@@ -26,19 +26,27 @@
                 <span id="try-again"></span>
                 <a href="{% url 'products' %}" id="research-btn" class="btn--grey"><i class="fas fa-times"></i>  Clear search results</a>
             {% else %}
+
+                <!-- HEADER -->
+
                 <h1 class="mt-5 text-center">Step in and explore all</h1>
+
+                <!-- SORTING PRODUCTS -->
+
+                <h2 class="text-center my-4">Sort by...</h2>    
+                <div class="d-flex flex-row justify-content-center my-4">
+                    <button class="btn--sort px-4" id="btn--sort--price--asc">Price (low to high)</button>
+                    <span class="mx-2">│</span>
+                    <button class="btn--sort px-4" id="btn--sort--price--desc">Price (high to low)</button>
+                    <span class="mx-2">│</span>
+                    <button class="btn--sort px-4" id="btn--sort--rating--desc">Rating</button>
+                </div>
+
+                
+
             {% endif %}
         
-        <!-- SORTING PRODUCTS -->
-
-        <h2 class="text-center my-4">Sort by...</h2>    
-        <div class="d-flex flex-row justify-content-center my-4">
-            <button class="btn--sort px-2" id="btn--sort--price--asc">Price (low to high)</button>
-            <span class="mx-2">│</span>
-            <button class="btn--sort px-2" id="btn--sort--price--desc">Price (high to low)</button>
-            <span class="mx-2">│</span>
-            <button class="btn--sort px-2" id="btn--sort--rating--desc">Rating</button>
-        </div>
+        
         
         <!-- DISPLAYING PRODUCTS-->
 
