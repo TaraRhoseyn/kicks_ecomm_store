@@ -1,5 +1,5 @@
 {% if product.product_group.name == "mens" or "womens" %}
-    <select name="product_sizes" id="id_product_sizes">
+    <select name="product_size" id="id_product_size">
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
@@ -14,7 +14,7 @@
         <option value="14">14</option>
     </select>
 {% elif product.product_group.name == "childrens" %}
-    <select name="product_sizes" id="id_product_sizes">
+    <select name="product_size" id="id_product_size">
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>

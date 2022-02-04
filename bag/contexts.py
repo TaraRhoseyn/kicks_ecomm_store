@@ -10,22 +10,30 @@ def bag_items(request):
 
     bag_items = []
     total = 0
-    product_nu = 0
-    grand_total = 0
-    delivery = Decimal(settings.DELIVERY_COST)
+    product_count = 0
     bag = request.session.get('bag', {})
-    # user = request.session.get('user', {})
 
-    for item_id, qty in bag.items():
-        product = get_object_or_404(Product, pk=item_id)
-        total += qty * product.price
-        product_nu += qty
-        bag_items.append({
-            'item_id': item_id,
-            'qty': qty,
-            'product': product,
-            'product_nu': product_nu,
-        })
+    for item_id, item_data in bag.items():
+        if isinstance(item_data, int):
+            product = get_object_or_404(Product, pk=item_id)
+            total += item_data * product.price
+            product_count += item_data
+            bag_items.append({
+                'item_id': item_id,
+                'quantity': item_data,
+                'product': product,
+            })
+        else:
+            product = get_object_or_404(Product, pk=item_id)
+            for size, quantity in item_data['items_by_size'].items():
+                total += quantity * product.price
+                product_count += quantity
+                bag_items.append({
+                    'item_id': item_id,
+                    'quantity': item_data,
+                    'product': product,
+                    'size': size,
+                })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         grand_total = total + delivery
@@ -40,9 +48,9 @@ def bag_items(request):
         'total': total,
         'delivery': delivery,
         'free_delivery_delta': free_delivery_delta,
-        'product_nu': product_nu,
+        'product_count': product_count,
         'grand_total': grand_total,
-        'product_nu': product_nu,
+        'product_count': product_count,
         'free_delivery_threshold': Decimal(settings.FREE_DELIVERY_THRESHOLD),
     }
 
