@@ -1,4 +1,6 @@
-{% if product_type  %}
+<!-- Renders different headers based on whether query sets
+are being used and if so which ones. -->
+{% if product_type %}
     {% for type in product_type %}
         <h1 class="mt-5 text-center">{{ type|title }}</h1>
     {% endfor %}
@@ -7,6 +9,10 @@
         <h1 class="mt-5 text-center">{{ group|title }}</h1>
     {% endfor %}
 {% elif product_brand %}
+    <!-- Different logic for product brand
+    from others, as most brands have 
+    two or more words, meaning the logic above
+    would only render all words as one -->
     {% for product in products %}
         {% if forloop.first %}
             <h1 class="mt-5 text-center">{{ product.product_brand.friendly_name }}</h1>
