@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <ul>
+        {% for brand in brands %}
+            <li>
+                <a href="{% url 'products' %}?product_brand={{ brand.name }}">
+                    {{ brand.friendly_name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    
+
+{% endblock %}
