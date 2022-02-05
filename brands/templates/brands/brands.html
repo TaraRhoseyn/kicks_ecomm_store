@@ -2,34 +2,26 @@
 {% load static %}
 {% load brand_extras %}
 
-
 {% block content %}
     <div class="container">
         <h1 class="mt-5 text-center">Brands</h1>
-        <!-- TODO: Add styling to page -->
-        <p>We have {{ brands|length }} brands.</p>
-
+        <h2 class="text-center my-4">View products from {{ brands|length }} brands:</h2>   
+        <!-- Credit for regrouping query set 
+        by first letter: StackOverflow -->
+        {% regroup brands by name|slice:":1" as brand_list %}
         <ul>
-            <h2>A</h2>
-            {% for brand in brands %}
-                {% if brand.friendly_name|firstchar == 'A' %}
-                    <li>
-                        <a class="{% cycle 'row1' 'row2' %}" href="{% url 'products' %}?product_brand={{ brand.name }}">
-                            {{ brand.friendly_name }}
-                        </a>
-                    </li>
-                {% endif %}
-            {% endfor %}
-            <h2>B</h2>
-            {% for brand in brands %}
-                {% if brand.friendly_name|firstchar == 'B' %}
-                    <li>
-                        <a class="{% cycle 'row1' 'row2' %}" href="{% url 'products' %}?product_brand={{ brand.name }}">
-                            {{ brand.friendly_name }}
-                        </a>
-                    </li>
-                {% endif %}
-            {% endfor %}
+            <div class="row my-5">
+                {% for brand in brand_list %}
+                    <div class="col-md-4 my-4">
+                        <h2><strong>{{ brand.grouper|title }}</strong></h2>
+                        <ul>
+                            {% for brand in brand.list %}
+                            <li>{{ brand.friendly_name|title }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endfor %}
+            </div>
         </ul>
     </div>
 {% endblock %}
