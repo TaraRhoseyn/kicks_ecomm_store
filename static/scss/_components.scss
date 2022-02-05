@@ -135,7 +135,12 @@
 /* rating system */ 
 
 .card-price {
-    font-weight: 700;
+    font-size: 20px;
+}
+
+.prod-size, .prod-qty {
+    width: 60%;
+    display: block;
 }
 
 use {
@@ -241,6 +246,7 @@ use {
     height: 60px!important;
     width: 60px!important;
     border-radius: 50%;
+    background-color: white;
     font-size: 20px;
     font-size: 30px;
     -webkit-box-shadow: 0px 5px 17px 5px rgba(166, 160, 170, 0.38); 
