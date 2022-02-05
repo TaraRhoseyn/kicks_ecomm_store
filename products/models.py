@@ -46,12 +46,12 @@ class Product(models.Model):
         'ProductGroup', default=1, null=True, blank=True, on_delete=models.SET_NULL)
     product_type = models.ForeignKey(
         'ProductType', default=1, null=True, blank=True, on_delete=models.SET_NULL)
+    product_brand = models.ForeignKey(
+        'ProductBrand', default=1, null=True, blank=True, on_delete=models.SET_NULL)
     price = models.DecimalField(
         max_digits=7, decimal_places=2, null=False, blank=False)
     rating = models.IntegerField(
         null=False, blank=False, validators=[MaxValueValidator(999)])
-    product_brand = models.ForeignKey(
-        'ProductBrand', default=1, null=True, blank=True, on_delete=models.SET_NULL)
     image_url = models.CharField(
         max_length=40, null=False, blank=False, default='SOME STRING')
     has_sizes = models.BooleanField(
