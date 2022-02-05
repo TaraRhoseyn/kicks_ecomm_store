@@ -120,9 +120,6 @@
                 const params = new URLSearchParams(location.search);
                 params.delete('sort');
                 params.delete('direction');
-                params.delete('product_brand');
-                params.delete('product_type');
-                params.delete('product_group');
                 window.history.replaceState({}, '', `${location.pathname}?${params}`);
                 location.reload();
             });
