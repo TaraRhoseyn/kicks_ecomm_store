@@ -176,7 +176,7 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 ### Code
 
-- **Stack Overflow**: For fixing [max_length on IntegerField](https://stackoverflow.com/questions/30849862/django-max-length-for-integerfield) bug.
+- **Stack Overflow**: For fixing [max_length on IntegerField](https://stackoverflow.com/questions/30849862/django-max-length-for-integerfield) bug. For [grouping queryset by first letter](https://stackoverflow.com/questions/4151631/django-grouping-queryset-by-first-letter)
 
 - **test-driven-django-development**: For [model unit testing methods](https://test-driven-django-development.readthedocs.io/en/latest/02-models.html).
 
