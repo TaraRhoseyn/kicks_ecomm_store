@@ -559,7 +559,7 @@
     "model": "products.product",
     "fields": {
       "sku": "TRAADME3BL",
-      "name": "Blue Addidas Trainers",
+      "name": "Blue Adidas Trainers",
       "description": "Ideal for the everyday jogger, these lightweight and comfortable trainers make a perfect addition to your workout.",
       "product_group": 2,
       "product_type": 1,
@@ -1024,7 +1024,7 @@
     "model": "products.product",
     "fields": {
       "sku": "SOCADAL5WH",
-      "name": "Addidas Tennis Shoes",
+      "name": "Adidas Tennis Shoes",
       "description": "White tennis-style high shoes.",
       "product_group": null,
       "product_type": 9,

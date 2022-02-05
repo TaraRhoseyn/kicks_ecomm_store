@@ -114,8 +114,8 @@
     "pk":17,
     "model":"products.productbrand",
     "fields": {
-        "name":"addidas",
-        "friendly_name":"Addidas"
+        "name":"adidas",
+        "friendly_name":"Adidas"
     }
 }, {
     "pk":18,
