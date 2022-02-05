@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark" id="nav">
+<nav class="navbar navbar-expand-lg navbar-dark" id="nav">
     <a class="navbar-brand" href="{% url 'home' %}">
         Kicks
     </a>
@@ -23,12 +23,10 @@
             <li class="nav-item">
                 <a class="nav-link mx-1" href="#">Brands</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link mx-1" href="{% url 'products' %}?product_type=socks">Socks</a>
-            </li>
             <li class="nav-item dropdown">
-                <a class="nav-link mx-1 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{% url 'products' %}?product_type=trainers,babyshoes,sandals,boots,pumps,heels,daps,brogues">Shoes</a>
+                <a class="nav-link mx-1 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{% url 'products' %}?product_type=trainers,babyshoes,sandals,boots,pumps,heels,daps,brogues">Shop all</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% url 'products' %}">All products</a>
                     <a class="dropdown-item" href="{% url 'products' %}?product_type=trainers">Trainers</a>
                     <a class="dropdown-item" href="{% url 'products' %}?product_type=babyshoes">Baby shoes</a>
                     <a class="dropdown-item" href="{% url 'products' %}?product_type=sandals">Sandals</a>
@@ -37,10 +35,8 @@
                     <a class="dropdown-item" href="{% url 'products' %}?product_type=heels">Heels</a>
                     <a class="dropdown-item" href="{% url 'products' %}?product_type=daps">Daps</a>
                     <a class="dropdown-item" href="{% url 'products' %}?product_type=brogues">Brogues</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?product_type=socks">Socks</a>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mx-1" href="{% url 'products' %}">All</a>
             </li>
         </ul>
         {% if total > 0 %}
@@ -53,10 +49,9 @@
         {% endif %}
         <a class="nav__bag-icon nav-icon mx-3" href="{% url 'view_shopping_bag' %}" aria-label="Shopping basket" title="Shopping basket"><i class="fas fa-shopping-basket fa-lg"></i></a>
         <a class="nav-icon mx-3" href="" aria-label="User account" title="User account"><i class="fas fa-user fa-lg"></i></a>
-        <!-- FIXME adjust tablet view of search bar with icons-->
         <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
-            <input class="search-input form-control mr-sm-2" type="search" name="search" placeholder="Search for products" aria-label="Search for products">
-            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+            <input class="search-input form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search for products">
+            <button class="btn btn-outline-warning btn_search-submit my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
         </form>
     </div>
 </nav>

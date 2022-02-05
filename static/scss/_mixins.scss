@@ -12,6 +12,10 @@
     @media (min-width: $breakpoint-tablet) { @content; }
 }
 
+@mixin for-tablet-only {
+    @media (max-width: $breakpoint-tablet) { @content; }
+}
+
 @mixin for-desktop-up {
     @media (min-width: $breakpoint-desktop) { @content; }
 }

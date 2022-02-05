@@ -3,7 +3,7 @@
 /* Navbar */
 #nav {
     background-color: $black;
-    @include for-tablet-up {
+    @include for-desktop-up {
         height: 5rem;
     }
     a {
@@ -25,9 +25,16 @@
     }
     .nav-link {
         font-weight: 400;
+        font-size: 0.9rem!important;
         letter-spacing: 1px;
+        padding: 2px!important;
+        @include for-large-screens-up {
+            padding: 8px!important;
+            font-size: 1rem!important;
+        }
     }
 }
+
 
 .dropdown-menu {
     background-color: black!important;
@@ -196,12 +203,14 @@ use {
     }
 }
 
-.search-term {
-    background-color: #f1e100;
-    padding: 4px;
-    padding-left: 8px;
-    padding-right: 8px;
+.btn_search-submit, .search-input {
+    border-radius: 0px;
 }
+
+.search-input {
+    width: 160px!important;
+}
+
 
 #try-again {
     display: block!important;
@@ -272,6 +281,7 @@ use {
 .nav__total {
     color: $yellow!important;
     margin: 0px!important;
+    font-size: 0.9rem!important;
 }
 
 .nav__bag-indicator-circle {
@@ -287,7 +297,7 @@ use {
 
 .nav__bag-icon {
     margin-left: -30px!important;
-    @include for-phone-only {
+    @include for-tablet-only {
         margin-left: auto!important;
     }
 }
