@@ -10,7 +10,7 @@
     "model":"products.producttype",
     "fields": {
         "name":"babyshoes",
-        "friendly_name":"Baby shoes"
+        "friendly_name":"Baby"
     }
 }, {
     "pk":3,

@@ -1,0 +1,17 @@
+{% if product_type  %}
+    {% for type in product_type %}
+        <h1 class="mt-5 text-center">{{ type|title }}</h1>
+    {% endfor %}
+{% elif product_group %}
+    {% for group in product_group %}
+        <h1 class="mt-5 text-center">{{ group|title }}</h1>
+    {% endfor %}
+{% elif product_brand %}
+    {% for product in products %}
+        {% if forloop.first %}
+            <h1 class="mt-5 text-center">{{ product.product_brand.friendly_name }}</h1>
+        {% endif %}
+    {% endfor %}
+{% else %}
+    <h1 class="mt-5 text-center">Step in and explore all</h1>
+{% endif %}
