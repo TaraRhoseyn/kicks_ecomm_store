@@ -68,7 +68,10 @@
                             </a>
                         </div>
                         <div class="card-body">
-                        <h5 class="card-title"><strong>{{ product.name }}</strong></h5>
+                        <h5 class="card-title">
+                            <a href="{% url 'individual_product' product.id %}" class="product_name">
+                                <strong>{{ product.name }}</strong></h5>
+                            </a>
                         {% include "includes/rating.html" %}
                         <!-- <p class="card-text">{{ product.description }}</p> -->
                         <p class="card-price mt-3"><strong>£{{ product.price }}</strong></p>

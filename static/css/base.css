@@ -140,6 +140,16 @@ Credit: Eduardo Boucas
   margin-top: 0px;
 }
 
+.product_name {
+  list-style-type: none;
+  color: black;
+}
+
+.product_name:hover {
+  color: #8918fb;
+  text-decoration: none;
+}
+
 .prod-desc {
   margin-top: 3rem;
 }

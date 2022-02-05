@@ -125,6 +125,14 @@
     }
 }
 
+.product_name {
+    list-style-type: none;
+    color: black;
+    &:hover {
+        color: $purple;
+        text-decoration: none;
+    }
+}
 
 .prod-desc {
     @include for-phone-only {
