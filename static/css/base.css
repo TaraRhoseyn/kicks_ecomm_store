@@ -369,6 +369,21 @@ footer p a:hover {
   color: #DED92F !important;
 }
 
+.list--alpha_brand {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list--alpha_brand li a {
+  color: black;
+  padding-bottom: 5px;
+  text-decoration: underline;
+}
+
+.list--alpha_brand li a:hover {
+  color: #8918fb;
+}
+
 .nav-link:hover, .nav-icon:hover {
   color: #DED92F !important;
 }

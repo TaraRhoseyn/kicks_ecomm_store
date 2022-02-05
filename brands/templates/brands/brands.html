@@ -14,9 +14,12 @@
                 {% for brand in brand_list %}
                     <div class="col-md-4 my-4">
                         <h2><strong>{{ brand.grouper|title }}</strong></h2>
-                        <ul>
+                        <ul class="list--alpha_brand">
                             {% for brand in brand.list %}
-                            <li>{{ brand.friendly_name|title }}</li>
+                            <li>
+                                <a href="{% url 'products' %}?product_brand={{ brand.name }}">
+                                    {{ brand.friendly_name|title }}</a>
+                            </li>
                             {% endfor %}
                         </ul>
                     </div>

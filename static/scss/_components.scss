@@ -338,3 +338,17 @@ footer {
         }
     }
 }
+
+.list--alpha_brand {
+    list-style-type: none;
+    padding: 0;
+
+    li a {
+        color: black;
+        padding-bottom: 5px;
+        text-decoration: underline;
+        &:hover {
+            color: $purple;
+        }
+    }
+}
