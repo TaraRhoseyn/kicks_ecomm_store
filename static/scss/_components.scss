@@ -64,15 +64,19 @@
 
 /* buttons */ 
 
-.main-btn {
-    color: $white;
-    background-color: $purple;
+.btn--purple {
+    color: white;
+    border: 3px $purple solid!important;
+    padding: 10px;
+    background-color: $purple!important;
 
     &:hover {
-        color: $white!important;
-        background-color: #370569!important;
+        color: white!important;
+        background-color: black!important;
+
     }
 }
+
 .home-secondary-section {
     > div, > div > div {
         @include for-phone-up {
@@ -265,13 +269,13 @@ use {
 }
 
 .nav__bag-indicator-circle {
-    width: 20px;
-    height: 20px;
+    width: 1.3rem;
+    height: 1.3rem;
     color: black;
     background-color: $yellow;
     margin-left: 15px!important;
     position: relative;
-    border-radius: 100px;
+    border-radius: 100%;
     margin-top: 18px;
 }
 

@@ -76,14 +76,16 @@ Credit: Eduardo Boucas
 }
 
 /* buttons */
-.main-btn {
-  color: #ffffff;
-  background-color: #8918fb;
+.btn--purple {
+  color: white;
+  border: 3px #8918fb solid !important;
+  padding: 10px;
+  background-color: #8918fb !important;
 }
 
-.main-btn:hover {
-  color: #ffffff !important;
-  background-color: #370569 !important;
+.btn--purple:hover {
+  color: white !important;
+  background-color: black !important;
 }
 
 @media (min-width: 320px) {
@@ -287,13 +289,13 @@ use:nth-child(5) {
 }
 
 .nav__bag-indicator-circle {
-  width: 20px;
-  height: 20px;
+  width: 1.3rem;
+  height: 1.3rem;
   color: black;
   background-color: #DED92F;
   margin-left: 15px !important;
   position: relative;
-  border-radius: 100px;
+  border-radius: 100%;
   margin-top: 18px;
 }
 
