@@ -5,8 +5,8 @@ def show_brand(request):
     """
     Show all brands.
     """
-
-    brands = ProductBrand.objects.all()
+    # Credit for sorting method: Reddit
+    brands = ProductBrand.objects.all().order_by('name') 
 
     context = {
         'brands': brands,

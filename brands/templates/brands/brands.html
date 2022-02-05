@@ -3,10 +3,12 @@
 
 {% block content %}
     <h1 class="mt-5 text-center">Brands</h1>
+    <!-- TODO: Add styling to page -->
+    <p>We have {{ brands|length }} brands.</p>
     <ul>
         {% for brand in brands %}
             <li>
-                <a href="{% url 'products' %}?product_brand={{ brand.name }}">
+                <a class="{% cycle 'row1' 'row2' %}" href="{% url 'products' %}?product_brand={{ brand.name }}">
                     {{ brand.friendly_name }}
                 </a>
             </li>

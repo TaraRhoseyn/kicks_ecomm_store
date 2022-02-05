@@ -196,6 +196,8 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 - **Modern CSS Dev** - For [smooth scroll](https://moderncss.dev/pure-css-smooth-scroll-back-to-top/)
 
+- **Reddit** - For [Django sorting method](https://www.reddit.com/r/django/comments/20lxq0/how_to_sort_a_retrieved_list_alphabetically_in_a/)
+
 ### Media
 
 All images were sourced from the copyright-free image repositories [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/). For full image rights and credit, please see the seperate [media.md](/docs/media.md) file.
