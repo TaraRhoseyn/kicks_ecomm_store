@@ -1,17 +1,35 @@
 {% extends "base.html" %}
 {% load static %}
+{% load brand_extras %}
+
 
 {% block content %}
-    <h1 class="mt-5 text-center">Brands</h1>
-    <!-- TODO: Add styling to page -->
-    <p>We have {{ brands|length }} brands.</p>
-    <ul>
-        {% for brand in brands %}
-            <li>
-                <a class="{% cycle 'row1' 'row2' %}" href="{% url 'products' %}?product_brand={{ brand.name }}">
-                    {{ brand.friendly_name }}
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
+    <div class="container">
+        <h1 class="mt-5 text-center">Brands</h1>
+        <!-- TODO: Add styling to page -->
+        <p>We have {{ brands|length }} brands.</p>
+
+        <ul>
+            <h2>A</h2>
+            {% for brand in brands %}
+                {% if brand.friendly_name|firstchar == 'A' %}
+                    <li>
+                        <a class="{% cycle 'row1' 'row2' %}" href="{% url 'products' %}?product_brand={{ brand.name }}">
+                            {{ brand.friendly_name }}
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+            <h2>B</h2>
+            {% for brand in brands %}
+                {% if brand.friendly_name|firstchar == 'B' %}
+                    <li>
+                        <a class="{% cycle 'row1' 'row2' %}" href="{% url 'products' %}?product_brand={{ brand.name }}">
+                            {{ brand.friendly_name }}
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock %}
