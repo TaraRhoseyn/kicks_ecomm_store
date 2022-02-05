@@ -159,9 +159,13 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - **Bug 2: Searching FieldError**: When searching using the search bar Django would throw a FieldError and could not resolve 'name_icontains'.
 - **Fix**: From consulting Django documentation I realised I had mistakenly only used one underscore (_) instead of two before 'icontains'.
 - **Bug 3: No render of products by product_group**: My filtering method through product_group was not rendering the correct products to the HTML.
-- **Fix** - Add .split() method to if statement within my product view.
--- **Bug 4: Field Error on search feature**: After working successfully (see bug 2) the search feature became broken during development. When attemping to search Django would through a FieldError, 'Related Field has invalid lookup: icontains".
--- **Fix** - Through research I discovered that in Django you can't use the Query object on ForeignKey database values. When I changed my product models to use a ForeignKey in place of the brand, it broke the search feature. I removed the ability to search by brand to fix this. This [answer](https://stackoverflow.com/questions/11754877/troubleshooting-related-field-has-invalid-lookup-icontains) on StackOverflow was particularly helpful in figuring this out.
+- **Fix**:Add .split() method to if statement within my product view.
+- **Bug 4: Field Error on search feature**: After working successfully (see bug 2) the search feature became broken during development. When attemping to search Django would through a FieldError, 'Related Field has invalid lookup: icontains".
+- **Fix**: Through research I discovered that in Django you can't use the Query object on ForeignKey database values. When I changed my product models to use a ForeignKey in place of the brand, it broke the search feature. I removed the ability to search by brand to fix this. This [answer](https://stackoverflow.com/questions/11754877/troubleshooting-related-field-has-invalid-lookup-icontains) on StackOverflow was particularly helpful in figuring this out.
+- **Bug 5: Could not get both the product size and product quantity to display on template.**
+- **Fix**: This involved a lot of trail and error and eventual chat to the CI support team. My first issue was that I couldn't pass the 'size' POST request data from the user to the database without manipulation of it as an integer. I then revisited the Boutique Ado code and implemented the if logic of the tutorial in my contexts.py Then the issue was twofold. 1) Through my template code I was inadvertently trying to render the entire item_data object in my code, rather than accessing just the quantity. 2) In my if statement of contexts.py I was accidentally passing the quantity value the item_data object instead of the quantity variable. Thank you to Code Institute for all their support on this bug.
+- **Bug 6: Inregrity Error raised on Django utilities**
+- **Fix**: Data is my products model was throwing invalid foreign key errors. This was because I was trying to load the data in the incorrect order. I first changed the model name, migrated changes, then 'loaddata' in the correct order of operations.
 
 ## Deployment
 
@@ -200,3 +204,4 @@ The images were edited using [Canva](https://www.canva.com/). The logo for 'KICK
 - To my wife Yasmine Rhoseyn for her testing support and feedback on this project.
 - To my mentor Mo Shami for his feedback, advice and support.
 - To the Code Institute slack community of students and alumni for their helpful advice, resources, guidance and support.
+- To the Code Institute support team for their help and guidance when fixing bugs in the codebase.
