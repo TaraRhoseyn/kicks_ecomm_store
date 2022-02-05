@@ -91,7 +91,6 @@
     border: 3px rgb(0, 0, 0) solid;
     -webkit-box-shadow: 7px 9px 0px 0px $purple; 
     box-shadow: 7px 9px 0px 0px $purple;
-
     @include for-phone-up {
         margin-top: 2rem!important;
     }
@@ -100,14 +99,21 @@
         margin-top: 5rem!important;
     }
 
-    .card-body {
-        height: 17.6rem!important;
-    }
 
     .card-text {
         margin-top: 1rem;
     }
 }
+
+.product--all_card {
+    @include for-tablet-up {
+        height: 425px!important;
+    }
+    .img-container {
+        margin-top: 0px;
+    }
+}
+
 
 .prod-desc {
     @include for-phone-only {
@@ -219,6 +225,10 @@ use {
     }
 }
 
+.btn--thin {
+    padding: 4px;
+}
+
 .btn_to-top {
     position: fixed;
     bottom: 40px;
@@ -236,17 +246,6 @@ use {
         cursor: pointer;
         -webkit-box-shadow: 0px 5px 17px 5px rgba(162,13,163,0.38); 
         box-shadow: 0px 5px 17px 5px rgba(162,13,163,0.38);
-    }
-}
-
-.btn--sort {
-    background-color: white!important;
-    border: 2px solid $purple!important;
-    border-radius: 20px!important;
-
-    &:hover {
-        background-color: $yellow!important;
-        border: 2px solid $yellow!important;
     }
 }
 

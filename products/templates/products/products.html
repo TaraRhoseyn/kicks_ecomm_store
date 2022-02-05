@@ -35,11 +35,18 @@
 
                 <h2 class="text-center my-4">Sort by...</h2>    
                 <div class="d-flex flex-row justify-content-center my-4">
-                    <button class="btn--sort px-4" id="btn--sort--price--asc">Price (low to high)</button>
-                    <span class="mx-2">│</span>
-                    <button class="btn--sort px-4" id="btn--sort--price--desc">Price (high to low)</button>
-                    <span class="mx-2">│</span>
-                    <button class="btn--sort px-4" id="btn--sort--rating--desc">Rating</button>
+                    <button class="btn--grey btn--thin px-2 mx-2" id="btn--sort--price--asc">
+                        <i class="fas fa-arrow-up"></i>
+                        Price (low to high)</button>
+                    <button class="btn--grey btn--thin px-2 mx-2" id="btn--sort--price--desc">
+                        <i class="fas fa-arrow-down"></i>
+                        Price (high to low)</button>
+                    <button class="btn--grey btn--thin px-2 mx-2" id="btn--sort--rating--desc">
+                        <i class="fas fa-star"></i>
+                        Rating (high to low) </button>
+                    <button class="btn--grey btn--thin px-2 mx-2" id="btn--sort--clear">
+                        <i class="fas fa-times"></i>
+                        Clear all</button>
                 </div>
 
                 
@@ -53,7 +60,7 @@
         <div class="row">
             {% for product in products %}
                 <div class="col-12 col-md-3" id="search-result">
-                    <div class="card-deck">
+                    <div class="card-deck product--all_card">
                         <div class="img-container">
                             <a href="{% url 'individual_product' product.id %}">
                                 <img class="card-img-top product-img" src="../../../static/home/{{ product.image_url }}" alt="{{ product.description }}" class="product-images">
@@ -62,8 +69,8 @@
                         <div class="card-body">
                         <h5 class="card-title"><strong>{{ product.name }}</strong></h5>
                         {% include "includes/rating.html" %}
-                        <p class="card-text">{{ product.description }}</p>
-                        <p class="card-price"><strong>£{{ product.price }}</strong></p>
+                        <!-- <p class="card-text">{{ product.description }}</p> -->
+                        <p class="card-price mt-3"><strong>£{{ product.price }}</strong></p>
                         </div>
                     </div>
                 </div>
@@ -87,6 +94,8 @@
                 params.append('direction', 'asc');
                 window.history.replaceState({}, '', `${location.pathname}?${params}`);
                 location.reload();
+                // FIXME: Add selected styling for button, without reloading??
+                
             });
             $("#btn--sort--price--desc").on("click", function() {
                 const params = new URLSearchParams(location.search);
@@ -103,6 +112,13 @@
                 params.delete('direction');
                 params.append('sort', 'rating');
                 params.append('direction', 'desc');
+                window.history.replaceState({}, '', `${location.pathname}?${params}`);
+                location.reload();
+            });
+            $("#btn--sort--clear").on("click", function() {
+                const params = new URLSearchParams(location.search);
+                params.delete('sort');
+                params.delete('direction');
                 window.history.replaceState({}, '', `${location.pathname}?${params}`);
                 location.reload();
             });
