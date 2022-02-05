@@ -164,8 +164,11 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - **Fix**: Through research I discovered that in Django you can't use the Query object on ForeignKey database values. When I changed my product models to use a ForeignKey in place of the brand, it broke the search feature. I removed the ability to search by brand to fix this. This [answer](https://stackoverflow.com/questions/11754877/troubleshooting-related-field-has-invalid-lookup-icontains) on StackOverflow was particularly helpful in figuring this out.
 - **Bug 5: Could not get both the product size and product quantity to display on template.**
 - **Fix**: This involved a lot of trail and error and eventual chat to the CI support team. My first issue was that I couldn't pass the 'size' POST request data from the user to the database without manipulation of it as an integer. I then revisited the Boutique Ado code and implemented the if logic of the tutorial in my contexts.py Then the issue was twofold. 1) Through my template code I was inadvertently trying to render the entire item_data object in my code, rather than accessing just the quantity. 2) In my if statement of contexts.py I was accidentally passing the quantity value the item_data object instead of the quantity variable. Thank you to Code Institute for all their support on this bug.
-- **Bug 6: Inregrity Error raised on Django utilities**
+- **Bug 6: Integrity Error raised on Django utilities**
 - **Fix**: Data is my products model was throwing invalid foreign key errors. This was because I was trying to load the data in the incorrect order. I first changed the model name, migrated changes, then 'loaddata' in the correct order of operations.
+- **Bug 7: /?product_type=socks URL not displaying any products**
+- **Fix**: Investigating in the Admin dashboard I discovered that the product_type and product_brand values were contaminating each other, with the product_types only going up to 8 (socks was 9) and the rest of the data being filled in with brand names. I fixed this by moving the product_brand value in the model and fixtures, deleting the brands in the Admin dashboard and reloading the data in the appropriate order (brands first).
+
 
 ## Deployment
 
