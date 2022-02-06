@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block content %}
 <div class="container">
@@ -24,7 +25,7 @@
                 <h3><strong>{{ i.product.name }}</strong></h3>
                 <p class="mb-4">SKU: {{ i.product.sku }}</p>
                 <p>Price: £{{ i.product.price }}</p>
-                <p>Quantity:
+                <p>Subtotal: £{{ i.product.price|prod_subtotal:i.quantity }}</p>
                 <form action="{% url 'adjust_bag' i.item_id %}" method="POST" class="bag__update-form">
                     {% csrf_token %}
                     {% if i.product.has_sizes %}
