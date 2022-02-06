@@ -270,6 +270,7 @@ use:nth-child(5) {
 }
 
 .btn--grey:hover {
+  cursor: pointer;
   color: white !important;
   background-color: grey !important;
 }

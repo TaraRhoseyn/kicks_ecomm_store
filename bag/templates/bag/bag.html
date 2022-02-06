@@ -2,66 +2,113 @@
 {% load static %}
 
 {% block content %}
-    <div class="container">
-        <h1 class="my-5">Shopping Bag</h1>
-        <button class="btn--grey mb-5" id="btn--back"><i class="fas fa-chevron-left"></i> 
-            <a href="{% url 'products' %}">Keep Shopping</a>   
-        </button>
+<div class="container">
+    <h1 class="my-5">Shopping Bag</h1>
+    <button class="btn--grey mb-5" id="btn--back"><i class="fas fa-chevron-left"></i>
+        <a href="{% url 'products' %}">Keep Shopping</a>
+    </button>
 
-        <h2 class="mb-5"><strong>Your Items</strong></h2>
-                {% if bag_items %}
-                    <main id="main--bag">
+    <h2 class="mb-5"><strong>Your Items</strong></h2>
+    {% if bag_items %}
+    <main id="main--bag">
 
-                        <!-- DISPLAYING SHOPPING BAG ITEMS -->
+        <!-- DISPLAYING SHOPPING BAG ITEMS -->
 
-                        {% for i in bag_items %}
-                            <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <img src="../../../static/home/{{ i.product.image_url }}" alt="">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <h3 class="mb-4">{{ i.product.name }}</h3>
-                                    <p>Size: <strong>{% if i.product.has_sizes %}{{ i.size }}{% endif %}</strong></p>
-                                    <p>Price: <strong>£{{ i.product.price }}</strong></p>
-                                    <p>Quantity: <strong>
-                                        {{ i.quantity }}
-                                    </strong></p>
-                                    <p>SKU: {{ i.product.sku }}</p>
-                                </div>
-                            </div>
-                        {% endfor %}
+        {% for i in bag_items %}
+        <br>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="../../../static/home/{{ i.product.image_url }}" alt="">
+            </div>
+            <div class="col-12 col-md-6">
+                <h3><strong>{{ i.product.name }}</strong></h3>
+                <p class="mb-4">SKU: {{ i.product.sku }}</p>
+                <p>Price: £{{ i.product.price }}</p>
+                <p>Quantity:
+                <form action="" method="POST" class="bag__update-form">
+                    {% csrf_token %}
+                    {% if i.product.has_sizes %}
+                    <label for="product_size">Size:</label>
+                    <select name="product_size" id="id_product_size" class="prod-size">
+                        <option value="3" {% if i.size == '3' %}selected{% endif %}>3</option>
+                        <option value="4" {% if i.size == '4' %}selected{% endif %}>4</option>
+                        <option value="5" {% if i.size == '5' %}selected{% endif %}>5</option>
+                        <option value="6" {% if i.size == '6' %}selected{% endif %}>6</option>
+                        <option value="7" {% if i.size == '7' %}selected{% endif %}>7</option>
+                        <option value="8" {% if i.size == '8' %}selected{% endif %}>8</option>
+                        <option value="9" {% if i.size == '9' %}selected{% endif %}>9</option>
+                        <option value="10" {% if i.size == '10' %}selected{% endif %}>10</option>
+                        <option value="11" {% if i.size == '11' %}selected{% endif %}>11</option>
+                        <option value="12" {% if i.size == '12' %}selected{% endif %}>12</option>
+                        <option value="13" {% if i.size == '13' %}selected{% endif %}>13</option>
+                        <option value="14" {% if i.size == '14' %}selected{% endif %}>14</option>
+                    </select>
+                    {% endif %}
+                    <label for="quantity" class="mt-4">Quantity</label>
+                    <input value="{{ i.quantity }}" type="number" name="quantity" value="1" min="1" max="999"
+                        data-item-id="{{ i.item_id }}" id="id_quantity_{{ i.item_id }}" class="prod-qty">
+                </form>
+                <div class="bag__btns mt-3">
+                    <a class="btn--grey btn--thin px-2 mr-2" class="bag__update-btn">
+                        <small><i class="fa fa-refresh mr-1" aria-hidden="true"></i>
+                            Update</small>
+                    </a>
+                    <a class="btn--grey btn--thin px-2 mr-2" class="bag__delete-btn" id="remove_{{ i.item_id }}" data-size="{{ i.size }}">
+                        <small><i class="fas fa-trash-alt mr-1"></i>Delete</small>
+                    </a>
+                </div>
+                <br>
+            </div>
+        </div>
+        <hr>
+        {% endfor %}
 
-                        <!-- DISPLAYING TOTAL -->
+        <!-- DISPLAYING TOTAL -->
 
-                        <h2 class="my-5"><strong>Your Total</strong></h2>
+        <h2 class="my-5"><strong>Your Total</strong></h2>
 
-                        {% if grand_total > free_delivery_threshold %}
-                            <p>You've spent enough to get free delivery. Woo!</p>
-                        {% else %}
-                            <p>Delivery cost: <strong>£{{ delivery|floatformat:2 }}</strong></p>
-                            <p><em>Spend only an extra £{{ free_delivery_delta }} more for free shipping!</em></p>
-                            
-                        {% endif %}
-                        <p class="bag--total">Your total is: <strong>£{{ grand_total|floatformat:2 }}</strong></p>
-                            
-                        
-                            
-                        <!-- CHECKOUT -->
-                        <div>
-                            <p>Checkout</p>
-                        </div>
+        {% if grand_total > free_delivery_threshold %}
+        <p>You've spent enough to get free delivery. Woo!</p>
+        {% else %}
+        <p>Delivery cost: <strong>£{{ delivery|floatformat:2 }}</strong></p>
+        <p><em>Spend only an extra £{{ free_delivery_delta }} more for free shipping!</em></p>
 
-                    </main>
-                        
+        {% endif %}
+        <p class="bag--total">Your total is: <strong>£{{ grand_total|floatformat:2 }}</strong></p>
 
-                        
 
-                    
-                    
-                    
 
-                {% else %}
-                    <p>Your bag is empty.</p>
-                {% endif %}
-    </div>
+        <!-- CHECKOUT -->
+        <div>
+            <p>Checkout</p>
+        </div>
+
+    </main>
+    {% else %}
+    <p>Your bag is empty.</p>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+    <script type="text/javascript">
+        // Updates bag contents
+        $('.bag__update-btn').click(function(e) {
+            var form = $(this).prev('.bag__update-form');
+            form.submit();
+        })
+        // Removes bag content
+        $('.bag__delete-btn').click(function(e) {
+            var csrfToken = "{{ csrf_token }}"
+            var itemId = $(this).attr('id').split('remove_')[1];
+            var size = $(this).data('size');
+            var url = `/bag/remove/${itemId}`;
+            var data = {'csrfmiddlewaretoken': csrfToken, 'size': size};
+
+            $.post(url, data)
+            .done(function() {
+                location.reload();
+            });
+            })
+    </script>
 {% endblock %}
