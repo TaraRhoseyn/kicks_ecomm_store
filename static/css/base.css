@@ -411,6 +411,28 @@ footer p a:hover {
   color: #8918fb;
 }
 
+.message-container {
+  z-index: 99999999999999;
+}
+
+.toast {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .toast {
+    top: 84px;
+    right: 10px;
+  }
+}
+
+.toast .toast-header {
+  background-color: #B1CD44;
+  color: black;
+}
+
 .nav-link:hover, .nav-icon:hover {
   color: #DED92F !important;
 }

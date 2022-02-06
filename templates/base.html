@@ -48,15 +48,27 @@
               <i class="icon_to-top fas fa-chevron-up text-black mx-auto my-auto"></i>
           </a>
     </div>
+
+    {% if messages %}
+    <div class="message-container">
+      {% for message in messages %}
+      {% include 'includes/toasts/toast_success.html' %}
+      {% endfor %}
+    </div>
+    
+    {% endif %}
         	
 
     {% block postloadjs %}
     {{ block.super }}
       <!-- Back to top logic. Credit: CI -->
       <script type="text/javascript">
-        $('.btn_to-top').click(function(e) {
-          window.scrollTo(0,0)
-        })
+
+          $('.btn_to-top').click(function(e) {
+            window.scrollTo(0,0)
+          });
+
+          $('.toast').toast('show');
       </script>
       <script src="../../../static/js/search.js" crossorigin="anonymous"></script>
     {% endblock %}
