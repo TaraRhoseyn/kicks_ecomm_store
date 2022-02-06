@@ -26,30 +26,20 @@ def add_to_bag(request, item_id):
         if item_id in list(bag.keys()):
             if size in bag[item_id]['items_by_size'].keys():
                 bag[item_id]['items_by_size'][size] += quantity
-                print("message sending....")
                 messages.success(request, f'Added {product.name} to your bag')
-                print("message should be sent")
             else:
                 bag[item_id]['items_by_size'][size] = quantity
-                print("message sending....")
                 messages.success(request, f'Added {product.name} to your bag')
-                print("message should be sent")
         else:
             bag[item_id] = {'items_by_size': {size: quantity}}
-            print("message sending....")
             messages.success(request, f'Added {product.name} to your bag')
-            print("message should be sent")
     else:
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
-            print("message sending....")
             messages.success(request, f'Added {product.name} to your bag')
-            print("message should be sent")
         else:
             bag[item_id] = quantity
-            print("message sending....")
             messages.success(request, f'Added {product.name} to your bag')
-            print("message should be sent")
     
     # overwrites var with session var
     request.session['bag'] = bag
