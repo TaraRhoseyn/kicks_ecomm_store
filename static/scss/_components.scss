@@ -361,3 +361,18 @@ footer {
         }
     }
 }
+
+.qty_input {
+    outline: 1px solid black;
+}
+
+.input-group {
+    width: 30%!important;
+    .form-qty-label {
+        margin-right: 30px!important;
+    }
+}
+
+.total--delivery_prompt {
+    color: $purple;
+}

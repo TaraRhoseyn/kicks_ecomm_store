@@ -395,6 +395,22 @@ footer p a:hover {
   color: #8918fb;
 }
 
+.qty_input {
+  outline: 1px solid black;
+}
+
+.input-group {
+  width: 30% !important;
+}
+
+.input-group .form-qty-label {
+  margin-right: 30px !important;
+}
+
+.total--delivery_prompt {
+  color: #8918fb;
+}
+
 .nav-link:hover, .nav-icon:hover {
   color: #DED92F !important;
 }

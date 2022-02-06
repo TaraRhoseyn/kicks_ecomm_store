@@ -42,7 +42,7 @@ def add_to_bag(request, item_id):
 
 def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
-
+    
     quantity = int(request.POST.get('quantity'))
     size = None
     if 'product_size' in request.POST:
@@ -63,7 +63,7 @@ def adjust_bag(request, item_id):
             bag.pop(item_id)
 
     request.session['bag'] = bag
-    return redirect(reverse('view_bag'))
+    return redirect(reverse('view_shopping_bag'))
 
 
 
