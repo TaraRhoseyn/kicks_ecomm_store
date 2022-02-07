@@ -409,4 +409,15 @@ footer {
         background-color: $yellow;
         color: black;
     }
+
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.toast-body-delivery {
+    background-color: $yellow!important;
 }

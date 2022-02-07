@@ -428,9 +428,34 @@ footer p a:hover {
   }
 }
 
-.toast .toast-header {
-  background-color: #B1CD44;
+.toast .toast-header-success {
+  background-color: #B1CD44 !important;
   color: black;
+}
+
+.toast .toast-header-error {
+  background-color: red;
+  color: white;
+}
+
+.toast .toast-header-info {
+  background-color: grey;
+  color: black;
+}
+
+.toast .toast-header-warning {
+  background-color: #DED92F;
+  color: black;
+}
+
+.bag-notification-wrapper {
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.toast-body-delivery {
+  background-color: #DED92F !important;
 }
 
 .nav-link:hover, .nav-icon:hover {
