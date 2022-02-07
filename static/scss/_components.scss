@@ -390,8 +390,23 @@ footer {
         right: 10px;
     }
 
-    .toast-header {
+    .toast-header-success {
         background-color: #B1CD44;
+        color: black;
+    }
+
+    .toast-header-error {
+        background-color: red;
+        color: white;
+    }
+
+    .toast-header-info {
+        background-color: grey;
+        color: black;
+    }
+
+    .toast-header-warning {
+        background-color: $yellow;
         color: black;
     }
 }
