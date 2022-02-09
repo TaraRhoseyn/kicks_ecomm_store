@@ -1,13 +1,26 @@
+# IMPORTS 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Third party:
 from django.shortcuts import get_object_or_404, render, reverse, redirect
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
+
+# Internal:
 from .models import Product, ProductBrand, ProductGroup, ProductType
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 def show_all_products(request):
     """
-    Returns all products.
+    View to returns all products, sort products 
+    by object keys and search queries
+    Args:
+        request (object): HTTP request object
+    Returns:
+        Products page(s) with passed context object
     """
 
     search = None
@@ -78,7 +91,13 @@ def show_all_products(request):
 
 def show_individual_product(request, product_id):
     """
-    Returns individual product details.
+    View to returns all products, sort products 
+    by object keys and search queries
+    Args:
+        request (object): HTTP request object
+        product_id key value of Product model
+    Returns:
+        Individual product page(s) with passed context object
     """
 
     product = get_object_or_404(Product, pk=product_id)

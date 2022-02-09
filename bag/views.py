@@ -1,22 +1,41 @@
+# IMPORTS 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Third party:
 from django.shortcuts import render, redirect, reverse, HttpResponse
 from django.contrib import messages
+
+# Internal:
 from products.models import Product
 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 def view_shopping_bag(request):
-    """ A view to render shopping bag page """
+    """
+    View that renders the bag contents page
+    Args:
+        request (object): HTTP request object
+    Returns:
+        Bag page.
+    """
     return render(request, 'bag/bag.html')
 
 
 def add_to_bag(request, item_id):
-    """ Add items to shopping bag """
-
+    """
+    Add items to shopping bag with quantity and size
+    Args:
+        request (object): HTTP request object
+        item_id: Item identifier
+    Returns:
+        redirect_url: Redirect to bag url
+    """
     product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
-
-    
-
     size = None
+
     if 'product_size' in request.POST:
         size = request.POST['product_size']
     # checks if bag var in session, creates one if not
@@ -49,8 +68,14 @@ def add_to_bag(request, item_id):
 
 
 def adjust_bag(request, item_id):
-    """Adjust the quantity of the specified product to the specified amount"""
-
+    """
+    Adjust the quantity of bag items to a specified amount
+    Args:
+        request (object): HTTP request object
+        item_id: Item identifier
+    Returns:
+        Redirect to bag url
+    """
     product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     size = None
@@ -84,8 +109,14 @@ def adjust_bag(request, item_id):
 
 
 def remove_from_bag(request, item_id):
-    """Remove the item from the shopping bag"""
-
+    """
+    Remove the item from the shopping bag
+    Args:
+        request (object): HTTP request object
+        item_id: Item identifier
+    Returns:
+        Http response of 200 (no error arising)
+    """
     try:
         product = Product.objects.get(pk=item_id)
         size = None

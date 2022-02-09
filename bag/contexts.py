@@ -1,13 +1,25 @@
+# IMPORTS 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Third party:
 from django.conf import settings
-from decimal import Decimal
 from django.shortcuts import get_object_or_404
+from decimal import Decimal
+
+# Internal:
 from products.models import Product
 
-from django.shortcuts import get_object_or_404
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-# Makes dict available to all apps
 def bag_items(request):
-
+    """
+    A context that contains the bag contents
+    and makes it available to all apps
+    Args:
+        request (object): HTTP request object
+    Returns:
+        Context object containing bag items
+    """
     bag_items = []
     total = 0
     product_count = 0
