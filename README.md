@@ -170,6 +170,8 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - **Fix**: Investigating in the Admin dashboard I discovered that the product_type and product_brand values were contaminating each other, with the product_types only going up to 8 (socks was 9) and the rest of the data being filled in with brand names. I fixed this by moving the product_brand value in the model and fixtures, deleting the brands in the Admin dashboard and reloading the data in the appropriate order (brands first).
 - **Bug 8: Inability to sort brands alphabetically by first letter**
 - **Fix**: My original method of trying to sort the brands object by alphabet, then render according to first letter was using a custom template tag (|firstchar) and the zip() method on a python alphabet string and django object. See this image to see how this looked. The dual iteration loop didn't work as intended. I could render either the brand name or the alphabet string, not use them in logic to render brands organised by the string itself. I changed this methodology and used the regroup template tag to regroup the brands query set instead which worked successfully.
+- **Bug 9: Stripe payment not going through**
+- **Fix**: Stripe payments were not being received as Successful despite the checkout form submitting correctly. This was due to the code throwing a TypeError because I was inadvertently trying to add a float with a decimal when calculating the grand total to be submitted to Stripe. I wrapped the instance of my DELIVERY_COST variable in update_total function with a Decimal method to convert the type. This allowed the sum to be calculated correctly and payment to be submitted. 
 
 
 ## Deployment
