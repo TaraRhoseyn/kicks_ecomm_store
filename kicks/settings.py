@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'bag',
     'brands',
-    'checkout'
+    'checkout',
+    # other
+    'crispy_forms',
 ]
 
 SITE_ID = 1
