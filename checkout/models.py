@@ -35,9 +35,9 @@ class Order(models.Model):
         null=False, 
         blank=False
     )
-    country = models.CountryField(
-        max_length=40, 
-        null=False, 
+    country = CountryField(
+        blank_label='Country *',
+        null=False,
         blank=False
     )
     postcode = models.CharField(

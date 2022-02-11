@@ -13,7 +13,7 @@ import json
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product
-from bag.contexts import bag_contents
+from bag.contexts import bag_items
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
