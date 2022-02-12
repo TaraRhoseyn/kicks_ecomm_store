@@ -102,6 +102,7 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - [Sass](https://sass-lang.com/): A CSS extension to speed up development of stylesheets. The features of Sass such as variables, mixins, nesting and seperation of logic was very helpful in this project. 
 - [Django](https://www.djangoproject.com/): Web framework for building the app's core functionality.
 - [Bootstrap](https://getbootstrap.com/): CSS and JS framework used for layout styling and navbar component.
+- [jQuery](https://jquery.com/): JS library to speed up JavaScript development.
 
 ### Tools
 
@@ -116,7 +117,8 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - *vscode-pdf*: To view the wireframes.pdf file within VSCode.
 - *Terminal Tools*: Provides buttons among terminal for command shorthands, making interacting with the terminal faster.
 - *Live Sass Compiler*: Watches for changes in scss files and compiles them to css files automatically. I've customised the settings to compile my .scss files into a singular .min.css file in my static directory.
-- [EmailJS API](https://www.emailjs.com/) - For taking data from the contact form and sending it to my email.
+- [EmailJS API](https://www.emailjs.com/): For taking data from the contact form and sending it to my email.
+- [ScrollifyJS](https://projects.lukehaas.me/scrollify/#home): jQuery plugin for scrolling effects.
 
 ### Helpful websites
 
