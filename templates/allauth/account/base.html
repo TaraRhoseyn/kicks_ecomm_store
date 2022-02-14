@@ -38,9 +38,15 @@
   </head>
   <body>
     {% include "includes/nav.html" %}
-
-    {% block content %}
-    {% endblock %}
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-6">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+    
 
     <!-- Back to top button -->
     <div class="to-top-overlay">
