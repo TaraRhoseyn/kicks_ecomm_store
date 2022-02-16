@@ -332,20 +332,19 @@ use {
 
 html, body {
     height: 100%;
-  }
-  body {
+}
+
+body {
     display: flex;
     flex-direction: column;
-  }
-  .content {
+}
+
+.content {
     flex: 1 0 auto;
-  }
+}
 
 footer {
     flex-shrink: 0;
-
-
-
     .footer__header {
         font-size: 20px;
         font-weight: 500;
