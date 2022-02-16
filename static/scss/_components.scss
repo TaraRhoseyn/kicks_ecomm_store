@@ -421,3 +421,7 @@ footer {
 .toast-body-delivery {
     background-color: $yellow!important;
 }
+
+.form-control:focus {
+    border-color: $yellow!important;
+}

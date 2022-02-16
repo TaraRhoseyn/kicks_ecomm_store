@@ -458,6 +458,10 @@ footer p a:hover {
   background-color: #DED92F !important;
 }
 
+.form-control:focus {
+  border-color: #DED92F !important;
+}
+
 .nav-link:hover, .nav-icon:hover {
   color: #DED92F !important;
 }
