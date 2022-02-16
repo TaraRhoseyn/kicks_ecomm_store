@@ -13,6 +13,12 @@
     font-weight: 700!important;
 }
 
+/* Fix: html rule eliminated horizontal scrollbar bug on mobile view. Credit: StackOverflow */
+
+html, body {
+    overflow-x:hidden 
+} 
+
 body {
     font-family: $secondary-font;
 }
