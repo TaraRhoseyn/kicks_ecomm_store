@@ -85,14 +85,14 @@ Credit: Eduardo Boucas
 }
 
 /* buttons */
-.btn--purple {
+.btn--purple, .allauth-inner-content button {
   color: white;
   border: 3px #8918fb solid !important;
   padding: 10px;
   background-color: #8918fb !important;
 }
 
-.btn--purple:hover {
+.btn--purple:hover, .allauth-inner-content button:hover {
   color: white !important;
   background-color: black !important;
 }
