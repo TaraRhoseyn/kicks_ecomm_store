@@ -64,7 +64,7 @@ Credit: Eduardo Boucas
 
 /* home hero section */
 .hero-image {
-  background-image: url("../home/home_hero.png");
+  background-image: url("media/home_hero.png");
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;

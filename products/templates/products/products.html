@@ -63,7 +63,7 @@
                     <div class="card-deck product--all_card">
                         <div class="img-container">
                             <a href="{% url 'individual_product' product.id %}">
-                                <img class="card-img-top product-img" src="../../../static/home/{{ product.image_url }}" alt="{{ product.description }}" class="product-images">
+                                <img class="card-img-top product-img" src="/media/{{ product.image_url }}" alt="{{ product.name }}" class="product-images">
                             </a>
                         </div>
                         <div class="card-body">
@@ -72,7 +72,6 @@
                                 <strong>{{ product.name }}</strong></h5>
                             </a>
                         {% include "includes/rating.html" %}
-                        <!-- <p class="card-text">{{ product.description }}</p> -->
                         <p class="card-price mt-3"><strong>£{{ product.price }}</strong></p>
                         </div>
                     </div>
