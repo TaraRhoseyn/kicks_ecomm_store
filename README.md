@@ -223,6 +223,8 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 - **Reddit** - For [Django sorting method](https://www.reddit.com/r/django/comments/20lxq0/how_to_sort_a_retrieved_list_alphabetically_in_a/)
 
+- **w3schools** - For [image parallax effect](https://www.w3schools.com/howto/howto_css_parallax.asp)
+
 ### Media
 
 All images were sourced from the copyright-free image repositories [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/). For full image rights and credit, please see the seperate [media.md](/docs/media.md) file.
