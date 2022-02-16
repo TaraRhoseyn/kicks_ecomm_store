@@ -462,6 +462,11 @@ footer p a:hover {
   border-color: #DED92F !important;
 }
 
+.order-history {
+  max-height: 416px;
+  overflow-y: auto;
+}
+
 .nav-link:hover, .nav-icon:hover {
   color: #DED92F !important;
 }

@@ -425,3 +425,8 @@ footer {
 .form-control:focus {
     border-color: $yellow!important;
 }
+
+.order-history {
+    max-height: 416px;
+    overflow-y: auto;
+}
