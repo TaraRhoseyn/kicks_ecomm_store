@@ -21,7 +21,11 @@ class TestProductModels(TestCase):
 
         ProductGroup.objects.create(
             name='test-brand', friendly_name='test brand')
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 72a140e2005bba90507af036a4388ea278b783c8
         ProductType.objects.create(
             name='test-brand', friendly_name='test brand')
 
@@ -36,7 +40,11 @@ class TestProductModels(TestCase):
             rating='1',
             image_url='test.png'
         )
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 72a140e2005bba90507af036a4388ea278b783c8
     def tearDown(self):
         """
         Delete test Product, ProductBrand, ProductGroup, and ProductType
@@ -59,4 +67,8 @@ class TestProductModels(TestCase):
         This test tests the products str method and verifies
         """
         product = Product.objects.get(pk='1')
+<<<<<<< HEAD
         self.assertEqual((product.__str__()), product.name) 
+=======
+        self.assertEqual((product.__str__()), product.name)
+>>>>>>> 72a140e2005bba90507af036a4388ea278b783c8
