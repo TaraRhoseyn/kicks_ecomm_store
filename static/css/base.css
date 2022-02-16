@@ -62,28 +62,6 @@ Credit: Eduardo Boucas
   color: black !important;
 }
 
-/* home hero section */
-.hero-image {
-  background-image: url("media/home_hero.png");
-  height: 100vh;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-@media (min-width: 768px) {
-  .hero-image .container {
-    margin-top: 250px;
-  }
-}
-
-@media (min-width: 768px) {
-  .hero-image .container a {
-    margin-top: 50px;
-  }
-}
-
 /* buttons */
 .btn--purple, .allauth-inner-content button {
   color: white;
@@ -95,16 +73,6 @@ Credit: Eduardo Boucas
 .btn--purple:hover, .allauth-inner-content button:hover {
   color: white !important;
   background-color: black !important;
-}
-
-@media (min-width: 320px) {
-  .home-secondary-section > div, .home-secondary-section > div > div {
-    margin-top: 30px;
-  }
-}
-
-.home-images {
-  width: 80%;
 }
 
 .card-deck {
@@ -202,9 +170,15 @@ use:nth-child(5) {
   width: 100px;
 }
 
-.home-secondary-section {
+.home-section {
   padding: 0;
   border: 0;
+}
+
+@media (min-width: 1024px) {
+  .home-section p {
+    font-size: 1.2rem;
+  }
 }
 
 .scroll-section {
@@ -214,17 +188,64 @@ use:nth-child(5) {
   right: 0;
   bottom: 0;
   left: 0;
+  border: 0;
   padding: 0;
   border: 0 !important;
   margin: 0 !important;
 }
 
-#scroll-green {
-  background-color: #B1CD44 !important;
+#home_section-one {
+  background-color: #B3E140 !important;
 }
 
-#scroll-red {
-  background-color: #D8243C !important;
+@media (min-width: 1024px) {
+  #home_section-one {
+    background-image: url("/media/home_1.webp");
+    /* Credit for parallax: w3schools */
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+#home_section-two {
+  background-color: #84BFE1 !important;
+}
+
+@media (min-width: 1024px) {
+  #home_section-two {
+    background-image: url("/media/home_2.webp");
+    /* Credit for parallax: w3schools */
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+#home_section-three {
+  color: #fff;
+  background-color: #D8263B !important;
+}
+
+@media (min-width: 1024px) {
+  #home_section-three {
+    background-image: url("/media/home_3.webp");
+    /* Credit for parallax: w3schools */
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+.align-middle {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 @media (min-width: 768px) {
@@ -506,6 +527,11 @@ footer p a:hover {
 /* Accessibility measure. Credit: Cory House */
 [aria-current] {
   font-weight: 700 !important;
+}
+
+/* Fix: html rule eliminated horizontal scrollbar bug on mobile view. Credit: StackOverflow */
+html, body {
+  overflow-x: hidden;
 }
 
 body {

@@ -45,29 +45,6 @@
 .dropdown-item:hover {
     color: black!important;
 }
-/* home hero section */ 
-
-.hero-image {
-    background-image: url("media/home_hero.png");
-    height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-
-    .container {
-        @include for-tablet-up {
-            margin-top: 250px;
-        }
-
-        a {
-            @include for-tablet-up {
-                margin-top: 50px;
-            }
-        }
-    }
-}
-
 
 /* buttons */ 
 
@@ -76,26 +53,12 @@
     border: 3px $purple solid!important;
     padding: 10px;
     background-color: $purple!important;
-
     &:hover {
         color: white!important;
         background-color: black!important;
 
     }
 }
-
-.home-secondary-section {
-    > div, > div > div {
-        @include for-phone-up {
-            // outline: 2px red solid;
-            margin-top: 30px;
-        }
-    }
-}
-.home-images {
-    width: 80%;
-}
-
 
 .card-deck {
     margin: 5px!important;
@@ -179,9 +142,14 @@ use {
     width: 100px;
 }
 
-.home-secondary-section {
+.home-section {
     padding: 0;
     border: 0;
+    p {
+        @include for-desktop-up {
+            font-size: 1.2rem;
+        }
+    }
 }
 
 .scroll-section {
@@ -192,18 +160,58 @@ use {
     right: 0;
     bottom: 0;
     left: 0;
+    border: 0;
     padding: 0;
     border: 0!important;
     margin: 0!important;
 }
 
-#scroll-green {
-    background-color: #B1CD44!important;
+#home_section-one {
+    background-color: #B3E140!important;
+    @include for-desktop-up {
+        background-image: url("/media/home_1.webp");
+        /* Credit for parallax: w3schools */
+        min-height: 250px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
 }
 
-#scroll-red {
-    background-color: #D8243C!important;
+#home_section-two {
+    background-color: #84BFE1!important;
+    @include for-desktop-up {
+        background-image: url("/media/home_2.webp");
+        /* Credit for parallax: w3schools */
+        min-height: 250px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
 }
+
+#home_section-three {
+    color: #fff;
+    background-color: #D8263B!important;
+    @include for-desktop-up {
+        background-image: url("/media/home_3.webp");
+        /* Credit for parallax: w3schools */
+        min-height: 250px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+}
+
+.align-middle {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
 
 .product-details {
     @include for-tablet-up {
