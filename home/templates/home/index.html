@@ -1,12 +1,50 @@
-{% extends "base.html" %}
 {% load static %}
 
-{% block head_title %}Home{% endblock %}
-{% block extra_meta %}
-    <meta name="description" content="Get the latest kicks without spending a fortune.">
-{% endblock %}
+<!DOCTYPE html>
+<html>
 
-{% block content %}
+<head>
+    <title>Home</title>
+
+    {% block core_meta %}
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="robots" content="index, follow">
+        {% endblock %}
+
+    {% block extra_meta %}
+
+    {% endblock %}
+
+    {% block corecss %}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% endblock %}
+
+    {% block corejs %}
+        <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script src="https://js.stripe.com/v3/"></script>
+        <script src="../static/js/main.js"></script>
+    {% endblock %}
+
+</head>
+
+<body>
+    {% include "includes/nav.html" %}
+
+
+    <meta name="description" content="Get the latest kicks without spending a fortune.">
+
     <div class="container-fluid hero-image scroll-section">
         <div class="row">
             <div class="col-12">
@@ -21,33 +59,36 @@
     <div class="container-fluid home-secondary-section">
         <div class="row home-images-rows scroll-section" id="scroll-green">
             <div class="col-12 col-md-6">
-                <img src="media/home_students.png" class="home-images" alt="">
+                <img src="/media/home_students.png" class="home-images" alt="">
             </div>
             <div class="col-12 col-md-6">
                 <h2 class="mb-5">Students get 10% off</h3>
-                <p>Register for an account with your student email address and we’ll send you a 
-                    discount code for 10% off your first order. </p>
-                <a href="" class="btn--purple">Claim discount</a>
+                    <p>Register for an account with your student email address and we’ll send you a
+                        discount code for 10% off your first order. </p>
+                    <a href="" class="btn--purple">Claim discount</a>
             </div>
         </div>
         <div class="row home-images-rows scroll-section" id="scroll-red">
             <div class="col-12 col-md-6">
                 <h2 class="mb-5">Free delivery!</h3>
-                <p>On all orders over £{{ free_delivery_threshold }}.</p>
-                <a href="{% url 'products' %}" class="btn--purple">Shop now</a>
+                    <p>On all orders over £{{ free_delivery_threshold }}.</p>
+                    <a href="{% url 'products' %}" class="btn--purple">Shop now</a>
             </div>
             <div class="col-12 col-md-6">
-                <img src="media/home_sale.png" class="home-images" alt="">
+                <img src="/media/home_sale.png" class="home-images" alt="">
             </div>
         </div>
     </div>
     <script src="../../../static/js/jquery.js"></script>
     <script src="../../../static/js/jquery.scrollify.js"></script>
     <script>
-        $(function() {
+        $(function () {
             $.scrollify({
-            section : ".scroll-section",
+                section: ".scroll-section",
             });
         });
     </script>
-{% endblock %}
+    {% include "includes/footer.html" %}
+</body>
+
+</html>

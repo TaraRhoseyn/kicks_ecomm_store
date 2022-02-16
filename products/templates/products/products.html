@@ -1,19 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_css %}
-    <!-- Credit: Modern CSS Dev 
-    Smooth scrolling IF user doesn't have a preference due to motion sensitivities -->
-    <style>
-        @media screen and (prefers-reduced-motion: no-preference) {
-            html {
-            scroll-behavior: smooth;
-            }
-        } 
-    </style>
-{% endblock %}
-
-
 {% block content %}
 
     <div class="container">
