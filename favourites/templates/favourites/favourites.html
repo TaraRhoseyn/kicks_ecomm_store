@@ -22,6 +22,8 @@
             <h1 class="my-5">My favourites</h1>
         </div>
 
+        {% if favourites_items %}
+
         <div class="row">
             {% for fav in favourites_items %}
                 <div class="col-12 col-md-3" id="search-result">
@@ -45,6 +47,20 @@
                 </div>
             {% endfor %}
         </div>
+        {% else %}
+            <div class="row">
+                <p>You have no favourites at the moment.</p>
+            </div>
+            <div class="row">
+                <div class="mt-5 ml-0">
+                    <a href="{% url 'products' %}" class="btn--grey" id="btn--back">
+                        <i class="fas fa-chevron-left"></i>
+                        Keep Shopping</a>
+                </div>
+            </div>
+            
+            
+        {% endif %}
     </div>
     
 {% endblock %}

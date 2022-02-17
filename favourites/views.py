@@ -31,9 +31,6 @@ def view_favourites(request):
         favourites_items = favourites.products.all()
         favourites_count = favourites.products.all().count()
 
-    if not favourites_items:
-        messages.info(request, 'Your favourites list is empty!')
-
     template = 'favourites/favourites.html'
     context = {
         'favourites_items': favourites_items,
