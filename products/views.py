@@ -8,7 +8,8 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 # Internal:
-from .models import Product, ProductBrand, ProductGroup, ProductType
+from .models import Product, ProductGroup, ProductType
+from brands.models import Brand
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -49,7 +50,7 @@ def show_all_products(request):
         if 'product_brand' in request.GET:
             product_brands = request.GET['product_brand'].split(',')
             products = products.filter(product_brand__name__in=product_brands)
-            product_brands = ProductBrand.objects.filter(name__in=product_brands)
+            product_brands = Brand.objects.filter(name__in=product_brands)
 
         # User searching products
         if 'search' in request.GET:

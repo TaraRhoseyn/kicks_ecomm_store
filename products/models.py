@@ -1,9 +1,12 @@
-# IMPORTS 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# IMPORTS 
 
-# Third party:
+# Third party
 from django.db import models
 from django.core.validators import MaxValueValidator
+
+# Internal
+from brands.models import Brand
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -79,43 +82,6 @@ class ProductType(models.Model):
         return self.friendly_name
 
 
-class ProductBrand(models.Model):
-    """
-    A class for brands of products, 
-    e.g. Nike, Puma etc
-    """
-    name = models.CharField(
-        max_length=200, 
-        null=True, 
-        blank=True
-    )
-    friendly_name = models.CharField(
-        max_length=200, 
-        null=True, 
-        blank=True
-    )
-
-    def __str__(self):
-        """
-        Returns the ProductBrand name string
-        Args:
-            self (object): self.
-        Returns:
-            The ProductBrand name string
-        """
-        return self.name
-
-    def get_friendly_name(self):
-        """
-        Returns the ProductBrand friendly name string
-        Args:
-            self (object): self.
-        Returns:
-            The ProductBrand friendly name string
-        """
-        return self.friendly_name
-
-
 class Product(models.Model):
     """
     A class for all products
@@ -146,7 +112,7 @@ class Product(models.Model):
         on_delete=models.SET_NULL
     )
     product_brand = models.ForeignKey(
-        'ProductBrand', 
+        Brand,
         default=1, 
         null=True, 
         blank=True, 

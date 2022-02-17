@@ -1,5 +1,14 @@
+# IMPORTS
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Third party
 from django.contrib import admin
-from .models import Product, ProductGroup, ProductType, ProductBrand
+
+# Internal
+from brands.models import Brand
+from .models import Product, ProductGroup, ProductType
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 class ProductAdmin(admin.ModelAdmin):
@@ -32,7 +41,7 @@ class ProductTypeAdmin(admin.ModelAdmin):
     )
 
 
-class ProductBrandAdmin(admin.ModelAdmin):
+class BrandAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'friendly_name'
@@ -42,4 +51,4 @@ class ProductBrandAdmin(admin.ModelAdmin):
 admin.site.register(Product, ProductAdmin)
 admin.site.register(ProductGroup, ProductGroupAdmin)
 admin.site.register(ProductType, ProductTypeAdmin)
-admin.site.register(ProductBrand, ProductBrandAdmin)
+admin.site.register(Brand, BrandAdmin)

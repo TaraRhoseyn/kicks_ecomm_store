@@ -5,7 +5,7 @@
 from django.shortcuts import render
 
 # Internal:
-from products.models import ProductBrand
+from brands.models import Brand
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -17,8 +17,8 @@ def show_brand(request):
     Returns:
         Brand page with passed context object
     """
-    # Credit for sort ProductBrand.objects method: Reddit
-    brands = ProductBrand.objects.all().order_by('name')    
+    # Credit for sort Brand.objects method: Reddit
+    brands = Brand.objects.all().order_by('name')    
     context = {
         'brands': brands,
     }
