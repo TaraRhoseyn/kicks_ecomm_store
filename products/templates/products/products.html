@@ -21,22 +21,21 @@
 
                 <!-- SORTING PRODUCTS -->
 
-                <h2 class="text-center my-4">Sort by...</h2>    
+                <h2 class="text-center my-4">Sort by...</h2>
                 <div class="d-flex flex-row justify-content-center my-4">
                     <button class="btn--grey btn--thin px-2 mx-2" id="btn--sort--price--asc">
                         <i class="fas fa-arrow-up"></i>
-                        Price (low to high)</button>
+                        Price</button>
                     <button class="btn--grey btn--thin px-2 mx-2" id="btn--sort--price--desc">
                         <i class="fas fa-arrow-down"></i>
-                        Price (high to low)</button>
+                        Price</button>
                     <button class="btn--grey btn--thin px-2 mx-2" id="btn--sort--rating--desc">
                         <i class="fas fa-star"></i>
-                        Rating (high to low) </button>
+                        Rating</button>
                     <button class="btn--grey btn--thin px-2 mx-2" id="btn--sort--clear">
                         <i class="fas fa-times"></i>
                         Clear all</button>
                 </div>
-
                 
             {% endif %}
         
@@ -83,7 +82,7 @@
                 params.append('direction', 'asc');
                 window.history.replaceState({}, '', `${location.pathname}?${params}`);
                 location.reload();
-                // FIXME: Add selected styling for button, without reloading??
+                changeFontWeight(this);
                 
             });
             $("#btn--sort--price--desc").on("click", function() {
@@ -111,6 +110,11 @@
                 window.history.replaceState({}, '', `${location.pathname}?${params}`);
                 location.reload();
             });
+            async function changeFontWeight(element) {
+                console.log("changeFontWeight function reached")
+                await new Promise(resolve => setTimeout(resolve, 1000));
+                element.classList.add('font-weight-cold');
+            }
         }
   </script>
   
