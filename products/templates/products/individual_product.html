@@ -22,7 +22,26 @@
                 <!-- PRODUCT DETAILS -->
 
                 <div class="product-details">
-                    <h1><strong>{{ product.name }}</strong></h1>
+                    <div class="row ml-0">
+                        <span>
+                            <h1>{{ product.name }}</h1>
+                        </span>
+                        <span>
+                                <!-- FAVOURITING PRODUCTS -->
+    
+                                {% if is_product_in_favourites %}
+                                <a href="{% url 'remove_product_from_favourites' product.id 'product' %}" aria-label="remove product from favourites"
+                                    class="favourite favourite-remove ml-4 fa-2x"><i class="fas fa-heart"></i></a>
+                                {% else %}
+                                <a href="{% url 'add_product_to_favourites' product.id %}" aria-label="add product to favourites"
+                                    class="favourite ml-4 fa-2x"><i class="far fa-heart"></i></a>
+                                {% endif %}
+                        </span>
+                    </div>
+                    
+                        
+                            
+                    
                     {% include "includes/rating.html" %}
                     <p class="rating-desc">{{ product.rating}}/5 stars</p>
                     <div class="prod-btns mt-3">
@@ -39,17 +58,6 @@
                     </div>
                     <p class="prod-desc">{{ product.description }}</p>
                     <p class="card-price mb-4">Price: <strong>£{{ product.price }}</strong></p>
-
-                    <!-- FAVOURITING PRODUCTS -->
-
-                    {% if is_product_in_favourites %}
-                        <a href="{% url 'remove_product_from_favourites' product.id 'product' %}" aria-label="remove product from favourites"
-                            class="favourite favourite-remove text-danger ml-3"><i class="fas fa-heart"></i></a>
-                    {% else %}
-                        <a href="{% url 'add_product_to_favourites' product.id %}" aria-label="add product to favourites"
-                            class="favourite text-danger ml-3"><i class="far fa-heart"></i></a>
-                    {% endif %}
-
 
                     <!-- ADD TO CART -->
 

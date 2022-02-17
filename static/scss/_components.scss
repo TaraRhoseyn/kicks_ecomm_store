@@ -79,7 +79,7 @@ body {
     &:hover {
         cursor: pointer;
         color: white!important;
-        background-color: grey;
+        background-color: grey!important;
 
     }
 }
@@ -467,4 +467,8 @@ footer {
 .order-history {
     max-height: 416px;
     overflow-y: auto;
+}
+
+.favourite {
+    color: $red!important;
 }

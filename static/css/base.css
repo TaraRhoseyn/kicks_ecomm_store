@@ -97,7 +97,7 @@ body {
 .btn--grey:hover {
   cursor: pointer;
   color: white !important;
-  background-color: grey;
+  background-color: grey !important;
 }
 
 .btn--red {
@@ -526,6 +526,10 @@ footer p a:hover {
 .order-history {
   max-height: 416px;
   overflow-y: auto;
+}
+
+.favourite {
+  color: #D8263B !important;
 }
 
 .nav-link:hover, .nav-icon:hover {
