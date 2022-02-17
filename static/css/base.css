@@ -110,6 +110,10 @@ body {
   background-color: #8918fb !important;
 }
 
+.btn--remove {
+  padding: 5px;
+}
+
 .btn_to-top {
   position: fixed;
   bottom: 40px;

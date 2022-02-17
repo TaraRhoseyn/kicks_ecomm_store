@@ -1,11 +1,25 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+{{ block.super }}
+    <style>
+        @media (max-width: 425px) { 
+            .card-deck { 
+                min-height: 500px!important; 
+            }
+        }
+    </style>
+{% endblock %}
+
 {% block content %}
 
     <div class="container">
 
         <!-- DISPLAYING FAVOURITED PRODUCTS -->
+        <div class="row">
+            <h1 class="my-5">My favourites</h1>
+        </div>
 
         <div class="row">
             {% for fav in favourites_items %}
@@ -22,12 +36,10 @@
                                 <strong>{{ fav.name }}</strong></h5>
                             </a>
                         {% include "includes/rating.html" %}
-                        <p class="card-price mt-3"><strong>£{{ fav.price }}</strong></p>
+                        <p class="card-price mt-3">£{{ fav.price }}</p>
                         </div>
-
                         <a href="{% url 'remove_product_from_favourites' fav.id 'favourites' %}" 
-                            class="btn--grey">Delete from favourites</a>
-
+                            class="btn--red btn--remove ml-3 mb-3 text-small">Remove </a>
                     </div>
                 </div>
             {% endfor %}
