@@ -117,7 +117,6 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - *vscode-pdf*: To view the wireframes.pdf file within VSCode.
 - *Terminal Tools*: Provides buttons among terminal for command shorthands, making interacting with the terminal faster.
 - *Live Sass Compiler*: Watches for changes in scss files and compiles them to css files automatically. I've customised the settings to compile my .scss files into a singular .min.css file in my static directory.
-- [EmailJS API](https://www.emailjs.com/): For taking data from the contact form and sending it to my email.
 - [ScrollifyJS](https://projects.lukehaas.me/scrollify/#home): jQuery plugin for scrolling effects.
 
 ### Helpful websites
