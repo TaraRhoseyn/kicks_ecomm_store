@@ -62,10 +62,10 @@ Credit: Eduardo Boucas
   color: black !important;
 }
 
-/* buttons */
+/* BUTTONS */
 .btn--purple, .allauth-inner-content button {
   color: white;
-  border: 3px #8918fb solid !important;
+  border: 1px #8918fb solid !important;
   padding: 10px;
   background-color: #8918fb !important;
 }
@@ -73,6 +73,62 @@ Credit: Eduardo Boucas
 .btn--purple:hover, .allauth-inner-content button:hover {
   color: white !important;
   background-color: black !important;
+  border: none;
+}
+
+body {
+  outline: 2px solid red;
+}
+
+.btn--thin {
+  padding: 4px;
+}
+
+.btn--grey, .btn--purple, .btn--red {
+  padding: 10px;
+}
+
+.btn--grey {
+  color: grey;
+  border: 1px grey solid;
+  background-color: white !important;
+}
+
+.btn--grey:hover {
+  cursor: pointer;
+  color: white !important;
+  background-color: grey;
+}
+
+.btn--red {
+  color: white !important;
+  background-color: #D8263B !important;
+}
+
+.btn--red:hover {
+  color: white !important;
+  background-color: #8918fb !important;
+}
+
+.btn_to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 5px;
+  height: 60px !important;
+  width: 60px !important;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 20px;
+  font-size: 30px;
+  -webkit-box-shadow: 0px 5px 17px 5px rgba(166, 160, 170, 0.38);
+  box-shadow: 0px 5px 17px 5px rgba(166, 160, 170, 0.38);
+}
+
+.btn_to-top:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 17px 5px rgba(162, 13, 163, 0.38);
+  box-shadow: 0px 5px 17px 5px rgba(162, 13, 163, 0.38);
 }
 
 .card-deck {
@@ -181,13 +237,6 @@ use:nth-child(5) {
   }
 }
 
-<<<<<<< HEAD
-* {
-  outline: red;
-}
-
-=======
->>>>>>> 72a140e2005bba90507af036a4388ea278b783c8
 .scroll-section {
   width: 100%;
   height: 100%;
@@ -215,7 +264,6 @@ use:nth-child(5) {
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
-<<<<<<< HEAD
 }
 
 #home_section-two {
@@ -251,43 +299,6 @@ use:nth-child(5) {
   }
 }
 
-=======
-}
-
-#home_section-two {
-  background-color: #84BFE1 !important;
-}
-
-@media (min-width: 1024px) {
-  #home_section-two {
-    background-image: url("/media/home_2.webp");
-    /* Credit for parallax: w3schools */
-    min-height: 250px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  }
-}
-
-#home_section-three {
-  color: #fff;
-  background-color: #D8263B !important;
-}
-
-@media (min-width: 1024px) {
-  #home_section-three {
-    background-image: url("/media/home_3.webp");
-    /* Credit for parallax: w3schools */
-    min-height: 250px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  }
-}
-
->>>>>>> 72a140e2005bba90507af036a4388ea278b783c8
 .align-middle {
   margin-top: auto;
   margin-bottom: auto;
@@ -326,44 +337,6 @@ use:nth-child(5) {
   .rating-desc, .rating-aria, .rating {
     display: inline;
   }
-}
-
-.btn--grey {
-  color: grey;
-  border: 1px grey solid;
-  padding: 10px;
-  background-color: white !important;
-}
-
-.btn--grey:hover {
-  cursor: pointer;
-  color: white !important;
-  background-color: grey !important;
-}
-
-.btn--thin {
-  padding: 4px;
-}
-
-.btn_to-top {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  padding: 5px;
-  height: 60px !important;
-  width: 60px !important;
-  border-radius: 50%;
-  background-color: white;
-  font-size: 20px;
-  font-size: 30px;
-  -webkit-box-shadow: 0px 5px 17px 5px rgba(166, 160, 170, 0.38);
-  box-shadow: 0px 5px 17px 5px rgba(166, 160, 170, 0.38);
-}
-
-.btn_to-top:hover {
-  cursor: pointer;
-  -webkit-box-shadow: 0px 5px 17px 5px rgba(162, 13, 163, 0.38);
-  box-shadow: 0px 5px 17px 5px rgba(162, 13, 163, 0.38);
 }
 
 #main--bag img {
@@ -612,4 +585,7 @@ nav {
 h1 {
   font-weight: 700;
 }
-/*# sourceMappingURL=base.css.map */
+
+a:hover {
+  text-decoration: none;
+}

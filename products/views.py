@@ -4,12 +4,14 @@
 # Third party:
 from django.shortcuts import get_object_or_404, render, reverse, redirect
 from django.contrib import messages
+from django.http import Http404
 from django.db.models import Q
 from django.db.models.functions import Lower
 
 # Internal:
 from .models import Product, ProductGroup, ProductType
 from brands.models import Brand
+from favourites.models import Favourite
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -103,8 +105,17 @@ def show_individual_product(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
+    # Grabs favourites
+    try:
+        favourites = get_object_or_404(Favourite, created_by=request.user.id)
+    except Http404:
+        is_product_in_favourites = False
+    else:
+        is_product_in_favourites = bool(product in favourites.products.all())
+
     context = {
         'product': product,
+        'is_product_in_favourites': is_product_in_favourites,
     }
 
     return render(request, 'products/individual_product.html', context)

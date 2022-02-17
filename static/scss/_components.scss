@@ -35,7 +35,6 @@
     }
 }
 
-
 .dropdown-menu {
     background-color: black!important;
     border: none;
@@ -46,17 +45,72 @@
     color: black!important;
 }
 
-/* buttons */ 
+/* BUTTONS */ 
 
 .btn--purple, .allauth-inner-content button {
     color: white;
-    border: 3px $purple solid!important;
+    border: 1px $purple solid!important;
     padding: 10px;
     background-color: $purple!important;
     &:hover {
         color: white!important;
         background-color: black!important;
+        border: none;
 
+    }
+}
+
+body {
+    outline: 2px solid red;
+}
+
+.btn--thin {
+    padding: 4px;
+}
+
+.btn--grey, .btn--purple, .btn--red {
+    padding: 10px;
+}
+
+.btn--grey {
+    color: grey;
+    border: 1px grey solid;
+    background-color: white!important;
+    &:hover {
+        cursor: pointer;
+        color: white!important;
+        background-color: grey;
+
+    }
+}
+
+.btn--red {
+    color: white!important;
+    background-color: $red!important;
+    &:hover {
+        color: white!important;
+        background-color: $purple!important;
+    }
+}
+
+.btn_to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 5px;
+    height: 60px!important;
+    width: 60px!important;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 20px;
+    font-size: 30px;
+    -webkit-box-shadow: 0px 5px 17px 5px rgba(166, 160, 170, 0.38); 
+    box-shadow: 0px 5px 17px 5px rgba(166, 160, 170, 0.38);
+
+    &:hover {
+        cursor: pointer;
+        -webkit-box-shadow: 0px 5px 17px 5px rgba(162,13,163,0.38); 
+        box-shadow: 0px 5px 17px 5px rgba(162,13,163,0.38);
     }
 }
 
@@ -194,7 +248,7 @@ use {
 
 #home_section-three {
     color: #fff;
-    background-color: #D8263B!important;
+    background-color: $red!important;
     @include for-desktop-up {
         background-image: url("/media/home_3.webp");
         /* Credit for parallax: w3schools */
@@ -243,45 +297,6 @@ use {
 .rating-desc, .rating-aria, .rating {
     @include for-tablet-up {
         display: inline;
-    }
-}
-
-.btn--grey {
-    color: grey;
-    border: 1px grey solid;
-    padding: 10px;
-    background-color: white!important;
-
-    &:hover {
-        cursor: pointer;
-        color: white!important;
-        background-color: grey!important;
-
-    }
-}
-
-.btn--thin {
-    padding: 4px;
-}
-
-.btn_to-top {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    padding: 5px;
-    height: 60px!important;
-    width: 60px!important;
-    border-radius: 50%;
-    background-color: white;
-    font-size: 20px;
-    font-size: 30px;
-    -webkit-box-shadow: 0px 5px 17px 5px rgba(166, 160, 170, 0.38); 
-    box-shadow: 0px 5px 17px 5px rgba(166, 160, 170, 0.38);
-
-    &:hover {
-        cursor: pointer;
-        -webkit-box-shadow: 0px 5px 17px 5px rgba(162,13,163,0.38); 
-        box-shadow: 0px 5px 17px 5px rgba(162,13,163,0.38);
     }
 }
 

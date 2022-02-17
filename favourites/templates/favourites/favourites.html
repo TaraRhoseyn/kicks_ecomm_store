@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container">
+
+        <!-- DISPLAYING FAVOURITED PRODUCTS -->
+
+        <div class="row">
+            {% for fav in favourites_items %}
+                <div class="col-12 col-md-3" id="search-result">
+                    <div class="card-deck product--all_card">
+                        <div class="img-container">
+                            <a href="{% url 'individual_product' fav.id %}">
+                                <img class="card-img-top product-img" src="/media/{{ fav.image_url }}" alt="{{ fav.name }}" class="product-images">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="{% url 'individual_product' fav.id %}" class="product_name">
+                                <strong>{{ fav.name }}</strong></h5>
+                            </a>
+                        {% include "includes/rating.html" %}
+                        <p class="card-price mt-3"><strong>£{{ fav.price }}</strong></p>
+                        </div>
+
+                        <a href="{% url 'remove_product_from_favourites' fav.id 'favourites' %}" 
+                            class="btn--grey">Delete from favourites</a>
+
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+{% endblock %}
