@@ -125,6 +125,7 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - [Am I Responsive](http://ami.responsivedesign.is/): Used to create the multi-device mock-up you see at the start of this README.md file.
 - [Tiny PNG](https://tinypng.com/): Used to compress images for improved website performance.
 - [Gorgias SKU Generator](https://www.gorgias.com/tools/sku-generator): Gorgias SKU Generator was used to generate SKU values. Please see [Database Design](#Database-Design) for more information on SKU architecture within the fixtures.
+- [PNG to WEBP](https://cloudconvert.com/png-to-webp): For converting png images to webp formats.
 
 ### Version Control
 
@@ -208,6 +209,8 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - **Cory House**: For [adding aria-current attributes to current pages](https://twitter.com/housecor/status/1476910306702077954/photo/1)
 
 - **Ignacio Lozano** - For [using coverage in Django for testing](https://www.bedjango.com/blog/package-week-coverage-django/)
+
+- **Paul Meeneghan** - For [favourites app](https://github.com/pmeeny)
 
 - **Eduardo Boucas** - For [approaching media queries in sass](https://css-tricks.com/approaches-media-queries-sass/)
 
