@@ -5,10 +5,13 @@
 {% block content %}
     <div class="container">
         <h1 class="my-5">Shopping Bag</h1>
-        <button class="btn--grey mb-5" id="btn--back"><i class="fas fa-chevron-left"></i>
-            <a href="{% url 'products' %}">Keep Shopping</a>
-        </button>
 
+
+        <div class="mb-5">
+            <a href="{% url 'products' %}" class="btn--grey" id="btn--back">
+                <i class="fas fa-chevron-left"></i>
+                Keep Shopping</a>
+        </div>
         <h2 class="mb-5"><strong>Your Items</strong></h2>
         {% if bag_items %}
             <main id="main--bag">

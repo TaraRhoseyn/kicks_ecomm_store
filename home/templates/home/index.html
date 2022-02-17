@@ -74,6 +74,31 @@
             </div>
         </div>
     </div>
+    <footer class="page-footer font-small">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 text-center">
+                    <p class="my-4 footer__header"><a href="{% url 'products' %}">Kicks Ltd</a></p>
+                </div>
+                <div class="col-12 col-md-6 ">
+                    <div class="footer--icons align-self-center text-center">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                            <i aria-hidden="true" class="fab fa-facebook-f fa-xs"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener">
+                            <i aria-hidden="true" class="fab fa-twitter fa-xs"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                            <i aria-hidden="true" class="fab fa-instagram fa-xs"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="../../../static/js/jquery.js"></script>
     <script src="../../../static/js/jquery.scrollify.js"></script>
     <script>
@@ -83,7 +108,6 @@
             });
         });
     </script>
-    {% include "includes/footer.html" %}
 </body>
 
 </html>
