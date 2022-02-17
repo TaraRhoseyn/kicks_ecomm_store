@@ -24,17 +24,17 @@
                 <div class="product-details">
                     <div class="row ml-0">
                         <span>
-                            <h1>{{ product.name }}</h1>
+                            <h1 class="mr-4">{{ product.name }}</h1>
                         </span>
                         <span>
                                 <!-- FAVOURITING PRODUCTS -->
     
                                 {% if is_product_in_favourites %}
                                 <a href="{% url 'remove_product_from_favourites' product.id 'product' %}" aria-label="remove product from favourites"
-                                    class="favourite favourite-remove ml-4 fa-2x"><i class="fas fa-heart"></i></a>
+                                    class="favourite favourite-remove fa-2x"><i class="fas fa-heart"></i></a>
                                 {% else %}
                                 <a href="{% url 'add_product_to_favourites' product.id %}" aria-label="add product to favourites"
-                                    class="favourite ml-4 fa-2x"><i class="far fa-heart"></i></a>
+                                    class="favourite fa-2x"><i class="far fa-heart"></i></a>
                                 {% endif %}
                         </span>
                     </div>
