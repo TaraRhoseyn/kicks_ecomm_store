@@ -100,6 +100,9 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 ### Features for Future Releases
 
+1. Contact form either using EmailJS or custom a form model.
+2. The default_rating field in the Product model changing from a manual input into an aggregated number made from all user reviews.
+
 ## Technologies Used
 
 ### Languages
