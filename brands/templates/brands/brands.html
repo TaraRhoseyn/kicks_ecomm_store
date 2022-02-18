@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    {{ block.super }}
+    <style>
+        .btn--brand_admin {
+            text-decoration: none!important;
+        }
+    </style>
+{% endblock %}
+
 {% block content %}
     <div class="container">
         <h1 class="mt-5 text-center">Brands</h1>
@@ -18,12 +27,24 @@
                             <li>
                                 <a href="{% url 'products' %}?product_brand={{ brand.name }}">
                                     {{ brand.friendly_name|title }}</a>
+                                {% if request.user.is_superuser %}
+                                    <a class="btn--brand_admin ml-1 text-primary" href="{% url 'edit_brand' brand_name=brand.name %}">
+                                        Edit</a>
+                                    
+                                {% endif %}
                             </li>
                             {% endfor %}
                         </ul>
                     </div>
                 {% endfor %}
             </div>
+            <div class="row">
+                {% if request.user.is_superuser %}
+                    <a class="btn--purple" href="{% url 'add_brand' %}">
+                        Add a brand</a>
+                {% endif %}
+            </div>
         </ul>
+        
     </div>
 {% endblock %}
