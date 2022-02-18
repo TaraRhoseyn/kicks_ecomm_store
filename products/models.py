@@ -198,4 +198,4 @@ class Review(models.Model):
     )
     
     def __str__(self):
-        return self.review
+        return self.text_review
