@@ -11,7 +11,7 @@ from products.models import Product
 
 class Favourite(models.Model):
     """
-    Holds products favourited by users. 
+    Holds products favourited by users.
     """
     class Meta:
         verbose_name_plural = 'Favourites'
