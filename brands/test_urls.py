@@ -14,17 +14,29 @@ class TestBrandUrls(SimpleTestCase):
     to the brand views.
     """
     def test_brand_url_resolves(self):
+        """
+        Checks main brand url is resolved
+        """
         url = reverse('show_brand')
         self.assertEqual(resolve(url).func, brands)
 
     def test_add_brand_url_resolves(self):
+        """
+        Checks add_brand url is resolved with args
+        """
         url = reverse('add_brand', args=['nike'])
         self.assertEqual(resolve(url).func, add_brand)
     
     def test_adjust_brand_url_resolves(self):
+        """
+        Checks edit_brand url is resolved with args
+        """
         url = reverse('edit_brand', args=['nike'])
         self.assertEqual(resolve(url).func, edit_brand)
     
-    def test_remove_brand_url_resolves(self):
+    def test_delete_brand_url_resolves(self):
+        """
+        Checks delete_brand url is resolved with args
+        """
         url = reverse('delete_brand', args=['nike'])
         self.assertEqual(resolve(url).func, delete_brand)
