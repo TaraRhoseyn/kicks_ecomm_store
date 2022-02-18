@@ -26,9 +26,6 @@
                 </div>
             </div>
             <div class="col-12 col-md-6">
-
-                <!-- PRODUCT DETAILS -->
-
                 <div class="product-details">
                     <div class="row ml-0">
                         <span>
@@ -48,7 +45,7 @@
                     </div>
                     
                         
-                            
+                    <!-- PRODUCT DETAILS -->       
                     
                     {% include "includes/rating.html" %}
                     <p class="rating-desc">{{ product.default_rating}}/5 stars</p>
@@ -78,9 +75,19 @@
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </form>
 
-                    
-
                 </div>
+            </div>
+        </div>
+
+        <!-- PRODUCT MANAGEMENT -->
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="my-5 font-weight-bold">Product Management</h2>
+                {% if request.user.is_superuser %}
+                    <a class="btn--red" href="{% url 'edit_product' product.id %}">Edit</a>
+                    <a class="btn--red" href="{% url 'delete_product' product.id %}">Delete</a>
+                {% endif %}
             </div>
         </div>
 
@@ -105,9 +112,6 @@
                         {% endif %}
 
                     {% endfor %}
-
-                    
-
                 {% else %}
                     <p>There are no reviews for this product at the moment.</p>
                 {% endif %}

@@ -62,6 +62,10 @@ The target audience for this website is primarily young people interested in fas
 
 #### Site owner/Administrator
 
+- As a store owner, I want the ability to add products to the store to limit dev dependency.
+- As a store owner, I want the ability to edit products in the store to quickly update inventory without dev dependency.
+- As a store owner, I want the ability to delete products from the store to quickly update inventory without dev dependency.
+
 ## Scope
 
 ## Design
