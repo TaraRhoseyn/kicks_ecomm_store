@@ -132,6 +132,7 @@ def show_individual_product(request, product_id):
 
     return render(request, 'products/individual_product.html', context)
 
+
 @login_required
 def add_review(request, product_id):
     """ Add a product review """

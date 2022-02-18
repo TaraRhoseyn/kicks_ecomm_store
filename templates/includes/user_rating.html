@@ -1,0 +1,64 @@
+<!-- Star rating system. Credit: Chris Bongers -->
+<svg id="stars" style="display: none;" version="1.1">
+    <symbol id="stars-empty-star" viewBox="0 0 102 18" fill="#c8c8c8">
+    <path d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792 5.657 6.243.907-4.517 4.404 1.066 6.218" />
+    </symbol>
+    <symbol id="stars-full-star" viewBox="0 0 102 18" fill="#fac001">
+    <path d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792 5.657 6.243.907-4.517 4.404 1.066 6.218" />
+    </symbol>
+</svg>
+{% if review.star_rating == 1 %}
+    <p aria-label="Rating is 1 out of 5" class="rating-aria">
+        <svg aria-hidden="true" focusable="false" class="rating">
+            <use xlink:href="#stars-full-star"/>
+            <use xlink:href="#stars-empty-star"/>
+            <use xlink:href="#stars-empty-star"/>
+            <use xlink:href="#stars-empty-star"/>
+            <use xlink:href="#stars-empty-star"/>
+        </svg>
+    </p>
+{% endif %}
+{% if review.star_rating == 2 %}
+    <p aria-label="Rating is 2 out of 5" class="rating-aria">
+        <svg aria-hidden="true" focusable="false" class="rating">
+            <use xlink:href="#stars-full-star"/>
+            <use xlink:href="#stars-full-star"/>
+            <use xlink:href="#stars-empty-star"/>
+            <use xlink:href="#stars-empty-star"/>
+            <use xlink:href="#stars-empty-star"/>
+        </svg>
+    </p>
+{% endif %}
+{% if review.star_rating == 3 %}
+    <p aria-label="Rating is 3 out of 5" class="rating-aria">
+        <svg aria-hidden="true" focusable="false" class="rating">
+            <use xlink:href="#stars-full-star"/>
+            <use xlink:href="#stars-full-star"/>
+            <use xlink:href="#stars-full-star"/>
+            <use xlink:href="#stars-empty-star"/>
+            <use xlink:href="#stars-empty-star"/>
+        </svg>
+    </p>
+{% endif %}
+{% if review.star_rating == 4 %}
+    <p aria-label="Rating is 4 out of 5" class="rating-aria">
+        <svg aria-hidden="true" focusable="false" class="rating">
+            <use xlink:href="#stars-full-star"/>
+            <use xlink:href="#stars-full-star"/>
+            <use xlink:href="#stars-full-star"/>
+            <use xlink:href="#stars-full-star"/>
+            <use xlink:href="#stars-empty-star"/>
+        </svg>
+    </p>
+{% endif %}
+{% if review.star_rating == 5 %}
+    <p aria-label="Rating is 5 out of 5" class="rating-aria">
+        <svg aria-hidden="true" focusable="false" class="rating">
+            <use xlink:href="#stars-full-star"/>
+            <use xlink:href="#stars-full-star"/>
+            <use xlink:href="#stars-full-star"/>
+            <use xlink:href="#stars-full-star"/>
+            <use xlink:href="#stars-full-star"/>
+        </svg>
+    </p>
+{% endif %}

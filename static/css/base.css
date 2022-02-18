@@ -536,6 +536,10 @@ footer p a:hover {
   color: #D8263B !important;
 }
 
+.review--paras {
+  font-size: 1.4rem;
+}
+
 .nav-link:hover, .nav-icon:hover {
   color: #DED92F !important;
 }

@@ -43,7 +43,7 @@
                             
                     
                     {% include "includes/rating.html" %}
-                    <p class="rating-desc">{{ product.rating}}/5 stars</p>
+                    <p class="rating-desc">{{ product.default_rating}}/5 stars</p>
                     <div class="prod-btns mt-3">
                         <a class="btn--grey btn--thin px-2" href="{% url 'products' %}?product_brand={{ product.product_brand.name }}">
                             <i class="fas fa-tag"></i>
@@ -71,12 +71,36 @@
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </form>
 
-                    <a href="{% url 'add_review' product_id=product.id %}"
-                        class="text-muted url-style">Leave your review</a>
+                    
 
                 </div>
             </div>
         </div>
+        <!-- REVIEWS -->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="font-weight-bold my-5">Reviews</h2>
+                <hr>
+                {% if reviews %}
+                    {% for review in reviews %}
+                    {% include "includes/user_rating.html" %}
+                    <p class="review--paras mt-2"><q>{{ review.text_review }}</q></p>
+                    <p>Review by: <span class="font-weight-bold">{{ review.created_by }}</span></p>
+                    <hr>
+                    {% endfor %}
+                {% else %}
+                    <p>There are no reviews for this product at the moment.</p>
+                {% endif %}
+                <div class="my-5">
+                    <a href="{% url 'add_review' product_id=product.id %}"
+                    class="btn--grey">Leave a review</a>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        
     </div>
 
     
