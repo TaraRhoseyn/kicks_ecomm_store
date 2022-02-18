@@ -4,7 +4,7 @@ from .models import Review
 
 class RatingForm(forms.ModelForm):
     class Meta:
-        exclude = ('user', 'product', 'created_by' 'created_at')
+        exclude = ('user', 'product', 'created_by', 'created_at')
         model = Review
         fields = '__all__'
         labels = {
