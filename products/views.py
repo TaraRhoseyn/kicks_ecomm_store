@@ -14,7 +14,7 @@ from django.contrib.auth.models import User
 from .models import Product, ProductGroup, ProductType, Review
 from brands.models import Brand
 from favourites.models import Favourite
-from .forms import RatingForm
+from .forms import RatingForm, ProductForm
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -225,6 +225,7 @@ def delete_review(request, review_id):
     Returns:
         All products page
     """
+
     review = get_object_or_404(Review, pk=review_id)
     if request.user.is_superuser or request.user == review.created_by:
         review.delete()
@@ -233,3 +234,15 @@ def delete_review(request, review_id):
     else:
         messages.error(request, 'Only the reviewer can do that.')
         return redirect(reverse('products'))
+
+
+
+def add_product(request):
+    """ Add a product to the store """
+    form = ProductForm()
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)

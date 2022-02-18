@@ -97,6 +97,14 @@ body {
     padding: 5px;
 }
 
+.btn--blank {
+    color: black!important;
+}
+
+.btn--blank:hover {
+    color: #8918fb;
+}
+
 .btn_to-top {
     position: fixed;
     bottom: 40px;

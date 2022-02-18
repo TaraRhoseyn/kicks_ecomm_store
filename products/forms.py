@@ -36,6 +36,6 @@ class ProductForm(forms.ModelForm):
         friendly_names = [
             (b.id, b.get_friendly_name()) for b in brands]
 
-        self.fields['product_groups'].choices = friendly_names
-        self.fields['product_types'].choices = friendly_names
-        self.fields['brands'].choices = friendly_names
+        self.fields['product_group'].choices = friendly_names
+        self.fields['product_type'].choices = friendly_names
+        self.fields['product_brand'].choices = friendly_names
