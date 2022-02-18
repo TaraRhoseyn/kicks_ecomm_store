@@ -30,7 +30,8 @@
                                 {% if request.user.is_superuser %}
                                     <a class="btn--brand_admin ml-1 text-primary" href="{% url 'edit_brand' brand_name=brand.name %}">
                                         Edit</a>
-                                    
+                                    <a class="btn--brand_admin ml-1 text-danger" href="{% url 'delete_brand' brand_name=brand.name %}">
+                                        Delete</a>
                                 {% endif %}
                             </li>
                             {% endfor %}

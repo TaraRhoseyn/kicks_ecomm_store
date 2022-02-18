@@ -80,3 +80,16 @@ def edit_brand(request, brand_name):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_brand(request, brand_name):
+    """ Delete a product from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    
+    product = get_object_or_404(Brand, name=brand_name)
+    product.delete()
+    messages.success(request, 'Brand deleted.')
+    return redirect(reverse('brands'))
