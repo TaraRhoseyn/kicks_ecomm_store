@@ -27,15 +27,15 @@ class ProductForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         product_groups = ProductGroup.objects.all()
-        friendly_names = [
+        group_friendly_names = [
             (g.id, g.get_friendly_name()) for g in product_groups]
         product_types = ProductType.objects.all()
-        friendly_names = [
+        type_friendly_names = [
             (t.id, t.get_friendly_name()) for t in product_types]
         brands = Brand.objects.all()
-        friendly_names = [
+        brand_friendly_names = [
             (b.id, b.get_friendly_name()) for b in brands]
 
-        self.fields['product_group'].choices = friendly_names
-        self.fields['product_type'].choices = friendly_names
-        self.fields['product_brand'].choices = friendly_names
+        self.fields['product_group'].choices = group_friendly_names
+        self.fields['product_type'].choices = type_friendly_names
+        self.fields['product_brand'].choices = brand_friendly_names
