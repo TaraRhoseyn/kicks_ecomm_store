@@ -38,10 +38,11 @@
                 {% for item in bag_items %}
                     <div class="row">
                         <div class="col-2 mb-3">
-                            <!-- TODO: Add url image if statement -->
-                            <a href="{% url 'individual_product' item.product.id %}">
-                                <img class="w-100" src="../../../media/{{ item.product.image }}" alt="{{ product.name }}" class="product-images">
-                            </a>
+                            {% if product.image %}
+                                <img class="w-100" src="{{ product.image.url }}" alt="{{ product.name }}" class="product-images">
+                            {% else %}
+                                <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" class="product-images">
+                            {% endif %}
                         </div>
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>

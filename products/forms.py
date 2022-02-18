@@ -1,17 +1,24 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# IMPORTS 
+# IMPORTS
 
 # Third party
 from django import forms
+from .widgets import CustomClearableFileInput
 
 # Internal
 from .models import Review, Product, ProductGroup, ProductType
 from brands.models import Brand
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
 class RatingForm(forms.ModelForm):
     class Meta:
-        exclude = ('user', 'product', 'created_by', 'created_at')
+        exclude = (
+            'user',
+            'product',
+            'created_by',
+            'created_at'
+        )
         model = Review
         fields = '__all__'
         labels = {
@@ -19,11 +26,18 @@ class RatingForm(forms.ModelForm):
             'text_review': 'Write your review'
         }
 
+
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
         fields = '__all__'
-    
+
+    image = forms.ImageField(
+        label='Image',
+        required=False,
+        widget=CustomClearableFileInput
+    )
+
     def __init__(self, *args, **kwargs):
         """
         Show placeholders as the friendly_name versions
@@ -40,6 +54,9 @@ class ProductForm(forms.ModelForm):
         brand_friendly_names = [
             (b.id, b.get_friendly_name()) for b in brands]
 
-        self.fields['product_group'].choices = group_friendly_names
-        self.fields['product_type'].choices = type_friendly_names
-        self.fields['product_brand'].choices = brand_friendly_names
+        self.fields[
+            'product_group'].choices = group_friendly_names
+        self.fields[
+            'product_type'].choices = type_friendly_names
+        self.fields[
+            'product_brand'].choices = brand_friendly_names
