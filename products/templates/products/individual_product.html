@@ -84,37 +84,33 @@
                 <hr>
                 {% if reviews %}
                     {% for review in reviews %}
-                    {% include "includes/user_rating.html" %}
-                    <p class="review--paras mt-2"><q>{{ review.text_review }}</q></p>
-                    <p>Review by: <span class="font-weight-bold">{{ review.created_by }}</span></p>
-                    <hr>
+                        {% include "includes/user_rating.html" %}
+                        <p class="review--paras mt-2"><q>{{ review.text_review }}</q></p>
+                        <p>Review by: <span class="font-weight-bold">{{ review.created_by }}</span></p>
+                        <hr>
+
+                        <!-- LINK TO EDIT REVIEWS -->
+
+                        {% if request.user == review.created_by or request.user.is_superuser %}
+                            <a href="{% url 'edit_review' review.pk %}" class="btn--grey">Edit</a>
+                            <a href="{% url 'delete_review' review.pk %}" class="btn--grey">Delete</a>
+                        {% endif %}
+
                     {% endfor %}
 
-                    <!-- LINK TO EDIT REVIEWS -->
-
-                    {% if request.user == review.created_by or request.user.is_superuser %}
-                    <div class="col-2">
-                        <a href="{% url 'edit_review' review.pk %}" class="btn btn-outline-green">EDIT</a>
-                    </div>
-                    {% endif %}
+                    
 
                 {% else %}
                     <p>There are no reviews for this product at the moment.</p>
                 {% endif %}
                 <div class="my-5">
                     <a href="{% url 'add_review' product_id=product.id %}"
-                    class="btn--grey">Leave a review</a>
+                    class="btn--purple">Leave a review</a>
                 </div>
             </div>
         </div>
-        
-        
 
-        
     </div>
-
-    
-
 {% endblock %}
 
 {% block postloadjs %}
