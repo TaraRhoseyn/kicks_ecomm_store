@@ -1,8 +1,15 @@
+# IMPORTS
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Third party
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
 from django.views.decorators.http import require_POST
 from django.conf import settings
+import stripe
+import json
 
+# Internal
 from .forms import OrderForm
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
@@ -10,12 +17,14 @@ from .models import Order, OrderLineItem
 from products.models import Product
 from bag.contexts import bag_items
 
-import stripe
-import json
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 @require_POST
 def cache_checkout_data(request):
+    """
+    Cache checkout data for user
+    """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -32,6 +41,9 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    """
+    Checkout for user
+    """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
