@@ -21,8 +21,6 @@ class TestCheckoutModels(TestCase):
         Product.objects.create(
             name='Test Name',
             price='99.99',
-            colour='Test Colour',
-            code='123456',
             description='Test Description',
         )
 
