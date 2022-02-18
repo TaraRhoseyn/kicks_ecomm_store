@@ -9,7 +9,7 @@ from django.urls import reverse, resolve
 from .views import checkout, checkout_success, cache_checkout_data, webhook
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-class TestBrandUrls(SimpleTestCase):
+class TestCheckoutUrls(SimpleTestCase):
     """
     Tests brand urls are resolved
     to the brand views.
