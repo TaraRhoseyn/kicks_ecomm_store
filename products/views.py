@@ -180,7 +180,14 @@ def add_review(request, product_id):
 
 @login_required
 def edit_review(request, review_id):
-    """ Save edited product review """
+    """
+    Edit product reviews on individual products.
+    Args:
+        request (object): HTTP request object
+        review_id key value of Review model
+    Returns:
+        Individual product page(s) with passed context object
+    """
     review = get_object_or_404(Review, pk=review_id)
     if request.user.is_superuser or request.user == review.created_by:
         if request.method == 'POST':
@@ -206,3 +213,23 @@ def edit_review(request, review_id):
         'product_id': review.product.id
     }
     return render(request, template, context)
+
+
+@login_required
+def delete_review(request, review_id):
+    """
+    Deletes product reviews on individual products.
+    Args:
+        request (object): HTTP request object
+        review_id key value of Review model
+    Returns:
+        All products page
+    """
+    review = get_object_or_404(Review, pk=review_id)
+    if request.user.is_superuser or request.user == review.created_by:
+        review.delete()
+        messages.info(request, 'Your review has been deleted.')
+        return redirect(reverse('products'))
+    else:
+        messages.error(request, 'Only the reviewer can do that.')
+        return redirect(reverse('products'))
