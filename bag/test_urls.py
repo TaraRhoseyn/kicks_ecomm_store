@@ -8,10 +8,10 @@ from django.urls import reverse, resolve
 from .views import view_shopping_bag, remove_from_bag, add_to_bag, adjust_bag
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-class TestHomeUrl(SimpleTestCase):
+class TestBagUrls(SimpleTestCase):
     """
-    Tests bag url is resolves 
-    to view_shopping_bag view. 
+    Tests bag urls are resolved
+    to the bag views.
     """
     def test_bag_url_resolves(self):
         url = reverse('view_shopping_bag')
