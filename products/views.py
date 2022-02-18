@@ -195,15 +195,14 @@ def edit_review(request, review_id):
                                         Please ensure the form is valid.')
         else:
             review_form = RatingForm(instance=review)
-
-        template = 'products/edit_review.html',
-        context = {
-            'form': review_form,
-            'review': review,
-            'product_id': review.product.id
-        }
-        return render(request, template, context)
     else:
         messages.error(
             request, 'Only the reviewer can edit this review')
         return redirect(reverse('individual_product', args=[review.product.id]))
+    template = 'products/edit_review.html',
+    context = {
+        'form': review_form,
+        'review': review,
+        'product_id': review.product.id
+    }
+    return render(request, template, context)
