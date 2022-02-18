@@ -13,6 +13,7 @@ class TestBrandForm(TestCase):
     """
     A class for testing checkout forms
     """
+    
     def test_add_brand_form(self):
         """
         This test tests the order form object
