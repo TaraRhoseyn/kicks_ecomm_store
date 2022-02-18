@@ -195,6 +195,8 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - **Fix**: I discovered this is a common bug with Bootstrap rows. To fix this I set a CSS rule for the root element that the 'overflow-x' be 'hidden'.
 - **Bug 11: Failed migrations on brand model caused Django project to fail completely**
 - **Fix**: When trying to migrate over the brand model from the products app to the brand app, I accidentally caused the whole project to fail on the server. The steps I took to fix the issue: (a) Reversed to a few commits previously (b) faked all previous migrations (c) reloaded all the data from the fixtures (d) make new migrations (e) opened a new branch to test migration attempt one step at a time. I believe I caused the bug by accidentally rewriting over an old migration which created a conflict within Django.
+- **Bug 12: AttributeError relating to editting reviews**
+- **Fix**: When loading the individual_product template, Django would throw an AttributeError because it could not find the url with the attributes passed to find the edit_review template. I fixed this by moving the url template tag from outside of the reviews for loop to inside.
 
 ## Deployment
 
