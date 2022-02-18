@@ -3,6 +3,7 @@
 
 # Third party:
 from django.apps import AppConfig
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 class ShoppingbagConfig(AppConfig):
