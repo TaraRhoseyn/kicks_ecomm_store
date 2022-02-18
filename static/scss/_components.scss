@@ -480,3 +480,13 @@ footer {
 .review--paras {
     font-size: 1.4rem;
 }
+
+.nav--user_account {
+    @include for-phone-up {
+        margin-left: -26px!important;
+        margin-top: 10px!important;
+    }
+    @include for-desktop-up {
+        margin-left: 0px!important;
+    }
+}

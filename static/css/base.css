@@ -540,6 +540,19 @@ footer p a:hover {
   font-size: 1.4rem;
 }
 
+@media (min-width: 320px) {
+  .nav--user_account {
+    margin-left: -26px !important;
+    margin-top: 10px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav--user_account {
+    margin-left: 0px !important;
+  }
+}
+
 .nav-link:hover, .nav-icon:hover {
   color: #DED92F !important;
 }
