@@ -25,6 +25,10 @@ class ProductForm(forms.ModelForm):
         fields = '__all__'
     
     def __init__(self, *args, **kwargs):
+        """
+        Show placeholders as the friendly_name versions
+        of the key values
+        """
         super().__init__(*args, **kwargs)
         product_groups = ProductGroup.objects.all()
         group_friendly_names = [
