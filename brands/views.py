@@ -31,6 +31,13 @@ def show_brand(request):
 
 @login_required
 def add_brand(request):
+    """
+    View to add brands 
+    Args:
+        request (object): HTTP request object
+    Returns:
+        Add brand page with context
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -56,6 +63,13 @@ def add_brand(request):
 
 @login_required
 def edit_brand(request, brand_name):
+    """
+    View to edit pre-existing brands 
+    Args:
+        request (object): HTTP request object
+    Returns:
+        Edit brand page with context
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -84,12 +98,18 @@ def edit_brand(request, brand_name):
 
 @login_required
 def delete_brand(request, brand_name):
-    """ Delete a product from the store """
+    """
+    View to delete pre-existing brands 
+    Args:
+        request (object): HTTP request object
+    Returns:
+        Generic brands page
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
     
-    product = get_object_or_404(Brand, name=brand_name)
-    product.delete()
+    brand = get_object_or_404(Brand, name=brand_name)
+    brand.delete()
     messages.success(request, 'Brand deleted.')
     return redirect(reverse('brands'))

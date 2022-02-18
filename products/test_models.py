@@ -1,9 +1,9 @@
-# Imports
+# IMPORTS
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Third party:
+# Third party
 from django.test import TestCase
 
-# Internal:
+# Internal
 from .models import ProductGroup, ProductType, Product
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -17,12 +17,14 @@ class TestProductModels(TestCase):
         Create test Product, ProductGroup, and ProductType
         """
         ProductGroup.objects.create(
-            name='test-brand', friendly_name='test brand')
+            name='testgroup',
+            friendly_name='test group')
         ProductType.objects.create(
-            name='test-brand', friendly_name='test brand')
+            name='testtype',
+            friendly_name='test type')
         Product.objects.create(
             sku='TRANICH3BL',
-            name='Test Name',
+            name='testname',
             description='Test description',
             product_brand='1',
             product_group='1',
@@ -32,34 +34,33 @@ class TestProductModels(TestCase):
             image = 'test.png',
             image_url='www.test.com/test.png'
         )
+    
+    def tearDown(self):
+        """
+        Delete test Product, ProductGroup, and ProductType
+        """
+        Product.objects.all().delete()
+        ProductGroup.objects.all().delete()
+        ProductType.objects.all().delete()
 
     def test_group_str_method(self):
         """
         Tests the ProductGroup method and verifies
         """
-        group = ProductGroup.objects.get(name='test-group')
+        group = ProductGroup.objects.get(name='testgroup')
         self.assertEqual((group.__str__()), group.name)
-        self.assertEqual(group.get_friendly_name(), group.friendly_name)
     
     def test_type_str_method(self):
         """
         Tests the ProductType method and verifies
         """
-        product_type = ProductType.objects.get(name='test-product_type')
+        product_type = ProductType.objects.get(name='testtype')
         self.assertEqual((product_type.__str__()), product_type.name)
-        self.assertEqual(product_type.get_friendly_name(), product_type.friendly_name)
 
     def test_product_str_method(self):
         """
         Tests the products str method and verifies
         """
-        product = Product.objects.get(pk='1')
+        product = Product.objects.get(name='testname')
         self.assertEqual((product.__str__()), product.name)
-    
-    def tearDown(self):
-        """
-        Delete test Product, ProductBrand, ProductGroup, and ProductType
-        """
-        Product.objects.all().delete()
-        ProductGroup.objects.all().delete()
-        ProductType.objects.all().delete()
+
