@@ -182,11 +182,11 @@ class Review(models.Model):
         choices=STAR_CHOICES, 
         default=4
     )
-    created_by = models.OneToOneField(
+    created_by = models.ForeignKey(
         User,
         null=True,
         blank=True,
-        on_delete=models.SET_NULL
+        on_delete=models.CASCADE
     )
     created_at = models.DateTimeField(
         auto_now_add=True
