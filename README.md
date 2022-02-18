@@ -57,14 +57,22 @@ The target audience for this website is primarily young people interested in fas
 2. As a first-time user, I want to be able to create an account so I can see all of my information at once.
 3. As a first-time user, I want to be able to place an order without creating an account if I wish.
 4. As a first-time user, I want to be able to search the product catalog
+- As a first-time user, I want to be directed to an error page if I am directed to a broken URL.
 
 #### Regular visitors
+
+- As a regular visitor, I want to add favourite items to a central location so I can see which products I may want to purchase in the future. 
+- As a regular visitor, I want to edit favourite items to keep track of my preferences. 
+- As a regular visitor, I want to delete favourite items if I change my mind about purchase.
 
 #### Site owner/Administrator
 
 - As a store owner, I want the ability to add products to the store to limit dev dependency.
 - As a store owner, I want the ability to edit products in the store to quickly update inventory without dev dependency.
 - As a store owner, I want the ability to delete products from the store to quickly update inventory without dev dependency.
+- As a store owner, I want the ability to add brands to the store to limit dev dependency.
+- As a store owner, I want the ability to edit brands in the store to quickly update inventory without dev dependency.
+- As a store owner, I want the ability to delete brands from the store to quickly update inventory without dev dependency.
 
 ## Scope
 
