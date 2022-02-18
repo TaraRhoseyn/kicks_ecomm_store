@@ -11,7 +11,7 @@
       "product_brand": 1,
       "price": 49.99,
       "default_rating": 3,
-      "image_url": "kids_1.png"
+      "image": "kids_1.png"
     }
   },
   {
@@ -26,7 +26,7 @@
       "product_type": 2,
       "price": 12.99,
       "default_rating": 4,
-      "image_url": "kids_2.png"
+      "image": "kids_2.png"
     }
   },
   {
@@ -41,7 +41,7 @@
       "product_brand": 1,
       "price": 59.99,
       "default_rating": 2,
-      "image_url": "kids_3.png"
+      "image": "kids_3.png"
     }
   },
   {
@@ -56,7 +56,7 @@
       "product_brand": 3,
       "price": 30,
       "default_rating": 1,
-      "image_url": "kids_4.png"
+      "image": "kids_4.png"
     }
   },
   {
@@ -71,7 +71,7 @@
       "product_brand": 4,
       "price": 25.99,
       "default_rating": 5,
-      "image_url": "kids_5.png"
+      "image": "kids_5.png"
     }
   },
   {
@@ -86,7 +86,7 @@
       "product_brand": 5,
       "price": 9.99,
       "default_rating": 3,
-      "image_url": "kids_6.png"
+      "image": "kids_6.png"
     }
   },
   {
@@ -101,7 +101,7 @@
       "product_brand": 6,
       "price": 12.99,
       "default_rating": 3,
-      "image_url": "kids_7.png"
+      "image": "kids_7.png"
     }
   },
   {
@@ -116,7 +116,7 @@
       "product_brand": 7,
       "price": 69.99,
       "default_rating": 2,
-      "image_url": "kids_8.png"
+      "image": "kids_8.png"
     }
   },
   {
@@ -131,7 +131,7 @@
       "product_brand": 8,
       "price": 19.99,
       "default_rating": 1,
-      "image_url": "kids_9.png"
+      "image": "kids_9.png"
     }
   },
   {
@@ -146,7 +146,7 @@
       "product_brand": 1,
       "price": 45,
       "default_rating": 5,
-      "image_url": "kids_10.png"
+      "image": "kids_10.png"
     }
   },
   {
@@ -161,7 +161,7 @@
       "product_brand": 9,
       "price": 30,
       "default_rating": 4,
-      "image_url": "kids_11.png"
+      "image": "kids_11.png"
     }
   },
   {
@@ -176,7 +176,7 @@
       "product_brand": 10,
       "price": 7.99,
       "default_rating": 3,
-      "image_url": "womens_1.png"
+      "image": "womens_1.png"
     }
   },
   {
@@ -191,7 +191,7 @@
       "product_brand": 11,
       "price": 79.99,
       "default_rating": 3,
-      "image_url": "womens_2.png"
+      "image": "womens_2.png"
     }
   },
   {
@@ -206,7 +206,7 @@
       "product_brand": 12,
       "price": 39.99,
       "default_rating": 2,
-      "image_url": "womens_3.png"
+      "image": "womens_3.png"
     }
   },
   {
@@ -221,7 +221,7 @@
       "product_brand": 1,
       "price": 48.95,
       "default_rating": 5,
-      "image_url": "womens_4.png"
+      "image": "womens_4.png"
     }
   },
   {
@@ -236,7 +236,7 @@
       "product_brand": 13,
       "price": 35.99,
       "default_rating": 2,
-      "image_url": "womens_5.png"
+      "image": "womens_5.png"
     }
   },
   {
@@ -251,7 +251,7 @@
       "product_brand": 14,
       "price": 25,
       "default_rating": 1,
-      "image_url": "womens_6.png"
+      "image": "womens_6.png"
     }
   },
   {
@@ -266,7 +266,7 @@
       "product_brand": 15,
       "price": 53.99,
       "default_rating": 4,
-      "image_url": "womens_7.png"
+      "image": "womens_7.png"
     }
   },
   {
@@ -281,7 +281,7 @@
       "product_brand": 16,
       "price": 22,
       "default_rating": 2,
-      "image_url": "womens_8.png"
+      "image": "womens_8.png"
     }
   },
   {
@@ -296,7 +296,7 @@
       "product_brand": 17,
       "price": 15,
       "default_rating": 5,
-      "image_url": "womens_9.png"
+      "image": "womens_9.png"
     }
   },
   {
@@ -311,7 +311,7 @@
       "product_brand": 18,
       "price": 21,
       "default_rating": 4,
-      "image_url": "womens_10.png"
+      "image": "womens_10.png"
     }
   },
   {
@@ -326,7 +326,7 @@
       "product_brand": 19,
       "price": 55,
       "default_rating": 3,
-      "image_url": "womens_11.png"
+      "image": "womens_11.png"
     }
   },
   {
@@ -341,7 +341,7 @@
       "product_brand": 20,
       "price": 40,
       "default_rating": 5,
-      "image_url": "womens_12.png"
+      "image": "womens_12.png"
     }
   },
   {
@@ -356,7 +356,7 @@
       "product_brand": 18,
       "price": 10,
       "default_rating": 1,
-      "image_url": "womens_13.png"
+      "image": "womens_13.png"
     }
   },
   {
@@ -371,7 +371,7 @@
       "product_brand": 21,
       "price": 46.95,
       "default_rating": 3,
-      "image_url": "womens_14.png"
+      "image": "womens_14.png"
     }
   },
   {
@@ -386,7 +386,7 @@
       "product_brand": 22,
       "price": 26.99,
       "default_rating": 4,
-      "image_url": "womens_15.png"
+      "image": "womens_15.png"
     }
   },
   {
@@ -401,7 +401,7 @@
       "product_brand": 23,
       "price": 73.99,
       "default_rating": 3,
-      "image_url": "womens_16.png"
+      "image": "womens_16.png"
     }
   },
   {
@@ -416,7 +416,7 @@
       "product_brand": 22,
       "price": 26.99,
       "default_rating": 3,
-      "image_url": "womens_17.png"
+      "image": "womens_17.png"
     }
   },
   {
@@ -431,7 +431,7 @@
       "product_brand": 22,
       "price": 26.99,
       "default_rating": 3,
-      "image_url": "womens_18.png"
+      "image": "womens_18.png"
     }
   },
   {
@@ -446,7 +446,7 @@
       "product_brand": 18,
       "price": 26.99,
       "default_rating": 4,
-      "image_url": "womens_19.png"
+      "image": "womens_19.png"
     }
   },
   {
@@ -461,7 +461,7 @@
       "product_brand": 24,
       "price": 54.6,
       "default_rating": 5,
-      "image_url": "womens_20.png"
+      "image": "womens_20.png"
     }
   },
   {
@@ -476,7 +476,7 @@
       "product_brand": 9,
       "price": 5,
       "default_rating": 1,
-      "image_url": "womens_21.png"
+      "image": "womens_21.png"
     }
   },
   {
@@ -491,7 +491,7 @@
       "product_brand": 9,
       "price": 5,
       "default_rating": 1,
-      "image_url": "womens_22.png"
+      "image": "womens_22.png"
     }
   },
   {
@@ -506,7 +506,7 @@
       "product_brand": 25,
       "price": 455,
       "default_rating": 5,
-      "image_url": "mens_1.png"
+      "image": "mens_1.png"
     }
   },
   {
@@ -521,7 +521,7 @@
       "product_brand": 26,
       "price": 45,
       "default_rating": 4,
-      "image_url": "mens_2.png"
+      "image": "mens_2.png"
     }
   },
   {
@@ -536,7 +536,7 @@
       "product_brand": 4,
       "price": 22.99,
       "default_rating": 3,
-      "image_url": "mens_3.png"
+      "image": "mens_3.png"
     }
   },
   {
@@ -551,7 +551,7 @@
       "product_brand": 27,
       "price": 26.99,
       "default_rating": 4,
-      "image_url": "mens_4.png"
+      "image": "mens_4.png"
     }
   },
   {
@@ -566,7 +566,7 @@
       "product_brand": 17,
       "price": 45.99,
       "default_rating": 3,
-      "image_url": "mens_5.png"
+      "image": "mens_5.png"
     }
   },
   {
@@ -581,7 +581,7 @@
       "product_brand": 28,
       "price": 29.99,
       "default_rating": 2,
-      "image_url": "mens_6.png"
+      "image": "mens_6.png"
     }
   },
   {
@@ -596,7 +596,7 @@
       "product_brand": 1,
       "price": 59.99,
       "default_rating": 3,
-      "image_url": "mens_7.png"
+      "image": "mens_7.png"
     }
   },
   {
@@ -611,7 +611,7 @@
       "product_brand": 4,
       "price": 19.99,
       "default_rating": 4,
-      "image_url": "mens_8.png"
+      "image": "mens_8.png"
     }
   },
   {
@@ -626,7 +626,7 @@
       "product_brand": 1,
       "price": 39.99,
       "default_rating": 4,
-      "image_url": "mens_9.png"
+      "image": "mens_9.png"
     }
   },
   {
@@ -641,7 +641,7 @@
       "product_brand": 1,
       "price": 69.99,
       "default_rating": 5,
-      "image_url": "mens_10.png"
+      "image": "mens_10.png"
     }
   },
   {
@@ -656,7 +656,7 @@
       "product_brand": 29,
       "price": 31.99,
       "default_rating": 3,
-      "image_url": "mens_11.png"
+      "image": "mens_11.png"
     }
   },
   {
@@ -671,7 +671,7 @@
       "product_brand": 28,
       "price": 15.99,
       "default_rating": 2,
-      "image_url": "mens_12.png"
+      "image": "mens_12.png"
     }
   },
   {
@@ -686,7 +686,7 @@
       "product_brand": 4,
       "price": 40,
       "default_rating": 3,
-      "image_url": "mens_13.png"
+      "image": "mens_13.png"
     }
   },
   {
@@ -701,7 +701,7 @@
       "product_brand": 1,
       "price": 110,
       "default_rating": 5,
-      "image_url": "mens_14.png"
+      "image": "mens_14.png"
     }
   },
   {
@@ -716,7 +716,7 @@
       "product_brand": 30,
       "price": 20.99,
       "default_rating": 3,
-      "image_url": "mens_15.png"
+      "image": "mens_15.png"
     }
   },
   {
@@ -731,7 +731,7 @@
       "product_brand": 31,
       "price": 34.99,
       "default_rating": 3,
-      "image_url": "mens_16.png"
+      "image": "mens_16.png"
     }
   },
   {
@@ -746,7 +746,7 @@
       "product_brand": 1,
       "price": 60.5,
       "default_rating": 2,
-      "image_url": "mens_17.png"
+      "image": "mens_17.png"
     }
   },
   {
@@ -761,7 +761,7 @@
       "product_brand": 1,
       "price": 79.99,
       "default_rating": 4,
-      "image_url": "mens_18.png"
+      "image": "mens_18.png"
     }
   },
   {
@@ -776,7 +776,7 @@
       "product_brand": 32,
       "price": 15,
       "default_rating": 3,
-      "image_url": "mens_19.png"
+      "image": "mens_19.png"
     }
   },
   {
@@ -791,7 +791,7 @@
       "product_brand": 13,
       "price": 55,
       "default_rating": 5,
-      "image_url": "mens_20.png"
+      "image": "mens_20.png"
     }
   },
   {
@@ -806,7 +806,7 @@
       "product_brand": 29,
       "price": 29.99,
       "default_rating": 3,
-      "image_url": "mens_21.png"
+      "image": "mens_21.png"
     }
   },
   {
@@ -821,7 +821,7 @@
       "product_brand": 33,
       "price": 19.99,
       "default_rating": 2,
-      "image_url": "mens_22.png"
+      "image": "mens_22.png"
     }
   },
   {
@@ -836,7 +836,7 @@
       "product_brand": 1,
       "price": 49.99,
       "default_rating": 3,
-      "image_url": "mens_23.png"
+      "image": "mens_23.png"
     }
   },
   {
@@ -851,7 +851,7 @@
       "product_brand": 1,
       "price": 39.99,
       "default_rating": 5,
-      "image_url": "mens_24.png"
+      "image": "mens_24.png"
     }
   },
   {
@@ -866,7 +866,7 @@
       "product_brand": 1,
       "price": 79.99,
       "default_rating": 3,
-      "image_url": "mens_25.png"
+      "image": "mens_25.png"
     }
   },
   {
@@ -881,7 +881,7 @@
       "product_brand": 4,
       "price": 20.5,
       "default_rating": 4,
-      "image_url": "mens_26.png"
+      "image": "mens_26.png"
     }
   },
   {
@@ -896,7 +896,7 @@
       "product_brand": 34,
       "price": 39.99,
       "default_rating": 3,
-      "image_url": "mens_27.png"
+      "image": "mens_27.png"
     }
   },
   {
@@ -911,7 +911,7 @@
       "product_brand": 1,
       "price": 69.99,
       "default_rating": 5,
-      "image_url": "mens_28.png"
+      "image": "mens_28.png"
     }
   },
   {
@@ -926,7 +926,7 @@
       "product_brand": 31,
       "price": 71.64,
       "default_rating": 4,
-      "image_url": "mens_29.png"
+      "image": "mens_29.png"
     }
   },
   {
@@ -941,7 +941,7 @@
       "product_brand": 1,
       "price": 230,
       "default_rating": 1,
-      "image_url": "mens_30.png"
+      "image": "mens_30.png"
     }
   },
   {
@@ -956,7 +956,7 @@
       "product_brand": 1,
       "price": 169.99,
       "default_rating": 5,
-      "image_url": "mens_31.png"
+      "image": "mens_31.png"
     }
   },
   {
@@ -971,7 +971,7 @@
       "product_brand": 1,
       "price": 79.99,
       "default_rating": 3,
-      "image_url": "mens_32.png"
+      "image": "mens_32.png"
     }
   },
   {
@@ -986,7 +986,7 @@
       "product_brand": 35,
       "price": 80,
       "default_rating": 4,
-      "image_url": "mens_33.png"
+      "image": "mens_33.png"
     }
   },
   {
@@ -1001,7 +1001,7 @@
       "product_brand": 28,
       "price": 21.99,
       "default_rating": 2,
-      "image_url": "mens_34.png"
+      "image": "mens_34.png"
     }
   },
   {
@@ -1016,7 +1016,7 @@
       "product_brand": 36,
       "price": 21.99,
       "default_rating": 2,
-      "image_url": "mens_35.png"
+      "image": "mens_35.png"
     }
   },
   {
@@ -1031,7 +1031,7 @@
       "product_brand": 17,
       "price": 21.99,
       "default_rating": 5,
-      "image_url": "socks_1.png"
+      "image": "socks_1.png"
     }
   },
   {
@@ -1046,7 +1046,7 @@
       "product_brand": 37,
       "price": 5.99,
       "default_rating": 3,
-      "image_url": "socks_2.png"
+      "image": "socks_2.png"
     }
   },
   {
@@ -1061,7 +1061,7 @@
       "product_brand": 37,
       "price": 3.99,
       "default_rating": 3,
-      "image_url": "socks_3.png"
+      "image": "socks_3.png"
     }
   },
   {
@@ -1076,7 +1076,7 @@
       "product_brand": 38,
       "price": 12.99,
       "default_rating": 4,
-      "image_url": "socks_4.png"
+      "image": "socks_4.png"
     }
   },
   {
@@ -1091,7 +1091,7 @@
       "product_brand": 4,
       "price": 9.99,
       "default_rating": 5,
-      "image_url": "socks_5.png"
+      "image": "socks_5.png"
     }
   },
   {
@@ -1106,7 +1106,7 @@
       "product_brand": 10,
       "price": 4.99,
       "default_rating": 4,
-      "image_url": "socks_6.png"
+      "image": "socks_6.png"
     }
   },
   {
@@ -1121,7 +1121,7 @@
       "product_brand": 6,
       "price": 2.99,
       "default_rating": 5,
-      "image_url": "socks_7.png"
+      "image": "socks_7.png"
     }
   },
   {
@@ -1136,7 +1136,7 @@
       "product_brand": 39,
       "price": 12.99,
       "default_rating": 5,
-      "image_url": "socks_8.png"
+      "image": "socks_8.png"
     }
   },
   {
@@ -1151,7 +1151,7 @@
       "product_brand": 39,
       "price": 21.99,
       "default_rating": 3,
-      "image_url": "socks_9.png"
+      "image": "socks_9.png"
     }
   },
   {
@@ -1166,7 +1166,7 @@
       "product_brand": 30,
       "price": 17,
       "default_rating": 5,
-      "image_url": "socks_10.png"
+      "image": "socks_10.png"
     }
   },
   {
@@ -1181,7 +1181,7 @@
       "product_brand": 40,
       "price": 10,
       "default_rating": 4,
-      "image_url": "socks_11.png"
+      "image": "socks_11.png"
     }
   },
   {
@@ -1196,7 +1196,7 @@
       "product_brand": 40,
       "price": 7.99,
       "default_rating": 3,
-      "image_url": "socks_12.png"
+      "image": "socks_12.png"
     }
   },
   {
@@ -1211,7 +1211,7 @@
       "product_brand": 41,
       "price": 13.5,
       "default_rating": 5,
-      "image_url": "socks_13.png"
+      "image": "socks_13.png"
     }
   },
   {
@@ -1226,7 +1226,7 @@
       "product_brand": 42,
       "price": 22,
       "default_rating": 4,
-      "image_url": "socks_14.png"
+      "image": "socks_14.png"
     }
   },
   {
@@ -1241,7 +1241,7 @@
       "product_brand": 42,
       "price": 22,
       "default_rating": 4,
-      "image_url": "socks_15.png"
+      "image": "socks_15.png"
     }
   },
   {
@@ -1256,7 +1256,7 @@
       "product_brand": 43,
       "price": 15.99,
       "default_rating": 5,
-      "image_url": "socks_16.png"
+      "image": "socks_16.png"
     }
   },
   {
@@ -1271,7 +1271,7 @@
       "product_brand": 10,
       "price": 8.99,
       "default_rating": 3,
-      "image_url": "socks_17.png"
+      "image": "socks_17.png"
     }
   },
   {
@@ -1286,7 +1286,7 @@
       "product_brand": 44,
       "price": 19.99,
       "default_rating": 5,
-      "image_url": "socks_18.png"
+      "image": "socks_18.png"
     }
   },
   {
@@ -1301,7 +1301,7 @@
       "product_brand": 44,
       "price": 19.99,
       "default_rating": 4,
-      "image_url": "socks_19.png"
+      "image": "socks_19.png"
     }
   },
   {
@@ -1316,7 +1316,7 @@
       "product_brand": 45,
       "price": 9.99,
       "default_rating": 5,
-      "image_url": "socks_20.png"
+      "image": "socks_20.png"
     }
   },
   {
@@ -1331,7 +1331,7 @@
       "product_brand": 42,
       "price": 12.99,
       "default_rating": 2,
-      "image_url": "socks_21.png"
+      "image": "socks_21.png"
     }
   },
   {
@@ -1346,7 +1346,7 @@
       "product_brand": 46,
       "price": 7,
       "default_rating": 5,
-      "image_url": "socks_22.png"
+      "image": "socks_22.png"
     }
   },
   {
@@ -1361,7 +1361,7 @@
       "product_brand": 47,
       "price": 54.99,
       "default_rating": 4,
-      "image_url": "socks_23.png"
+      "image": "socks_23.png"
     }
   },
   {
@@ -1376,7 +1376,7 @@
       "product_brand": 42,
       "price": 4.99,
       "default_rating": 2,
-      "image_url": "socks_24.png"
+      "image": "socks_24.png"
     }
   },
   {
@@ -1391,7 +1391,7 @@
       "product_brand": 48,
       "price": 13.99,
       "default_rating": 5,
-      "image_url": "socks_25.png"
+      "image": "socks_25.png"
     }
   },
   {
@@ -1406,7 +1406,7 @@
       "product_brand": 49,
       "price": 25,
       "default_rating": 4,
-      "image_url": "socks_26.png"
+      "image": "socks_26.png"
     }
   },
   {
@@ -1421,7 +1421,7 @@
       "product_brand": 49,
       "price": 25,
       "default_rating": 4,
-      "image_url": "socks_27.png"
+      "image": "socks_27.png"
     }
   },
   {
@@ -1436,7 +1436,7 @@
       "product_brand": 42,
       "price": 4.99,
       "default_rating": 3,
-      "image_url": "socks_28.png"
+      "image": "socks_28.png"
     }
   },
   {
@@ -1451,7 +1451,7 @@
       "product_brand": 50,
       "price": 14.99,
       "default_rating": 5,
-      "image_url": "socks_29.png"
+      "image": "socks_29.png"
     }
   },
   {
@@ -1466,7 +1466,7 @@
       "product_brand": 4,
       "price": 12,
       "default_rating": 2,
-      "image_url": "socks_30.png"
+      "image": "socks_30.png"
     }
   },
   {
@@ -1481,7 +1481,7 @@
       "product_brand": 51,
       "price": 30,
       "default_rating": 4,
-      "image_url": "socks_31.png"
+      "image": "socks_31.png"
     }
   },
   {
@@ -1496,7 +1496,7 @@
       "product_brand": 52,
       "price": 5,
       "default_rating": 3,
-      "image_url": "socks_32.png"
+      "image": "socks_32.png"
     }
   },
   {
@@ -1511,7 +1511,7 @@
       "product_brand": 53,
       "price": 4.99,
       "default_rating": 4,
-      "image_url": "socks_33.png"
+      "image": "socks_33.png"
     }
   },
   {
@@ -1526,7 +1526,7 @@
       "product_brand": 54,
       "price": 2.99,
       "default_rating": 5,
-      "image_url": "socks_34.png"
+      "image": "socks_34.png"
     }
   }
 ]

@@ -21,6 +21,7 @@ class ProductAdmin(admin.ModelAdmin):
         'default_rating',
         'product_brand',
         'image_url',
+        'image',
         'has_sizes'
     )
 

@@ -133,9 +133,13 @@ class Product(models.Model):
     )
     image_url = models.CharField(
         max_length=40, 
-        null=False, 
-        blank=False, 
-        default='SOME STRING'
+        null=True, 
+        blank=True, 
+        default='String value'
+    )
+    image = models.ImageField(
+        null=True, 
+        blank=True
     )
     has_sizes = models.BooleanField(
         default=True, 

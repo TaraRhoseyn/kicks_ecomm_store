@@ -29,7 +29,8 @@ class TestProductModels(TestCase):
             product_type='1',
             price='99.99',
             default_rating='1',
-            image_url='test.png'
+            image = 'test.png',
+            image_url='www.test.com/test.png'
         )
 
     def test_group_str_method(self):
