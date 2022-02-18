@@ -1,19 +1,60 @@
 {% extends 'base.html' %}
 
-{% block content %}
+{% block extra_css %}
+{{ block.super }}
+    <style>
+        img {
+            margin-top: 0;
+            border: 3px rgb(0, 0, 0) solid;
+            -webkit-box-shadow: 5px 7px 0px 0px #8918fb; 
+            box-shadow: 5px 7px 0px 0px #8918fb;
+        }
+        .btn--blank {
+            color: black!important;
+        }
+        .btn--blank:hover {
+            color: #8918fb;
+        }
+    </style>
+{% endblock %}
 
-{% if request.user.is_authenticated %}
-<form method="POST" action="{% url 'add_review' product.id %}" class="form mb-2 mt-5" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form | crispy }}
-    <div class="text-right">
-        <a class="btn btn-outline-black rounded-0" href="{% url 'individual_product' product_id=product.id %}">Cancel</a>
-        <button class="btn btn-black rounded-0" type="submit">Submit Review</button>
-    </div>
-</form>
-{% else %}
-    <p>Please sign in</p>
-{% endif %}
+{% block content %}
+<div class="container">
+
+    <!-- HEADING -->
+
+    <h1 class="my-5">Leave a review</h1>
+
+    <!-- FORM -->
+
+    {% if request.user.is_authenticated %}
+    <form method="POST" action="{% url 'add_review' product.id %}" class="form mb-2 mt-5" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <p class="mr-4 font-weight-bold">{{ product.name }}</p>
+                <img class="w-100" src="/media/{{ product.image_url }}" alt="{{ product.description }}" class="product-images">
+            </div>
+            <div class="col-12 col-md-8">
+                {{ form | crispy }}
+            </div>
+        </div>
+        <div class="my-5">
+            <button class="btn--purple" type="submit">Submit Review</button>
+            <a class="ml-3 btn--blank" href="{% url 'individual_product' product_id=product.id %}">Cancel</a>
+        </div>
+        
+            
+    </form>
+    {% else %}
+
+    <!-- REDIRECT -->
+
+    <p>Please <a href="{% url 'login' %}">login</a> to your account or <a href="{% url 'register' %}">register</a> to leave a review.</p>
+
+    {% endif %}
+</div>
+
 
 
 {% endblock %}
