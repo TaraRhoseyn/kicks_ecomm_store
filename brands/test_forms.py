@@ -1,0 +1,24 @@
+# IMPORTS
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Third party
+from django.test import TestCase
+
+# Internal
+from .forms import BrandForm
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+class TestBrandForm(TestCase):
+    """
+    A class for testing checkout forms
+    """
+    def test_add_brand_form(self):
+        """
+        This test tests the order form object
+        """
+        testform = BrandForm({
+            'name': 'testbrand',
+            'friendly_name': 'Test Brand'
+            })
+        self.assertTrue(testform.is_valid())
