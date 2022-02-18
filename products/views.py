@@ -96,8 +96,8 @@ def show_all_products(request):
 
 def show_individual_product(request, product_id):
     """
-    View to returns all products, sort products 
-    by object keys and search queries
+    View to returns individual product view 
+    with favourites and reviews if available.
     Args:
         request (object): HTTP request object
         product_id key value of Product model
@@ -106,22 +106,31 @@ def show_individual_product(request, product_id):
     """
 
     product = get_object_or_404(Product, pk=product_id)
+    
 
-    # Grabs favourites
+    # Retrieves favourites if favourite matches user and product
     try:
         favourites = get_object_or_404(Favourite, created_by=request.user.id)
     except Http404:
         is_product_in_favourites = False
     else:
         is_product_in_favourites = bool(product in favourites.products.all())
-
-    context = {
-        'product': product,
-        'is_product_in_favourites': is_product_in_favourites,
-    }
+    
+    # Retrieves reviews if review matches product
+    if Review.objects.filter(product__id__exact=product_id):
+        reviews = Review.objects.filter(product__id__exact=product_id)
+        context = {
+            'product': product,
+            'is_product_in_favourites': is_product_in_favourites,
+            'reviews': reviews,
+        }
+    else:
+        context = {
+            'product': product,
+            'is_product_in_favourites': is_product_in_favourites,
+        }
 
     return render(request, 'products/individual_product.html', context)
-
 
 @login_required
 def add_review(request, product_id):
@@ -159,3 +168,4 @@ def add_review(request, product_id):
     }
 
     return render(request, template, context)
+
