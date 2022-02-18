@@ -135,7 +135,14 @@ def show_individual_product(request, product_id):
 
 @login_required
 def add_review(request, product_id):
-    """ Add a product review """
+    """
+    Add product reviews on individual products.
+    Args:
+        request (object): HTTP request object
+        product_id key value of Product model
+    Returns:
+        Individual product page(s) with passed context object
+    """
     product = get_object_or_404(Product, pk=product_id)
     created_by = User.objects.get(username=request.user)
 
@@ -170,3 +177,33 @@ def add_review(request, product_id):
 
     return render(request, template, context)
 
+
+@login_required
+def edit_review(request, review_id):
+    """ Save edited product review """
+    review = get_object_or_404(Review, pk=review_id)
+    if request.user.is_superuser or request.user == review.created_by:
+        if request.method == 'POST':
+            review_form = RatingForm(request.POST, instance=review)
+            if review_form.is_valid():
+                review_form.save()
+                messages.info(request, 'Your review has been updated!')
+                return redirect(reverse('individual_product',
+                                args=[review.product.id]))
+            else:
+                messages.error(request, 'Failed to update the review. \
+                                        Please ensure the form is valid.')
+        else:
+            review_form = RatingForm(instance=review)
+
+        template = 'products/edit_review.html',
+        context = {
+            'form': review_form,
+            'review': review,
+            'product_id': review.product.id
+        }
+        return render(request, template, context)
+    else:
+        messages.error(
+            request, 'Only the reviewer can edit this review')
+        return redirect(reverse('individual_product', args=[review.product.id]))

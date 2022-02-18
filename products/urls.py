@@ -6,4 +6,6 @@ urlpatterns = [
     path('<product_id>', views.show_individual_product, name='individual_product'),
     path('add_review/<product_id>/', views.add_review,
          name="add_review"),
+    path('edit_review/<review_id>/', views.edit_review,
+         name="edit_review"),
 ]
