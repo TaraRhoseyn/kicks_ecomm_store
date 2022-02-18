@@ -4,6 +4,8 @@
 # Third party
 from django.db import models
 from django.core.validators import MaxValueValidator
+from django.contrib.auth.models import User
+from django.db.models import Avg
 
 # Internal
 from brands.models import Brand
@@ -124,7 +126,7 @@ class Product(models.Model):
         null=False, 
         blank=False
     )
-    rating = models.IntegerField(
+    default_rating = models.IntegerField(
         null=False, 
         blank=False, 
         validators=[MaxValueValidator(999)]
@@ -150,3 +152,50 @@ class Product(models.Model):
             The Product name string
         """
         return self.name
+
+    @property
+    def user_rating(self):
+        return self.reviews.aggregate(avg_score=Avg('review_score'))[
+            'avg_score']
+
+
+class Review(models.Model):
+    """
+    A class for leaving reviews on products.
+    """
+    class Meta:
+        verbose_name_plural = 'Reviews'
+
+    text_review = models.TextField(
+        max_length='1024',
+        null=True,
+        blank=True,
+    )
+    STAR_CHOICES = (
+        (1, '1'),
+        (2, '2'),
+        (3, '3'),
+        (4, '4'),
+        (5, '5'),
+    )
+    star_rating = models.IntegerField(
+        choices=STAR_CHOICES, 
+        default=4
+    )
+    created_by = models.OneToOneField(
+        User,
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL
+    )
+    created_at = models.DateTimeField(
+        auto_now_add=True
+    )
+    product = models.ForeignKey(
+        Product, 
+        on_delete=models.CASCADE, 
+        related_name='reviews'
+    )
+    
+    def __str__(self):
+        return self.review

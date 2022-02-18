@@ -70,7 +70,9 @@
                         <!-- can i redirect through js instead? -->
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </form>
-                   
+
+                    <a href="{% url 'add_review' product_id=product.id %}"
+                        class="text-muted url-style">Leave your review</a>
 
                 </div>
             </div>

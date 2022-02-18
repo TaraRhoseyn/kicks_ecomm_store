@@ -6,13 +6,15 @@ from django.shortcuts import get_object_or_404, render, reverse, redirect
 from django.contrib import messages
 from django.http import Http404
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
 from django.db.models.functions import Lower
+from django.contrib.auth.models import User
 
 # Internal:
-from .models import Product, ProductGroup, ProductType
+from .models import Product, ProductGroup, ProductType, Review
 from brands.models import Brand
 from favourites.models import Favourite
-
+from .forms import RatingForm
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -119,3 +121,41 @@ def show_individual_product(request, product_id):
     }
 
     return render(request, 'products/individual_product.html', context)
+
+
+@login_required
+def add_review(request, product_id):
+    """ Add a product review """
+    product = get_object_or_404(Product, pk=product_id)
+    created_by = User.objects.get(username=request.user)
+
+    user_review = Review.objects.filter(product=product, created_by=created_by)
+    review_form = RatingForm(request.POST)
+
+    if request.method == 'POST':
+        if user_review:
+            messages.error(request, "You have reviewed this product already.")
+            return redirect(reverse('individual_product', args=[product_id]))
+
+        else:
+            if review_form.is_valid():
+                review = review_form.save(commit=False)
+                review.created_by = created_by
+                review.product = product
+                review.save()
+                messages.info(request, 'Thank you for your review!')
+                return redirect(reverse('individual_product', args=[product_id]))
+            else:
+                messages.error(request, "Ensure the form is valid. \
+                                    Please try again!")
+
+    else:
+        review_form = RatingForm(instance=product)
+
+    template = 'products/add_review.html'
+    context = {
+        'form': review_form,
+        'product': product,
+    }
+
+    return render(request, template, context)

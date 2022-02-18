@@ -28,7 +28,7 @@ class TestProductModels(TestCase):
             product_group='1',
             product_type='1',
             price='99.99',
-            rating='1',
+            default_rating='1',
             image_url='test.png'
         )
 

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if request.user.is_authenticated %}
+<form method="POST" action="{% url 'add_review' product.id %}" class="form mb-2 mt-5" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form | crispy }}
+    <div class="text-right">
+        <a class="btn btn-outline-black rounded-0" href="{% url 'individual_product' product_id=product.id %}">Cancel</a>
+        <button class="btn btn-black rounded-0" type="submit">Submit Review</button>
+    </div>
+</form>
+{% else %}
+    <p>Please sign in</p>
+{% endif %}
+
+
+{% endblock %}
