@@ -5,7 +5,6 @@
 from django.contrib import admin
 
 # Internal
-from brands.models import Brand
 from .models import Product, ProductGroup, ProductType, Review
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -42,11 +41,7 @@ class ProductTypeAdmin(admin.ModelAdmin):
     )
 
 
-class BrandAdmin(admin.ModelAdmin):
-    list_display = (
-        'name',
-        'friendly_name'
-    )
+
 
 class ReviewAdmin(admin.ModelAdmin):
     list_display = (
@@ -61,5 +56,4 @@ class ReviewAdmin(admin.ModelAdmin):
 admin.site.register(Product, ProductAdmin)
 admin.site.register(ProductGroup, ProductGroupAdmin)
 admin.site.register(ProductType, ProductTypeAdmin)
-admin.site.register(Brand, BrandAdmin)
 admin.site.register(Review, ReviewAdmin)
