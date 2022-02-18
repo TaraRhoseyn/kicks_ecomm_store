@@ -2,7 +2,7 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Third party
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.shortcuts import render, reverse, redirect
@@ -38,9 +38,9 @@ def add_brand(request):
     if request.method == 'POST':
         form = BrandForm(request.POST, request.FILES)
         if form.is_valid():
-            product = form.save()
+            brand = form.save()
             messages.success(request, 'Successfully added brand!')
-            return redirect(reverse('individual_product', args=[product.id]))
+            return redirect(reverse('brands'))
         else:
             messages.error(request, 'Failed to add brand. Please ensure the form is valid.')
     else:
@@ -53,3 +53,30 @@ def add_brand(request):
 
     return render(request, template, context)
 
+
+@login_required
+def edit_brand(request, brand_name):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    
+    brand = get_object_or_404(Brand, name=brand_name)
+    if request.method == 'POST':
+        form = BrandForm(request.POST, request.FILES, instance=brand)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated brand!')
+            return redirect(reverse('brands'))
+        else:
+            messages.error(request, 'Failed to update brand. Please ensure the form is valid.')
+    else:
+        form = BrandForm(instance=brand)
+        messages.info(request, f'You are editing {brand.name}')
+
+    template = 'brands/edit_brand.html'
+    context = {
+        'form': form,
+        'brand': brand,
+    }
+
+    return render(request, template, context)
