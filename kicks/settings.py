@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'favourites',
     # other
     'crispy_forms',
+    'storages',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -174,18 +175,37 @@ USE_I18N = True
 USE_TZ = True
 
 
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Delivery information
+FREE_DELIVERY_THRESHOLD = 70
+DELIVERY_COST = 7.99
+
+
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+if 'USE_AWS' in os.environ:
+    AWS_STORAGE_BUCKET_NAME = 'ci-ms4-kicks'
+    AWS_S3_REGION_NAME = 'eu-west-2'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY_ID = os.environ.get('AWS_SECRET_ACCESS_KEY_ID')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+    # Static and media storage
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
 
-
-FREE_DELIVERY_THRESHOLD = 70
-DELIVERY_COST = 7.99
+    # Override URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
 # Stripe
 STRIPE_CURRENCY = 'usd'
