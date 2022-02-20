@@ -213,7 +213,7 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - **Bug 12: AttributeError relating to editting reviews**
 - **Fix**: When loading the individual_product template, Django would throw an AttributeError because it could not find the url with the attributes passed to find the edit_review template. I fixed this by moving the url template tag from outside of the reviews for loop to inside.
 - **Bug 13: Pushing to Heroku failure*
-- **Fix**: Heroku would not accept my git push due to dependency conflicts between the packages botocore, python-dateutil and heroku (cli). I could not get the packages botocore and heroku to align on what version of python-dateutil they each required, so I uninstalled heroku. I then had to manually set DISABLE_COLLECTSTATIC in the config of the heroku dashboard instead of using heroku's cli. 
+- **Fix**: Heroku would not accept my git push due to dependency conflicts between the packages botocore, python-dateutil and heroku (cli). I could not get the packages botocore and heroku to align on what version of python-dateutil they each required, so I uninstalled heroku. I then had to manually set DISABLE_COLLECTSTATIC in the config of the heroku dashboard instead of using heroku's cli.
 
 ## Deployment
 
