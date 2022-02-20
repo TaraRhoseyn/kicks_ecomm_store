@@ -1,0 +1,44 @@
+Check results
+=============
+
+
+
+Code
+=============
+# IMPORTS
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Third party
+from django.test import TestCase
+
+# Internal
+from .models import Brand
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+class TestBrandModel(TestCase):
+    """
+    A class for testing the brand model
+    """
+
+    def setUp(self):
+        """
+        Create test Brand model object
+        """
+        Brand.objects.create(
+            name='testbrand',
+            friendly_name='test brand'
+        )
+
+    def tearDown(self):
+        """
+        Delete test Brand model object
+        """
+        Brand.objects.all().delete()
+
+    def test_str_method(self):
+        """
+        Tests whether the Brand object
+        returns a string value
+        """
+        brand = Brand.objects.get(name='testbrand')
+        self.assertEqual((brand.__str__()), brand.name)
