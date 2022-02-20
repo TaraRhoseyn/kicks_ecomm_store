@@ -38,7 +38,11 @@
         <div class="row">
             <div class="col-12 col-md-4">
                 <p class="mr-4 font-weight-bold">{{ product.name }}</p>
-                <img class="w-100" src="/media/{{ product.image }}" alt="{{ product.description }}" class="product-images">
+                {% if product.image %}
+                    <img class="w-100" src="{{ product.image.url }}" alt="{{ product.name }}" class="product-images">
+                {% else %}
+                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" class="product-images">
+                {% endif %} 
             </div>
             <div class="col-12 col-md-8">
                 {{ form|crispy }}
@@ -55,7 +59,7 @@
 
     <!-- REDIRECT -->
 
-    <p>Please <a href="{% url 'login' %}">login</a> to your account or <a href="{% url 'register' %}">register</a> to update a review.</p>
+    <p>Please <a href="{% url 'login' %}">login</a> to your account or <a shref="{% url 'register' %}">register</a> to update a review.</p>
 
     {% endif %}
 </div>
