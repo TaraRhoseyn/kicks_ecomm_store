@@ -73,13 +73,21 @@ profiles/views.py| 0 errors, 0 warnings | [Report](https://github.com/TaraRhosey
 
 ### JSHint
 
+
 JavaScript validation was manually tested with [JSHint](https://jshint.com/)
 
 Files tested and their result:
 
-| File  | Result | PEP8Online file |
+| File  | Result | JShint report |
  ------ | :------------ | ---------------- |
 checkout/stripe_elements.js | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/checkout_stripelements.png) |
 products/templates/product.html (filtering feature) | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/products.png) |
-profiles/countryfield.js | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/profiles_countryfield.png) |
+profiles/static/profiles/js/countryfield.js | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/profiles_countryfield.png) |
 static/js/search.js | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/static_search.png) |
+
+### CSS validation
+
+| File  | Result | CSS validation service |
+ ------ | :------------ | ---------------- |
+checkout/static/checkout/css/checkout.css | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/css_validation/css_validation.png) |
+static/css/base.css| 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/css_validation/css_validation.png) |
