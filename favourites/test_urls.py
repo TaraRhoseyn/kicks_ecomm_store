@@ -7,7 +7,7 @@ from django.urls import reverse, resolve
 
 # Internal
 from .views import view_favourites, add_product_to_favourites
-from .views import remove_product_from_favourites
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 class TestFavouritesUrls(SimpleTestCase):
@@ -29,10 +29,3 @@ class TestFavouritesUrls(SimpleTestCase):
         """
         url = reverse('add_product_to_favourites', args=['1'])
         self.assertEqual(resolve(url).func, add_product_to_favourites)
-    
-    def test_remove_product_from_favourite_resolves(self):
-        """
-        Checks add_product_to_favourites url is resolved
-        """
-        url = reverse('remove_product_from_favourites', args=['1'])
-        self.assertEqual(resolve(url).func, remove_product_from_favourites)

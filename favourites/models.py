@@ -33,4 +33,4 @@ class Favourite(models.Model):
         Returns:
             str: users favourite string
         """
-        return f"{self.created_by}'s Favourites"
+        return f"Your Favourites"
