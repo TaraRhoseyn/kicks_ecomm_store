@@ -183,7 +183,7 @@ FREE_DELIVERY_THRESHOLD = 70
 DELIVERY_COST = 7.99
 
 
-
+# Static and media files
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
