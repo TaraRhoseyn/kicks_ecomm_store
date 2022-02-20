@@ -1,7 +1,7 @@
 
 # Testing
 
-## Code compliance
+## Code validation
 
 ### PEP8 Compliance
 
@@ -67,3 +67,19 @@ profiles/test_models.py| 0 errors, 0 warnings | [Report](https://github.com/Tara
 profiles/test_views.py| 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/pep8_compliance/pep8_profiles_testviews.txt) |
 profiles/urls.py| 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/pep8_compliance/pep8_profiles_urls.txt) |
 profiles/views.py| 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/pep8_compliance/pep8_profiles_views.txt) |
+
+
+
+
+### JSHint
+
+JavaScript validation was manually tested with [JSHint](https://jshint.com/)
+
+Files tested and their result:
+
+| File  | Result | PEP8Online file |
+ ------ | :------------ | ---------------- |
+checkout/stripe_elements.js | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/checkout_stripelements.png) |
+products/templates/product.html (filtering feature) | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/products.png) |
+profiles/countryfield.js | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/profiles_countryfield.png) |
+static/js/search.js | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/static_search.png) |
