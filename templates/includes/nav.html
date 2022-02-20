@@ -50,13 +50,17 @@
             <p class="nav__total"></p>
         {% endif %}
         <!-- Shopping bag -->
-        <a class="nav__bag-icon nav-icon mx-1" href="{% url 'view_shopping_bag' %}" aria-label="Shopping basket" title="Shopping basket"><i class="fas fa-shopping-basket fa-lg"></i></a>
+        <a class="nav__bag-icon nav-icon mx-1" href="{% url 'view_shopping_bag' %}" aria-label="Shopping basket" title="Shopping basket">
+            <i aria-hidden="true" class="fas fa-shopping-basket fa-lg"></i>
+            <span class="sr-only">Shopping Bag</span>
+        </a>
         
         
         <!-- User account -->
         <li class="nav-item dropdown">
             <a class="nav-icon ml-1 mr-4" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-user fa-lg nav--user_account"></i>
+                <i aria-hidden="true" class="fas fa-user fa-lg nav--user_account"></i>
+                <span class="sr-only">User Account</span>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 {% if request.user.is_authenticated %}
