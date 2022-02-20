@@ -42,7 +42,7 @@
                     <img class="w-100" src="{{ product.image.url }}" alt="{{ product.name }}" class="product-images">
                 {% else %}
                     <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" class="product-images">
-                {% endif %} 
+                {% endif %}
             </div>
             <div class="col-12 col-md-8">
                 {{ form|crispy }}
