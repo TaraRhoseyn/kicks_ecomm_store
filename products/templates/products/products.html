@@ -79,6 +79,7 @@
 
   <script type="text/javascript">
         window.onload=function(){
+            /*jshint esversion: 8 */
             // Adds sorting params to url. 
             $("#btn--sort--price--asc").on("click", function() {
                 const params = new URLSearchParams(location.search);
@@ -117,7 +118,7 @@
                 location.reload();
             });
             async function changeFontWeight(element) {
-                console.log("changeFontWeight function reached")
+                console.log("changeFontWeight function reached");
                 await new Promise(resolve => setTimeout(resolve, 1000));
                 element.classList.add('font-weight-bold');
             }

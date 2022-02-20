@@ -8,7 +8,7 @@ function checkSearchResult() {
             displayNoResult();
         }
     } else {
-        return
+        return;
     }
 }
 
