@@ -1,10 +1,10 @@
-# Imports
+# IMPORTS
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# 3rd party:
+# Third party
 from django.test import TestCase
 from django.contrib.auth.models import User
 
-# Internal:
+# Internal
 from .models import UserProfile
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
