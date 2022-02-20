@@ -21,9 +21,9 @@ class Order(models.Model):
     Class for the Order model
     """
     user_profile = models.ForeignKey(
-        UserProfile, 
+        UserProfile,
         on_delete=models.SET_NULL,
-        null=True, 
+        null=True,
         blank=True,
         related_name='orders'
     )
@@ -34,7 +34,8 @@ class Order(models.Model):
     )
     full_name = models.CharField(
         max_length=50,
-        null=False,blank=False
+        null=False,
+        blank=False
     )
     email = models.EmailField(
         max_length=254,
@@ -43,13 +44,14 @@ class Order(models.Model):
     )
     phone_number = models.CharField(
         max_length=20,
-        null=False,blank=False
+        null=False,
+        blank=False
     )
     country = CountryField(
         blank_label='Country *',
         null=False,
         blank=False
-    )    
+    )
     postcode = models.CharField(
         max_length=20,
         null=True,
@@ -108,7 +110,6 @@ class Order(models.Model):
         default=''
     )
 
-
     def _generate_order_number(self):
         """
         Generate a random, unique order number using UUID
@@ -120,7 +121,8 @@ class Order(models.Model):
         Update grand total each time a line item is added,
         accounting for delivery costs.
         """
-        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
+        self.order_total = self.lineitems.aggregate(
+            Sum('lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
             self.delivery_cost = Decimal(settings.DELIVERY_COST)
         else:

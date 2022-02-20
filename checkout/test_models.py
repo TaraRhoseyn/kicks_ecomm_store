@@ -9,6 +9,7 @@ from .models import Order
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
 class TestCheckoutModels(TestCase):
     """
     A class for testing checkout models
