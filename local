@@ -41,6 +41,7 @@ PyJWT==2.3.0
 pyparsing==3.0.6
 pytest==6.2.5
 pytest-cov==3.0.0
+python-dateutil==2.8.2
 python3-openid==3.2.0
 pyzmq==22.3.0
 requests==2.27.1
@@ -54,6 +55,5 @@ toml==0.10.2
 tomli==2.0.0
 tzdata==2021.5
 urllib3==1.26.7
-python-dateutil==2.8.2
 uuid==1.30
 yarl==1.7.2
