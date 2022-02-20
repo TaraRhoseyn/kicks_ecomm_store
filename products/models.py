@@ -1,5 +1,5 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# IMPORTS 
+# IMPORTS
 
 # Third party
 from django.db import models
@@ -12,19 +12,20 @@ from brands.models import Brand
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
 class ProductGroup(models.Model):
     """
-    A class for groups of products, 
+    A class for groups of products,
     e.g. Womens, Mens and Kids
     """
 
     name = models.CharField(
-        max_length=200, 
-        null=True, 
+        max_length=200,
+        null=True,
         blank=True)
     friendly_name = models.CharField(
-        max_length=200, 
-        null=True, 
+        max_length=200,
+        null=True,
         blank=True)
 
     def __str__(self):
@@ -50,17 +51,17 @@ class ProductGroup(models.Model):
 
 class ProductType(models.Model):
     """
-    A class for types of products, 
+    A class for types of product types
     e.g. trainers, heels etc
     """
 
     name = models.CharField(
-        max_length=200, 
-        null=True, 
+        max_length=200,
+        null=True,
         blank=True)
     friendly_name = models.CharField(
-        max_length=200, 
-        null=True, 
+        max_length=200,
+        null=True,
         blank=True)
 
     def __str__(self):
@@ -89,61 +90,61 @@ class Product(models.Model):
     A class for all products
     """
     sku = models.CharField(
-        max_length=12, 
-        null=False, 
+        max_length=12,
+        null=False,
         blank=False
     )
     name = models.CharField(
-        max_length=40, 
-        null=False, 
+        max_length=40,
+        null=False,
         blank=False
     )
     description = models.TextField()
     product_group = models.ForeignKey(
-        'ProductGroup', 
-        default=1, 
-        null=True, 
-        blank=True, 
+        'ProductGroup',
+        default=1,
+        null=True,
+        blank=True,
         on_delete=models.SET_NULL
     )
     product_type = models.ForeignKey(
-        'ProductType', 
-        default=1, 
-        null=True, 
-        blank=True, 
+        'ProductType',
+        default=1,
+        null=True,
+        blank=True,
         on_delete=models.SET_NULL
     )
     product_brand = models.ForeignKey(
         Brand,
-        default=1, 
-        null=True, 
-        blank=True, 
+        default=1,
+        null=True,
+        blank=True,
         on_delete=models.SET_NULL
     )
     price = models.DecimalField(
-        max_digits=7, 
-        decimal_places=2, 
-        null=False, 
+        max_digits=7,
+        decimal_places=2,
+        null=False,
         blank=False
     )
     default_rating = models.IntegerField(
-        null=False, 
-        blank=False, 
+        null=False,
+        blank=False,
         validators=[MaxValueValidator(999)]
     )
     image_url = models.CharField(
-        max_length=40, 
-        null=True, 
-        blank=True, 
+        max_length=40,
+        null=True,
+        blank=True,
         default='String value'
     )
     image = models.ImageField(
-        null=True, 
+        null=True,
         blank=True
     )
     has_sizes = models.BooleanField(
-        default=True, 
-        null=False, 
+        default=True,
+        null=False,
         blank=False
     )
 
@@ -183,7 +184,7 @@ class Review(models.Model):
         (5, '5'),
     )
     star_rating = models.IntegerField(
-        choices=STAR_CHOICES, 
+        choices=STAR_CHOICES,
         default=4
     )
     created_by = models.ForeignKey(
@@ -196,10 +197,10 @@ class Review(models.Model):
         auto_now_add=True
     )
     product = models.ForeignKey(
-        Product, 
-        on_delete=models.CASCADE, 
+        Product,
+        on_delete=models.CASCADE,
         related_name='reviews'
     )
-    
+
     def __str__(self):
         return self.text_review

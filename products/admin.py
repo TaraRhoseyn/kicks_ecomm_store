@@ -41,8 +41,6 @@ class ProductTypeAdmin(admin.ModelAdmin):
     )
 
 
-
-
 class ReviewAdmin(admin.ModelAdmin):
     list_display = (
         'text_review',

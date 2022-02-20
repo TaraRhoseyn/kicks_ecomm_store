@@ -28,10 +28,10 @@ class TestProductModels(TestCase):
             description='Test description',
             price='99.99',
             default_rating='1',
-            image = 'test.png',
+            image='test.png',
             image_url='www.test.com/test.png'
         )
-    
+
     def tearDown(self):
         """
         Delete test Product, ProductGroup, and ProductType
@@ -46,7 +46,7 @@ class TestProductModels(TestCase):
         """
         group = ProductGroup.objects.get(name='testgroup')
         self.assertEqual((group.__str__()), group.name)
-    
+
     def test_type_str_method(self):
         """
         Tests the ProductType method and verifies
@@ -60,4 +60,3 @@ class TestProductModels(TestCase):
         """
         product = Product.objects.get(name='testname')
         self.assertEqual((product.__str__()), product.name)
-

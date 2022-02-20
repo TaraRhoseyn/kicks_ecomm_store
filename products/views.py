@@ -1,4 +1,4 @@
-# IMPORTS 
+# IMPORTS
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Third party:
@@ -20,7 +20,7 @@ from .forms import RatingForm, ProductForm
 
 def show_all_products(request):
     """
-    View to returns all products, sort products 
+    View to returns all products, sort products
     by object keys and search queries
     Args:
         request (object): HTTP request object
@@ -35,11 +35,10 @@ def show_all_products(request):
     sort = None
     direction = None
     products = Product.objects.all()
-    
 
     if request.GET:
 
-        # Sorting products by type 
+        # Sorting products by type
         if 'product_type' in request.GET:
             product_types = request.GET['product_type'].split(',')
             products = products.filter(product_type__name__in=product_types)
@@ -49,12 +48,14 @@ def show_all_products(request):
         if 'product_group' in request.GET:
             product_groups = request.GET['product_group'].split(',')
             products = products.filter(product_group__name__in=product_groups)
-            product_groups = ProductGroup.objects.filter(name__in=product_groups)
+            product_groups = ProductGroup.objects.filter(
+                name__in=product_groups)
 
         if 'product_brand' in request.GET:
             product_brands = request.GET['product_brand'].split(',')
             products = products.filter(product_brand__name__in=product_brands)
-            product_brands = Brand.objects.filter(name__in=product_brands)
+            product_brands = Brand.objects.filter(
+                name__in=product_brands)
 
         # User searching products
         if 'search' in request.GET:
@@ -63,10 +64,11 @@ def show_all_products(request):
                 # If search bar is blank:
                 messages.error(request, "Please fill out the search bar.")
                 return redirect(reverse('products'))
-            searches = Q(name__icontains=search) | Q(description__icontains=search)
+            searches = Q(
+                name__icontains=search) | Q(description__icontains=search)
             products = products.filter(searches)
-       
-       # User sorting products
+
+        # User sorting products
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
@@ -78,7 +80,6 @@ def show_all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-        
 
     current_sorting = f'{sort}_{direction}'
 
@@ -96,7 +97,7 @@ def show_all_products(request):
 
 def show_individual_product(request, product_id):
     """
-    View to returns individual product view 
+    View to returns individual product view
     with favourites and reviews if available.
     Args:
         request (object): HTTP request object
@@ -106,7 +107,6 @@ def show_individual_product(request, product_id):
     """
 
     product = get_object_or_404(Product, pk=product_id)
-    
 
     # Retrieves favourites if favourite matches user and product
     try:
@@ -115,7 +115,7 @@ def show_individual_product(request, product_id):
         is_product_in_favourites = False
     else:
         is_product_in_favourites = bool(product in favourites.products.all())
-    
+
     # Retrieves reviews if review matches product
     if Review.objects.filter(product__id__exact=product_id):
         reviews = Review.objects.filter(product__id__exact=product_id)
@@ -161,7 +161,8 @@ def add_review(request, product_id):
                 review.product = product
                 review.save()
                 messages.info(request, 'Thank you for your review!')
-                return redirect(reverse('individual_product', args=[product_id]))
+                return redirect(reverse(
+                    'individual_product', args=[product_id]))
             else:
                 messages.error(request, "Ensure the form is valid. \
                                     Please try again!")
@@ -205,7 +206,8 @@ def edit_review(request, review_id):
     else:
         messages.error(
             request, 'Only the reviewer can edit this review')
-        return redirect(reverse('individual_product', args=[review.product.id]))
+        return redirect(reverse(
+            'individual_product', args=[review.product.id]))
     template = 'products/edit_review.html',
     context = {
         'form': review_form,
@@ -241,7 +243,7 @@ def add_product(request):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-    
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
@@ -249,7 +251,9 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('individual_product', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to add product. '
+                'Please ensure the form is valid.')
     else:
         form = ProductForm()
 
@@ -267,7 +271,7 @@ def edit_product(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-    
+
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
@@ -276,7 +280,9 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('individual_product', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to update product. '
+                'Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -296,7 +302,7 @@ def delete_product(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-    
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted.')
