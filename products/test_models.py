@@ -18,7 +18,7 @@ class TestProductModels(TestCase):
         """
         ProductGroup.objects.create(
             name='testgroup',
-            friendly_name='test group')
+            friendly_name='test_group')
         ProductType.objects.create(
             name='testtype',
             friendly_name='test type')
@@ -26,9 +26,6 @@ class TestProductModels(TestCase):
             sku='TRANICH3BL',
             name='testname',
             description='Test description',
-            product_brand='1',
-            product_group='1',
-            product_type='1',
             price='99.99',
             default_rating='1',
             image = 'test.png',
