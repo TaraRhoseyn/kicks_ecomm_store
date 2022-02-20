@@ -1,4 +1,4 @@
-# IMPORTS 
+# IMPORTS
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Third party
@@ -12,6 +12,7 @@ from .models import Brand
 from .forms import BrandForm
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 def show_brand(request):
     """
@@ -29,10 +30,11 @@ def show_brand(request):
 
     return render(request, 'brands/brands.html', context)
 
+
 @login_required
 def add_brand(request):
     """
-    View to add brands 
+    View to add brands
     Args:
         request (object): HTTP request object
     Returns:
@@ -41,7 +43,7 @@ def add_brand(request):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-    
+
     if request.method == 'POST':
         form = BrandForm(request.POST, request.FILES)
         if form.is_valid():
@@ -49,7 +51,9 @@ def add_brand(request):
             messages.success(request, 'Successfully added brand!')
             return redirect(reverse('brands'))
         else:
-            messages.error(request, 'Failed to add brand. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to add brand. '
+                           'Please ensure the form is valid.')
     else:
         form = BrandForm()
 
@@ -64,7 +68,7 @@ def add_brand(request):
 @login_required
 def edit_brand(request, brand_name):
     """
-    View to edit pre-existing brands 
+    View to edit pre-existing brands
     Args:
         request (object): HTTP request object
     Returns:
@@ -73,7 +77,7 @@ def edit_brand(request, brand_name):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-    
+
     brand = get_object_or_404(Brand, name=brand_name)
     if request.method == 'POST':
         form = BrandForm(request.POST, request.FILES, instance=brand)
@@ -82,7 +86,9 @@ def edit_brand(request, brand_name):
             messages.success(request, 'Successfully updated brand!')
             return redirect(reverse('brands'))
         else:
-            messages.error(request, 'Failed to update brand. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to update brand.'
+                           'Please ensure the form is valid.')
     else:
         form = BrandForm(instance=brand)
         messages.info(request, f'You are editing {brand.name}')
@@ -99,7 +105,7 @@ def edit_brand(request, brand_name):
 @login_required
 def delete_brand(request, brand_name):
     """
-    View to delete pre-existing brands 
+    View to delete pre-existing brands
     Args:
         request (object): HTTP request object
     Returns:
@@ -108,7 +114,7 @@ def delete_brand(request, brand_name):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-    
+
     brand = get_object_or_404(Brand, name=brand_name)
     brand.delete()
     messages.success(request, 'Brand deleted.')

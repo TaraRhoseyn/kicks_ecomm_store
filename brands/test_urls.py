@@ -10,6 +10,7 @@ from django.urls import reverse, resolve
 from .views import add_brand, show_brand, edit_brand, delete_brand
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
 class TestBrandUrls(TestCase):
     """
     Tests brand urls are resolved
@@ -35,7 +36,7 @@ class TestBrandUrls(TestCase):
         """
         url = reverse('edit_brand', args=['nike'])
         self.assertEqual(resolve(url).func, edit_brand)
-    
+
     def test_delete_brand_url_resolves(self):
         """
         Checks delete_brand url is resolved with args

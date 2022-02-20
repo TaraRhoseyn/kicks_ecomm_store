@@ -9,17 +9,17 @@ from django.db import models
 
 class Brand(models.Model):
     """
-    A class for brands of products, 
+    A class for brands of products,
     e.g. Nike, Puma etc
     """
     name = models.CharField(
-        max_length=200, 
-        null=True, 
+        max_length=200,
+        null=True,
         blank=True
     )
     friendly_name = models.CharField(
-        max_length=200, 
-        null=True, 
+        max_length=200,
+        null=True,
         blank=True
     )
 

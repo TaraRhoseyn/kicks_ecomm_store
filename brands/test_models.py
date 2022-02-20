@@ -27,7 +27,7 @@ class TestBrandModel(TestCase):
         Delete test Brand model object
         """
         Brand.objects.all().delete()
-    
+
     def test_str_method(self):
         """
         Tests whether the Brand object
