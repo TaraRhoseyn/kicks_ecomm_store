@@ -5,7 +5,6 @@
 import os
 from pathlib import Path
 import dj_database_url
-from decouple import config
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -208,27 +207,6 @@ if 'USE_AWS' in os.environ:
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
-
-AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
-print(AWS_ACCESS_KEY_ID) # returns correctly
-AWS_SECRET_ACCESS_KEY_ID = config('AWS_SECRET_ACCESS_KEY_ID')
-print(AWS_SECRET_ACCESS_KEY_ID) # returns correctly
-AWS_S3_CUSTOM_DOMAIN = f'https://ci-ms4-kicks.s3.eu-west-2.amazonaws.com/' # current domain
-print(AWS_S3_CUSTOM_DOMAIN) # returns correctly
-
-# Static and media files
-STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-STATICFILES_LOCATION = 'static'
-DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-MEDIAFILES_LOCATION = 'media'
-
-# Override static and media URLs in production
-STATIC_URL = f'{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-print('static url is =' + STATIC_URL)
-MEDIA_URL = f'{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-print('media url is =' + MEDIA_URL)
-
 
 
 # Stripe
