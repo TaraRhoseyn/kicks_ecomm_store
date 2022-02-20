@@ -2,11 +2,11 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Third party
 from django.test import TestCase
+from django.contrib.auth.models import User
 
 # Internal
 from products.models import Product
 from .models import Favourite
-from profiles.models import User
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -18,22 +18,18 @@ class TestFavouriteModels(TestCase):
         """
         Create a test product, user and favourites
         """
-        Product.objects.create(
-            name='Test Name',
-            price='99.99',
-            description='Test Description',
+        user = User.objects.create_user(
+            username='test_user', 
+            password='test_password'
         )
-        User.objects.create(
-            full_name='Test Name',
-            email='test@gmail.com',
-            phone_number='123456789',
-            country='IE',
-            town_or_city='Test City',
-            street_address1='Test Address',
+        Product.objects.create(
+            name='test_name',
+            price='99.99',
+            description='test_description',
+            default_rating='2',
         )
         Favourite.objects.create(
-            products='Test Name',
-            created_by='testname'
+            created_by=user
         )
 
     def tearDown(self):
@@ -48,5 +44,5 @@ class TestFavouriteModels(TestCase):
         """
         Tests string return of Favourite model
         """
-        favourite = Favourite.objects.get(created_by='testname')
-        self.assertEqual(str(favourite), favourite.created_by)
+        favourite = Favourite.objects.get()
+        self.assertEqual(str(favourite.__str__()), favourite.__str__())
