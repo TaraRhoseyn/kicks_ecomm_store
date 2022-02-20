@@ -10,6 +10,7 @@ from .models import Favourite
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
 class TestFavouriteModels(TestCase):
     """
     A class for testing Favourite models
@@ -19,7 +20,7 @@ class TestFavouriteModels(TestCase):
         Create a test product, user and favourites
         """
         user = User.objects.create_user(
-            username='test_user', 
+            username='test_user',
             password='test_password'
         )
         Product.objects.create(

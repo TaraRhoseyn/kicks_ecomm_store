@@ -13,6 +13,7 @@ from .models import Favourite
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Credit: Paul Meeneghan
 
+
 @login_required
 def view_favourites(request):
     """

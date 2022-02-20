@@ -10,6 +10,7 @@ from .views import view_favourites, add_product_to_favourites
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
 class TestFavouritesUrls(SimpleTestCase):
     """
     Tests favourites urls are resolved
@@ -22,7 +23,7 @@ class TestFavouritesUrls(SimpleTestCase):
         """
         url = reverse('view_favourites')
         self.assertEqual(resolve(url).func, view_favourites)
-    
+
     def test_add_product_to_favourites_resolves(self):
         """
         Checks add_product_to_favourites url is resolved
