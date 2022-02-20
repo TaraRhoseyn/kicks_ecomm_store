@@ -6,9 +6,6 @@ import os
 from pathlib import Path
 import dj_database_url
 
-# Internals
-import kicks.env as env
-
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -24,7 +21,7 @@ SECRET_KEY = 'django-insecure-eb0ba6a_9l$d(ru(7r53xp_abjetcka9_^t&ywforho6fgib7z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ci-ms4-kicks.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['ci-ms4-kicks.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -148,7 +145,6 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
