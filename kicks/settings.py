@@ -5,6 +5,7 @@
 import os
 from pathlib import Path
 import dj_database_url
+from decouple import config
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -190,14 +191,16 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-AWS_S3_CUSTOM_DOMAIN = f'https://ci-ms4-kicks.s3.eu-west-2.amazonaws.com/'
-
 if 'USE_AWS' in os.environ:
     AWS_STORAGE_BUCKET_NAME = 'ci-ms4-kicks'
     AWS_S3_REGION_NAME = 'eu-west-2'
-    
+    AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
+    print(AWS_ACCESS_KEY_ID)
+    AWS_SECRET_ACCESS_KEY_ID = config('AWS_SECRET_ACCESS_KEY_ID')
+    print(AWS_SECRET_ACCESS_KEY_ID)
+    AWS_S3_CUSTOM_DOMAIN = f'https://ci-ms4-kicks.s3.eu-west-2.amazonaws.com/'
+    print(AWS_S3_CUSTOM_DOMAIN)
+
     # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
@@ -206,7 +209,9 @@ if 'USE_AWS' in os.environ:
 
     # Override static and media URLs in production
     STATIC_URL = f'{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    print(STATIC_URL)
     MEDIA_URL = f'{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+    print(MEDIA_URL)
 
 # Stripe
 STRIPE_CURRENCY = 'usd'
