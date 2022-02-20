@@ -30,12 +30,12 @@
                     <div class="card-deck product--all_card">
                         <div class="img-container">
                             {% if product.image %}
-                                <a href="{% url 'individual_product' product.id %}">
-                                    <img class="card-img-top product-img" src="{{ product.image.url }}" alt="{{ product.name }}" class="product-images">
+                                <a href="{% url 'individual_product' fav.id %}">
+                                    <img class="card-img-top product-img" src="{{ fav.image.url }}" alt="{{ fav.name }}" class="product-images">
                                 </a>
                             {% else %}
-                                <a href="{% url 'individual_product' product.id %}">
-                                    <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" class="product-images">
+                                <a href="{% url 'individual_product' fav.id %}">
+                                    <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ fav.name }}" class="product-images">
                                 </a>
                             {% endif %}
                         </div>
