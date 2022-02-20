@@ -35,7 +35,7 @@ class TestBagViews(TestCase):
         response = self.client.get('/bag/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'bag/bag.html')
-    
+
     def test_add_to_bag(self):
         """
         Checks that items have been added to bag
@@ -46,7 +46,7 @@ class TestBagViews(TestCase):
                                     "redirect_url": "view_shopping_bag"})
         bag = self.client.session['bag']
         self.assertEqual(bag[str(testproduct.id)], 1)
-    
+
     def test_remove_from_bag(self):
         """
         Checks that items have been removed from bag
