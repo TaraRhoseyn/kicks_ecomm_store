@@ -192,14 +192,12 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if 'USE_AWS' in os.environ:
+    # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'ci-ms4-kicks'
     AWS_S3_REGION_NAME = 'eu-west-2'
-    AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
-    print(AWS_ACCESS_KEY_ID)
-    AWS_SECRET_ACCESS_KEY_ID = config('AWS_SECRET_ACCESS_KEY_ID')
-    print(AWS_SECRET_ACCESS_KEY_ID)
-    AWS_S3_CUSTOM_DOMAIN = f'https://ci-ms4-kicks.s3.eu-west-2.amazonaws.com/'
-    print(AWS_S3_CUSTOM_DOMAIN)
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
     # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
@@ -208,10 +206,30 @@ if 'USE_AWS' in os.environ:
     MEDIAFILES_LOCATION = 'media'
 
     # Override static and media URLs in production
-    STATIC_URL = f'{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-    print(STATIC_URL)
-    MEDIA_URL = f'{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-    print(MEDIA_URL)
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
+
+AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
+print(AWS_ACCESS_KEY_ID) # returns correctly
+AWS_SECRET_ACCESS_KEY_ID = config('AWS_SECRET_ACCESS_KEY_ID')
+print(AWS_SECRET_ACCESS_KEY_ID) # returns correctly
+AWS_S3_CUSTOM_DOMAIN = f'https://ci-ms4-kicks.s3.eu-west-2.amazonaws.com/' # current domain
+print(AWS_S3_CUSTOM_DOMAIN) # returns correctly
+
+# Static and media files
+STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+STATICFILES_LOCATION = 'static'
+DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+MEDIAFILES_LOCATION = 'media'
+
+# Override static and media URLs in production
+STATIC_URL = f'{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+print('static url is =' + STATIC_URL)
+MEDIA_URL = f'{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+print('media url is =' + MEDIA_URL)
+
+
 
 # Stripe
 STRIPE_CURRENCY = 'usd'
