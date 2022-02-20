@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "heroku": "^7.59.2",
     "jquery-scrollify": "^1.0.21",
     "sass": "^1.48.0"
   }
