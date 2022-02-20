@@ -22,7 +22,7 @@ def show_brand(request):
         Brand page with passed context object
     """
     # Credit for sort Brand.objects method: Reddit
-    brands = Brand.objects.all().order_by('name')    
+    brands = Brand.objects.all().order_by('name')
     context = {
         'brands': brands,
     }
