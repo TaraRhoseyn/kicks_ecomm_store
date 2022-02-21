@@ -38,8 +38,8 @@
         <div class="row">
             <div class="col-12 col-md-4">
                 <p class="mr-4 font-weight-bold">{{ product.name }}</p>
-                {% if product.image %}
-                    <img class="w-100 product-images" src="{{ product.image.url }}" alt="{{ product.name }}">
+                {% if review.image %}
+                    <img class="w-100 product-images" src="{{ review.product.image.url }}" alt="{{ product.name }}">
                 {% else %}
                     <img class="w-100 product-images" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 {% endif %}
