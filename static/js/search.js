@@ -2,7 +2,7 @@
 function checkSearchResult() {
     var url = window.location.href;
     if (url.includes("search")) {
-        if (document.getElementById('search-result')) {
+        if (document.getElementsByClassName('search-result')) {
             return;
         } else {
             displayNoResult();
