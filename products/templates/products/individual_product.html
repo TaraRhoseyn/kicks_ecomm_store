@@ -28,9 +28,9 @@
             <div class="col-12 col-md-6">
                 <div class="product-details">
                     <div class="row ml-0">
-                        <span>
+                        <div>
                             <h1 class="mr-4">{{ product.name }}</h1>
-                        </span>
+                        </div>
                         <span>
                                 <!-- FAVOURITING PRODUCTS -->
     
@@ -70,7 +70,7 @@
                         {% csrf_token %}
                         {% include "includes/sizing.html" %}
                         <label for="quantity" class="mt-4">Quantity</label>
-                        <input type="number" name="quantity" id="quantity" value="1" min="1" max="999" data-item-id="{{ product.id }}" id="id_quantity_{{ product.id }}" class="prod-qty">
+                        <input type="number" name="quantity" value="1" min="1" max="999" data-item-id="{{ product.id }}" id="id_quantity_{{ product.id }}" class="prod-qty">
                         <input type="submit" class="btn--purple mt-4" value="Add to Cart">
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </form>
