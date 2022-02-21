@@ -89,15 +89,15 @@ body {
 }
 
 .btn--grey {
-  color: grey;
-  border: 1px grey solid;
+  color: #474747;
+  border: 1px #474747 solid;
   background-color: white !important;
 }
 
 .btn--grey:hover {
   cursor: pointer;
   color: white !important;
-  background-color: grey !important;
+  background-color: #474747 !important;
 }
 
 .btn--red {
@@ -335,7 +335,7 @@ use:nth-child(5) {
 }
 
 .rating-desc {
-  color: grey;
+  color: #474747;
   margin-top: 1px;
 }
 
@@ -512,7 +512,7 @@ footer p a:hover {
 }
 
 .toast .toast-header-info {
-  background-color: grey;
+  background-color: #474747;
   color: black;
 }
 

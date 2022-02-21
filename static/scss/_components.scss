@@ -73,13 +73,13 @@ body {
 }
 
 .btn--grey {
-    color: grey;
-    border: 1px grey solid;
+    color: $grey;
+    border: 1px $grey solid;
     background-color: white!important;
     &:hover {
         cursor: pointer;
         color: white!important;
-        background-color: grey!important;
+        background-color: $grey!important;
 
     }
 }
@@ -298,7 +298,7 @@ use {
 }
 
 .rating-desc {
-    color: grey;
+    color: $grey;
     margin-top: 1px;
     @include for-tablet-up {
         margin-left: 15px;
@@ -450,7 +450,7 @@ footer {
     }
 
     .toast-header-info {
-        background-color: grey;
+        background-color: $grey;;
         color: black;
     }
 
