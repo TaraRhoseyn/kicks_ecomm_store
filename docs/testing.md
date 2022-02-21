@@ -91,3 +91,36 @@ static/js/search.js | 0 errors, 0 warnings | [Screenshot](https://github.com/Tar
  ------ | :------------ | ---------------- |
 checkout/static/checkout/css/checkout.css | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/css_validation/css_validation.png) |
 static/css/base.css| 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/css_validation/css_validation.png) |
+
+### WAVE accessibility tool 
+
+| Page  | Result | WAVE report |
+ ------ | :------------ | ---------------- |
+home | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/home_index.png) |
+accounts/verification_sent | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_emailsent.png) |
+accounts/login | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_login.png) |
+accounts/logout | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_logout.png) |
+accounts/password_change | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_password_change.png) |
+accounts/password_reset_done | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_password_reset_done.png) |
+accounts/register | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_register.png) |
+bag | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/bag.png) |
+brands/{all brands} | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/brands_allbrands.png) |
+brands/{example brand} | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/brands_example.png) |
+checkout | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/checkout.png) |
+checkout/checkout_success | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/checkout_success.png) |
+favourites | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/favourites.png) |
+product/{all products} | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/product_allproducts.png) |
+product/{individual_product} | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/product_individual_product.png) |
+product/?product_group=childrens | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/product_kids.png) |
+product/?product_group=womens | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_womens.png) |
+product/?product_group=mens | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_mens.png) |
+product/?product_type=baby| 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_baby.png) |
+product/?product_type=boots| 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_boots.png) |
+product/?product_type=brogues| 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_brogues.png) |
+product/?product_type=daps| 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_daps.png) |
+product/?product_type=heels| 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_heels.png) |
+product/?product_type=pumps| 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_pumps.png) |
+product/?product_type=socks| 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_socks.png) |
+review/add_review | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/review_add_review.png) |
+review/edit_review | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/review_edit_review.png) |
+

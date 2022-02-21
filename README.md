@@ -220,6 +220,8 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - **Fix**: A couple of my files failed PEP8 validation because of minor issues like no new line at the end of a file and lines too long. I fixed these issues and all python files now pass with 0 errors and 0 warnings.
 - **Error: JavaScript linting errors**
 - **Fix**: I had to insert missing colons into my JavaScript files to pass JSHint.
+- **Error: WAVE accessibility errors**
+- **Fix**: Global button styling had to be changed to pass colour contrast in WAVE, as well as removing empty links and adding aria attributes to certain buttons. All pages now pass WAVE with 0 errors and 0 contrast errors.
 
 ## Deployment
 
