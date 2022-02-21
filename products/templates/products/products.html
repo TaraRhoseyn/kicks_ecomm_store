@@ -106,7 +106,7 @@
                 const params = new URLSearchParams(location.search);
                 params.delete('sort');
                 params.delete('direction');
-                params.append('sort', 'rating');
+                params.append('sort', 'default_rating');
                 params.append('direction', 'desc');
                 window.history.replaceState({}, '', `${location.pathname}?${params}`);
                 location.reload();
