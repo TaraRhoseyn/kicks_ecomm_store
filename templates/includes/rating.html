@@ -1,6 +1,7 @@
 <!-- Star rating system. Credit: Felix M -->
 {% if product.default_rating == 1 %}
-    <p aria-label="Rating is 1 out of 5" class="rating-aria">
+    <span class="sr-only">Rating is 1 out of 5</span>
+    <p class="rating-aria">
         <i class="star"></i>
         <i class="empty-star"></i>
         <i class="empty-star"></i>
@@ -9,7 +10,8 @@
     </p>
 {% endif %}
 {% if product.default_rating == 2 %}
-    <p aria-label="Rating is 2 out of 5" class="rating-aria">
+    <span class="sr-only">Rating is 2 out of 5</span>
+    <p class="rating-aria">
         <i class="star"></i>
         <i class="star"></i>
         <i class="empty-star"></i>
@@ -18,7 +20,8 @@
     </p>
 {% endif %}
 {% if product.default_rating == 3 %}
-    <p aria-label="Rating is 3 out of 5" class="rating-aria">
+    <span class="sr-only">Rating is 3 out of 5</span>
+    <p class="rating-aria">
         <i class="star"></i>
         <i class="star"></i>
         <i class="star"></i>
@@ -27,7 +30,8 @@
     </p>
 {% endif %}
 {% if product.default_rating == 4 %}
-    <p aria-label="Rating is 4 out of 5" class="rating-aria">
+    <span class="sr-only">Rating is 4 out of 5</span>
+    <p class="rating-aria">
         <i class="star"></i>
         <i class="star"></i>
         <i class="star"></i>
@@ -36,7 +40,8 @@
     </p>
 {% endif %}
 {% if product.default_rating == 5 %}
-    <p aria-label="Rating is 5 out of 5" class="rating-aria">
+<span class="sr-only">Rating is 5 out of 5</span>
+    <p class="rating-aria">
         <i class="star"></i>
         <i class="star"></i>
         <i class="star"></i>
