@@ -57,25 +57,27 @@
         
         
         <!-- User account -->
-        <li class="nav-item dropdown">
-            <a class="nav-icon ml-1 mr-4" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i aria-hidden="true" class="fas fa-user fa-lg nav--user_account"></i>
-                <span class="sr-only">User Account</span>
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                {% if request.user.is_authenticated %}
-                {% if request.user.is_superuser %}
-                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+        <ul>
+            <li class="nav-item dropdown">
+                <a class="nav-icon ml-1 mr-4" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i aria-hidden="true" class="fas fa-user fa-lg nav--user_account"></i>
+                    <span class="sr-only">User Account</span>
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                    {% if request.user.is_authenticated %}
+                    {% if request.user.is_superuser %}
+                        <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                    {% endif %}
+                    <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                    <a href="{% url 'view_favourites' %}" class="dropdown-item">My Favourites</a>
+                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                {% else %}
+                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                 {% endif %}
-                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                <a href="{% url 'view_favourites' %}" class="dropdown-item">My Favourites</a>
-                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-            {% else %}
-                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-            {% endif %}
-            </div>
-        </li>
+                </div>
+            </li>
+        </ul>
         <!-- Search bar -->
         <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
             <input class="search-input form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search for products">
