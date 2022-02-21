@@ -79,7 +79,10 @@
         <!-- Search bar -->
         <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
             <input class="search-input form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search for products">
-            <button class="btn btn-outline-warning btn_search-submit my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+            <button class="btn btn-outline-warning btn_search-submit my-2 my-sm-0" type="submit">
+                <i class="fas fa-search"></i>
+                <span class="sr-only">Search</span>
+            </button>
         </form>
     </div>
 </nav>
