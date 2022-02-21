@@ -29,7 +29,7 @@
                 <div class="col-12 col-md-3" id="search-result">
                     <div class="card-deck product--all_card">
                         <div class="img-container">
-                            {% if product.image %}
+                            {% if fav.image %}
                                 <a href="{% url 'individual_product' fav.id %}">
                                     <img class="card-img-top product-img" src="{{ fav.image.url }}" alt="{{ fav.name }}" class="product-images">
                                 </a>
