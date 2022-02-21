@@ -23,7 +23,7 @@
         2. [Manual Testing](#Manual-Testing)
     8. [Browser compatibility](#browser-compatability)
     9. [Testing user stories](#testing-user-stories)
-6. [Bugs](#Bug-Squashing)
+6. [Bugs and Errors](#Bug-and-errors)
 7. [Deployment](#deployment)
 8. [Credits](#credits)
     1. [Code](#code)
@@ -186,7 +186,7 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 ### Testing user stories
 
-## Bug Squashing
+## Bugs and Errors
 
 - **Bug 1: Incorrect data types**: Product model throwing errors when attempting to make migration
 - **Fix**:  Change attribute on an IntegerField from max_digits to the Django method MaxValueValidator. Add on_delete attribute to ForeignKeys. Add max_digits attribute to DecimalFields.
@@ -216,6 +216,10 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - **Fix**: Heroku would not accept my git push due to dependency conflicts between the packages botocore, python-dateutil and heroku (cli). I could not get the packages botocore and heroku to align on what version of python-dateutil they each required, so I uninstalled heroku. I then had to manually set DISABLE_COLLECTSTATIC in the config of the heroku dashboard instead of using heroku's cli.
 - **Bug 14: Heroku 500 Server Errors on pages**
 - **Fix**: On all pages but the home page my deployed app on Heroku would return a 500 internal server error. I temporarily enabled Debug and saw that Django was throwing a ProgrammingError on the pages, suggesting that the data was not pulling from the database correctly. I reinstalled the heroku package, logged in, and applied migrations specifically with the 'heroku run python' flag and then loaded the data. This resolved the issue, I then turned off Debug again.
+- **Error: PEP8Online errors**
+- **Fix**: A couple of my files failed PEP8 validation because of minor issues like no new line at the end of a file and lines too long. I fixed these issues and all python files now pass with 0 errors and 0 warnings.
+- **Error: JavaScript linting errors**
+- **Fix**: I had to insert missing colons into my JavaScript files to pass JSHint.
 
 ## Deployment
 
