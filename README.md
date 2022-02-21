@@ -222,6 +222,8 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - **Fix**: I had to insert missing colons into my JavaScript files to pass JSHint.
 - **Error: WAVE accessibility errors**
 - **Fix**: Global button styling had to be changed to pass colour contrast in WAVE, as well as removing empty links and adding aria attributes to certain buttons. All pages now pass WAVE with 0 errors and 0 contrast errors.
+- **Error: Duplicate IDs on star rating system**
+- **Fix**: Testing pages for HTML validation revealed duplicate ID attributes on the same page due to how my star rating system worked with SVGs. I tried adjusting this method but not entirely eliminate the need for IDs which would always cause duplicates in the places they were used. Instead, I adopted a CSS-based method of producing stars which used classes instead of IDs.
 
 ## Deployment
 
@@ -247,7 +249,7 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 - **Code Institute** - For their lessons on Python and Django, particularly the Boutique Ado project.
 
-- **Chris Bongers** - For [a star rating system made of SVG paths](https://codepen.io/rebelchris/pen/dyXORMd)
+- **Felix M** - For [a star rating system](https://codepen.io/fxm90/pen/yOBWVe)
 
 - **Modern CSS Dev** - For [smooth scroll](https://moderncss.dev/pure-css-smooth-scroll-back-to-top/)
 
