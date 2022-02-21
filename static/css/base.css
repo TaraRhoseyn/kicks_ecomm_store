@@ -600,7 +600,7 @@ footer p a:hover {
   border-bottom: .7em  solid #fac001;
   border-left: .3em solid transparent;
   /* Controlls the size of the stars. */
-  font-size: 12px;
+  font-size: 9px;
 }
 
 .star:before, .star:after {
@@ -635,7 +635,7 @@ footer p a:hover {
   border-bottom: .7em  solid #c8c8c8;
   border-left: .3em solid transparent;
   /* Controls the size of the stars. */
-  font-size: 12px;
+  font-size: 9px;
 }
 
 .empty-star:before, .empty-star:after {
