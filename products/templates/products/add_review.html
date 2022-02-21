@@ -33,9 +33,9 @@
             <div class="col-12 col-md-4">
                 <p class="mr-4 font-weight-bold">{{ product.name }}</p>
                 {% if product.image %}
-                    <img class="w-100" src="{{ product.image.url }}" alt="{{ product.name }}" class="product-images">
+                    <img class="w-100 product-images" src="{{ product.image.url }}" alt="{{ product.name }}">
                 {% else %}
-                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" class="product-images">
+                    <img class="w-100 product-images" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 {% endif %}            
             </div>
             <div class="col-12 col-md-8">

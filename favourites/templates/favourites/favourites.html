@@ -31,11 +31,11 @@
                         <div class="img-container">
                             {% if fav.image %}
                                 <a href="{% url 'individual_product' fav.id %}">
-                                    <img class="card-img-top product-img" src="{{ fav.image.url }}" alt="{{ fav.name }}" class="product-images">
+                                    <img class="card-img-top product-img product-images" src="{{ fav.image.url }}" alt="{{ fav.name }}">
                                 </a>
                             {% else %}
                                 <a href="{% url 'individual_product' fav.id %}">
-                                    <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ fav.name }}" class="product-images">
+                                    <img class="card-img-top product-img product-images" src="{{ MEDIA_URL }}noimage.png" alt="{{ fav.name }}">
                                 </a>
                             {% endif %}
                         </div>
