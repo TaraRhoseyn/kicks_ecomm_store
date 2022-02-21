@@ -24,10 +24,10 @@
                     <div class="row">
                         <div class="col-12 col-md-6">
                             {% if item.product.image %}
-                                <img class="w-100" src="/media/{{ item.product.image }}" alt="{{ item.product.name }}">
+                                <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                             {% else %}
-                                <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
-                            {% endif %}                        
+                                <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                            {% endif %}                      
                         </div>
                         <div class="col-12 col-md-6">
                             <h3><strong>{{ item.product.name }}</strong></h3>
