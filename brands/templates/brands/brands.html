@@ -17,35 +17,32 @@
         <!-- Credit for regrouping query set 
         by first letter: StackOverflow -->
         {% regroup brands by name|slice:":1" as brand_list %}
-        <ul>
-            <div class="row my-5">
-                {% for brand in brand_list %}
-                    <div class="col-md-4 my-4">
-                        <h2><strong>{{ brand.grouper|title }}</strong></h2>
-                        <ul class="list--alpha_brand">
-                            {% for brand in brand.list %}
-                            <li>
-                                <a href="{% url 'products' %}?product_brand={{ brand.name }}">
-                                    {{ brand.friendly_name|title }}</a>
-                                {% if request.user.is_superuser %}
-                                    <a class="btn--brand_admin ml-1 text-primary" href="{% url 'edit_brand' brand_name=brand.name %}">
-                                        Edit</a>
-                                    <a class="btn--brand_admin ml-1 text-danger" href="{% url 'delete_brand' brand_name=brand.name %}">
-                                        Delete</a>
-                                {% endif %}
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                {% endfor %}
-            </div>
-            <div class="row">
-                {% if request.user.is_superuser %}
-                    <a class="btn--purple" href="{% url 'add_brand' %}">
-                        Add a brand</a>
-                {% endif %}
-            </div>
-        </ul>
-        
+        <div class="row my-5">
+            {% for brand in brand_list %}
+                <div class="col-md-4 my-4">
+                    <h2><strong>{{ brand.grouper|title }}</strong></h2>
+                    <ul class="list--alpha_brand">
+                        {% for brand in brand.list %}
+                        <li>
+                            <a href="{% url 'products' %}?product_brand={{ brand.name }}">
+                                {{ brand.friendly_name|title }}</a>
+                            {% if request.user.is_superuser %}
+                                <a class="btn--brand_admin ml-1 text-primary" href="{% url 'edit_brand' brand_name=brand.name %}">
+                                    Edit</a>
+                                <a class="btn--brand_admin ml-1 text-danger" href="{% url 'delete_brand' brand_name=brand.name %}">
+                                    Delete</a>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            {% if request.user.is_superuser %}
+                <a class="btn--purple" href="{% url 'add_brand' %}">
+                    Add a brand</a>
+            {% endif %}
+        </div>
     </div>
 {% endblock %}
