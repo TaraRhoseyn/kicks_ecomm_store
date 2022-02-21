@@ -212,8 +212,10 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - **Fix**: When trying to migrate over the brand model from the products app to the brand app, I accidentally caused the whole project to fail on the server. The steps I took to fix the issue: (a) Reversed to a few commits previously (b) faked all previous migrations (c) reloaded all the data from the fixtures (d) make new migrations (e) opened a new branch to test migration attempt one step at a time. I believe I caused the bug by accidentally rewriting over an old migration which created a conflict within Django.
 - **Bug 12: AttributeError relating to editting reviews**
 - **Fix**: When loading the individual_product template, Django would throw an AttributeError because it could not find the url with the attributes passed to find the edit_review template. I fixed this by moving the url template tag from outside of the reviews for loop to inside.
-- **Bug 13: Pushing to Heroku failure*
+- **Bug 13: Pushing to Heroku failure**
 - **Fix**: Heroku would not accept my git push due to dependency conflicts between the packages botocore, python-dateutil and heroku (cli). I could not get the packages botocore and heroku to align on what version of python-dateutil they each required, so I uninstalled heroku. I then had to manually set DISABLE_COLLECTSTATIC in the config of the heroku dashboard instead of using heroku's cli.
+- **Bug 14: Heroku 500 Server Errors on pages**
+- **Fix**: On all pages but the home page my deployed app on Heroku would return a 500 internal server error. I temporarily enabled Debug and saw that Django was throwing a ProgrammingError on the pages, suggesting that the data was not pulling from the database correctly. I reinstalled the heroku package, logged in, and applied migrations specifically with the 'heroku run python' flag and then loaded the data. This resolved the issue, I then turned off Debug again.
 
 ## Deployment
 
