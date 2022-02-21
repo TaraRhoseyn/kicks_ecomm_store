@@ -59,13 +59,13 @@
                             {% endif %}
                         </div>
                         <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="{% url 'individual_product' product.id %}" class="product_name">
-                                <strong>{{ product.name }}</strong>
-                            </a>
-                        </h5>
-                        {% include "includes/rating.html" %}
-                        <p class="card-price mt-3"><strong>£{{ product.price }}</strong></p>
+                            <h5 class="card-title">
+                                <a href="{% url 'individual_product' product.id %}" class="product_name">
+                                    <strong>{{ product.name }}</strong>
+                                </a>
+                            </h5>
+                            {% include "includes/rating.html" %}
+                            <p class="card-price mt-3"><strong>£{{ product.price }}</strong></p>
                         </div>
                     </div>
                 </div>
