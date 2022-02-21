@@ -50,11 +50,11 @@
                         <div class="img-container">
                             {% if product.image %}
                                 <a href="{% url 'individual_product' product.id %}">
-                                    <img class="card-img-top product-img" src="{{ product.image.url }}" alt="{{ product.name }}" class="product-images">
+                                    <img class="card-img-top product-img product-images" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
                             {% else %}
                                 <a href="{% url 'individual_product' product.id %}">
-                                    <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" class="product-images">
+                                    <img class="card-img-top product-img product-images" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 </a>
                             {% endif %}
                         </div>
