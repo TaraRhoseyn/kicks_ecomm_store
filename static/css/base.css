@@ -202,7 +202,6 @@ body {
   }
 }
 
-/* rating system */
 .card-price {
   font-size: 20px;
 }
@@ -230,12 +229,6 @@ use:nth-child(4) {
 use:nth-child(5) {
   -webkit-transform: translate(80px);
           transform: translate(80px);
-}
-
-.rating {
-  display: block;
-  height: 20px;
-  width: 100px;
 }
 
 .home-section {
@@ -586,6 +579,83 @@ footer p a:hover {
   background-color: #dc3545;
   border-color: #dc3545;
   border-radius: 0;
+}
+
+/* Star ratings */
+.rating {
+  display: block;
+  height: 20px;
+  width: 100px;
+}
+
+.star {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .9em;
+  margin-right: .9em;
+  margin-bottom: 1.2em;
+  border-right: .3em solid transparent;
+  border-bottom: .7em  solid #fac001;
+  border-left: .3em solid transparent;
+  /* Controlls the size of the stars. */
+  font-size: 12px;
+}
+
+.star:before, .star:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: .6em;
+  left: -1em;
+  border-right: 1em solid transparent;
+  border-bottom: .7em  solid #fac001;
+  border-left: 1em solid transparent;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+
+.star:after {
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+
+.empty-star {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .9em;
+  margin-right: .9em;
+  margin-bottom: 1.2em;
+  border-right: .3em solid transparent;
+  border-bottom: .7em  solid #c8c8c8;
+  border-left: .3em solid transparent;
+  /* Controls the size of the stars. */
+  font-size: 12px;
+}
+
+.empty-star:before, .empty-star:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: .6em;
+  left: -1em;
+  border-right: 1em solid transparent;
+  border-bottom: .7em  solid #c8c8c8;
+  border-left: 1em solid transparent;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+
+.empty-star:after {
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
 }
 
 .nav-link:hover, .nav-icon:hover {
