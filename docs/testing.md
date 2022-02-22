@@ -69,9 +69,32 @@ profiles/urls.py| 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn
 profiles/views.py| 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/pep8_compliance/pep8_profiles_views.txt) |
 
 
+### HTML Validation
+
+All pages were manually validated with the [W3C Markup validation service](https://validator.w3.org/)
+
+| File  | Result | HTML validation service |
+ ------ | :------------ | ---------------- |
+ / (home) | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/home.png) |
+/bag.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/bag.png) |
+/checkout.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/checkout.png) |
+/checkout_success.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/checkout_checkout_success.png) |
+/checkout_success.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/checkout_checkout_success.png) |
+/brands.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/brands.png) |
+/brands/add_brand.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/brands.png) |
+/brands/edit_brand.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/brands.png) |
+/favourites.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/favourites.png) |
+/products.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/products.png) |
+/products/add_product.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/products_add_product.png) |
+/products/edit_product.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/products_edit_product.png) |
+/products/add_review.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/products_add_review.png) |
+/products/edit_review.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/products_edit_review.png) |
+/products/? (search query) | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/products_search_param_example.png) |
+/profiles.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/profile.png) |
 
 
-### JSHint
+
+### JSHints
 
 
 JavaScript validation was manually tested with [JSHint](https://jshint.com/)
@@ -80,47 +103,51 @@ Files tested and their result:
 
 | File  | Result | JShint report |
  ------ | :------------ | ---------------- |
-checkout/stripe_elements.js | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/checkout_stripelements.png) |
-products/templates/product.html (filtering feature) | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/products.png) |
-profiles/static/profiles/js/countryfield.js | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/profiles_countryfield.png) |
-static/js/search.js | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/static_search.png) |
+checkout/stripe_elements.js | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/checkout_stripelements.png) |
+products/templates/product.html (filtering feature) | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/products.png) |
+profiles/static/profiles/js/countryfield.js | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/profiles_countryfield.png) |
+static/js/search.js | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/jshint/static_search.png) |
 
-### CSS validation
+### CSS Validation
+
+CSS validation was manually tested with the [W3C CSS validation service](https://jigsaw.w3.org/css-validator/)
 
 | File  | Result | CSS validation service |
  ------ | :------------ | ---------------- |
-checkout/static/checkout/css/checkout.css | 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/css_validation/css_validation.png) |
-static/css/base.css| 0 errors, 0 warnings | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/css_validation/css_validation.png) |
+checkout/static/checkout/css/checkout.css | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/css_validation/css_validation.png) |
+static/css/base.css| 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/css_validation/css_validation.png) |
 
-### WAVE accessibility tool 
+### WAVE accessibility tool
+
+All pages were manually checked using [WebAIM's WAVE tool](https://wave.webaim.org/)
 
 | Page  | Result | WAVE report |
  ------ | :------------ | ---------------- |
-home | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/home_index.png) |
-accounts/verification_sent | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_emailsent.png) |
-accounts/login | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_login.png) |
-accounts/logout | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_logout.png) |
-accounts/password_change | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_password_change.png) |
-accounts/password_reset_done | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_password_reset_done.png) |
-accounts/register | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_register.png) |
-bag | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/bag.png) |
-brands/{all brands} | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/brands_allbrands.png) |
-brands/{example brand} | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/brands_example.png) |
-checkout | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/checkout.png) |
-checkout/checkout_success | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/checkout_success.png) |
-favourites | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/favourites.png) |
-product/{all products} | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/product_allproducts.png) |
-product/{individual_product} | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/product_individual_product.png) |
-product/?product_group=childrens | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/product_kids.png) |
-product/?product_group=womens | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_womens.png) |
-product/?product_group=mens | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_mens.png) |
-product/?product_type=baby| 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_baby.png) |
-product/?product_type=boots| 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_boots.png) |
-product/?product_type=brogues| 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_brogues.png) |
-product/?product_type=daps| 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_daps.png) |
-product/?product_type=heels| 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_heels.png) |
-product/?product_type=pumps| 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_pumps.png) |
-product/?product_type=socks| 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_socks.png) |
-review/add_review | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/review_add_review.png) |
-review/edit_review | 0 errors, 0 contrast errors | [Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/review_edit_review.png) |
+home | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/home_index.png) |
+accounts/verification_sent | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_emailsent.png) |
+accounts/login | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_login.png) |
+accounts/logout | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_logout.png) |
+accounts/password_change | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_password_change.png) |
+accounts/password_reset_done | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_password_reset_done.png) |
+accounts/register | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/account_register.png) |
+bag | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/bag.png) |
+brands/{all brands} | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/brands_allbrands.png) |
+brands/{example brand} | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/brands_example.png) |
+checkout | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/checkout.png) |
+checkout/checkout_success | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/checkout_success.png) |
+favourites | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/favourites.png) |
+product/{all products} | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/product_allproducts.png) |
+product/{individual_product} | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/product_individual_product.png) |
+product/?product_group=childrens | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/product_kids.png) |
+product/?product_group=womens | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_womens.png) |
+product/?product_group=mens | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_mens.png) |
+product/?product_type=baby| 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_baby.png) |
+product/?product_type=boots| 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_boots.png) |
+product/?product_type=brogues| 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_brogues.png) |
+product/?product_type=daps| 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_daps.png) |
+product/?product_type=heels| 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_heels.png) |
+product/?product_type=pumps| 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_pumps.png) |
+product/?product_type=socks| 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/products_socks.png) |
+review/add_review | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/review_add_review.png) |
+review/edit_review | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/review_edit_review.png) |
 
