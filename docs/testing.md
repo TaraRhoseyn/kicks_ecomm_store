@@ -151,3 +151,34 @@ product/?product_type=socks| 0 errors, 0 contrast errors | [Report](https://gith
 review/add_review | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/review_add_review.png) |
 review/edit_review | 0 errors, 0 contrast errors | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wave/review_edit_review.png) |
 
+
+
+## Unit Testing
+
+Unit testing was used across the project to test key functionality.
+
+I reached a coverage of 60%, ideally I would have liked to reach more but had time constraints so chose to focus on the core essentials of each app. Please see below evidence of this coverage, and please see the [full coverage report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/unit_testing/coverage_full_report.pdf) if you would like more details.
+
+![Coverage report example](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/unit_testing/coverage_percentage.png)
+
+All tests are passing.
+
+Bag app unit tests:
+
+![Bag unit tests](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/unit_testing/unit_testing_bag_app.png)
+
+Brands app unit tests:
+
+![Brands unit tests](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/unit_testing/unit_testing_brands_app.png)
+
+Favourites app unit tests:
+
+![Favourites unit tests](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/unit_testing/unit_testing_favourites_app.png)
+
+Home app unit tests:
+
+![Home unit tests](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/unit_testing/unit_testing_home_app.png)
+
+Products app unit tests:
+
+![Products unit tests](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/unit_testing/unit_testing_products_app.png)
