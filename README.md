@@ -61,9 +61,7 @@ The target audience for this website is primarily young people interested in fas
 
 #### Regular visitors
 
-- As a regular visitor, I want to add favourite items to a central location so I can see which products I may want to purchase in the future. 
-- As a regular visitor, I want to edit favourite items to keep track of my preferences. 
-- As a regular visitor, I want to delete favourite items if I change my mind about purchase.
+- As a regular visitor, I want to add, edit and remove favourite items so I can see which products I may want to purchase in the future. 
 
 #### Site owner/Administrator
 
@@ -117,10 +115,103 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 ### Current Features
 
+**Feature 1: Navigation Bar**
+
+Navigation bar lets users navigate to each page of the website, login, register, product manage, view running total of shopping bag and go to checkout.
+
+![Feature 1](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_1.png)
+
+**Feature 2: Footer**
+
+The footer lets users go to social media accounts of the site owners (placeholders) and redirect themselves to the home page.
+
+![Feature 2](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_2.png)
+
+**Feature 3: Login**
+
+The login page lets users login or redirects them to the register page or reset password.
+
+![Feature 3](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_3.png)
+
+**Feature 4: Register**
+
+The register page lets users regiser an account (regular account, not superuser) or redirects them to the login page or reset password.
+
+![Feature 4](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_4.png)
+
+**Feature 5: All Products page**
+
+This page lets users view all products at once. It has a convenient scroll-to-top button as the page is rather long.
+
+![Feature 5](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_5.png)
+
+**Feature 6: Individual Product page**
+
+From any of the general product pages users can click on the individual product view to get more product details by clicking the product image or name. 
+
+Users are directed to a page with a larger image of the product, size details, quantity details, a description, product reviews, the ability to favourite product (if signed in as either a regular or superuser), the ability to leave a review (if signed in as either a regular or superuser) and the ability to add product to shopping bag.
+
+Superusers are able to edit or delete all reviews on the page, and if you're used in as the original user who left the review you can also edit or delete your own review. They are also able to edit or delete products directly from these pages.
+
+Regular user's view:
+
+![Feature 6](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_6_regularuser.png)
+
+Superuser's view:
+
+![Feature 6](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_6_superuser.png)
+
+**Feature 7: Search for products**
+
+There's an in-built search feature in the app built with JavaScript that allows users to search the database for products.
+
+![Feature 7](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_7.png)
+
+**Feature 8: Favourites page**
+
+**Feature 9: Reviews**
+
+**Feature 10: Shopping bag**
+
+**Feature 11: Checkout**
+
+**Feature 12: Profile**
+
+**Feature 13: Product management**
+
+**Feature 14: Admin**
+
+**Feature 15: Filter products by price**
+
+**Feature 16: Filter products by rating**
+
+**Feature 17: Women's products page**
+
+**Feature 18: Men's products page**
+
+**Feature 19: Children's products page**
+
+**Feature 20: Distinct product type pages**
+
+**Feature 21: Brands page**
+
+Regular users can view all brands on a single page and click through to view products from only a specified brand.
+
+Superusers can view all brands and also edit, delete or add new brands.
+
+Regular user's view:
+
+![Feature 21](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_21_regularuser.png)
+
+Superuser's view:
+
+![Feature 21](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_21_superuser.png)
+
 ### Features for Future Releases
 
 1. Contact form either using EmailJS or custom a form model.
 2. The default_rating field in the Product model changing from a manual input into an aggregated number made from all user reviews.
+3. A reviews.html page where a user can view all their reviews in one place.
 
 ## Technologies Used
 
@@ -173,9 +264,9 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 ## Testing
 
-Please see the [seperate testing markdown](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/testing.md) file for details of testing.
+Please see the [separate testing markdown](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/testing.md) file for details of testing.
 
-All files pass all code validation. User stories have been tested. All apps passing all unit tests.
+All files pass all code validation. User stories have been tested. All apps pass all unit tests.
 
 ### Testing user stories
 
@@ -226,7 +317,7 @@ All files pass all code validation. User stories have been tested. All apps pass
 
 - **Stack Overflow**: For fixing [max_length on IntegerField](https://stackoverflow.com/questions/30849862/django-max-length-for-integerfield) bug. For [grouping queryset by first letter](https://stackoverflow.com/questions/4151631/django-grouping-queryset-by-first-letter). For fixing [bootstrap bug](https://stackoverflow.com/questions/14270084/overflow-xhidden-doesnt-prevent-content-from-overflowing-in-mobile-browsers).
 
-- **test-driven-django-development**: For [model unit testing methods](https://test-driven-django-development.readthedocs.io/en/latest/02-models.html).
+- **test-driven-django-development**: For [unit testing methods](https://test-driven-django-development.readthedocs.io/en/latest/02-models.html).
 
 - **Cory House**: For [adding aria-current attributes to current pages](https://twitter.com/housecor/status/1476910306702077954/photo/1)
 

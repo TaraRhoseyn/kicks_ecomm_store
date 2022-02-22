@@ -1,3 +1,11 @@
+# Table of contents
+
+- [Testing](#testing)
+  - [Code validation](#code-validation)
+  - [Unit Testing](#unit-testing)
+  - [Device and browser testing](#device-and-browser-testing)
+  - [Testing user stories](#testing-user-stories)
+
 
 # Testing
 
