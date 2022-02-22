@@ -110,7 +110,7 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - [HTML5](https://en.wikipedia.org/wiki/HTML): Website structure.
 - [CSS3](https://en.wikipedia.org/wiki/CSS): Website styling.
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript): Website functionality and DOM manipulation.
-- [Python](https://www.python.org/): Website data and server maniulation.
+- [Python](https://www.python.org/): Website data and server manipulation.
 
 ### Frameworks and libraries
 
@@ -118,6 +118,7 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 - [Django](https://www.djangoproject.com/): Web framework for building the app's core functionality.
 - [Bootstrap](https://getbootstrap.com/): CSS and JS framework used for layout styling and navbar component.
 - [jQuery](https://jquery.com/): JS library to speed up JavaScript development.
+- [Postgres](https://www.postgresql.org/): Database for deployed data.
 
 ### Tools
 
@@ -153,23 +154,9 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 ## Testing
 
-### HTML Validation
+Please see the [seperate testing markdown] file for details of testing.
 
-### CSS Validation
-
-### JavaScript Linting
-
-### Python PEP8 Compliance Check
-
-### Unit Testing
-
-### Accessibility
-
-### Performance
-
-#### Lighthouse Testing
-
-### Manual Testing
+All files pass all code validation. User stories have been tested. All apps passing all unit tests.
 
 #### Devices tested
 

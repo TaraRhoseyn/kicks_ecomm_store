@@ -75,7 +75,10 @@ All pages were manually validated with the [W3C Markup validation service](https
 
 | File  | Result | HTML validation service |
  ------ | :------------ | ---------------- |
- / (home) | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/home.png) |
+/ (home) | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/home.png) |
+/accounts/login.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/accounts_login.png) |
+/accounts/signup.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/accounts_signup.png) |
+/accounts/confirm-email.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/accounts_confirm_email.png) |
 /bag.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/bag.png) |
 /checkout.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/checkout.png) |
 /checkout_success.html | 0 errors, 0 warnings | [Report](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/html_validation/checkout_checkout_success.png) |
