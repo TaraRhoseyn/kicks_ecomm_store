@@ -94,6 +94,25 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 ## Wireframes
 
+| Page  | Desktop | Tablet | Mobile |
+ ------ | :------- | ------ | ------ |
+| accounts/login.html  | [Desktop Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/login_desktop.png) | [Tablet Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/login_tablet.png) | [Mobile Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/login_tablet.png) |
+| accounts/register.html  | [Desktop Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/register_desktop.png) | [Tablet Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/register_tablet.png) | [Mobile Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/register_tablet.png) |
+| bag.html  | [Desktop Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/bag_desktop.png) | [Tablet Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/bag_tablet.png) | [Mobile Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/bag_tablet.png) |
+| brands.html  | [Desktop Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/brands_desktop.png) | [Tablet Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/brands_tablet.png) | [Mobile Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/brands_tablet.png) |
+| checkout.html  | [Desktop Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/checkout_desktop.png) | [Tablet Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/checkout_tablet.png) | [Mobile Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/checkout_tablet.png) |
+| checkout/checkout_success.html  | [Desktop Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/checkout_success_desktop.png) | [Tablet Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/checkout_success_tablet.png) | [Mobile Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/checkout_success_tablet.png) |
+| favourites.html  | [Desktop Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/favourites_desktop.png) | [Tablet Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/favourites_tablet.png) | [Mobile Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/favourites_tablet.png) |
+| index.html  | [Desktop Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/home_desktop.png) | [Tablet Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/home_tablet.png) | [Mobile Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/home_tablet.png) |
+| products/individual_product.html  | [Desktop Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/individual_product_desktop.png) | [Tablet Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/individual_product_tablet.png) | [Mobile Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/individual_product_tablet.png) |
+| products/add_product.html  | [Desktop Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/products_add_product_desktop.png) | [Tablet Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/products_add_product_tablet.png) | [Mobile Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/products_add_product_tablet.png) |
+| products/edit_product.html  | [Desktop Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/products_edit_product_desktop.png) | [Tablet Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/products_edit_product_tablet.png) | [Mobile Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/products_edit_product_tablet.png) |
+| products/add_review.html  | [Desktop Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/products_add_review_desktop.png) | [Tablet Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/products_add_review_tablet.png) | [Mobile Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/products_add_review_tablet.png) |
+| products/edit_product.html  | [Desktop Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/products_edit_review_desktop.png) | [Tablet Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/products_edit_review_tablet.png) | [Mobile Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/products_edit_review_tablet.png) |
+| profile.html  | [Desktop Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/profile_desktop.png) | [Tablet Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/profile_tablet.png) | [Mobile Wireframe](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/wireframes/profile_tablet.png) |
+
+
+
 ## Features
 
 ### Current Features
@@ -154,22 +173,9 @@ For the data of product group (womens, mens and kids) and type (sandals, trainer
 
 ## Testing
 
-Please see the [seperate testing markdown] file for details of testing.
+Please see the [seperate testing markdown](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/testing.md) file for details of testing.
 
 All files pass all code validation. User stories have been tested. All apps passing all unit tests.
-
-#### Devices tested
-
-- Huawei PRA-LX1
-- iPhone SE
-- LENOVO IdeaCentre 3 Desktop PC with a 34" monitor
-- DELL Inspiron 15 5593
-
-#### Tests performed
-
-#### Results
-
-### Browser compatibility
 
 ### Testing user stories
 

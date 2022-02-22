@@ -185,3 +185,21 @@ Home app unit tests:
 Products app unit tests:
 
 ![Products unit tests](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/unit_testing/unit_testing_products_app.png)
+
+## Device and browser testing
+
+### Devices tested
+
+- Huawei PRA-LX1: Website and user stories work as expected.
+- iPhone SE: Website and user stories work as expected.
+- LENOVO IdeaCentre 3 Desktop PC with a 34" monitor: Website and user stories work as expected.
+- DELL Inspiron 15 5593: Website and user stories work as expected.
+
+### Browsers tested
+
+- Google chrome: Website and user stories work as expected.
+- Microsoft Edge: Website and user stories work as expected.
+- Safari: Website and user stories work as expected.
+- Firefox: Website and user stories work as expected.
+
+## Testing user stories
