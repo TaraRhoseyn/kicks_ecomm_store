@@ -158,11 +158,6 @@ class Product(models.Model):
         """
         return self.name
 
-    @property
-    def user_rating(self):
-        return self.reviews.aggregate(avg_score=Avg('review_score'))[
-            'avg_score']
-
 
 class Review(models.Model):
     """
@@ -173,8 +168,8 @@ class Review(models.Model):
 
     text_review = models.TextField(
         max_length='1024',
-        null=True,
-        blank=True,
+        null=False,
+        blank=False,
     )
     STAR_CHOICES = (
         (1, '1'),
