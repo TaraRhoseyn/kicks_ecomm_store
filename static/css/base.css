@@ -53,6 +53,10 @@ Credit: Eduardo Boucas
   }
 }
 
+#nav-user_account {
+  padding-left: 20px !important;
+}
+
 .dropdown-menu {
   background-color: black !important;
   border: none;
