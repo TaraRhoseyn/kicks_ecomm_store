@@ -572,7 +572,7 @@ User stories covered by this feature: 35
 - [Git](https://git-scm.com/): Used for version control within VSCode to push the code to GitHub.
 - [GitHub](https://github.com/): Used as a remote repository to store project code.
 
-### Deployment
+### Deployment Tools
 
 - [Heroku](https://www.heroku.com/) - Used for deployment.
 
@@ -623,6 +623,60 @@ All files pass all code validation. User stories have been tested. All apps pass
 
 ## Deployment
 
+### Local deployment (clone this repository)
+
+1. Log into your GitHub account and find [this repository](https://github.com/TaraRhoseyn/CI_MS4_Kicks/).
+2. Click on the 'Code' button (next to 'Add file').
+3. To clone the repository using HTTPS, under clone with HTTPS, copy the link.
+4. Then open Git Bash.
+5. Change the current working directory to where you want the cloned directory to be made.
+6. In your IDE's terminal type 'git clone' followed by the URL you copied.
+7. Press Enter.
+8. Your local clone will now be made.
+9. Please note that if you were to make a clone of this repository, you would have to gather all of the environmental variables such as access and API keys yourself and store them locally in a env.py file (do not commit this to git).
+
+### Using Stripe
+
+1. Create an account with [stripe](https://stripe.com/)
+2. Click 'Developers' tab. 
+3. Select API keys. Please note your publishable key and secret here, these will be needed in both your development and deployment environment (secret key kept secret).
+4. Set your env variables based on keys mentioned above. 
+5. Go to Webhooks
+6. Create webhook with either your url followed by /checkout/wh/ (for your deployed env) or as a local host (for your dev env). I found the stripe-cli useful here, I was able to sign in on my terminal and set a webhook to listen to add events.
+7. Test your webhook using test payments on your website.
+
+### Using AWS (S3 Bucket)
+
+1. Create an account with [AWS](https://aws.amazon.com/).
+2. Select S3 bucket service, making sure to select your correct region.
+3. Create new bucket, making sure to enable public access and select correct (AWS will warn you against this).
+4. Add bucket policy:
+![Bucket policy](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/deployment/aws_bucket_policy.png)
+5. Add CORS policy:
+![CORS policy](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/deployment/aws_cors_policy.png)
+6. Set Read access for the Bucket ACL for Everyone(Public Access)
+7. Go to the IAM user service.
+8. Create a user group.
+9. Use AWS's prebuilt policy of 'AmazonS3FullAccess' and add it to the user group as a policy permission.
+10. Create new policy for the group by importing managed policy, selecting AmazonS3FullAccess and update the policy Resource to include your s3 bucket ARN.
+11. Add policy to user group. 
+12. Create a new user to add to the group and give them programmatic access.
+13. Take note of the secret key and access key, you will need these environmental variables for your deployment.
+14. Add your env variables to your settings.py. Please see the 'if 'USE_AWS' logic function at the bottom of that file for set up.
+
+### Deployment to Heroku
+
+1. Log in to [Heroku](https://www.heroku.com/).
+2. Click 'New' on the Dashboard and select 'Create new app'.
+3. Select your region and create an app name.
+4. Set environment variables in your app dashboard such as SECRET_KEY, DATABASE_URL, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, EMAIL_HOST_PASS, EMAIL_HOST_USER, STRIPE_PUBLIC_KEY, STRIPE_SECRET_KEY, STRIPE_WH_SECRET and USE_AWS.
+5. To use the postgres add on and also AWS, make sure you set the variable DISABLE_COLLECTSTATIC=1 in your project so that Heroku does not collect the static for us until AWS s3 bucket is integrated in our project (see above for details on how to achieve this).
+6. Use the postgres add-on in Heroku as your main database for deployment. You will need to grab the database url from Heroku and put it in your env as DATABASE_URL. Then makemigrations to this url, migrate models then load your fixtures. You can also use the heroku cli, log in to it from your terminal and do the usual heroku commands to make the migrations and load the data.
+7. You can now safely deploy to Heroku by git adding, comitting then pushing to this remote directory. You can also enable automatic deployments to Heroku by going through the process of 'Connect with GitHub' in the Heroku app dashboard.
+
+
+Please note: If you encounter issues in your deployment, you can use both the Heroku build logs to see issues if your project is struggling to deploy or temporarily enable the DEVELOPMENT mode in your config to momentarily allow Django to turn DEBUG on. Do make sure to remove this once you've fixed the issue.
+
 ## Credits
 
 ### Code
@@ -638,6 +692,12 @@ All files pass all code validation. User stories have been tested. All apps pass
 - **Paul Meeneghan** - For [favourites app](https://github.com/pmeeny)
 
 - **Eduardo Boucas** - For [approaching media queries in sass](https://css-tricks.com/approaches-media-queries-sass/)
+
+- **The Dumbfounds** - All of the Dumbfounds videos on unit testing were helpful, but I used the [testing views one](https://www.youtube.com/watch?v=hA_VxnxCHbo) in particular.
+
+- **Luke Hass** - For [scrollify js set up instructions](https://projects.lukehaas.me/scrollify/#overview)
+
+- **Alexander Grib** - For [testing forms](https://github.com/alexandergrib/ms4-store/blob/main/profiles/test_forms.py)
 
 - **CSS Tricks** - For [approaching nesting in sass](https://css-tricks.com/the-sass-ampersand/)
 
