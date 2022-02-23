@@ -24,6 +24,9 @@
 
 The aim of this website is to build a fully functional e-commerce site where users can purchase footwear and accessories, leave ratings, create accounts and view their order history.
 
+![Screenshot](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/web_screenshot.png)
+View the live site [here](https://ci-ms4-kicks.herokuapp.com/).
+
 Disclaimer: The purpose of this website is purely education and in submission for an assignment for Code Institute's Diploma in Web Applications Development. Any reference to real brand names used in this assignment are not affiliated to the project.
 
 To use this website as a customer, you can either make an account or use these credentials:
@@ -564,7 +567,6 @@ User stories covered by this feature: 35
 ### Helpful websites
 
 - [Unsplash](https://unsplash.com/): All images used in the website apart from the logo were from the online copyright-free repository, Unsplash. See Credits for more information.
-- [Am I Responsive](http://ami.responsivedesign.is/): Used to create the multi-device mock-up you see at the start of this README.md file.
 - [Tiny PNG](https://tinypng.com/): Used to compress images for improved website performance.
 - [Gorgias SKU Generator](https://www.gorgias.com/tools/sku-generator): Gorgias SKU Generator was used to generate SKU values. Please see [Database Design](#Database-Design) for more information on SKU architecture within the fixtures.
 - [PNG to WEBP](https://cloudconvert.com/png-to-webp): For converting png images to webp formats.
