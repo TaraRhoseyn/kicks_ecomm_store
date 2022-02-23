@@ -26,6 +26,10 @@ The aim of this website is to build a fully functional e-commerce site where use
 
 Disclaimer: The purpose of this website is purely education and in submission for an assignment for Code Institute's Diploma in Web Applications Development. Any reference to real brand names used in this assignment are not affiliated to the project.
 
+To use this website as a customer, you can either make an account or use these credentials:
+- Login: michaelscott
+- Password: Testing1234
+
 ## User Experience
 
 ### Target Audience
