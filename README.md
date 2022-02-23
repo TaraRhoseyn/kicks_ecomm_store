@@ -299,25 +299,75 @@ The bag page if items are contained:
 
 **Feature 11: Checkout**
 
+Users can checkout, place an order and pay for the items in their shopping bag. Users can get to checkout through the bag page. Once it's gone through users will receive a confirmation email too.
+
+The checkout page:
+
+![Feature 11](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_11.png)
+
+Confirmation of checkout:
+
+![Feature 11](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_11_success.png)
+
 **Feature 12: Profile**
+
+The profile page lets users see their order history, update their default delivery information and view their favourites.
+
+![Feature 12](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_12.png)
 
 **Feature 13: Product management**
 
+Superusers can add products or delete and edit all products natively in the website without going through to the Admin. 
+
+Products can be editted or deleted from the individual_product view:
+
+![Feature 13](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_13_mgt_view_product.png)
+
+Products can be added through the Product Management view accessible via the account icon drop down menu in the navbar:
+
+![Feature 13](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_13.png)
+
 **Feature 14: Admin**
+
+Superusers can go to the /admin/ url and log into the Django admin dashboard where they have full CRUD functionality across the website with all database models.
+
+![Feature 14](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_14.png)
 
 **Feature 15: Filter products by price**
 
+All products can be filtered by price to go from high to low or low to high, as indicated by the arrow icons. 
+
+Going forward, I would like to apply more obvious styling to the selected params to let users know more clearly which filter they currently have selected if any.
+
+![Feature 15](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_15.png)
+
 **Feature 16: Filter products by rating**
+
+All products can be filtered by rating to go from high to low. I decided against putting a low to high option because I don't see a reason why a user would wish to see the lowest rated item.
+
+Going forward, I would like to apply more obvious styling to the selected params to let users know more clearly which filter they currently have selected if any.
+
+![Feature 15](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_15.png)
 
 **Feature 17: Women's products page**
 
+Users can filter products by only Women's using the navigation bar.
+
+![Feature 17](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_17.png)
+
 **Feature 18: Men's products page**
+
+Users can filter products by only Men's using the navigation bar.
+
+![Feature 18](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_18.png)
 
 **Feature 19: Children's products page**
 
-**Feature 20: Distinct product type pages**
+Users can filter products by only Children's using the navigation bar.
 
-**Feature 21: Brands page**
+![Feature 19](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_19.png)
+
+**Feature 20: Brands page**
 
 Regular users can view all brands on a single page and click through to view products from only a specified brand.
 
@@ -325,14 +375,17 @@ Superusers can view all brands and also edit, delete or add new brands.
 
 Regular user's view:
 
-![Feature 21](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_21_regularuser.png)
+![Feature 20](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_20_regularuser.png)
 
 Superuser's view:
 
-![Feature 21](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_21_superuser.png)
+![Feature 20](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_2_superuser.png)
 
 **Feature 22: Toasts for user feedback**
 
+Four different types of toasts (info, error, success and warning) exist to let users know when they have updated, added or deleted any significant piece of data, such as adding an item to the shopping bag.
+
+![Feature 21](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_21.png)
 
 ### Features for Future Releases
 
