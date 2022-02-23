@@ -3,27 +3,17 @@
 1. [Project Goals](#project-goals)
 2. [User Experience](#user-experience)
     1. [Target Audience](#target-audience)
-    2. [User stories](#user-stories)
+    2. [User Stories](#user-stories)
     3. [Scope](#scope)
     4. [Design](#design)
         1. [Database Design](#Database-Design)
+        2. [Visual Design](#Visual-Design)
     5. [Wireframes](#wireframes)
 3. [Features](#features)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
     2. [Frameworks & Tools](#frameworks,-libraries-and-other-tools)
 5. [Testing](#testing)
-    1. [HTML Validation](#HTML-validation)
-    2. [CSS Validation](#CSS-validation)
-    3. [JavaScript Linting](#JavaScript-Linting)
-    4. [Python PEP8 Compliance Check](#Python-PEP8-Compliance-Check)
-    5. [Unit Testing](#Unit-Testing)
-    6. [Accessibility](#accessibility)
-    7. [Performance](#performance)
-        1. [Lighthouse Testing](#Lighthouse-Testing)
-        2. [Manual Testing](#Manual-Testing)
-    8. [Browser compatibility](#browser-compatability)
-    9. [Testing user stories](#testing-user-stories)
 6. [Bugs and Errors](#Bug-and-errors)
 7. [Deployment](#deployment)
 8. [Credits](#credits)
@@ -144,7 +134,9 @@ This physical model contains all databse collections, data types and relations t
 - Contains information about specific products in regards to orders being made.
 - Contains the fields: order, product, product_size, quantity, lineitem_total
 
-### Colour Scheme
+### Visual Design
+
+#### Colour Scheme
 
 The following colours were chosen to be the main colours of the website due to their association with youth culture and street fashion, particularly the yellow and purple. I wanted to create a vibrant and fun brand. 
 
@@ -152,11 +144,11 @@ The following colours were chosen to be the main colours of the website due to t
 
 Other colours are used in other sections of the site such as a neon green or neutral grey, but these are the core colours.
 
-### Typography
+#### Typography
 
 The main heading font is Outfit (with generic sans-serif if font fails) and the main body text is Outfit, with a tertiary font of Rubik Mono One. [Google fonts](https://fonts.google.com/) was used for the typography. I chose these fonts due to there high readability and comptability across browsers.
 
-### Imagery
+#### Imagery
 
 All of the images used are fully copyright-free images (please see the [media.md](/docs/media.md) markdown file for more details). 
 
@@ -192,6 +184,36 @@ The imagery is fun, bright and vibrant product photography. Imagery is used a lo
 Navigation bar lets users navigate to each page of the website, login, register, product manage, view running total of shopping bag and go to checkout.
 
 ![Feature 1](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_1.png)
+
+If the user is not logged in, the user will prompt them to either register or login:
+
+![Feature 1](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_1_not_logged_in.png)
+
+If a regular user is logged in, the user can view their profile, their favourites or log out:
+
+![Feature 1](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_1_not_regularuser.png)
+
+If a superuser is logged in, the user can view their profile, their favourites, manage products or log out:
+
+![Feature 1](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_1_not_superuser.png)
+
+The navigation bar also lets users keep a running total of their shopping bag, if it has items in it and how many. Users can also go straight to the bag page by clicking on the cart.
+
+If their are any items in the cart, a yellow notification circle will appear over the bag to let users know they have items in there and how many products.
+
+Navbar and bag icon without items:
+
+![Feature 1](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_1_no_items.png)
+
+Navbar and bag icon with an item in it: 
+
+![Feature 1](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_1_items.png)
+
+Users can also use the navbar to search for products:
+
+![Feature 1](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_1_search.png)
+
+Please see Feature 7 to see the result of the search page.
 
 **Feature 2: Footer**
 
@@ -241,9 +263,39 @@ There's an in-built search feature in the app built with JavaScript that allows 
 
 **Feature 8: Favourites page**
 
+Regular users and superusers can favourite individual products to keep them in a central location. Users favourite/un-favourite products directly from the individual_product view then can view all of their favourites (and also remove them) from favourites.html which is accessible from the user icon drop down menu in the nav bar.
+
+Users favouriting/un-favouriting on the individual_product view:
+
+![Feature 8](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_8_add_favourites.png)
+
+Users viewing their favourites and choice to un-favourite them:
+
+![Feature 8](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_8.png)
+
 **Feature 9: Reviews**
 
+Reviews can be left by regular users or superusers. Regular users can edit or delete their own reviews, while superusers can edit or delete any reviews. Going forward I would like to use this model to upload the default_rating field on the Product model to replace the admin-input of ratings and have users be able to quickly see an aggregated rating for the product as well as individual reviews. Please see future features for details on improvements to this feature.
+
+How to leave a review and view other reviews on the individual_product view (under the product descriptions):
+
+![Feature 9](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_9_view_review.png)
+
+Leaving a review:
+
+![Feature 9](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_9_leave_review.png)
+
 **Feature 10: Shopping bag**
+
+The shopping bag lets users view which items are in their current cart and go through to checkout. Please see the above Feature 1 to see how the bag looks in the navigation bar view. 
+
+The bag page if empty:
+
+![Feature 10](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_10_empty.png)
+
+The bag page if items are contained:
+
+![Feature 10](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_10_items.png)
 
 **Feature 11: Checkout**
 
@@ -278,6 +330,9 @@ Regular user's view:
 Superuser's view:
 
 ![Feature 21](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_21_superuser.png)
+
+**Feature 22: Toasts for user feedback**
+
 
 ### Features for Future Releases
 
@@ -340,8 +395,6 @@ Superuser's view:
 Please see the [separate testing markdown](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/testing.md) file for details of testing.
 
 All files pass all code validation. User stories have been tested. All apps pass all unit tests.
-
-### Testing user stories
 
 ## Bugs and Errors
 
