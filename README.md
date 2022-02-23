@@ -3,12 +3,11 @@
 1. [Project Goals](#project-goals)
 2. [User Experience](#user-experience)
     1. [Target Audience](#target-audience)
-    2. [User Stories](#user-stories)
-    3. [Scope](#scope)
-    4. [Design](#design)
+    2. [Scope (User Stories)](#scope-(user-stories))
+    3. [Design](#design)
         1. [Database Design](#Database-Design)
         2. [Visual Design](#Visual-Design)
-    5. [Wireframes](#wireframes)
+    4. [Wireframes](#wireframes)
 3. [Features](#features)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -42,30 +41,74 @@ The target audience for this website is primarily young people interested in fas
 7. Parents of young children looking to buy good quality but affordable shoes for their growing children.
 8. Family members of young children looking to buy footwear-related gifts for seasonal occasions.
 
-### User Stories
+### Scope (User Stories)
 
 #### First-time users
 
-1. As a first-time user, I want to able to navigate around the website in a way that is intuitive and easily understandable so I can browse freely.
-2. As a first-time user, I want to be able to create an account so I can see all of my information at once.
-3. As a first-time user, I want to be able to place an order without creating an account if I wish.
-4. As a first-time user, I want to be able to search the product catalog
-- As a first-time user, I want to be directed to an error page if I am directed to a broken URL.
+1.	As a first-time user, I want to checkout without creating an account for ease of use.
+2.	As a first-time user, I want to immediately understand what is being sold at the store.
 
-#### Regular visitors
+#### First-time/regular users
 
-- As a regular visitor, I want to add, edit and remove favourite items so I can see which products I may want to purchase in the future. 
+3.	As a first-time/regular user, I want to able to navigate around the website in a way that is intuitive and easily understandable so I can browse freely.
+4.	As a first-time/regular user, I want to view all products at once to freely browse.
+5.	As a first-time/regular user, I want to be able to search product by most expensive to least expensive so I can make a decision that makes sense with my budget.
+6.	As a first-time/regular user, I want to be able to search product by least expensive to most expensive so I can make a decision that makes sense with my budget.
+7.	As a first-time/regular user, I want to view products by how highly rated they are so I can feel confident in my purchasing decision.
+8.	As a first-time user/regular user, I want to be directed to an error page if I am directed to a broken URL or experience a server error.
+9.	As a first-time user, I want to create an account so I can update delivery information.
+10.	As a first-time user, I want to create an account so I can view my order history once placed.
+11.	As a first-time user, I want to create an account so I can favourite products that I can revisit later.
+12.	As a first-time/regular user, I want to see reviews of products so I can see if it’s the right product for me based on other user feedback.
+13.	As a first-time/regular user, I want to add items to shopping bag so I can order multiple items in one go.
+14.	As a first-time/regular user, I want to see only women’s products at a time.
+15.	As a first-time/regular user, I want to see only men’s products at a time.
+16.	As a first-time/regular user, I want to see only children’s products at a time. 
+17.	As a first-time/regular user, I want to see products related only to the type of product I’m interested in, e.g. socks or daps or trainers.
+18.	As a first-time/regular user, I want to see all of the brands that sell products on the store.
+19.	As a first-time/regular user, I want to see items relating only to the specific brands I select.
+20.	As a first-time/regular user, I want quick user feedback when I have made a change to my account. 
+21.	As a first-time/regular user, I want quick user feedback when I have added an item to my shopping bag or removed it.
+22.	As a first-time/regular user, I want to view my profile to update delivery information. 
+23.	As a first-time/regular user, I want to view my profile to view my order history.
+24.	As a first-time/regular user, I want to favourite items that I can revisit later.
+25.	As a first-time/regular user, I want to view my favourited items.
+26.	As a first-time/regular user, I want to search the product catalog.
+27.	As a first-time/regular user, I want feedback that my shopping bag is empty.
+28.	As a first-time/regular user, I want to view all the products in my shopping bag at once if not empty.
+29.	As a first-time/regular user, I want to easily remove or update items in the shopping bag. 
+30.	As a first-time/regular user, I want to checkout with my delivery information, payment information and complete my order.
+31.	As a first-time/regular user, I want positive confirmation that my order has been successfully completed.
+32.	As a first-time/regular user, I want feedback that my order is currently being processed.
 
-#### Site owner/Administrator
+#### Regular users
 
-- As a store owner, I want the ability to add products to the store to limit dev dependency.
-- As a store owner, I want the ability to edit products in the store to quickly update inventory without dev dependency.
-- As a store owner, I want the ability to delete products from the store to quickly update inventory without dev dependency.
-- As a store owner, I want the ability to add brands to the store to limit dev dependency.
-- As a store owner, I want the ability to edit brands in the store to quickly update inventory without dev dependency.
-- As a store owner, I want the ability to delete brands from the store to quickly update inventory without dev dependency.
+33.	As a regular user, I want to add reviews to products to give other users feedback.
+34.	As a regular user, I want to remove products from my favourites if I am no longer interested in.
+35.	As a regular user, I want to reset my password in case I forget it.
+36.	As a regular user, I want to edit product reviews if I wish to update it.
+37.	As a regular user, I want to remove product reviews if I change my mind.
+38.	As a regular user, I want to log out of my account.
 
-## Scope
+#### Store owners
+
+39.	As a store owner (superuser), I want to add products to the store to limit dev dependency.
+40.	As a store owner (superuser), I want to edit products in the store to quickly update inventory without dev dependency.
+41.	As a store owner (superuser), I want to delete products from the store to quickly update inventory without dev dependency.
+42.	As a store owner (superuser), I want to edit or delete user reviews for reputational safety.
+43.	As a store owner (superuser), I want to add brands to the store to limit dev dependency.
+44.	As a store owner (superuser), I want to edit brands in the store to quickly update inventory without dev dependency.
+45.	As a store owner (superuser), I want to delete brands from the store to quickly update inventory without dev dependency.
+46.	As a store owner (superuser), I want to add product types in the admin in case our inventory grows.
+47.	As a store owner (superuser), I want to edit product types in the admin in case our inventory changes.
+48.	 As a store owner (superuser), I want to add product groups to the admin in case our inventory grows.
+49.	As a store owner (superuser), I want to edit product groups in the admin in case our inventory changes.
+50.	As a store owner (superuser), I want to view product reviews in the admin to see which products are popular.
+51.	As a store owner (superuser), I want to view what products users have favourited in the admin to see which products are popular.
+52.	As a store owner (superuser), I want to see orders placed in the admin so I can fulfil them. 
+53.	As a store owner (superuser), I want to edit orders placed in the admin in case a user gets in contact to make changes due to a mistake. 
+54.	As a store owner (superuser), I want to see all other users of the website so I can see the popularity of the website, manage staff permissions or view customer details.
+55.	As a store owner (superuser), I want to see user email addresses associated with the website so I can create a marketing email list if the correct marketing permissions are set.
 
 ## Design
 
@@ -73,7 +116,7 @@ The target audience for this website is primarily young people interested in fas
 
 **Database physical model:**
 
-This physical model contains all databse collections, data types and relations to one another:
+This physical model contains all database collections, data types and relations to one another:
 
 ![Database physical model](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/design/database_diagram.png)
 
@@ -215,11 +258,15 @@ Users can also use the navbar to search for products:
 
 Please see Feature 7 to see the result of the search page.
 
+User stories covered by this feature: 6,14
+
 **Feature 2: Footer**
 
 The footer lets users go to social media accounts of the site owners (placeholders) and redirect themselves to the home page.
 
 ![Feature 2](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_2.png)
+
+User stories covered by this feature: 6
 
 **Feature 3: Login**
 
@@ -227,17 +274,23 @@ The login page lets users login or redirects them to the register page or reset 
 
 ![Feature 3](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_3.png)
 
+User stories covered by this feature: 5,6,7
+
 **Feature 4: Register**
 
 The register page lets users regiser an account (regular account, not superuser) or redirects them to the login page or reset password.
 
 ![Feature 4](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_4.png)
 
+User stories covered by this feature: 5,6,7
+
 **Feature 5: All Products page**
 
 This page lets users view all products at once. It has a convenient scroll-to-top button as the page is rather long.
 
 ![Feature 5](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_5.png)
+
+User stories covered by this feature: 2,4,5,6,7
 
 **Feature 6: Individual Product page**
 
@@ -255,13 +308,17 @@ Superuser's view:
 
 ![Feature 6](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_6_superuser.png)
 
+User stories covered by this feature: 12, 13, 24, 33, 40, 42
+
 **Feature 7: Search for products**
 
 There's an in-built search feature in the app built with JavaScript that allows users to search the database for products.
 
 ![Feature 7](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_7.png)
 
-**Feature 8: Favourites page**
+User stories covered by this feature: 26
+
+**Feature 8: Favourites**
 
 Regular users and superusers can favourite individual products to keep them in a central location. Users favourite/un-favourite products directly from the individual_product view then can view all of their favourites (and also remove them) from favourites.html which is accessible from the user icon drop down menu in the nav bar.
 
@@ -272,6 +329,8 @@ Users favouriting/un-favouriting on the individual_product view:
 Users viewing their favourites and choice to un-favourite them:
 
 ![Feature 8](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_8.png)
+
+User stories covered by this feature: 24, 25, 34, 51
 
 **Feature 9: Reviews**
 
@@ -285,6 +344,8 @@ Leaving a review:
 
 ![Feature 9](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_9_leave_review.png)
 
+User stories covered by this feature: 12, 33, 36, 37, 42, 50
+
 **Feature 10: Shopping bag**
 
 The shopping bag lets users view which items are in their current cart and go through to checkout. Please see the above Feature 1 to see how the bag looks in the navigation bar view. 
@@ -296,6 +357,8 @@ The bag page if empty:
 The bag page if items are contained:
 
 ![Feature 10](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_10_items.png)
+
+User stories covered by this feature: 13, 21, 27, 28, 29
 
 **Feature 11: Checkout**
 
@@ -309,11 +372,15 @@ Confirmation of checkout:
 
 ![Feature 11](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_11_success.png)
 
+User stories covered by this feature: 1, 30, 31, 32, 52, 53
+
 **Feature 12: Profile**
 
 The profile page lets users see their order history, update their default delivery information and view their favourites.
 
 ![Feature 12](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_12.png)
+
+User stories covered by this feature: 22, 23, 25, 34
 
 **Feature 13: Product management**
 
@@ -327,11 +394,15 @@ Products can be added through the Product Management view accessible via the acc
 
 ![Feature 13](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_13.png)
 
+User stories covered by this feature: 39, 40, 41
+
 **Feature 14: Admin**
 
 Superusers can go to the /admin/ url and log into the Django admin dashboard where they have full CRUD functionality across the website with all database models.
 
 ![Feature 14](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_14.png)
+
+User stories covered by this feature: 39-55
 
 **Feature 15: Filter products by price**
 
@@ -341,6 +412,8 @@ Going forward, I would like to apply more obvious styling to the selected params
 
 ![Feature 15](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_15.png)
 
+User stories covered by this feature: 5,6
+
 **Feature 16: Filter products by rating**
 
 All products can be filtered by rating to go from high to low. I decided against putting a low to high option because I don't see a reason why a user would wish to see the lowest rated item.
@@ -349,11 +422,15 @@ Going forward, I would like to apply more obvious styling to the selected params
 
 ![Feature 15](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_15.png)
 
+User stories covered by this feature: 7
+
 **Feature 17: Women's products page**
 
 Users can filter products by only Women's using the navigation bar.
 
 ![Feature 17](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_17.png)
+
+User stories covered by this feature: 14
 
 **Feature 18: Men's products page**
 
@@ -361,11 +438,15 @@ Users can filter products by only Men's using the navigation bar.
 
 ![Feature 18](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_18.png)
 
+User stories covered by this feature: 15
+
 **Feature 19: Children's products page**
 
 Users can filter products by only Children's using the navigation bar.
 
 ![Feature 19](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_19.png)
+
+User stories covered by this feature: 16
 
 **Feature 20: Brands page**
 
@@ -381,11 +462,63 @@ Superuser's view:
 
 ![Feature 20](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_2_superuser.png)
 
-**Feature 22: Toasts for user feedback**
+User stories covered by this feature: 18, 19, 43, 44, 45
+
+**Feature 21: Toasts for user feedback**
 
 Four different types of toasts (info, error, success and warning) exist to let users know when they have updated, added or deleted any significant piece of data, such as adding an item to the shopping bag.
 
 ![Feature 21](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_21.png)
+
+User stories covered by this feature: 12, 20, 21, 27
+
+**Feature 22: Home page**
+
+This page lets users know of the purpose of the shop, the kind of products on sale and delivers a call to action to shop. It also lets users know of the free delivery on products over a certain amount.
+
+![Feature 22](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_22.png)
+
+User stories covered by this feature: 2
+
+**Feature 23: 400 error page**
+
+Error page redirecting users back to home if they encounter a 400 error.
+
+User stories covered by this feature: 8
+
+**Feature 24: 403 error page**
+
+Error page redirecting users back to home if they encounter a 403 error.
+
+User stories covered by this feature: 8
+
+**Feature 24: 404 error page**
+
+Error page redirecting users back to home if they encounter a 404 error.
+
+User stories covered by this feature: 8
+
+**Feature 24: 500 error page**
+
+Error page redirecting users back to home if they encounter a 500 error.
+
+User stories covered by this feature: 8
+
+**Feature 25: Logout**
+
+Log out page sets users logout without disrupting their data.
+
+![Feature 25](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_25.png)
+
+User stories covered by this feature: 28
+
+**Feature 26: Password reset**
+
+Users can reset their password (based on Django allauth library)
+
+![Feature 26](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_26.png)
+
+User stories covered by this feature: 35
 
 ### Features for Future Releases
 
