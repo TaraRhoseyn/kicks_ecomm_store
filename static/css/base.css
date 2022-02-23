@@ -57,6 +57,47 @@ Credit: Eduardo Boucas
   padding-left: 20px !important;
 }
 
+.bag--total {
+  font-size: 1.5rem;
+}
+
+.nav__total {
+  color: #DED92F !important;
+  margin: 0px !important;
+  font-size: 0.9rem !important;
+}
+
+.nav__bag-indicator-circle {
+  width: 1.3rem;
+  height: 1.3rem;
+  color: black;
+  background-color: #DED92F;
+  margin-left: 15px !important;
+  position: relative;
+  border-radius: 100%;
+  margin-top: 18px;
+}
+
+.nav__bag-icon {
+  margin-left: -30px !important;
+}
+
+@media (max-width: 988px) {
+  .nav__bag-icon {
+    margin-left: auto !important;
+  }
+}
+
+.nav__bag-indicator-text {
+  margin-bottom: 0px !important;
+  font-size: 12px !important;
+  font-weight: 600;
+}
+
+.nav__total {
+  margin-right: 15px !important;
+}
+
 .dropdown-menu {
   background-color: black !important;
   border: none;
@@ -160,7 +201,7 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 988px) {
   .card-deck {
     margin-top: 5rem !important;
   }
@@ -170,7 +211,7 @@ body {
   margin-top: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 988px) {
   .product--all_card {
     height: 425px !important;
   }
@@ -313,7 +354,7 @@ use:nth-child(5) {
   margin-bottom: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 988px) {
   .product-details {
     margin-top: 80px;
   }
@@ -336,13 +377,13 @@ use:nth-child(5) {
   margin-top: 1px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 988px) {
   .rating-desc {
     margin-left: 15px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 988px) {
   .rating-desc, .rating-aria, .rating {
     display: inline;
   }
@@ -352,47 +393,6 @@ use:nth-child(5) {
   width: 80%;
   border: 3px #8918fb solid;
   margin-bottom: 20px;
-}
-
-.bag--total {
-  font-size: 1.5rem;
-}
-
-.nav__total {
-  color: #DED92F !important;
-  margin: 0px !important;
-  font-size: 0.9rem !important;
-}
-
-.nav__bag-indicator-circle {
-  width: 1.3rem;
-  height: 1.3rem;
-  color: black;
-  background-color: #DED92F;
-  margin-left: 15px !important;
-  position: relative;
-  border-radius: 100%;
-  margin-top: 18px;
-}
-
-.nav__bag-icon {
-  margin-left: -30px !important;
-}
-
-@media (max-width: 768px) {
-  .nav__bag-icon {
-    margin-left: auto !important;
-  }
-}
-
-.nav__bag-indicator-text {
-  margin-bottom: 0px !important;
-  font-size: 12px !important;
-  font-weight: 600;
-}
-
-.nav__total {
-  margin-right: 15px !important;
 }
 
 html, body {
@@ -491,7 +491,7 @@ footer p a:hover {
   right: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 988px) {
   .toast {
     top: 84px;
     right: 10px;
