@@ -13,15 +13,12 @@ class FavouriteAdmin(admin.ModelAdmin):
     Admin class for the Favourites model.
     """
     list_display = (
-        'products',
         'created_by',
     )
     search_fields = (
-        'products',
         'created_by',
     )
     list_filter = (
-        'products',
         'created_by',
     )
 
