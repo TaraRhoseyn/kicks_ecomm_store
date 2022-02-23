@@ -1,0 +1,51 @@
+<!-- Star rating system. Credit: Felix M -->
+{% if fav.default_rating == 1 %}
+    <span class="sr-only">Rating is 1 out of 5</span>
+    <p class="rating-aria">
+        <i class="star"></i>
+        <i class="empty-star"></i>
+        <i class="empty-star"></i>
+        <i class="empty-star"></i>
+        <i class="empty-star"></i>
+    </p>
+{% endif %}
+{% if fav.default_rating == 2 %}
+    <span class="sr-only">Rating is 2 out of 5</span>
+    <p class="rating-aria">
+        <i class="star"></i>
+        <i class="star"></i>
+        <i class="empty-star"></i>
+        <i class="empty-star"></i>
+        <i class="empty-star"></i>
+    </p>
+{% endif %}
+{% if fav.default_rating == 3 %}
+    <span class="sr-only">Rating is 3 out of 5</span>
+    <p class="rating-aria">
+        <i class="star"></i>
+        <i class="star"></i>
+        <i class="star"></i>
+        <i class="empty-star"></i>
+        <i class="empty-star"></i>
+    </p>
+{% endif %}
+{% if fav.default_rating == 4 %}
+    <span class="sr-only">Rating is 4 out of 5</span>
+    <p class="rating-aria">
+        <i class="star"></i>
+        <i class="star"></i>
+        <i class="star"></i>
+        <i class="star"></i>
+        <i class="empty-star"></i>
+    </p>
+{% endif %}
+{% if fav.default_rating == 5 %}
+<span class="sr-only">Rating is 5 out of 5</span>
+    <p class="rating-aria">
+        <i class="star"></i>
+        <i class="star"></i>
+        <i class="star"></i>
+        <i class="star"></i>
+        <i class="star"></i>
+    </p>
+{% endif %}

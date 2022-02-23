@@ -44,7 +44,7 @@
                             <a href="{% url 'individual_product' fav.id %}" class="product_name">
                                 <strong>{{ fav.name }}</strong></h5>
                             </a>
-                        {% include "includes/rating.html" %}
+                        {% include "includes/fav_rating.html" %}
                         <p class="card-price mt-3">£{{ fav.price }}</p>
                         </div>
                         <a href="{% url 'remove_product_from_favourites' fav.id 'favourites' %}" 
