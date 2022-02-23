@@ -6,6 +6,7 @@
     2. [User stories](#user-stories)
     3. [Scope](#scope)
     4. [Design](#design)
+        1. [Database Design](#Database-Design)
     5. [Wireframes](#wireframes)
 3. [Features](#features)
 4. [Technologies Used](#technologies-used)
@@ -33,6 +34,8 @@
 ## Project Goals
 
 The aim of this website is to build a fully functional e-commerce site where users can purchase footwear and accessories, leave ratings, create accounts and view their order history.
+
+Disclaimer: The purpose of this website is purely education and in submission for an assignment for Code Institute's Diploma in Web Applications Development. Any real brand names used in this assignment are not affiliated to the project.
 
 ## User Experience
 
@@ -78,11 +81,68 @@ The target audience for this website is primarily young people interested in fas
 
 ### Database Design
 
-<details>
-    <summary>Why use ProductGroup and ProductType models?</summary>
+**Database physical model:**
 
-For the data of product group (womens, mens and kids) and type (sandals, trainers, etc) I could have used character fields in the main Products model. Instead, I opted to create separate models to hold this data to limit human error. One could easily accidentally type in "men" instead of "mens" for example, leading to issues when sorting the products later on.
-</details>
+This physical model contains all databse collections, data types and relations to one another:
+
+![Database physical model](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/ms4_diagram.png)
+
+#### Models
+
+**Product model**
+
+- Core model containing all information about products.
+- Contains the fields: sku, name, description, product_group, product_type, product_brand, price, default_rating, image_url, image and has_sizes.
+- The sku field naming convention is based on sku architecture principles. The first two letters are product type, e.g. "TRAINERS", the next two are brand, e.g. "NIKE", the next two are product grouping, e.g. "CHILDRENS, the next number the default rating, e.g. "3", and the last letters the colour, e.g. "BLUE". For example, the first product's sku is "TRANICH3BL". I learnt about sku architecture from this [blog post](https://www.shopify.co.uk/retail/what-is-a-sku-number) from Shopify. I sped up production of sku fields by using the [Gorgias SKU Generator](https://www.gorgias.com/tools/sku-generator).
+- The image_url field is used to store the AWS s3 bucket url which holds the product's image.
+
+**ProductType model**
+
+- Contains all of the product types, for example Trainers, Daps, Brogues etc. These types are used to help users filter to which products they may be interested in.
+- Contains the fields: name, friendly_name.
+- This could have been a CharField in the Product model, but I opted to create separate models to hold this data to limit human error.
+
+**ProductGroup model**
+
+- Contains all of the product types, for example Mens, Womens etc. These groups are used to help users filter to which products would suit them.
+- Contains the fields: name, friendly_name.
+- This could have been a CharField in the Product model, but I opted to create separate models to hold this data to limit human error.
+
+**Brand model**
+
+- Contains all 54 brands whose products are used in this project.
+- Contains the fields: name, friendly_name.
+- This could have been a CharField in the Product model, but (a) I wanted to limit human error and (b) I was creating seperate views for a brands app so it made more sense to keep the Brand model in the same app rather than be part of Product in the products app.
+
+**Review**
+
+- Contains all product reviews left by users. Reviews can be left by regular users or superusers. Regular users can edit or delete their own reviews, while superusers can edit or delete any reviews. Going forward I would like to use this model to upload the default_rating field on the Product model to replace the admin-input of ratings and have users be able to quickly see an aggregated rating for the product as well as individual reviews.
+- Contains the fields: text_review, star_rating, created_at, created_by, product
+
+**Favourite**
+
+- Stores products favourited by a specific user. 
+- Contains the fields: product, created_by
+
+**UserProfile**
+
+- Contains delivery information and the user. 
+- Contains the fields: user, default_phone_number, default_street_address1, default_street_address2, default_town_or_city, default_county,  default_postcode, default_country
+
+**User**
+
+- This is a model created by the Django allauth library.
+- Contains the fields: username, password, first_name, last_name, is_staff, is_active, is_superuser, last_login, date_joined
+
+**Order**
+
+- Contains all key order information such as delivery information, shopping bag and total of order.
+- Contains the fields: user_profile, order_number, full_name, email, phone_number, country, postcode, town_or_city, street_address_1, street_address_2, county, date, delivery_cost, order_total, grand_total, original_bag, stripe_pid
+
+**OrderLineItem**
+
+- Contains information about specific products in regards to orders being made.
+- Contains the fields: order, product, product_size, quantity, lineitem_total
 
 ### Colour Scheme
 
@@ -346,6 +406,8 @@ All files pass all code validation. User stories have been tested. All apps pass
 All images were sourced from the copyright-free image repositories [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/). For full image rights and credit, please see the seperate [media.md](/docs/media.md) file.
 
 The images were edited using [Canva](https://www.canva.com/). The logo for 'KICKS' was also made in Canva.
+
+Some brand names do refer to real companies, but the actual product lines do not exist and please see the disclaimer at the top of this README for information regarding educational purposes.
 
 ### Acknowledgements
 
