@@ -650,6 +650,7 @@ All files pass all code validation. User stories have been tested. All apps pass
 5. Go to Webhooks
 6. Create webhook with either your url followed by /checkout/wh/ (for your deployed env) or as a local host (for your dev env). I found the stripe-cli useful here, I was able to sign in on my terminal and set a webhook to listen to add events.
 7. Test your webhook using test payments on your website.
+8. Upon deployment remove the keys from your env.py and add them to your Heroku app dashboard (see details below).
 
 ### Using AWS (S3 Bucket)
 
