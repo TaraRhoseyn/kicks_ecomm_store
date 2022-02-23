@@ -234,11 +234,11 @@ If the user is not logged in, the user will prompt them to either register or lo
 
 If a regular user is logged in, the user can view their profile, their favourites or log out:
 
-![Feature 1](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_1_not_regularuser.png)
+![Feature 1](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_1_regularuser.png)
 
 If a superuser is logged in, the user can view their profile, their favourites, manage products or log out:
 
-![Feature 1](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_1_not_superuser.png)
+![Feature 1](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/features/feature_1_superuser.png)
 
 The navigation bar also lets users keep a running total of their shopping bag, if it has items in it and how many. Users can also go straight to the bag page by clicking on the cart.
 
@@ -541,7 +541,6 @@ User stories covered by this feature: 35
 - [Django](https://www.djangoproject.com/): Web framework for building the app's core functionality.
 - [Bootstrap](https://getbootstrap.com/): CSS and JS framework used for layout styling and navbar component.
 - [jQuery](https://jquery.com/): JS library to speed up JavaScript development.
-- [Postgres](https://www.postgresql.org/): Database for deployed data.
 
 ### Tools
 
@@ -566,6 +565,7 @@ User stories covered by this feature: 35
 - [Gorgias SKU Generator](https://www.gorgias.com/tools/sku-generator): Gorgias SKU Generator was used to generate SKU values. Please see [Database Design](#Database-Design) for more information on SKU architecture within the fixtures.
 - [PNG to WEBP](https://cloudconvert.com/png-to-webp): For converting png images to webp formats.
 - [Google fonts](https://fonts.google.com/) was used for the typography.
+- [Dbdiagram](https://dbdiagram.io/): For creating the database physical model.
 
 ### Version Control
 
@@ -575,6 +575,8 @@ User stories covered by this feature: 35
 ### Deployment Tools
 
 - [Heroku](https://www.heroku.com/) - Used for deployment.
+- [Postgres](https://www.postgresql.org/): Database for deployed data.
+- [AWS](https://aws.amazon.com/): For static and media storage.
 
 ## Testing
 
@@ -675,7 +677,7 @@ All files pass all code validation. User stories have been tested. All apps pass
 7. You can now safely deploy to Heroku by git adding, comitting then pushing to this remote directory. You can also enable automatic deployments to Heroku by going through the process of 'Connect with GitHub' in the Heroku app dashboard.
 
 
-Please note: If you encounter issues in your deployment, you can use both the Heroku build logs to see issues if your project is struggling to deploy or temporarily enable the DEVELOPMENT mode in your config to momentarily allow Django to turn DEBUG on. Do make sure to remove this once you've fixed the issue.
+Please note: If you encounter issues in your deployment, you can use both the Heroku build logs to see issues if your project is struggling to deploy or temporarily enable the DEVELOPMENT variable in your config to momentarily allow Django to turn DEBUG on. Do make sure to remove this once you've fixed the issue.
 
 ## Credits
 
