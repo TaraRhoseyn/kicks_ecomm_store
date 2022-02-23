@@ -35,7 +35,7 @@
 
 The aim of this website is to build a fully functional e-commerce site where users can purchase footwear and accessories, leave ratings, create accounts and view their order history.
 
-Disclaimer: The purpose of this website is purely education and in submission for an assignment for Code Institute's Diploma in Web Applications Development. Any real brand names used in this assignment are not affiliated to the project.
+Disclaimer: The purpose of this website is purely education and in submission for an assignment for Code Institute's Diploma in Web Applications Development. Any reference to real brand names used in this assignment are not affiliated to the project.
 
 ## User Experience
 
@@ -85,7 +85,7 @@ The target audience for this website is primarily young people interested in fas
 
 This physical model contains all databse collections, data types and relations to one another:
 
-![Database physical model](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/ms4_diagram.png)
+![Database physical model](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/design/database_diagram.png)
 
 #### Models
 
@@ -146,9 +146,21 @@ This physical model contains all databse collections, data types and relations t
 
 ### Colour Scheme
 
+The following colours were chosen to be the main colours of the website due to their association with youth culture and street fashion, particularly the yellow and purple. I wanted to create a vibrant and fun brand. 
+
+![Colour scheme](https://github.com/TaraRhoseyn/CI_MS4_Kicks/blob/main/docs/design/colour_scheme.png)
+
+Other colours are used in other sections of the site such as a neon green or neutral grey, but these are the core colours.
+
 ### Typography
 
+The main heading font is Outfit (with generic sans-serif if font fails) and the main body text is Outfit, with a tertiary font of Rubik Mono One. [Google fonts](https://fonts.google.com/) was used for the typography. I chose these fonts due to there high readability and comptability across browsers.
+
 ### Imagery
+
+All of the images used are fully copyright-free images (please see the [media.md](/docs/media.md) markdown file for more details). 
+
+The imagery is fun, bright and vibrant product photography. Imagery is used a lot throughout the website to keep the website visually engaging and give users as much visual information about the product as possible.
 
 ## Wireframes
 
@@ -312,6 +324,7 @@ Superuser's view:
 - [Tiny PNG](https://tinypng.com/): Used to compress images for improved website performance.
 - [Gorgias SKU Generator](https://www.gorgias.com/tools/sku-generator): Gorgias SKU Generator was used to generate SKU values. Please see [Database Design](#Database-Design) for more information on SKU architecture within the fixtures.
 - [PNG to WEBP](https://cloudconvert.com/png-to-webp): For converting png images to webp formats.
+- [Google fonts](https://fonts.google.com/) was used for the typography.
 
 ### Version Control
 
@@ -408,6 +421,8 @@ All images were sourced from the copyright-free image repositories [Unsplash](ht
 The images were edited using [Canva](https://www.canva.com/). The logo for 'KICKS' was also made in Canva.
 
 Some brand names do refer to real companies, but the actual product lines do not exist and please see the disclaimer at the top of this README for information regarding educational purposes.
+
+[Google fonts](https://fonts.google.com/) was used for the typography.
 
 ### Acknowledgements
 
